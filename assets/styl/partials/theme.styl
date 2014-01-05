@@ -1,0 +1,96 @@
+body.theme
+  background #E91818
+  font-family Georgia, Times, "Times New Roman", serif
+  -webkit-font-smoothing antialiased
+
+  h1, h2, h3
+    color #444
+    font-family "Helvetica Neue", Helvetica, Arial, sans-serif
+
+  hr
+    margin-left  -1rem
+    margin-right -1rem
+    border-style dashed
+    border-bottom-width 0
+
+  a
+    color red
+
+  .masthead
+    margin-bottom 0.5rem
+    text-align center
+    color rgba(white, 0.5)
+
+  .masthead-title
+    padding 0.75rem 0
+    font-size 2rem
+    line-height 1
+    color inherit
+    text-transform uppercase
+
+    small
+      display block
+      margin-top 0.5rem
+      font-size 50%
+      color inherit
+
+    a
+      color white
+      text-shadow 0 0.6rem 0.1rem rgba(black, 0.2)
+
+      &:hover, &:focus
+        text-decoration none
+
+  .content
+    position relative
+    margin-bottom 2rem
+    padding 1rem
+    background white
+    border-radius 1px
+    box-shadow:
+      0 0 1px 2px rgba(white, 0.1),
+      0 0 0px 4px rgba(black, 0.1),
+      0 0 2px 0px rgba(black, 0.5),
+      inset 0 0 1px 1px #eee
+
+    @media (min-width: 30rem)
+      padding 2rem
+
+  .post-title, .post-date
+    text-align center
+
+  .post-title a
+    color inherit
+
+  .pagination
+    margin-bottom 2rem
+    font-family inherit
+
+  .pagination-item:first-child
+    border-top-left-radius    0.1rem
+    border-bottom-left-radius 0.1rem
+
+  .pagination-item:last-child
+    border-top-right-radius    0.1rem
+    border-bottom-right-radius 0.1rem
+
+  a.pagination-item
+    &:hover, &:active, &:focus
+      color white
+      background red
+      border-color red
+      text-decoration none
+
+    &:focus
+      outline none
+
+  .social-icon
+    color rgba(gray, 0.3)
+
+  a.social-icon
+    &:hover, &:active, &:focus
+      color red
+
+  .footer
+    text-align center
+    color #888
