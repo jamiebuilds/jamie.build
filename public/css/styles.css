@@ -498,7 +498,7 @@ a.pagination-item:hover {
   font-smoothing: antialiased;
 }
 body.theme {
-  background: #e91818;
+  background: #292e3c;
   font-family: Georgia, Times, "Times New Roman", serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -520,7 +520,7 @@ body.theme a {
 body.theme .masthead {
   margin-bottom: 0.5rem;
   text-align: center;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.3);
 }
 body.theme .masthead-title {
   padding: 0.75rem 0;
@@ -549,12 +549,32 @@ body.theme .content {
   padding: 1rem;
   background: #fff;
   border-radius: 1px;
-  box-shadow: 0 0 1px 2px rgba(255,255,255,0.1), 0 0 0px 4px rgba(0,0,0,0.1), 0 0 2px 0px rgba(0,0,0,0.5), inset 0 0 1px 1px #eee;
 }
 @media (min-width: 30rem) {
   body.theme .content {
     padding: 2rem;
   }
+}
+body.theme .post-image {
+  margin: -1rem -1rem 1rem;
+  padding: 1rem;
+}
+@media (min-width: 30rem) {
+  body.theme .post-image {
+    margin: -2rem -2rem 2rem;
+  }
+}
+body.theme .post-image img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+body.theme .post-image-hero {
+  padding: 0;
+}
+body.theme .post-image-hero img {
+  width: 100%;
+  border-radius: 0;
 }
 body.theme .post-title,
 body.theme .post-date {

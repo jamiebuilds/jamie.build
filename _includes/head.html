@@ -5,13 +5,65 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>
-    {% if page.title %}
-      {{ page.title }} &middot; {{ site.title }}
+  <!-- Metadata -->
+
+  {% if page.title %}
+    <title>{{ page.title }} &middot; {{ site.title }}</title>
+    <meta property="og:title"            content="{{ page.title }} &middot; {{ site.title }}">
+  {% else %}
+    <title>{{ site.title }}</title>
+    <meta property="og:title"            content="{{ site.title }}">
+  {% endif %}
+
+  <meta name="description"               content="{{ site.description }}">
+  <meta name="author"                    content="{{ site.author.name }}">
+
+  {% if page.tags %}
+    <meta name="keywords"                content="{{ page.tags | join: ', ' }}, {{ site.keywords | join: ', ' }}">
+  {% else %}
+    <meta name="keywords"                content="{{ site.keywords | join: ', ' }}">
+  {% endif %}
+
+  <meta property="og:site_name"          content="{{ site.title }}">
+  <meta property="og:description"        content="{{ site.description }}">
+  <meta property="og:locale"             content="en_US">
+
+  <meta name="twitter:card"              content="summary">
+  <meta name="twitter:site"              content="{{ site.author.twitter }}">
+
+  {% if page.type == 'article' %}
+    <meta property="og:type"             content="article">
+
+    {% if page.author %}
+      <meta property="og:article:author" content="{{ page.author.name }}">
+      <meta name="twitter:creator"       content="{{ page.author.twitter }}">
     {% else %}
-      {{ site.title }}
+      <meta property="og:article:author" content="{{ site.author.name }}">
+      <meta name="twitter:creator"       content="{{ site.author.twitter }}">
     {% endif %}
-  </title>
+
+    {% if page.tags %}
+      <meta property="og:article:tag"    content="{{ page.tags | join: ', ' }}">
+    {% endif %}
+
+  {% else %}
+    <meta property="og:type"             content="{{ site.type           }}">
+    <meta name="twitter:creator"         content="{{ site.author.twitter }}">
+  {% endif %}
+
+  {% if page.image %}
+    <meta name="twitter:image"           content="{{ page.image.url    }}">
+    <meta property="og:image"            content="{{ page.image.url    }}">
+    <meta property="og:image:type"       content="{{ page.image.type   }}">
+    <meta property="og:image:width"      content="{{ page.image.width  }}">
+    <meta property="og:image:height"     content="{{ page.image.height }}">
+  {% else %}
+    <meta name="twitter:image"           content="{{ site.image.url    }}">
+    <meta property="og:image"            content="{{ site.image.url    }}">
+    <meta property="og:image:type"       content="{{ site.image.type   }}">
+    <meta property="og:image:width"      content="{{ site.image.width  }}">
+    <meta property="og:image:height"     content="{{ site.image.height }}">
+  {% endif %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="/public/css/styles.css">

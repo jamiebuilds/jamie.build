@@ -1,5 +1,11 @@
+primary_color      = red
+primary_background = #292E3C
+
+secondary_color      = white
+secondary_background = white
+
 body.theme
-  background #E91818
+  background primary_background
   font-family Georgia, Times, "Times New Roman", serif
   -webkit-font-smoothing antialiased
 
@@ -14,12 +20,12 @@ body.theme
     border-bottom-width 0
 
   a
-    color red
+    color primary_color
 
   .masthead
     margin-bottom 0.5rem
     text-align center
-    color rgba(white, 0.5)
+    color rgba(secondary_color, 0.3)
 
   .masthead-title
     padding 0.75rem 0
@@ -35,7 +41,7 @@ body.theme
       color inherit
 
     a
-      color white
+      color secondary_color
       text-shadow 0 0.6rem 0.1rem rgba(black, 0.2)
 
       &:hover, &:focus
@@ -45,16 +51,30 @@ body.theme
     position relative
     margin-bottom 2rem
     padding 1rem
-    background white
+    background secondary_background
     border-radius 1px
-    box-shadow:
-      0 0 1px 2px rgba(white, 0.1),
-      0 0 0px 4px rgba(black, 0.1),
-      0 0 2px 0px rgba(black, 0.5),
-      inset 0 0 1px 1px #eee
 
     @media (min-width: 30rem)
       padding 2rem
+
+  .post-image
+    margin -1rem -1rem 1rem
+    padding 1rem
+
+    @media (min-width: 30rem)
+      margin -2rem -2rem 2rem
+
+    img
+      max-width 100%
+      height auto
+      margin 0 auto
+
+  .post-image-hero
+    padding 0
+
+    img
+      width 100%
+      border-radius 0
 
   .post-title, .post-date
     text-align center
@@ -76,9 +96,9 @@ body.theme
 
   a.pagination-item
     &:hover, &:active, &:focus
-      color white
-      background red
-      border-color red
+      color secondary_color
+      background primary_color
+      border-color primary_color
       text-decoration none
 
     &:focus
@@ -89,7 +109,7 @@ body.theme
 
   a.social-icon
     &:hover, &:active, &:focus
-      color red
+      color primary_color
 
   .footer
     text-align center

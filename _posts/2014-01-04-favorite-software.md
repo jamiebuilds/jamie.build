@@ -1,6 +1,13 @@
 ---
-layout : post
-title  : Favorite Software
+type: article
+layout: post
+title: Favorite Software
+tags:
+  - 'Software'
+  - 'Mac'
+  - 'OS X'
+  - 'Linux'
+  - 'Chrome'
 ---
 
 <div class="message">This post comes word for word from my <a href="https://github.com/thejameskyle/favorite-software">Github Repository</a>. If you have any suggestions or corrections, feel free to make them there. I'll try and keep this post up to date with the repository.
