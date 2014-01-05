@@ -15,3 +15,5 @@ git commit -m 'Publish Site'
 echo
 echo "$(tput setaf 2)[PUSH]$(tput sgr0)"
 git push origin master
+
+echo
