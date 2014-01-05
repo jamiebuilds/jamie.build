@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            'James Kyle'
+tagline:          'Dat tagline tho'
+description:      'Base theme for Jekyll themes by @mdo.'
+url:              http://thejameskyle.github.io
+
+author:
+  name:           'James Kyle'
+  url:            https://github.com/thejameskyle
+
+paginate:         1
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/thejameskyle/thejameskyle.github.io
