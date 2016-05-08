@@ -178,6 +178,7 @@
 
       function renderRepos(repos) {
         var ol = document.getElementById('repos');
+        var totalStars = 0;
 
         repos
           .filter(function(repo) {
@@ -199,7 +200,11 @@
 
             li.appendChild(a);
             ol.appendChild(li);
+            
+            totalStars += repo.stargazers_count;
           });
+          
+        console.log(totalStars);
       }
 
       var cached = localStorage.getItem('repos');
