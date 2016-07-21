@@ -231,7 +231,7 @@
         var ol = document.getElementById('repos');
         var totalStars = 0;
         
-        ol.removeChild(ol.firstChild); // remove spacing
+        ol.removeChild(ol.firstElementChild); // remove spacing
 
         repos
           .filter(function(repo) {
