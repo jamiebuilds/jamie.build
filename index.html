@@ -76,7 +76,10 @@
     </header>
 
     <section id="social">
-      <h2>Me on the internet...</h2>
+      <h2>
+        <a href="#social">#</a>
+        Me on the internet...
+      </h2>
       <ol>
         <li><a href="https://github.com/thejameskyle">GitHub</a></li>
         <li><a href="https://twitter.com/thejameskyle">Twitter</a></li>
@@ -88,7 +91,10 @@
     </section>
 
     <section id="jobs">
-      <h2>I have worked at...</h2>
+      <h2>
+        <a href="#jobs">#</a>
+        I have worked at...
+      </h2>
       <ol>
         <li>Facebook - (June 2016 - Present)</li>
         <li>CloudFlare - (September 2014 - June 2016)</li>
@@ -100,7 +106,10 @@
     </section>
 
     <section id="books">
-      <h2>Things I've written...</h2>
+      <h2>
+        <a href="#books">#</a>
+        Things I've written...
+      </h2>
       <ol>
         <li><a href="https://github.com/thejameskyle/the-super-tiny-compiler">The Super Tiny Compiler</a></li>
         <li><a href="https://github.com/thejameskyle/babel-handbook">Babel Handbook</a></li>
@@ -108,7 +117,10 @@
     </section>
     
     <section id="writing">
-      <h2>Things I'm writing...</h2>
+      <h2>
+        <a href="#writing">#</a>
+        Things I'm writing...
+      </h2>
       <ol>
         <li>Itsy Bitsy Data Structures</li>
         <li>(Untitled book on algorithms)</li>
@@ -117,7 +129,10 @@
     </section>
     
     <section id="blog">
-      <h2>More things I've written...</h2>
+      <h2>
+        <a href="#blog">#</a>
+        More things I've written...
+      </h2>
       <ol>
         <li><a href="https://medium.com/@thejameskyle/npm-dx-fdcedebf552e">npm dx</a></li>
         <li><a href="https://medium.com/@thejameskyle/learning-how-to-learn-7f04d6f42c1e">Learning How to Learn</a></li>
@@ -128,7 +143,10 @@
     </section>
 
     <section id="membership">
-      <h2>Core team member on...</h2>
+      <h2>
+        <a href="#membership">#</a>
+        Core team member on...
+      </h2>
       <ol>
         <li><a href="http://babeljs.io">Babel</li>
         <li><a href="http://lernajs.io">Lerna</a></li>
@@ -138,7 +156,10 @@
     </section>
 
     <section id="talks">
-      <h2>Talks I've given...</h2>
+      <h2>
+        <a href="#talks">#</a>
+        Talks I've given...
+      </h2>
       <ol>
         <li>Full Stack (Denver, CO): "How to build a compiler"</li>
         <li>Camp JS VII: "How to build a compiler (aussie edition)"</li>
@@ -156,7 +177,10 @@
     </section>
     
     <section id="upcoming">
-      <h2>Upcoming talks...</h2>
+      <h2>
+        <a href="#upcoming">#</a>
+        Upcoming talks...
+      </h2>
       <ol>
         <li><a href="http://www.reactrally.com/">React Rally (Salt Lake City, UT): "Zero to Binary Search Tree"</a></li>
         <li><a href="http://2016.jsconf.cn/">JSConf China (Nanjing, CN): "How to build a compiler"</a></li>
@@ -165,8 +189,13 @@
     </section>
 
     <section id="code">
-      <h2>Open Source Projects...</h2>
-      <ol id="repos"></ol>
+      <h2>
+        <a href="#code">#</a>
+        Open Source Projects...
+      </h2>
+      <ol id="repos">
+        <div style="height: 4000px"></div>
+      </ol>
     </section>
 
     <script>
@@ -201,6 +230,8 @@
       function renderRepos(repos) {
         var ol = document.getElementById('repos');
         var totalStars = 0;
+        
+        ol.removeChild(ol.firstChild); // remove spacing
 
         repos
           .filter(function(repo) {
