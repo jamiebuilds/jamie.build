@@ -201,6 +201,13 @@
     </section>
 
     <script>
+      var externalRepos = [
+        'https://api.github.com/repos/marionettejs/backbone.marionette',
+        'https://api.github.com/repos/marionettejs/backbone.radio',
+        'https://api.github.com/repos/babel/babel',
+        'https://api.github.com/repos/lerna/lerna'
+      ];
+      
       function request(url, callback) {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
@@ -209,20 +216,30 @@
         xhr.open('GET', url, true);
         xhr.send();
       }
-
-      function fetchRepos(repos, page) {
-        request('https://api.github.com/users/thejameskyle/repos?page=' + page + '&per_page=100', function(xhr) {
-          if (xhr.readyState !== 4) return;
-
-          repos = repos.concat(JSON.parse(xhr.responseText));
-
-          if (xhr.getResponseHeader('Link').indexOf('rel="next"') > -1) {
-            fetchRepos(repos, page + 1);
-          } else {
-            cacheRepos(repos);
-            renderRepos(repos);
-          }
-        });
+      
+      function fetchRepos() {
+        var repos = [];
+        var page = 0;
+        
+        function next(url) {
+          request(url, function(xhr) {
+            if (xhr.readyState !== 4) return;
+            
+            repos = repos.concat(JSON.parse(xhr.responseText));
+          
+            if (externalRepos.length) {
+              next(externalRepos.unshift());
+            } else if (page === 1 || xhr.getResponseHeader('Link').indexOf('rel="next"') > -1) {
+              page++;
+              next('https://api.github.com/users/thejameskyle/repos?page=' + page + '&per_page=100')
+            } else {
+              cacheRepos(repos);
+              renderRepos(repos); 
+            }
+          });
+        }
+        
+        next(externalRepos.unshift());
       }
 
       function cacheRepos(repos) {
@@ -266,7 +283,7 @@
       if (cached) {
         renderRepos(JSON.parse(cached));
       } else {
-        fetchRepos([], 1);
+        fetchRepos();
       }
     </script>
   </body>
