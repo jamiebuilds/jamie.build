@@ -228,7 +228,7 @@
             repos = repos.concat(JSON.parse(xhr.responseText));
           
             if (externalRepos.length) {
-              next(externalRepos.unshift());
+              next(externalRepos.shift());
             } else if (page === 1 || xhr.getResponseHeader('Link').indexOf('rel="next"') > -1) {
               page++;
               next('https://api.github.com/users/thejameskyle/repos?page=' + page + '&per_page=100')
@@ -239,7 +239,7 @@
           });
         }
         
-        next(externalRepos.unshift());
+        next(externalRepos.shift());
       }
 
       function cacheRepos(repos) {
