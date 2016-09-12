@@ -270,7 +270,11 @@
             var a = document.createElement('a');
 
             a.href = repo.html_url;
-            a.innerText = repo.name + ' (' + repo.stargazers_count + ' stars)';
+            a.innerText = (
+              (repo.owner.login === 'thejameskyle' ? '' : repo.owner.login + '/') +
+              repo.name +
+              ' (' + repo.stargazers_count + ' stars)'
+            );
 
             li.appendChild(a);
             ol.appendChild(li);
