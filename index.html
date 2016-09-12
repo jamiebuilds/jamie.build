@@ -226,10 +226,12 @@
             if (xhr.readyState !== 4) return;
             
             repos = repos.concat(JSON.parse(xhr.responseText));
+            
+            var linkHeader = xhr.getResponseHeader('Link');
           
             if (externalRepos.length) {
               next(externalRepos.shift());
-            } else if (page === 1 || xhr.getResponseHeader('Link').indexOf('rel="next"') > -1) {
+            } else if (page === 0 || (linkHeader && linkHeader.indexOf('rel="next"') > -1)) {
               page++;
               next('https://api.github.com/users/thejameskyle/repos?page=' + page + '&per_page=100')
             } else {
