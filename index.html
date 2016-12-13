@@ -81,27 +81,30 @@
 
       @media print {
         body {
-          font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font: 0.8em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
-        header h1::before {
-          content: "James Kyle - ";
+        header h1 {
+          margin-bottom: 0;
         }
 
         header p {
-          font-size: 1.4em;
+          margin-top: 0;
+          font-size: 1.2em;
         }
 
-        header p:not(:first-of-type) {
-          display: none;
+        section {
+          page-break-before: auto;
+          page-break-inside: avoid;
+          page-break-after: auto;
         }
 
-        a {
+        section ol a {
           text-decoration: none;
           color: inherit;
         }
 
-        a::after {
+        section ol a::after {
           content: attr(href);
           color: blue;
           margin-left: 0.2em;
@@ -117,23 +120,27 @@
           font-size: 0.8em;
         }
 
-        h2 + p span {
-          color: blue;
-          text-decoration: underline;
+        .ref {
+          display: none;
         }
 
-        .ref {
+        .screen {
           display: none;
         }
       }
     </style>
   </head>
   <body>
-    <header>
+    <header class="screen">
       <h1>@thejameskyle</h1>
       <p>UI Engineer</p>
       <p>Professional Sticker Maker</p>
       <p>Maker of DANK Software</p>
+    </header>
+
+    <header class="print">
+      <h1>James Kyle</h1>
+      <p>me@thejameskyle.com - @thejameskyle</p>
     </header>
 
     <section id="social">
@@ -143,7 +150,7 @@
       </h2>
       <p class="print">
         For a more up to date list see:
-        <span>https://thejameskyle.com/#social</span>
+        <a href="https://thejameskyle.com/#social">https://thejameskyle.com/#social</a>
       </p>
       <ol>
         <li><a href="https://github.com/thejameskyle">GitHub</a></li>
@@ -162,7 +169,7 @@
       </h2>
       <p class="print">
         For a more up to date list see:
-        <span>https://thejameskyle.com/#jobs</span>
+        <a href="https://thejameskyle.com/#jobs">https://thejameskyle.com/#jobs</a>
       </p>
       <ol>
         <li>Facebook - (June 2016 - Present)</li>
@@ -180,7 +187,7 @@
       </h2>
       <p class="print">
         For a more up to date list see:
-        <span>https://thejameskyle.com/#books</span>
+        <a href="https://thejameskyle.com/#books">https://thejameskyle.com/#books</a>
       </p>
       <ol>
         <li><a href="https://github.com/thejameskyle/the-super-tiny-compiler">The Super Tiny Compiler</a></li>
@@ -189,14 +196,14 @@
       </ol>
     </section>
 
-    <section id="writing">
+    <section id="writing" class="screen">
       <h2>
         <a class="ref" href="#writing">#</a>
         Things I'm writing...
       </h2>
       <p class="print">
         For a more up to date list see:
-        <span>https://thejameskyle.com/#writing</span>
+        <a href="https://thejameskyle.com/#writing">https://thejameskyle.com/#writing</a>
       </p>
       <ol>
         <li>(Untitled book on algorithms)</li>
@@ -211,7 +218,7 @@
       </h2>
       <p class="print">
         For a more up to date list see:
-        <span>https://thejameskyle.com/#blog</span>
+        <a href="https://thejameskyle.com/#blog">https://thejameskyle.com/#blog</a>
       </p>
       <ol>
         <li><a href="https://medium.com/@thejameskyle/dear-javascript-7e14ffcae36c">Dear JavaScript</a></li>
@@ -248,7 +255,7 @@
       </h2>
       <p class="print">
         For a more up to date list see:
-        <span>https://thejameskyle.com/#membership</span>
+        <a href="https://thejameskyle.com/#membership">https://thejameskyle.com/#membership</a>
       </p>
       <ol>
         <li><a href="https://github.com/tc39">TC39</a></li>
@@ -268,7 +275,7 @@
       </h2>
       <p class="print">
         For a more up to date list see:
-        <span>https://thejameskyle.com/#talks</span>
+        <a href="https://thejameskyle.com/#talks">https://thejameskyle.com/#talks</a>
       </p>
       <ol>
         <li><a href="http://2016.jsconf.asia/">JSConf Asia (Singapore, SG): "Algorithms? Oh It's O(n)"</a></li>
@@ -290,14 +297,14 @@
       </ol>
     </section>
 
-    <section id="upcoming">
+    <section id="upcoming" class="screen">
       <h2>
         <a class="ref" href="#upcoming">#</a>
         Upcoming talks...
       </h2>
       <p class="print">
         For a more up to date list see:
-        <span>https://thejameskyle.com/#upcoming</span>
+        <a href="https://thejameskyle.com/#upcoming">https://thejameskyle.com/#upcoming</a>
       </p>
       <ol>
         <li>(No future talks currently planned)</li>
@@ -311,7 +318,7 @@
       </h2>
       <p class="print">
         For a more up to date list see:
-        <span>https://thejameskyle.com/#websites</span>
+        <a href="https://thejameskyle.com/#websites">https://thejameskyle.com/#websites</a>
       </p>
       <ol>
         <li><a href="https://yarnpkg.com/">yarnpkg.com</a></li>
@@ -326,7 +333,7 @@
       </h2>
       <p class="print">
         For a more up to date list see:
-        <span>https://thejameskyle.com/#code</span>
+        <a href="https://thejameskyle.com/#code">https://thejameskyle.com/#code</a>
       </p>
       <ol id="repos">
         <div style="height: 4000px">(Loading...)</div>
@@ -418,6 +425,10 @@
               repo.name +
               ' (' + repo.stargazers_count + ' stars)'
             );
+
+            if (repo.stargazers_count < 30) {
+              li.className = 'screen';
+            }
 
             li.appendChild(a);
             ol.appendChild(li);
