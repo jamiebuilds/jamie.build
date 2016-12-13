@@ -4,96 +4,167 @@
     <title>James Kyle: The Website</title>
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
     <style>
-      body {
-        margin: 0.2%;
-        font-family: VT323, monaco, Consolas, "Lucida Console", monospace;
-        font-size: 1em;
+      @media screen {
+        body {
+          margin: 0.2%;
+          font-family: VT323, monaco, Consolas, "Lucida Console", monospace;
+          font-size: 1em;
 
-        background: blue;
-        color: white;
-        -webkit-font-smoothing: antialiased;
+          background: blue;
+          color: white;
+          -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2 {
+          font-size: 1em;
+          font-weight: normal;
+          text-transform: uppercase;
+        }
+
+        ul, ol {
+          list-style-position: inside;
+          padding-left: 0;
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        a:hover {
+          background: white;
+          color: blue;
+        }
+
+        header  {
+          margin: 10% 1em;
+          text-transform: uppercase;
+          color: yellow;
+          text-shadow:
+            0.05em 0.05em blue, -0.05em -0.05em red,
+            0.10em 0.10em blue, -0.10em -0.10em red,
+            0.15em 0.15em blue, -0.15em -0.15em red,
+            0.20em 0.20em blue, -0.20em -0.20em red;
+        }
+
+        header h1 {
+          margin: 0;
+          font-size: 17.4vw;
+        }
+
+        header p {
+          margin: 0;
+          font-size: 5.5vw;
+        }
+
+        header p::before {
+          content: "> ";
+        }
+
+        section {
+          margin: 1em;
+        }
+
+        .ugh::before {
+          content: "Ugh... ";
+        }
+
+        .print {
+          display: none;
+        }
       }
 
-      @media (min-width:  600px) { body { font-size: 1.5em; } }
-      @media (min-width:  800px) { body { font-size: 2.0em; } }
-      @media (min-width: 1000px) { body { font-size: 2.5em; } }
+      @media screen and (min-width:  600px) { body { font-size: 1.5em; } }
+      @media screen and (min-width:  800px) { body { font-size: 2.0em; } }
+      @media screen and (min-width: 1000px) { body { font-size: 2.5em; } }
 
-      h1, h2 {
-        font-size: 1em;
-        font-weight: normal;
-        text-transform: uppercase;
-      }
+      @media print {
+        body {
+          margin: 1in;
+          font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
 
-      ul, ol {
-        list-style-position: inside;
-        padding-left: 0;
-      }
+        header h1::before {
+          content: "James Kyle - ";
+        }
 
-      a {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-      }
+        header p {
+          font-size: 1.4em;
+        }
 
-      a:hover {
-        background: white;
-        color: blue;
-      }
+        header p:not(:first-of-type) {
+          display: none;
+        }
 
-      header  {
-        margin: 10% 1em;
-        text-transform: uppercase;
-        color: yellow;
-        text-shadow:
-          0.05em 0.05em blue, -0.05em -0.05em red,
-          0.10em 0.10em blue, -0.10em -0.10em red,
-          0.15em 0.15em blue, -0.15em -0.15em red,
-          0.20em 0.20em blue, -0.20em -0.20em red;
-      }
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
 
-      header h1 {
-        margin: 0;
-        font-size: 17.4vw;
-      }
+        a::after {
+          content: attr(href);
+          color: blue;
+          margin-left: 0.2em;
+          text-decoration: underline;
+        }
 
-      header p {
-        margin: 0;
-        font-size: 5.5vw;
-      }
+        h2 {
+          margin-bottom: 0;
+        }
 
-      section {
-        margin: 1em;
+        h2 + p {
+          margin-top: 0;
+          font-size: 0.8em;
+        }
+
+        h2 + p span {
+          color: blue;
+          text-decoration: underline;
+        }
+
+        .ref {
+          display: none;
+        }
       }
     </style>
   </head>
   <body>
     <header>
       <h1>@thejameskyle</h1>
-      <p>&gt; UI Engineer</p>
-      <p>&gt; Professional Sticker Maker</p>
-      <p>&gt; Maker of DANK Software</p>
+      <p>UI Engineer</p>
+      <p>Professional Sticker Maker</p>
+      <p>Maker of DANK Software</p>
     </header>
 
     <section id="social">
       <h2>
-        <a href="#social">#</a>
+        <a class="ref" href="#social">#</a>
         Me on the internet...
       </h2>
+      <p class="print">
+        For a more up to date list see:
+        <span>https://thejameskyle.com/#social</span>
+      </p>
       <ol>
         <li><a href="https://github.com/thejameskyle">GitHub</a></li>
         <li><a href="https://twitter.com/thejameskyle">Twitter</a></li>
         <li><a href="https://medium.com/@thejameskyle">Medium</a></li>
         <li><a href="https://www.stickermule.com/user/1070640906/stickers">Sticker Mule</a></li>
         <li><a href="https://www.instagram.com/thejameskyle/">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/thejameskyle">Ugh...</a></li>
+        <li><a class="ugh" href="https://www.linkedin.com/in/thejameskyle">LinkedIn</a></li>
       </ol>
     </section>
 
     <section id="jobs">
       <h2>
-        <a href="#jobs">#</a>
+        <a class="ref" href="#jobs">#</a>
         I have worked at...
       </h2>
+      <p class="print">
+        For a more up to date list see:
+        <span>https://thejameskyle.com/#jobs</span>
+      </p>
       <ol>
         <li>Facebook - (June 2016 - Present)</li>
         <li>CloudFlare - (September 2014 - June 2016)</li>
@@ -105,32 +176,44 @@
 
     <section id="books">
       <h2>
-        <a href="#books">#</a>
+        <a class="ref" href="#books">#</a>
         Things I've written...
       </h2>
+      <p class="print">
+        For a more up to date list see:
+        <span>https://thejameskyle.com/#books</span>
+      </p>
       <ol>
         <li><a href="https://github.com/thejameskyle/the-super-tiny-compiler">The Super Tiny Compiler</a></li>
         <li><a href="https://github.com/thejameskyle/itsy-bitsy-data-structures">Itsy Bitsy Data Structures</a></li>
         <li><a href="https://github.com/thejameskyle/babel-handbook">Babel Handbook</a></li>
       </ol>
     </section>
-    
+
     <section id="writing">
       <h2>
-        <a href="#writing">#</a>
+        <a class="ref" href="#writing">#</a>
         Things I'm writing...
       </h2>
+      <p class="print">
+        For a more up to date list see:
+        <span>https://thejameskyle.com/#writing</span>
+      </p>
       <ol>
         <li>(Untitled book on algorithms)</li>
         <li>(Untitled book on software design patterns)</li>
       </ol>
     </section>
-    
+
     <section id="blog">
       <h2>
-        <a href="#blog">#</a>
+        <a class="ref" href="#blog">#</a>
         More things I've written...
       </h2>
+      <p class="print">
+        For a more up to date list see:
+        <span>https://thejameskyle.com/#blog</span>
+      </p>
       <ol>
         <li><a href="https://medium.com/@thejameskyle/dear-javascript-7e14ffcae36c">Dear JavaScript</a></li>
         <li><a href="https://yarnpkg.com/blog/2016/11/24/lockfiles-for-all">Lockfiles should be committed on all projects | Yarn</a></li>
@@ -161,9 +244,13 @@
 
     <section id="membership">
       <h2>
-        <a href="#membership">#</a>
+        <a class="ref" href="#membership">#</a>
         Core team member on...
       </h2>
+      <p class="print">
+        For a more up to date list see:
+        <span>https://thejameskyle.com/#membership</span>
+      </p>
       <ol>
         <li><a href="https://github.com/tc39">TC39</a></li>
         <li><a href="https://yarnpkg.com/">Yarn</a></li>
@@ -177,9 +264,13 @@
 
     <section id="talks">
       <h2>
-        <a href="#talks">#</a>
+        <a class="ref" href="#talks">#</a>
         Talks I've given...
       </h2>
+      <p class="print">
+        For a more up to date list see:
+        <span>https://thejameskyle.com/#talks</span>
+      </p>
       <ol>
         <li><a href="http://2016.jsconf.asia/">JSConf Asia (Singapore, SG): "Algorithms? Oh It's O(n)"</a></li>
         <li><a href="https://www.youtube.com/watch?v=ZYFOWesCm_0">ReactNL (Amsterdam, NL): "Getting into the Flow"</a></li>
@@ -199,22 +290,30 @@
         <li>Dancing with Marionette: "Marionette State of the Union"</li>
       </ol>
     </section>
-    
+
     <section id="upcoming">
       <h2>
-        <a href="#upcoming">#</a>
+        <a class="ref" href="#upcoming">#</a>
         Upcoming talks...
       </h2>
+      <p class="print">
+        For a more up to date list see:
+        <span>https://thejameskyle.com/#upcoming</span>
+      </p>
       <ol>
         <li>(No future talks currently planned)</li>
       </ol>
     </section>
-    
+
     <section id="websites">
       <h2>
-        <a href="#websites">#</a>
+        <a class="ref" href="#websites">#</a>
         Open Source Websites I've built...
       </h2>
+      <p class="print">
+        For a more up to date list see:
+        <span>https://thejameskyle.com/#websites</span>
+      </p>
       <ol>
         <li><a href="https://yarnpkg.com/">yarnpkg.com</a></li>
         <li><a href="http://babeljs.io/">babeljs.io</a></li>
@@ -223,9 +322,13 @@
 
     <section id="code">
       <h2>
-        <a href="#code">#</a>
+        <a class="ref" href="#code">#</a>
         Open Source Projects...
       </h2>
+      <p class="print">
+        For a more up to date list see:
+        <span>https://thejameskyle.com/#code</span>
+      </p>
       <ol id="repos">
         <div style="height: 4000px">(Loading...)</div>
       </ol>
@@ -248,7 +351,7 @@
         'https://api.github.com/repos/yarnpkg/website',
         'https://api.github.com/repos/babel/babel.github.io'
       ];
-      
+
       function request(url, callback) {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
@@ -257,19 +360,19 @@
         xhr.open('GET', url, true);
         xhr.send();
       }
-      
+
       function fetchRepos() {
         var repos = [];
         var page = 0;
-        
+
         function next(url) {
           request(url, function(xhr) {
             if (xhr.readyState !== 4) return;
-            
+
             repos = repos.concat(JSON.parse(xhr.responseText));
-            
+
             var linkHeader = xhr.getResponseHeader('Link');
-          
+
             if (externalRepos.length) {
               next(externalRepos.shift());
             } else if (page === 0 || (linkHeader && linkHeader.indexOf('rel="next"') > -1)) {
@@ -277,11 +380,11 @@
               next('https://api.github.com/users/thejameskyle/repos?page=' + page + '&per_page=100')
             } else {
               cacheRepos(repos);
-              renderRepos(repos); 
+              renderRepos(repos);
             }
           });
         }
-        
+
         next(externalRepos.shift());
       }
 
@@ -292,7 +395,7 @@
       function renderRepos(repos) {
         var ol = document.getElementById('repos');
         var totalStars = 0;
-        
+
         ol.removeChild(ol.firstElementChild); // remove spacing
 
         repos
@@ -319,10 +422,10 @@
 
             li.appendChild(a);
             ol.appendChild(li);
-            
+
             totalStars += repo.stargazers_count;
           });
-          
+
         console.log(totalStars);
       }
 
