@@ -450,5 +450,45 @@
         fetchRepos();
       }
     </script>
+    
+    
+    <script>
+      var KEY_UP = 38;
+      var KEY_DOWN = 40;
+
+      var KEY_J = 74;
+      var KEY_K = 75;
+
+      var slice = Array.prototype.slice;
+
+      window.addEventListener('keydown', function(event) {
+        var keyCode = event.keyCode;
+
+        var isUp = keyCode === KEY_UP || keyCode === KEY_J;
+        var isDown = keyCode === KEY_DOWN || keyCode === KEY_K;
+
+        if (!(isUp || isDown)) return;
+
+        event.preventDefault();
+
+        var activeElement = document.activeElement;
+        var links = slice.call(document.links);
+
+        var indexOf = links.indexOf(activeElement);
+        var lastIndex = links.length - 1;
+        var nextIndex;
+
+        if (indexOf === -1) {
+          nextIndex = isDown ? 0 : lastIndex;
+        } else if (isUp) {
+          nextIndex = indexOf > 0 ? indexOf - 1 : lastIndex;
+        } else {
+          nextIndex = indexOf < lastIndex ? indexOf + 1 : 0;
+        }
+
+        links[next].focus();
+      });
+
+    </script>
   </body>
 </html>
