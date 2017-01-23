@@ -461,6 +461,14 @@
 
       var slice = Array.prototype.slice;
 
+      function getIndexUp(activeIndex, lastIndex) {
+        return activeIndex > 0 ? activeIndex - 1 : lastIndex;
+      }
+
+      function getIndexDown(activeIndex, lastIndex) {
+        return activeIndex < lastIndex ? activeIndex + 1 : 0;
+      }
+
       window.addEventListener('keydown', function(event) {
         var keyCode = event.keyCode;
 
@@ -471,24 +479,33 @@
 
         event.preventDefault();
 
-        var activeElement = document.activeElement;
         var links = slice.call(document.links);
 
-        var indexOf = links.indexOf(activeElement);
-        var lastIndex = links.length - 1;
-        var nextIndex;
-
-        if (indexOf === -1) {
-          nextIndex = isDown ? 0 : lastIndex;
-        } else if (isUp) {
-          nextIndex = indexOf > 0 ? indexOf - 1 : lastIndex;
-        } else {
-          nextIndex = indexOf < lastIndex ? indexOf + 1 : 0;
+        function getActiveIndex() {
+          return links.indexOf(document.activeElement);
         }
 
-        links[nextIndex].focus();
-      });
+        function next(activeIndex) {
+          var lastIndex = links.length - 1;
+          var nextIndex;
 
+          if (activeIndex === -1) {
+            nextIndex = isDown ? 0 : lastIndex;
+          } else if (isUp) {
+            nextIndex = getIndexUp(activeIndex, lastIndex);
+          } else {
+            nextIndex = getIndexDown(activeIndex, lastIndex);
+          }
+
+          links[nextIndex].focus();
+
+          if (getActiveIndex() === activeIndex) {
+            next(nextIndex);
+          }
+        }
+
+        next(getActiveIndex());
+      });
     </script>
   </body>
 </html>
