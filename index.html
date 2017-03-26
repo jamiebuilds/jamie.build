@@ -431,7 +431,8 @@
             a.innerText = (
               (repo.owner.login === 'thejameskyle' ? '' : repo.owner.login + '/') +
               repo.name +
-              ' (' + repo.stargazers_count + ' stars)'
+              ' (' + repo.stargazers_count + ' stars,' +
+              repo.forks_count + ' forks)'
             );
 
             if (repo.stargazers_count < 30) {
