@@ -409,6 +409,7 @@
       function renderRepos(repos) {
         var ol = document.getElementById('repos');
         var totalStars = 0;
+        var totalForks = 0;
 
         ol.removeChild(ol.firstElementChild); // remove spacing
 
@@ -443,9 +444,11 @@
             ol.appendChild(li);
 
             totalStars += repo.stargazers_count;
+            totalForks += repo.forks_count;
           });
 
-        console.log(totalStars);
+        console.log('Total stars: ' + totalStars);
+        console.log('Total forks: ' + totalForks);
       }
 
       var cached = localStorage.getItem('repos');
