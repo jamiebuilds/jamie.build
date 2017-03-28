@@ -349,24 +349,26 @@
 
     <script>
       var externalRepos = [
-        'https://api.github.com/repos/marionettejs/backbone.marionette',
-        'https://api.github.com/repos/marionettejs/backbone.radio',
-        'https://api.github.com/repos/babel/babel',
-        'https://api.github.com/repos/lerna/lerna',
-        'https://api.github.com/repos/cloudflare/cf-ui',
-        'https://api.github.com/repos/cloudflare/react-modal2',
-        'https://api.github.com/repos/cloudflare/react-gateway',
-        'https://api.github.com/repos/cloudflare/a11y-focus-scope',
-        'https://api.github.com/repos/cloudflare/a11y-focus-store',
-        'https://api.github.com/repos/babel/babili',
-        'https://api.github.com/repos/facebook/flow',
-        'https://api.github.com/repos/yarnpkg/yarn',
-        'https://api.github.com/repos/yarnpkg/website',
-        'https://api.github.com/repos/babel/babel.github.io',
-        'https://api.github.com/repos/facebook/jest',
-        'https://api.github.com/repos/flowtype/flow-inspect',
-        'https://api.github.com/repos/styled-components/babel-plugin-polished'
-      ];
+        'marionettejs/backbone.marionette',
+        'marionettejs/backbone.radio',
+        'babel/babel',
+        'lerna/lerna',
+        'cloudflare/cf-ui',
+        'cloudflare/react-modal2',
+        'cloudflare/react-gateway',
+        'cloudflare/a11y-focus-scope',
+        'cloudflare/a11y-focus-store',
+        'babel/babili',
+        'facebook/flow',
+        'yarnpkg/yarn',
+        'yarnpkg/website',
+        'babel/babel.github.io',
+        'facebook/jest',
+        'flowtype/flow-inspect',
+        'styled-components/babel-plugin-polished'
+      ].map(function(repo) {
+        return 'https://api.github.com/repos/' + repo;
+      });
 
       function request(url, callback) {
         var xhr = new XMLHttpRequest();
