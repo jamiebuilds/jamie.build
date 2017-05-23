@@ -474,9 +474,6 @@
     
     
     <script>
-      var KEY_UP = 38;
-      var KEY_DOWN = 40;
-
       var KEY_J = 74;
       var KEY_K = 75;
 
@@ -494,8 +491,8 @@
         if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 
         var keyCode = event.keyCode;
-        var isUp = keyCode === KEY_UP || keyCode === KEY_J;
-        var isDown = keyCode === KEY_DOWN || keyCode === KEY_K;
+        var isUp = keyCode === KEY_J;
+        var isDown = keyCode === KEY_K;
 
         if (!(isUp || isDown)) return;
 
