@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/thejameskyle
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://thejameskyle.com
+  * I am thejameskyle (https://keybase.io/thejameskyle) on keybase.
+  * I have a public key ASDzyCd0iTlzuzsM8kQa4WfcaIPpsdnObqBJVW3ur0aBBgo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120f3c82774893973bb3b0cf2441ae167dc6883e9b1d9ce6ea049556deeaf4681060a",
+            "host": "keybase.io",
+            "kid": "0120f3c82774893973bb3b0cf2441ae167dc6883e9b1d9ce6ea049556deeaf4681060a",
+            "uid": "cca4b2dbfbc03054b13295a185e91519",
+            "username": "thejameskyle"
+        },
+        "service": {
+            "hostname": "thejameskyle.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.22"
+    },
+    "ctime": 1495573578,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1495573533,
+        "hash": "a261d6d323b2ca627288bbfb07833b2c7349b040fdd34a4b2f218306de21a00e0f05e5904a1f7513d90c7ad200e922e57c3f2c5a5b38e86685c3b59d0962c4da",
+        "seqno": 1104835
+    },
+    "prev": "67d3050a3fe266bb8d03f57d3d6ada4768bd4c740abe4ddb4d6cec87b421da1c",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg88gndIk5c7s7DPJEGuFn3GiD6bHZzm6gSVVt7q9GgQYKp3BheWxvYWTFAvx7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZjNjODI3NzQ4OTM5NzNiYjNiMGNmMjQ0MWFlMTY3ZGM2ODgzZTliMWQ5Y2U2ZWEwNDk1NTZkZWVhZjQ2ODEwNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZjNjODI3NzQ4OTM5NzNiYjNiMGNmMjQ0MWFlMTY3ZGM2ODgzZTliMWQ5Y2U2ZWEwNDk1NTZkZWVhZjQ2ODEwNjBhIiwidWlkIjoiY2NhNGIyZGJmYmMwMzA1NGIxMzI5NWExODVlOTE1MTkiLCJ1c2VybmFtZSI6InRoZWphbWVza3lsZSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoidGhlamFtZXNreWxlLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMjIifSwiY3RpbWUiOjE0OTU1NzM1NzgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5NTU3MzUzMywiaGFzaCI6ImEyNjFkNmQzMjNiMmNhNjI3Mjg4YmJmYjA3ODMzYjJjNzM0OWIwNDBmZGQzNGE0YjJmMjE4MzA2ZGUyMWEwMGUwZjA1ZTU5MDRhMWY3NTEzZDkwYzdhZDIwMGU5MjJlNTdjM2YyYzVhNWIzOGU4NjY4NWMzYjU5ZDA5NjJjNGRhIiwic2Vxbm8iOjExMDQ4MzV9LCJwcmV2IjoiNjdkMzA1MGEzZmUyNjZiYjhkMDNmNTdkM2Q2YWRhNDc2OGJkNGM3NDBhYmU0ZGRiNGQ2Y2VjODdiNDIxZGExYyIsInNlcW5vIjo4LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQMzwJy5nf/1qfRc3F0grwUFL4Brw/PoSpI2x4rruG38cHh5jW4FbSLZMUueyYeLicS3HSafnwptZ1SanDrexfAKoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCCbfbVFED9ajrSoHjjI3+O3UXnJFsqjEcIgtwfFuh4lZaN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/thejameskyle
+
+==================================================================
