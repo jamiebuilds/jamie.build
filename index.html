@@ -331,6 +331,11 @@
     </section>
 
     <script>
+      var orgs = [
+        'thejameskyle',
+        'babel-utils',
+      ];
+
       var externalRepos = [
         'marionettejs/backbone.marionette',
         'marionettejs/backbone.radio',
@@ -364,6 +369,8 @@
       }
 
       function fetchRepos() {
+        var orgs = ['thejameskyle', 'babel-utils'];
+        var orgIndex = 0;
         var repos = [];
         var page = 0;
 
@@ -377,9 +384,19 @@
 
             if (externalRepos.length) {
               next(externalRepos.shift());
-            } else if (page === 0 || (linkHeader && linkHeader.indexOf('rel="next"') > -1)) {
+              return;
+            }
+            
+            let hasRemaining = page === 0 || (linkHeader && linkHeader.indexOf('rel="next"') > -1)
+            
+            if (!hasRemaining && orgs[++orgIndex]) {
+              hasRemaining = true;
+              page = 0;
+            }
+            
+            if (hasRemaining) {
               page++;
-              next('https://api.github.com/users/thejameskyle/repos?page=' + page + '&per_page=100')
+              next('https://api.github.com/users/' + orgs[orgIndex] + '/repos?page=' + page + '&per_page=100')
             } else {
               cacheRepos(repos);
               renderRepos(repos);
