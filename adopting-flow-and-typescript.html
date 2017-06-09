@@ -1,0 +1,345 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Adopting Flow &amp; TypeScript – @thejameskyle</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<header>
+  <h1>Adopting Flow &amp; TypeScript</h1>
+  <p>A comparison between the two on-boarding processes</p>
+</header>
+
+<aside class="song">
+  This article is best enjoyed while listening to:
+  "Cotton Heads" — Caravan Palace
+</aside>
+
+<p>
+  Let's imagine a scenario where we want to adopt a type checker...
+</p>
+
+<hr>
+
+<p>
+  Lately we've been noticing a lot of NaN's show up in our app. We search for
+  the source and find the following code:
+</p>
+
+<pre><code>// math.js
+function square(n) {
+  return n * n;
+}
+square("oops");</code></pre>
+
+<p>
+  We sigh to ourselves, and decide maybe it's finally time to add a type
+  checker. We step back and take a look at our options:
+  <a href="https://flow.org/">Flow</a> or
+  <a href="http://www.typescriptlang.org/">TypeScript</a>.
+</p>
+
+Both of these tools have fairly simple file-by-file adoption:
+
+<ul>
+  <li>
+    Flow: Add a <code>// @flow</code> comment to the top of your file
+  </li>
+
+  <li>
+    TypeScript: Change the <code>.js</code> extension to a <code>.ts</code>
+    extension
+  </li>
+</ul>
+
+<p>
+  But let's compare what happens from there.
+</p>
+
+<em/>
+
+<h2>
+  Adopting TypeScript
+</h2>
+
+<p>
+  To adopt TypeScript, we'll first rename <code>math.js</code> to
+  <code>math.ts</code>:
+</p>
+
+<pre><code>// math.ts
+function square(n) {
+  return n * n;
+}
+square("oops");</code></pre>
+
+<p>
+  Now we'll run typescript:
+</p>
+
+<pre><code>(no errors)</code></pre>
+
+<p>
+  There are no errors because TypeScript requires that we type annotate our
+  function before it will check the type like this:
+</p>
+
+<pre><code>function square(n: number): number {
+  return n * n;
+}
+square("oops");</code></pre>
+
+<p>
+  But without those types, TypeScript will do one of two things depending on
+  your configuration:
+</p>
+
+<ol>
+  <li>
+    Implicitly cast every unknown type to <code>any</code>. This any type will
+    opt you out of all type checking.
+  </li>
+  <li>
+    Or if you're using the <code>--noImplicitAny</code> option, it will throw
+    an error for any unknown types, requiring you to add type annotations.
+  </li>
+</ol>
+
+<p>
+  This means that the amount of code <em>covered</em> by TypeScript is tied to
+  the types that you have written. Type coverage goes up <em>linearly</em> as
+  you write types.
+</p>
+
+<h2>
+  Type Coverage
+</h2>
+
+<p>
+  Before we go any further, I should explain what type coverage is.
+</p>
+
+<section>
+  <img
+    src="img/type-coverage.png"
+    alt="Uncovered code shown in red"/>
+
+  <footer>
+    <p>
+      Uncovered code shown in red
+    </p>
+  </footer>
+</section>
+
+<p>
+  If you look at the values and expressions in your code and asked the type
+  checker "do you know what type this is?".
+</p>
+
+<p>
+  If the type checker knows the type, then that value or expression is covered.
+  If the type checker does not know the type then it's not covered.
+</p>
+
+<p>
+  The percentage of code for which the type checker knows the type is the "type
+  coverage" of your program.
+</p>
+
+<p>
+  You want your programs to have as much type coverage as possible because then
+  it will be able to tell you when you've made mistakes in more places.
+</p>
+
+<p>
+  Without type coverage, a type checker is nothing.
+</p>
+
+<h2>
+  Adopting Flow
+</h2>
+
+<pre><code>// @flow
+function square(n) {
+  return n * n;
+}
+square("oops");</code></pre>
+
+<p>
+  Then we'll run Flow and see the results:
+</p>
+
+<pre><code>function square(n) {
+  return n * n;
+         <em>^</em>   <em>^</em>
+         <em>Error (x2)</em>
+}
+square("oops");
+
+<em>Error (x2)
+string. The operand of an arithmetic operation must be a number.</em></code></pre>
+
+<p>
+  Immediately we have type errors that tell us <em>something</em> has gone
+  wrong.
+</p>
+
+<p>
+  Flow only requires us to type the exports of a file and the external modules.
+  Everything else can be <em>inferred</em>.
+</p>
+
+<p>
+  This makes type coverage go up much faster. With just a few types you can
+  quickly get files with really high type coverage.
+</p>
+
+<p>
+  In my experience, I can get files covered to about 70–90% in just a few
+  minutes.
+</p>
+
+<p>
+  Here's a <em>super scientific</em> graph of the difference:
+</p>
+
+<section>
+  <img
+    src="img/adopting-flow-and-typescript-graph.png"
+    alt="Graph showing Flow coverage going up much earlier on than TypeScript"/>
+</section>
+
+
+<p>
+  This isn't my personal opinion, you can go out and try this for yourselves
+  and see the difference a few types makes.
+</p>
+
+<p>
+  To see the type coverage of a file in Flow you can run:
+</p>
+
+<pre><code>flow coverage path/to/file.js --color</code></pre>
+
+<p>
+  You can also use
+  <a href="https://github.com/rpl/flow-coverage-report">flow-coverage-report</a>
+  to help you out.
+</p>
+
+<aside>
+  <p>
+    <strong>Note:</strong> I'm not aware of any type coverage reporting tools
+    for TypeScript (please send me a link if you know of one!). But you can
+    test if code is covered by testing to see if it reports errors when you do
+    something wrong.
+  </p>
+</aside>
+
+<hr/>
+
+<h2>
+  How does this work?
+</h2>
+
+<p>
+  The reason these two tools have such different adoption behaviors comes down
+  to the difference between their architectures.
+</p>
+
+<h3>TypeScript Architecture: AST-directed</h3>
+
+<p>
+  TypeScript will <em>walk</em> through your program and build up a table of
+  known types. As it discovers values and expressions it assigns types to them
+  immediately. When TypeScript discovers an unknown type it must make a
+  decision immediately, which means either assigning it to <code>any</code> or
+  throwing an error.
+</p>
+
+<h3>Flow Architecture: Graph-directed</h3>
+
+<p>
+  Flow will build up a graph of all your values and expressions and their
+  relationships to one another. It will then start to assign types to each
+  value and expression. If it finds an unknown type it will make it an "open"
+  type and come back to it later.
+</p>
+
+<p>
+  Once Flow has a full graph of your program it will start to connect all the
+  dots, flowing types from one value to another. Open types take on the types
+  of all the values that flow into them– the resulting type is called the
+  <em>inferred</em> type.
+</p>
+
+<p>
+  You can watch this happening. Let's take a look at the type errors we got
+  with Flow before:
+</p>
+
+<pre><code>function square(n) {
+  return n * n;
+         <em>^</em>   <em>^</em>
+         <em>Error (x2)</em>
+}
+square("oops");
+
+<em>Error (x2)</em>
+<em>string. The operand of an arithmetic operation must be a number.</em></code></pre>
+
+<p>
+  Notice how error is pointing to the <code>n * n</code> rather than
+  <code>square("oops")</code>. Because we didn't write a type for n the
+  <code>"oops"</code> string flowed into it and Flow started checking n as if
+  it were a string.
+</p>
+
+<p>
+  Adding a type annotation we can see the error move:
+</p>
+
+<pre><code>function square(n: number) {
+  return n * n;
+}
+square("oops");
+       <em>^ Error</em>
+
+<em>Error: string.</em>
+<em>This type is incompatible with the expected param type of number.</em></code></pre>
+
+<p>
+  This raises an important point: Just because Flow can infer types everywhere
+  doesn't mean that you shouldn't add type annotate your code.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+  Both TypeScript and Flow have really good on-boarding processes. Going
+  file-by-file is a great experience.
+</p>
+
+<p>
+  However, if you use Flow, you'll have much higher type coverage much faster
+  and you'll be able to sleep <em>soundly</em>.
+</p>
+
+<p>
+  With Flow you'll be adding types to make errors nicer, not to uncover them.
+</p>
+
+<footer>
+  <p>
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    Creative Commons Attribution 4.0 International License</a>.
+  </p>
+</footer>
+
+<script src="block-sites.js"></script>
+</body>
+</html>
