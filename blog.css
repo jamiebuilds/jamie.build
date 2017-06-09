@@ -101,9 +101,17 @@ a {
   color: hotpink;
 }
 
-section footer {
+footer {
   font-size: 0.7em;
   font-family: monaco, Consolas, "Lucida Console", monospace;
+}
+
+body > footer {
+  margin-top: 2em;
+  border-top: 0.5em solid black;
+}
+
+section footer {
   border-left: 0.5em solid black;
   padding-left: 1em;
 }
