@@ -126,3 +126,12 @@ section footer {
 section footer :first-child {
   margin-top: 0;
 }
+
+.song {
+  border: none;
+  background: hotpink;
+}
+
+.song a {
+  color: white;
+}
