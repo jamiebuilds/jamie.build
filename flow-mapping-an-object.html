@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Flow: Mapping an object – @thejameskyle</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<h1>Flow: Mapping an object</h1>
+
+<p>
+  <a href="https://flowtype.org/">Flow</a> is a static type checker for
+  JavaScript designed to make you more productive by providing feedback as you
+  write code. Flow provides you with helpful warning messages pointing exactly
+  where something went wrong rather than having to debug errors at runtime that
+  might appear somewhere far away from the source.
+</p>
+
+<section>
+  <img src="img/flow-demo.png" alt="Screenshot of Flow being used in an error"/>
+
+  <footer>
+    <p>
+      Flow provides useful type warnings inline, even in places where no types have
+      been written
+    </p>
+  </footer>
+</section>
+
+<p>
+  Flow does this in a way that is easy to incrementally migrate your code to
+  use types and uses inference to find bugs in your code even when it does not
+  have types. Flow embraces the dynamic nature of JavaScript rather than
+  rigidly telling you how mad it is at you like other type systems you might
+  have hated in the past.
+</p>
+
+<p>
+  Types in Flow are pretty easy to get used to, they look like this:
+</p>
+
+<pre><code>function square(n<em>: number</em>)<em>: number</em> {
+  return n * n;
+}</code></pre>
+
+<p>
+  It extends the JavaScript syntax with a nice clean type syntax that operates
+  almost like documentation, but in a way that prevents bugs, improves your
+  development experience, and never goes out of date
+  (<a href="http://documentation.js.org/">You can even generate real
+  documentation from it!</a>).
+</p>
+
+<p>
+  But even in places where you don't write types, Flow doesn't stop working.
+  Using extremely powerful inference, Flow can track types even when they are
+  no where to be seen. I'll demonstrate this later on.
+</p>
+
+<hr>
+
+<p>
+  In order for Flow to be as helpful as possible, it needs types for more than
+  just your source code, it needs it for the libraries and frameworks that you
+  use.
+</p>
+
+<p>
+  Library definitions look like this:
+</p>
+
+<pre><code>declare module 'my-repeating-library' {
+  declare function repeat(str: string, n: number): string;
+}</code></pre>
+
+<p>
+  Then when you go to use your library you have types all ready for you:
+</p>
+
+<pre><code>import {repeat} from 'my-repeating-library';
+repeat(10, "Hello");
+       <strong>^ number. This type is incompatible with string</strong>
+           <strong>^ string. This type is incompatible with number</strong></code></pre>
+
+<p>
+  When you have awesome type definitions for your libraries, Flow's inference
+  engine can take over the rest and types are rarely needed at all.
+</p>
+
+<p>
+  Developers of these libraries and frameworks can include their own
+  definitions using
+  <a href="https://flowtype.org/docs/declarations.html#declaration-files">.flow</a>
+  files (and in an ideal world they all would!). If types are not included out
+  of the box then there is an easy way for you to create your own definitions
+  for them and even share your definitions with the Flow community.
+</p>
+
+<p>
+  Since types in Flow are created incrementally, there are different levels of
+  coverage. You can get away with loose typing if you want to (and Flow will
+  still do a ton for you), or you can spend a little bit more time and make
+  even more helpful types.
+</p>
+
+<p>
+  Today, we're going to walk through a real definition file that I wrote for
+  <a href="https://twitter.com/sindresorhus">Sindre Sorhus'</a>
+  <a href="https://github.com/sindresorhus/map-obj">map-obj</a> package. I
+  started off by writing fairly loose types and incrementally worked my way to
+  super high quality types.
+</p>
+
+<p>
+  Later I'll demonstrate how getting the types right in one place meant that I
+  could write less types later on because of Flow's powerful inference.
+</p>
+
+<p>
+  Going through this you'll learn about how great type definitions are made,
+  and how to use some advanced features of Flow to make it work even harder to
+  make your development experience nicer for you.
+</p>
+
+<hr>
+
+<h2>Introducing map-obj</h2>
+
+<img src="img/map-obj-repo.png" alt="Screenshot of map-obj GitHub repo">
+
+<p>
+  The api of <a href="https://www.npmjs.com/package/map-obj">map-obj</a> is
+  fairly simple: We iterate over the key-value pairs of an object and return
+  new key-value pairs as an array in order to create a new object.
+</p>
+
+<pre><code><em>import mapObj from 'map-obj';</em>
+const newObject = <em>mapObj({foo: 'bar'}, (key, value, object) => {</em>
+  // first element is the new key and second is the new value
+  // here we reverse the order
+  <em>return [value, key];</em>
+<em>});</em>
+// => {bar: 'foo'}</code></pre>
+
+<h3>Starting Off</h3>
+
+<p>
+  Since I'm using Flow and this library does not have any types I want to
+  create a library definition file.
+</p>
+
+<p>
+  I'll create the module definition:
+</p>
+
+<pre><code><em>declare module 'map-obj'</em> {
+  ...
+}</code></pre>
+
+<p>
+  Then I'll declare the default exported function:
+</p>
+
+<pre><code>declare module 'map-obj' {
+  <em>declare export default function mapObj</em>(...): ...;
+}</code></pre>
+
+<p>
+  And now I'll add the types for the basic api:
+</p>
+
+<pre><code>declare module 'map-obj' {
+  declare export default function mapObj(
+    <em>object: Object,
+    iteratee: Function</em>
+  )<em>: Object</em>;
+}</code></pre>
+
+<h3>Functions</h3>
+
+<p>
+  We've added the basic types of the params, but we're not detailing the
+  arguments of the iteratee at all. So lets do that.
+</p>
+
+<p>
+Flow supports describing these "iteratee" or "callback" functions using this syntax:
+</p>
+
+<pre><code>(param: paramType) => returnedType</code></pre>
+
+<p>
+  I'll just add that to the definition:
+</p>
+
+<pre><code>declare module 'map-obj' {
+  declare function exports(
+    object: Object,
+    <em>iteratee: (
+      key: string,
+      value: any,
+      object: Object
+    ) => Array&lt;any&gt;</em>
+  ): Object;
+}</code></pre>
+
+<h3>Tuples</h3>
+
+<p>
+  Now the Array here is a little bit more complicated. It is what is known as a
+  "tuple" (Think of a tuple as an array that describes something using
+  positional items in the array, i.e. <code>["foo", 1, true]</code>).
+</p>
+
+<p>
+  Flow supports these using the following syntax:
+</p>
+
+<pre><code>const tuple: <em>[string, number, boolean]</em> = ['foo', 2, true];</code></pre>
+
+<p>
+  Let's describe the array in our definition:
+</p>
+
+<pre><code>declare module 'map-obj' {
+  declare export default function mapObj(
+    object: Object,
+    iteratee: (
+      key: string,
+      value: any,
+      object: Object
+    ) => <em>[string | number, any]</em>
+  ): Object;
+}</code></pre>
+
+<h3>Objects as maps</h3>
+
+<p>
+  Next, we are using Object all over the place without describing them at all.
+</p>
+
+<p>
+  Note that we are using these objects as a mapping of arbitrary keys to
+  values. Flow can describe these maps with this syntax:
+</p>
+
+<pre><code>const obj: <em>{ [key: string]: number }</em> = { foo: 1, bar: 2 };</code></pre>
+
+<p>
+  Using this in our definition looks like this:
+</p>
+
+<pre><code>declare module 'map-obj' {
+  declare export default function mapObj(
+    object: <em>{ [key: string]: any }</em>,
+    iteratee: (
+      key: string,
+      value: any,
+      object: <em>{ [key: string]: any }</em>
+    ) => [string | number, any]
+  )<em>: { [key: string]: any }</em>;
+}</code></pre>
+
+<h3>Polymorphic Types</h3>
+
+<p>
+  You might notice we have 5 instances of any (meaning that we accept any type
+  of value in those places).
+</p>
+
+<p>
+  It is true that <code>mapObj</code> will accept any type in those places,
+  however there is a relationship between them that we are not yet describing.
+</p>
+
+<p>
+  For these relationships we will use something known as "Polymorphic Types".
+  These sound <em>really</em> scary, but they are actually much more simple
+  than they sound.
+</p>
+
+<p>
+  In the following function identity we accept an argument sameValue that will
+  immediately be returned.
+</p>
+
+<pre><code>function identity(<em>sameValue</em>) {
+  return <em>sameValue</em>;
+}</code></pre>
+
+<p>
+  We want to communicate that whatever you pass as sameValue will be the same
+  value that is returned.
+</p>
+
+<p>
+  In order to communicate this in functions, you do the following:
+</p>
+
+<pre><code>function identity<em>&lt;Value&gt;</em>(sameValue: <em>Value</em>): <em>Value</em> {
+  return sameValue;
+}</code></pre>
+
+<p>
+  Using <code>&lt;...&gt;</code> we say that "this function has these
+  polymorphic types", here we are creating "TSame". Then we are matching up
+  <code>sameValue</code> with the returned value.
+</p>
+
+<aside>
+  <p>
+    <strong>Note:</strong> Polymorphic types can have any name, they just
+    cannot conflict with the names of values in your program.
+  </p>
+</aside>
+
+<p>
+  Using polymorphic types in our function we want to do two things.
+</p>
+
+<ol>
+  <li>
+    We want to track the values from the input object through the function.
+  </li>
+
+  <li>
+    We want to track the values used for the output object through the function.
+  </li>
+</ol>
+
+<p>
+  We'll create two polymorphic types, <code>TInputValue</code> and
+  <code>TOutputValue</code>:
+</p>
+
+<pre><code>declare module 'map-obj' {
+  declare export default function mapObj<em>&lt;Input, Output&gt;</em>(
+    object: { [key: string]: <em>Input</em> },
+    iteratee: (
+      key: string,
+      value: Input,
+      object: { [key: string]: <me>Input</em> }
+    ) => [string | number, <em>Output</em>]
+  ): { [key: string]: <em>Output</em> };
+}</code></pre>
+
+<h3>Annotating Polymorphic Types</h3>
+
+<p>
+  There's actually one more thing we want to track through the function, and
+  that's the object (the one was pass in is the same as the one in the
+  iteratee).
+</p>
+
+<p>
+  However, we don't want to lose the
+  <code>{ [key: string]: Input }</code> types we have right now. Luckily,
+  using Flow we can describe our polymorphic types inside the
+  <code>&lt;...&gt;</code>. Reusing our identity example from earlier:
+</p>
+
+<pre><code>function identity<TSame: number>(sameValue: <em>Value</em>): <em>Value</em> {
+  return sameValue;
+}</code></pre>
+
+<p>
+  Let's move our object into another polymorphic type:
+</p>
+
+<pre><code>declare module 'map-obj' {
+  declare function exports<
+    Input,
+    Output,
+    <em>Obj: { [key: string]: Input }</em>
+  >(
+    object: <em>Obj</em>,
+    iteratee: (
+      key: string,
+      value: Input,
+      object: <em>Obj</em>
+    ) => [string|number, Output]
+  ): { [key: string]: Output };
+}</code></pre>
+
+<h3>Greatness Ensues</h3>
+
+<p>
+  Now that we've defined the types for our library we can use it like this:
+</p>
+
+<pre><code>import mapObj from 'map-obj';
+const res = <em>mapObj({ foo: 1, bar: 2 }, (key, value, object) => {
+  return [value, key];
+});</em></code></pre>
+
+<p>
+  Notice that we don't need any types in the above code. All the hard work we
+  put in pays off by allowing us to write plain JavaScript code with 100% type
+  safety.
+</p>
+
+<p>
+  These types also become really useful when we have an IDE that supports Flow
+  such as <a href="https://nuclide.io/">Nuclide</a>.
+</p>
+
+<p>
+  As we type we get auto-completion:
+</p>
+
+<img src="img/flow-autocompletion.png" alt="Auto-completion"/>
+
+<p>
+  We can hover over values and see their type:
+</p>
+
+<img src="img/flow-hover-type.png" alt="Type information on hover"/>
+
+<p>
+  Using those polymorphic types we can auto-complete known values:
+</p>
+
+<img src="img/flow-autocomplete-polymorphic-values.png" alt="Auto-completing polymorphic values"/>
+
+<p>
+  We also get nice inline warnings when we've done something incorrect:
+</p>
+
+<img src="img/inline-type-errors.png" alt="Inline type errors reported by Flow"/>
+
+<h2>flow-typed</h2>
+
+<p>
+  Now that we've written our definition for the <code>map-obj</code> package,
+  we should share it with anyone else who might want to use that package.
+</p>
+
+<p>
+  For this Flow has a centralized repository,
+  <a href="https://github.com/flowtype/flow-typed">flow-typed</a>, which
+  includes high-quality definitions for tons of popular packages.
+</p>
+
+<h2>Try it out</h2>
+
+<p>
+  Now that you've spent all this time reading this article and learning about
+  how to create high-quality definitions for Flow, why not solidify that
+  knowledge by contributing your own definitions to
+  <a href="https://github.com/flowtype/flow-typed">flow-typed</a>? Doing is one
+  of the best ways of learning and we could really use the help!
+</p>
+
+<p>
+  Go find some random tiny package that doesn't yet have a definition file in
+  flow-typed and try to create one yourself. Try making a PR and we'll help you
+  clean it up and make it perfect.
+</p>
+
+<p>
+  If you need help finding a package, take a look through
+  <a href="https://www.npmjs.com/~sindresorhus">Sindre Sorhus's 8
+  <em>trillion</em> other npm packages</a>. They're nice and tiny so they
+  shouldn't take you long!
+</p>
+
+<script src="block-sites.js"></script>
+</body>
+</html>

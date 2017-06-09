@@ -1,0 +1,113 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 20px 100px;
+
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  /*font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;*/
+  font-size: 1.2em;
+  line-height: 2;
+
+  text-align: justify;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 0.85em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  /*font-family: monaco, Consolas, "Lucida Console", monospace;*/
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, hr, blockquote, pre,
+img {
+  margin: 2em 0 0;
+}
+
+li {
+  margin: 1em 0 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: none;
+  border-top: 1em solid black;
+}
+
+blockquote {
+  border-left: 1em solid black;
+  padding: 0 0 0 1em;
+}
+
+aside {
+  border: 1em solid black;
+  padding: 1em 1em;
+  margin: 1em 0;
+}
+
+aside :first-child {
+  margin-top: 0;
+}
+
+code {
+  background: black;
+  color: white;
+  padding: 0.25em;
+}
+
+pre {
+  background: black;
+  color: white;
+  padding: 1em;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+pre strong {
+  font-weight: normal;
+  background: hotpink;
+  color: black;
+}
+
+pre em {
+  color: hotpink;
+  font-style: normal;
+}
+
+a {
+  color: hotpink;
+}
+
+section footer {
+  font-size: 0.7em;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  border-left: 0.5em solid black;
+  padding-left: 1em;
+}
+
+section footer :first-child {
+  margin-top: 0;
+}
