@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Flow: Mapping an object – @thejameskyle</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<header>
+  <h1>Introducing React Loadable</h1>
+
+  <p>Component-centric code splitting and loading in React</p>
+</header>
+
+<p>
+  When you have a large enough application, a single large bundle with all of
+  your code becomes a problem for startup time. You need to start breaking your
+  app into separate bundles and load them dynamically when needed.
+</p>
+
+
+<section>
+  <img
+    src="img/react-loadable-split-bundles.png"
+    alt="A single giant bundle vs. multiple smaller bundles"/>
+
+  <footer>
+    <p>
+      A single giant bundle vs. multiple smaller bundles
+    </p>
+  </footer>
+</section>
+
+<p>
+  How to split a single bundle into multiple is a well solved problem with
+  tools like <a href="https://github.com/substack/factor-bundle">Browserify</a>
+  and <a href="https://webpack.js.org/guides/code-splitting/">Webpack</a>.
+</p>
+
+<p>
+  But now you need to find places in your application where you can decide to
+  split off into another bundle and load it asynchronously. You also need a way
+  to communicate in your app when something is loading.
+</p>
+
+<h3>
+  Route-based splitting vs Component-based splitting
+</h3>
+
+<p>
+  A common piece of advice you will see is to break your app into separate
+  routes and load each one asynchronously. This seems to work well enough for
+  most apps, clicking on a link and loading a new page is not a terrible
+  experience.
+</p>
+
+<p>
+  But we can do better than that.
+</p>
+
+<p>
+  Using most routing tools for React, a route is simply a component. There's
+  nothing particularly special about them. So what if we optimized around
+  components instead of delegating that responsibility to routes? What would
+  that buy us?
+</p>
+
+<section>
+  <img
+    src="img/react-loadable-component-splitting.png"
+    alt="Route vs. component centric code splitting"/>
+
+  <footer>
+    <p>
+      Route vs. component centric code splitting
+    </p>
+  </footer>
+</section>
+
+<p>
+  It turns out quite a lot. There are many more places than just routes where
+  you can pretty easily split apart your app. Modals, tabs, and many more UI
+  components hide content until the user has done something to reveal it.
+</p>
+
+<p>
+  Not to mention all the places where you can defer loading content until
+  higher priority content is finished loading. That component at the very
+  bottom of your page which loads a bunch of libraries: Why does that need to
+  be loaded at the same time as the content near the top?
+</p>
+
+<p>
+  You can still easily split on routes too since they are simply components.
+  Just do whatever is best for your app.
+</p>
+
+<p>
+  But we need to make splitting up at the component-level as easy as splitting
+  at the route-level. To split in a new place should be as easy as changing a
+  few lines of app code and everything else is automatic.
+</p>
+
+<hr>
+
+<h2>
+  Introducing React Loadable
+</h2>
+
+<p>
+  React Loadable is a small library I wrote to make component-centric code
+  splitting easier in React.
+</p>
+
+<p>
+  Loadable is a higher-order component (a function that creates a component)
+  which makes it easy to split up bundles on a component level.
+</p>
+
+<p>
+  Let's imagine two components, one that imports and renders another.
+</p>
+
+<pre><code><em>import AnotherComponent from './another-component';</em>
+
+class MyComponent extends React.Component {
+  render() {
+    return <em>&lt;AnotherComponent/&gt;</em>;
+  }
+}</code></pre>
+
+<p>
+  Right now we are depending on <code>AnotherComponent</code> being imported
+  synchronously via <code>import</code>. We need a way to make it loaded
+  asynchronously.
+</p>
+
+<p>
+  Using a <strong>dynamic import</strong>
+  (<a href="https://github.com/tc39/proposal-dynamic-import">a tc39 proposal
+  currently at stage 3</a>) we can modify our component to load
+  <code>AnotherComponent</code> asynchronously.
+</p>
+
+<pre><code>class MyComponent extends React.Component {
+  state = {
+    AnotherComponent: null
+  };
+
+  componentWillMount() {
+    <em>import('./another-component')</em>.then(AnotherComponent =&gt; {
+      this.setState({ AnotherComponent });
+    });
+  }
+
+  render() {
+    let {AnotherComponent} = this.state;
+    <em>if (!AnotherComponent) {
+      return &lt;div&gt;Loading...&lt;/div&gt;;
+    } else {
+      return &lt;AnotherComponent/&gt;;
+    };</em>
+  }
+}</code></pre>
+
+<p>
+  However, this is a bunch of manual work, and it doesn't even handle a lot of
+  different cases. What about when the <code>import()</code> fails? What about
+  server-side rendering?
+</p>
+
+<p>
+  Instead you can use <code>Loadable</code> to abstract away the problem. Using
+  Loadable is simple. All you need to do is pass in a function which loads your
+  component and a "Loading" component to show while your component loads.
+</p>
+
+<pre><code><em>import Loadable from 'react-loadable';</em>
+
+function MyLoadingComponent() {
+  return &lt;div&gt;Loading...&lt;/div&gt;;
+}
+
+<em>const LoadableAnotherComponent = Loadable({
+  loader: () =&gt; import('./another-component'),
+  LoadingComponent: MyLoadingComponent
+});</em>
+
+class MyComponent extends React.Component {
+  render() {
+    return <em>&lt;LoadableAnotherComponent/&gt;</em>;
+  }
+}</code></pre>
+
+<p>
+  But what if the component fails to load? We need to also have an error state.
+</p>
+
+<p>
+  In order to give you maximum control over what gets displayed when, the
+  <code>error</code> will simply be passed to your
+  <code>LoadingComponent</code> as a prop.
+</p>
+
+<pre><code>function MyLoadingComponent({ <em>error</em> }) {
+  if (<em>error</em>) {
+    return &lt;div&gt;Error!&lt;/div&gt;;
+  } else {
+    return &lt;div&gt;Loading...&lt;/div&gt;;
+  }
+}</code></pre>
+
+<h3>
+  Automatic code-splitting on <code>import()</code>
+</h3>
+
+<p>
+  The great things about <code>import()</code> is that Webpack 2 can actually
+  automatically split your code for you whenever you add a new one without any
+  additional work.
+</p>
+
+<p>
+  This means that you can easily experiment with new code splitting points just
+  by switching to <code>import()</code> and using React Loadable. Figure out
+  what performs best on your app.
+</p>
+
+<p>
+  <a href="https://github.com/thejameskyle/react-loadable-example">You can see
+  an example project here</a>. Or
+  <a href="https://webpack.js.org/guides/code-splitting-import/">read the
+  Webpack 2 docs</a> (Note: some of the relevant docs are also in
+  <a href="https://webpack.js.org/guides/code-splitting-require/">the
+  require.ensure() section</a>).
+</p>
+
+<h3>
+  Avoiding Flash Of Loading Component
+</h3>
+
+<p>
+  Sometimes components load really quickly (&lt;200ms) and the loading screen
+  only quickly flashes on the screen.
+</p>
+
+<p>
+  A number of user studies have proven that this causes users to perceive
+  things taking longer than they really have. If you don't show anything, users
+  perceive it as being faster.
+</p>
+
+<p>
+  So your loading component will also get a <code>pastDelay</code> prop which
+  will only be <code>true</code> once the component has taken longer to load
+  than a set <code>delay</code>.
+</p>
+
+<pre><code>export default function MyLoadingComponent({ error, <em>pastDelay</em> }) {
+  if (error) {
+    return &lt;div&gt;Error!&lt;/div&gt;;
+  } else if (<em>pastDelay</em>) {
+    return &lt;div&gt;Loading...&lt;/div&gt;;
+  } else {
+    return null;
+  }
+}</code></pre>
+
+<p>
+  This <code>delay</code> defaults to <code>200ms</code> but you can also
+  customize the delay using a third argument to <code>Loadable</code>.
+</p>
+
+<pre><code>Loadable({
+  loader: () =&gt; import('./another-component'),
+  LoadingComponent: MyLoadingComponent,
+  <em>delay: 300</em>
+});</code></pre>
+
+<h3>
+  Preloading
+</h3>
+
+<p>
+  As an optimization, you can also decide to preload a component before it gets
+  rendered.
+</p>
+
+<p>
+  For example, if you need to load a new component when a button gets clicked
+  you could start preloading the component when the user hovers over the
+  button.
+</p>
+
+<p>
+  The component created by <code>Loadable</code> exposes a <code>preload</code>
+  static method which does exactly this.
+</p>
+
+<pre><code>let LoadableMyComponent = Loadable({
+  loader: () =&gt; import('./another-component'),
+  LoadingComponent: MyLoadingComponent,
+});
+
+class MyComponent extends React.Component {
+  state = { showComponent: false };
+
+  onClick = () =&gt; {
+    this.setState({ showComponent: true });
+  };
+
+  onMouseOver = () =&gt; {
+    <em>LoadableMyComponent.preload();</em>
+  };
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;button
+          onClick={this.onClick}
+          onMouseOver={this.onMouseOver}&gt;
+          Show loadable component
+        &lt;/button&gt;
+        {this.state.showComponent &amp;&amp; &lt;LoadableMyComponent/&gt;}
+      &lt;/div&gt;
+    )
+  }
+}</code></pre>
+
+<h3>
+  Server-side rendering
+</h3>
+
+<p>
+  Loader also supports server-side rendering through one final argument.
+</p>
+
+<p>
+  Passing the exact path to the module you are loading dynamically allows
+  Loader to <code>require()</code> it synchronously when running on the server.
+</p>
+
+<pre><code>import path from 'path';
+
+const LoadableAnotherComponent = Loadable({
+  loader: () =&gt; import('./another-component'),
+  LoadingComponent: MyLoadingComponent,
+  delay: 200,
+  <em>serverSideRequirePath: path.join(__dirname, './another-component')</em>
+});</code></pre>
+
+<p>
+  This means that your async-loaded code-splitted bundles can render
+  synchronously server-side.
+</p>
+
+<p>
+  The problem then comes with picking back up on the client. We can render the
+  application in full on the server-side but then on the client we need to load
+  in bundles one at a time.
+</p>
+
+<p>
+  But what if we could figure out which bundles were needed as part of the
+  server-side bundling process? Then we could ship those bundles to the client
+  all at once and the client picks up in the exact state the server rendered.
+</p>
+
+<p>
+  You can actually get really close to this today.
+</p>
+
+<p>
+  Because we have the all the paths for server-side requires in
+  <code>Loadable</code>, we can add a new <code>flushServerSideRequires</code>
+  function that returns all the paths that ended up getting rendered
+  server-side. Then using <code>webpack --json</code> we can match together the
+  files with the bundles they ended up in
+  (<a href="https://gist.github.com/thejameskyle/abecfe8ec2a7ce1e312a904527a31908">
+  You can see my code here</a>).
+</p>
+
+<p>
+  The only remaining issue is to get Webpack playing nicely on the client. I'll
+  be waiting for your message after I publish this Sean.
+</p>
+
+<p>
+  There's all sorts of cool shit we could build once this all integrates
+  nicely. React Fiber will enable us to be even smarter about which bundles we
+  want to ship immediately and which ones we want to defer until higher
+  priority work is complete.
+</p>
+
+<hr>
+
+<p>
+  In closing, please install this shit and give me a star on the repo.
+</p>
+
+<pre><code>yarn add react-loadable
+# or
+npm install --save react-loadable
+</code></pre>
+
+<footer>
+  <p>
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    Creative Commons Attribution 4.0 International License</a>.
+  </p>
+</footer>
+
+<script src="block-sites.js"></script>
+</body>
+</html>

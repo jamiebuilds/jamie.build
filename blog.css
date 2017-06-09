@@ -101,6 +101,13 @@ a {
   color: hotpink;
 }
 
+body > header p {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  margin-top: 0;
+  font-size: 1.4em;
+  color: hotpink;
+}
+
 footer {
   font-size: 0.7em;
   font-family: monaco, Consolas, "Lucida Console", monospace;
