@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript's new #private class fields – @thejameskyle</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<header>
+  <h1>JavaScript's new #private class fields</h1>
+  <p>What they are, how they work, and why they are the way they are</p>
+</header>
+
+<aside class="song">
+  This article is best enjoyed while listening to:<br/>
+  <a href="https://www.youtube.com/watch?v=kOts-yZsu8A">"Noise Pollution" — Portugal. The Man</a>
+</aside>
+
+<p>
+  <a href="https://github.com/tc39/proposal-class-fields#private-fields">Private
+  class fields</a> are now at
+  <a href="https://tc39.github.io/process-document/">Stage 2</a> in the
+  JavaScript standard process. It's not finalized yet, but the JavaScript
+  standards committee expects the feature to be developed and eventually
+  included in the standard (although it may still change).
+</p>
+
+<p>
+  The syntax (currently) looks like this:
+</p>
+
+<pre><code>class Point {
+  <em>#x;</em>
+  <em>#y;</em>
+
+  constructor(x, y) {
+    <em>this.#x</em> = x;
+    <em>this.#y</em> = y;
+  }
+
+  equals(point) {
+    return <em>this.#x</em> === <em>point.#x</em> &amp;&amp; <em>this.#y</em> === <em>point.#y</em>;
+  }
+}</code></pre>
+
+<p>
+  There are two main parts of this syntax:
+</p>
+
+<ol>
+  <li>Defining private fields</li>
+  <li>Referencing private fields</li>
+</ol>
+
+<h2>
+  Defining Private Fields
+</h2>
+
+<p>
+  Defining private fields is mostly the same as defining public fields:
+</p>
+
+<pre><code>class Foo {
+  publicFieldName = 1;
+  <em>#privateFieldName = 2;</em>
+}</code></pre>
+
+<p>
+  In order to access a private field, you need to have defined it. So in case
+  you don't want to instantiate a value when defining the property, you can do
+  so:
+</p>
+
+<pre><code>class Foo {
+  <em>#privateFieldName;</em>
+}</code></pre>
+
+<h3>Referencing Private Fields</h3>
+
+<p>
+  Referencing private fields works similar to accessing any other property,
+  only it has a special syntax.
+</p>
+
+<pre><code>class Foo {
+  publicFieldName = 1;
+  <em>#privateFieldName</em> = 2;
+  add() {
+    return this.publicFieldName + <em>this.#privateFieldName</em>;
+  }
+}</code></pre>
+
+<p>
+  There's also a shorthand version of <code>this.#</code>:
+</p>
+
+<pre><code>method() {
+  <em>#</em>privateFieldName;
+}</code></pre>
+
+<p>
+  Which is the same as:
+</p>
+
+<pre><code>method() {
+  <em>this.#</em>privateFieldName;
+}</code></pre>
+
+<h2>Referencing private fields of instances</h2>
+
+<p>
+  Referencing private fields isn't just limited to <code>this</code>. You can
+  also access private fields on values that are instances of your class:
+</p>
+
+<pre><code>class Foo {
+  #privateValue = 42;
+  static getPrivateValue(<em>foo</em>) {
+    return <em>foo.#privateValue</em>;
+  }
+}
+
+Foo.getPrivateValue(<em>new Foo()</em>); // >> 42</code></pre>
+
+<p>
+  Here, <code>foo</code> is an instance of <code>Foo</code> so we are allowed
+  to lookup <code>#privateValue</code> from within the class definition.
+</o>
+
+<h2>Private Methods (coming soon?)</h2>
+
+<p>
+  Private fields are coming as part of a
+  <a href="https://github.com/tc39/proposal-class-fields">proposal</a> focusing
+  on just adding class fields. The proposal does not make any changes to class
+  methods, so private class methods will be coming in a
+  <a href="https://github.com/tc39/proposal-private-fields/blob/master/METHODS.md">followup
+  proposal</a> and will likely look like this:
+</p>
+
+<pre><code>class Foo {
+  constructor() {
+    <em>this.#method();</em>
+  }
+  <em>#method() {</em>
+    // ...
+  <em>}</em>
+}</code></pre>
+
+<p>
+  In the meantime, you can still assign functions to private fields:
+</p>
+
+<pre><code>class Foo {
+  constructor() {
+    <em>this.#method();</em>
+  }
+
+  <em>#method = () => {</em>
+    // ...
+  <em>};</em>
+}</code></pre>
+
+<h2>Encapsulation</h2>
+
+<p>
+  If you're using an instance of a class, you cannot reference that class's
+  private fields. You can only reference private fields from within the class
+  that defines them.
+</p>
+
+<pre><code>class Foo {
+  #bar;
+  method() {
+    <em>this.#bar;</em> // Works
+  }
+}
+let foo = new Foo();
+<em>foo.#bar;</em> // Invalid!</code></pre>
+
+<p>
+  Further, to be truly private, you shouldn't be able to even detect that a
+  private field exists.
+</p>
+
+<p>
+  In order to make sure that you can't detect a private field, we need to allow
+  public fields with the same name.
+</p>
+
+<pre><code>class Foo {
+  <em>bar</em> = 1; // public bar
+  <em>#bar</em> = 2; // private bar
+}</code></pre>
+
+<p>
+  If private fields didn't allow for public fields with the same name, you
+  could detect the private fields existence by trying to write to a property of
+  the same name:
+</p>
+
+<pre><code>foo.bar = 1; // <em>Error: `bar` is private! (boom... detected)</em></code></pre>
+
+<p>
+  Or the silent version:
+</p>
+
+<pre><code>foo.bar = 1;
+foo.bar; // <em>`undefined` (boom... detected again)</em></code></pre>
+
+<p>
+  This encapsulation should also be true for subclasses. A subclass should be
+  able to have a field of the same name without having to worry about the
+  parent class.
+</p>
+
+<pre><code>class Foo {
+  <em>#fieldName</em> = 1;
+}
+
+class Bar extends Foo {
+  <em>fieldName</em> = 2; // Works!
+}</code></pre>
+
+<aside>
+  <p>
+    <strong>Note:</strong> For more about the motivation behind encapsulation
+    or "hard private"
+    <a href="https://github.com/tc39/proposal-private-fields/blob/master/FAQ.md#why-is-encapsulation-a-goal-of-this-proposal">
+    read this section in the FAQ</a>.
+  </p>
+</aside>
+
+<h2>So why the hashtag?</h2>
+
+<p>
+  A lot of people are wondering "why not follow conventions from many other
+  languages and use a <code>private</code> keyword"?
+</p>
+
+<p>
+  Here's an example of that syntax:
+</p>
+
+<pre><code>class Foo {
+  <em>private value;</em>
+
+  equals(foo) {
+    return <em>this.value</em> === <em>foo.value</em>;
+  }
+}</code></pre>
+
+<p>
+  Let's look the two parts of the syntax separately.
+</p>
+
+<h3>
+  Why don't declarations use the private keyword?
+</h3>
+
+<p>
+  The private keyword is used in a lot of different languages to declare
+  private fields.
+</p>
+
+<p>
+  Let's look at the syntax of language like that:
+</p>
+
+<pre><code>class EnterpriseFoo {
+  <em>public bar;</em>
+  <em>private baz;</em>
+  method() {
+    this.bar;
+    this.baz;
+  }
+}</code></pre>
+
+<p>
+  In these languages, public and private fields are accessed the same way. So
+  it makes sense that they get defined this way.
+</p>
+
+<p>
+  However, in JavaScript, because we can't use this.field for private
+  properties (which I'll get to in a second), we need a way of syntactically
+  communicating the relationship. By using the # in both places, it's much
+  clearer what is being referenced.
+</p>
+
+<h3>Why do references need the <code>#hashtag</code>?</h3>
+
+<p>
+  We need to use <code>this.#field</code> instead of <code>this.field</code>
+  for a couple reasons:
+</p>
+
+<ol>
+  <li>
+    Because of <strong>#encapsulation</strong> (<em>see the "Encapsulation"
+    section above</em>), we need to allow public and private fields with the
+    same name at the same time. So accessing a private field can't just be a
+    normal lookup.
+  </li>
+  <li>
+    Public fields in JavaScript can be referenced via <code>this.field</code>
+    or <code>this['field']</code>. Private fields won't be able to support the
+    second syntax (because it needs to be static) and that could lead to confusion.
+  </li>
+  <li>
+    You'd need expensive checks:
+  </li>
+</ol>
+
+<p>
+  Let's take a look at a code example.
+</p>
+
+<pre><code>class Point {
+  <em>#x;</em>
+  <em>#y;</em>
+
+  constructor(x, y) {
+    <em>this.#x</em> = x;
+    <em>this.#y</em> = y;
+  }
+  equals(other) {
+    return <em>this.#x</em> === <em>other.#x</em> &amp;&amp; <em>this.#y</em> === <em>other.#y</em>;
+  }
+}</code></pre>
+
+<p>
+  Notice how we're referencing <code>other.#x</code> and <code>other.#y</code>.
+  By accessing the private fields, we are assuming that other is an
+  <code>instanceof</code> our class <code>Point</code>.
+</p>
+
+<p>
+  Because we've used the #hashtag syntax we've told the JavaScript compiler
+  that we're looking up private properties from the current class.
+</p>
+
+<p>
+  But what would happen if we didn't use the #hashtag?
+</p>
+
+<pre><code>equals(otherPoint) {
+  return <em>this.x</em> === <em>otherPoint.x</em> &amp;&amp; <em>this.y</em> === <em>otherPoint.y</em>;
+}</code></pre>
+
+<p>
+  Now we have a problem: How do we know what <code>otherPoint</code> is?
+</p>
+
+<p>
+  JavaScript doesn't have a static type system, so <code>otherPoint</code>
+  could be anything.
+</p>
+
+<p>
+  Which is a problem for two reasons:
+</p>
+
+<ol>
+  <li>
+    Our function behaves differently depending on what type of value you pass
+    to it: Sometimes accessing a private property, other times looking up a
+    public property.
+  </li>
+  <li>
+    We'd have to check the type of <code>otherPoint</code> every single time:
+  </li>
+</ol>
+
+<pre><code>if (
+  <em>otherPoint instanceof Point</em> &amp;&amp;
+  <em>isNotSubClass(otherPoint, Point)</em>
+) {
+  return getPrivate(otherPoint, 'foo');
+} else {
+  return otherPoint.foo;
+}</code></pre>
+
+<p>
+  Even worse, we'd have to do this for every single property access within a
+  class to check if we're referencing a private property.
+</p>
+
+<p>
+  Property access is already really slow, so we definitely do not want to add
+  any more weight to it.
+</p>
+
+<p>
+  <strong>TL;DR:</strong> We need to use a <code>#hashtag</code> for private
+  properties because the alternative of using standard property accesses would
+  create unexpected behavior and result in huge performance problems.
+</p>
+
+<hr/>
+
+<p>
+  Private fields are an awesome addition to the language. Thanks to all the
+  wonderful hardworking people on TC39 who made/are making them happen!
+</p>
+
+<footer>
+  <p>
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    Creative Commons Attribution 4.0 International License</a>.
+  </p>
+</footer>
+
+<script src="block-sites.js"></script>
+</body>
+</html>
