@@ -3,7 +3,74 @@
 <head>
   <meta charset="utf-8">
   <title>Dear JavaScript – @thejameskyle</title>
-  <link rel="stylesheet" href="blog.css">
+  <style media="screen">
+
+    body {
+      margin: 10% auto;
+      padding: 0 1em;
+      max-width: 400px;
+      /*font-family: "Bodoni MT",Didot,"Didot LT STD","Hoefler Text",Garamond,"Times New Roman",serif;*/
+      /*font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;*/
+      font-family: Georgia,Times,"Times New Roman",serif;
+      line-height: 2;
+
+      -webkit-font-smoothing: antialiased;
+      text-align: justify;
+      color: darkblue;
+    }
+
+    @media (min-width: 700px) {
+      html {
+        border: 2em solid darkblue;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dotted;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid;
+    }
+
+    p {
+      margin: 2em 0;
+    }
+
+    li {
+      margin: 1em 0;
+    }
+
+    blockquote {
+      margin: 1em 0;
+      padding: 1em;
+      background: darkblue;
+      color: white;
+    }
+
+    blockquote :first-child {
+      margin-top: 0;
+    }
+
+    blockquote footer {
+      font-size: 0.8em;
+    }
+
+    @media (min-width: 600px) { img { max-width: 500px; margin: 0 -50px; } }
+    @media (min-width: 700px) { img { max-width: 600px; margin: 0 -100px; } }
+    @media (min-width: 800px) { img { max-width: 700px; margin: 0 -150px; } }
+    @media (min-width: 900px) { img { max-width: 800px; margin: 0 -200px; } }
+    @media (min-width: 1000px) { img { max-width: 900px; margin: 0 -250px; } }
+    @media (min-width: 1100px) { img { max-width: 1000px; margin: 0 -300px; } }
+  </style>
 </head>
 <body>
 
@@ -113,7 +180,7 @@
   <footer>
     <cite>
       <a href="https://www.reddit.com/r/javascript/comments/40pag0/the_sad_state_of_entitled_web_developers/cyw11mk/">
-        Me on Reddit, a few months after Babel 6 was published
+        Myself, a few months after Babel 6 was published
       </a>
     </cite>
   </footer>
