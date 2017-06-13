@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Babel Plugin "Ordering" – @thejameskyle</title>
+  <style media="screen">
+    body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2em 2em 6em;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 1.2em;
+      line-height: 1.8;
+      background: #212136;
+      color: white;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    p, h1, h2, h3, h4, h5, h6, ul, ol, li, pre, img {
+      margin-top: 1.5em;
+      margin-bottom: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: top;
+      border: 1px solid #171826;
+    }
+
+    header {
+      padding-bottom: 1em;
+      border-bottom: 1px solid #171826;
+    }
+
+    header p {
+      margin-top: 0;
+      font-size: 1.4em;
+      font-weight: 300;
+      color: #999BB7;
+    }
+
+    footer {
+      margin-top: 2em;
+      border-top: 1px solid #171826;
+      font-size: 0.8em;
+      color: #999BB7;
+    }
+
+    a {
+      color: #6BD9ED;
+    }
+
+    code {
+      font-size: 0.95em;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1em;
+      border-left: 5px solid;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid;
+    }
+
+    pre {
+      background: #292A44;
+      border: 1px solid #171826;
+      color: white;
+      padding: 1em;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    pre code {
+      color: inherit;
+    }
+
+    pre em {
+      font-style: normal;
+      color: #F86F9C;
+    }
+
+    code {
+      color: #F86F9C;
+    }
+  </style>
+</head>
+<body>
+
+
+<header>
+  <h1>Babel Plugin "Ordering"</h1>
+  <p>Why there is no order, and how to deal with that</p>
+</header>
+
+<p>
+  A <a href="https://babeljs.io">Babel</a> config looks something like this:
+</p>
+
+<pre><code>{
+  <em>presets</em>: ["preset-1", "preset-2"],
+  <em>plugins</em>: ["plugin-3"]
+}</code></pre>
+
+<p>
+  Since presets are essentially just a list of plugins, internally Babel
+  reduces this config down to something like this:
+</p>
+
+<pre><code>{
+  plugins: [<em>"plugin-1", "plugin-2", "plugin-3"</em>]
+}</code></pre>
+
+<p>
+  It's natural to think that this becomes the <em>order</em> of which plugins
+  run, but this is not the case. There's more steps than that.
+</p>
+
+<p>
+  Plugins at the top level look like this:
+</p>
+
+<pre><code>export function plugin(babel) {
+  return {
+    <em>visitor: {
+      ClassDeclaration(path) {
+        // ...
+      },
+
+      FunctionDeclaration(path) {
+        // ...
+      },
+    },</em>
+  };
+};</code></pre>
+
+<p>
+  Notice the <code>visitor</code> here. A
+  <a href="https://en.wikipedia.org/wiki/Visitor_pattern">visitor</a> is an
+  object with methods defined on it that is used as part of a tree traversal.
+</p>
+
+<p>
+  A <a href="https://en.wikipedia.org/wiki/Tree_traversal">tree traversal</a>
+  is the process of exploring a large tree-like data structure. In this case
+  our data structure is an AST.
+</p>
+
+<p>
+  An <a href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">AST</a> (or
+  "Abstract Syntax Tree") is an abstract representation of code. It looks
+  something like this:
+</p>
+
+<pre><code>{
+  <em>type: "Program"</em>,
+  body: [{
+    <em>type: "FunctionDeclaration"</em>,
+    id: {
+      <em>type: "Identifier"</em>,
+      name: "foo"
+    }
+  }, {
+    <em>type: "ClassDeclaration"</em>,
+    id: {
+      <em>type: "Identifier"</em>,
+      name: "Bar"
+    },
+    ...
+  }]
+}</code></pre>
+
+<p>
+  Notice each of the objects with a <code>type</code> property. These are AST
+  "Nodes". These nodes are what our plugin visitors are visiting.
+</p>
+
+<p>
+  As Babel runs, it traverses down the tree and calls plugin visitor methods on
+  each of the matching nodes in the tree.
+</p>
+
+<p>
+  So what order does this happen in?
+</p>
+
+<p>
+  Well imagine if we did enforce plugin order. What we'd need to do is take one
+  plugin traverse through the entire tree and run all the visitor methods and
+  then go back to the top of the tree and start over with the next plugin.
+</p>
+
+<p>
+  We'd kick off a new traversal for every single plugin, each plugin getting
+  the results of the last
+</p>
+
+<p>
+  The problem with that, is it'd be painfully slow.
+</p>
+
+<p>
+  Imagine you needed to fire off 1,000 different HTTP requests. If you fired
+  them one after the other, waiting for the previous request to resolve before
+  creating the next one, you'd be able to enforce the order.
+</p>
+
+<img src="img/series.png">
+
+<p>
+  However, that'd be the slowest possible way you could make all of those
+  requests. If you instead ran them all at once in parallel. The whole process
+  would only take as long as the slowest request.
+</p>
+
+<img src="img/parallel.png">
+
+<p>
+  The problem then would be if these requests conflicted with one another. If
+  one request was deleting a resource that another was trying to get, it would
+  be a race. If the resource was deleted before the other one could get it,
+  then it will fail. The order of these requests still matters.
+</p>
+
+<p>
+  The same is true for plugin visitors. We can make them all much fast by
+  running them all in the same traversal process. As we traverse up and down
+  the AST, we call methods from different visitors at different times just
+  based on whatever happens to come first.
+</p>
+
+<p>
+  This is why there's no true "order" of plugins at the top level. They all run
+  at the "same" time.
+</p>
+
+<p>
+  Note that there is still an order at the individual node level. If there is
+  two visitors that are trying to reach a <code>FunctionDeclaration</code>
+  Babel will still run them in the order that they were configured at.
+</p>
+
+<h3>How do plugins deal with this?</h3>
+
+<p>
+  As much as possible, plugins should try not to care about the order that they
+  run in. Oftentimes they can be written in a way that makes them "dumb" and
+  just deals with whatever they are handed.
+</p>
+
+<p>
+  But when they can't, they can also be written in a way where they beat other
+  plugins in the race to a node.
+</p>
+
+<p>
+  Remember how we're traversing down an AST one node at a time. If two plugins
+  are trying to reach a node at the same time. One of them might decide to
+  visit a node higher in the tree and traverse back down itself.
+</p>
+
+<p>
+  So imagine we have two plugins: One which is modifying a
+  <code>ClassDeclaration</code> and one that is replacing a
+  <code>ClassDeclaration</code> and getting rid of it in the process. We need
+  to run the "modifying" plugin first so that it has access to the
+  <code>ClassDeclaration</code>.
+</p>
+
+<p>
+  Instead of visiting the <code>ClassDeclaration</code> what if we visited the
+  top-level <code>Program</code> node instead?
+</p>
+
+<pre><code>export function modifyingPlugin(babel) {
+  return {
+    visitor: {
+      <em>Program</em>(programPath) {
+        <em>programPath.traverse</em>({
+          <em>ClassDeclaration</em>(classPath) {
+            // ...
+          },
+        });
+      },
+    },
+  };
+};</code></pre>
+
+<p>
+  Now our plugin is forcing itself to reach the <code>ClassDeclaration</code>
+  when it reaches the <code>Program</code> which we know happens first.
+</p>
+
+<h3>Race to the bottom</h3>
+
+<p>
+  The problem that we have now is what happens when we have multiple plugins
+  that need to run "first"?
+</p>
+
+<p>
+  If we have two plugins that are both trying to force themselves to be first
+  by going straight to the <code>Program</code> we have the same problem again.
+</p>
+
+<p>
+  There's no real "fix" to this problem. Even if we bit the performance bullet
+  and ran them all in sequence, that'd only make configuration harder because
+  now plugin order matters all of the time instead of just some of the time
+  (there's other problems too, but they get really complicated fast).
+</p>
+
+<p>
+  Plugins can help alleviate this problem by being less destructive and acting
+  "dumber" so that they aren't conflicting with one another.
+</p>
+
+<p>
+  Babel can also help make this easier for users by allowing plugins to specify
+  "order". Where they can explicitly say "I need to run before/after Plugin X".
+  This is a band-aid mo
+</p>
+
+<footer>
+  <p>
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    Creative Commons Attribution 4.0 International License</a>.
+  </p>
+</footer>
+
+<script src="block-sites.js"></script>
+</body>
+</html>
