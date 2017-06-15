@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Automatic JavaScript Bundle Optimization Using Machine Learning – @thejameskyle</title>
+  <style media="screen">
+    body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2em;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 1.2em;
+      line-height: 1.8;
+
+      background: #F4F5FF;
+
+      color: #292A44;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, ul, ol, li, img, pre, aside {
+      margin-top: 2em;
+      margin-bottom: 0;
+    }
+
+    h1 {
+      margin: 0.5em 0 1em 0;
+      font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+      font-size: 6vw;
+      line-height: 0.9;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1em;
+      border-left: 5px solid;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid;
+    }
+
+    a {
+      color: #5C68FF;
+    }
+
+    code {
+      padding: 0.2em 0.4em;
+      font-size: 0.95em;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      background: #292A44;
+      color: white;
+    }
+
+    aside {
+      border-left: 1em solid;
+      padding: 1em;
+    }
+
+    pre {
+      background: #292A44;
+      color: white;
+      padding: 1em;
+    }
+
+    pre code {
+      color: inherit;
+      background: transparent;
+      padding: 0;
+    }
+
+    pre em {
+      font-style: normal;
+      color: #949CFF;
+    }
+
+    body > footer {
+      margin-top: 2em;
+      font-size: 0.8em;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    section footer {
+      text-align: center;
+      font-size: 0.8em;
+    }
+
+    section footer :first-child {
+      margin-top: 0;
+    }
+
+    .split {
+      overflow: hidden;
+    }
+
+    .split-item {
+      float: left;
+      width: 45%;
+    }
+
+    .split-item:first-of-type {
+      margin-right: 5%;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Automatic JavaScript Bundle Optimization Using Machine Learning</h1>
+
+<aside class="song">
+  This article is best enjoyed while listening to:
+  <a href="https://www.youtube.com/watch?v=nxg4C365LbQ" target="_blank">
+    "Acid Rain" – Lorn
+  </a>
+</aside>
+
+<h3>Introduction</h3>
+
+<p>
+  Bundlers like <a href="http://browserify.org/">Browserify</a> and
+  <a href="https://webpack.js.org/">Webpack</a> allow you to split your
+  JavaScript code base across many files and bundle them all together into
+  static assets.
+</p>
+
+<p>
+  For example, if you were created these files:
+</p>
+
+<pre><code><em>// main.js</em>
+import hello from "./hello";
+hello("world");</code></pre>
+
+<pre><code><em>// hello.js</em>
+export default function hello(subject) {
+  console.log(`Hello ${subject}`);
+}</code></pre>
+
+<p>
+  And ran them through a bundler, it would produce something functionally
+  similar to this:
+</p>
+
+<pre><code><em>// bundle.js</em>
+function hello(subject) {
+  console.log(`Hello ${subject}`);
+}
+
+hello("world");</code></pre>
+
+<p>
+  You can then use this file in a browser without having to worry about hooking
+  up all your dependencies. Bundlers make client-side dependency management
+  simple and automatic.
+</p>
+
+<p>
+  But after a while your app gets big enough that creating a single bundle
+  makes for a really large download size before the startup of your app. You
+  need to break it apart.
+</p>
+
+<p>
+  Most applications don't need all of their code at once in order to run. For
+  example, if you're only rendering a single route to start, you only need the
+  code for that particular route.
+</p>
+
+<p>
+  You can start to split bundles like this:
+</p>
+
+<div class="split">
+  <section class="split-item">
+    <img
+      src="img/ml-bundling-all.png"
+      alt="A large application in one large bundle"/>
+    <footer>
+      <p>
+        A large application in one large bundle
+      </p>
+    </footer>
+  </section>
+
+  <section class="split-item">
+    <img
+      src="img/ml-bundling-routes.png"
+      alt="Split up into multiple bundles by route"/>
+    <footer>
+      <p>
+        Split up into multiple bundles by route
+      </p>
+    </footer>
+  </section>
+</div>
+
+<div class="split">
+  <section class="split-item">
+    <img
+      src="img/ml-bundling-routes.png"
+      alt="Multiple bundles by route"/>
+    <footer>
+      <p>
+        Multiple bundles by route
+      </p>
+    </footer>
+  </section>
+
+  <section class="split-item">
+    <img
+      src="img/ml-bundling-components.png"
+      alt="Split up into smaller bundles at the component-level"/>
+    <footer>
+      <p>
+        Split up into smaller bundles at the component-level
+      </p>
+    </footer>
+  </section>
+</div>
+
+<div class="split">
+  <section class="split-item">
+    <img
+      src="img/ml-bundling-components.png"
+      alt="Many small bundles split up at component-level"/>
+    <footer>
+      <p>
+        Many small bundles split up at component-level
+      </p>
+    </footer>
+  </section>
+
+  <section class="split-item">
+    <img
+      src="img/ml-bundling-related.png"
+      alt="Grouped together by the route being loaded"/>
+    <footer>
+      <p>
+        Grouped together by the route being loaded
+      </p>
+    </footer>
+  </section>
+</div>
+
+
+<h3>The Problem</h3>
+
+<p>
+  For large client-side apps, having a single "bundle"
+</p>
+
+<h3>The Solution</h3>
+
+<h3>Getting Started</h3>
+
+<p>
+  To start, we need a way to report information about dynamic
+  <code>import</code>'s in our code. This is where the
+  <a href="https://github.com/thejameskyle/import-inspector">import-inspector</a>
+  library comes in which comes with a companion
+  <a href="https://babeljs.io">Babel</a> plugin to automate everything.
+</p>
+
+<p>
+  First we'll install the packages that we need
+</p>
+
+<pre><code>yarn add import-inspector
+yarn add --dev babel-plugin-import-inspector</code></pre>
+
+<p>
+  Next, we can update our <code>.babelrc</code> file to include the following
+  configuration:
+</p>
+
+<pre><code>{
+  "plugins": {
+    <em>["import-inspector", {
+      "currentModuleFileName": true,
+      "importedModulePath": true,
+      "timeToImport": true
+    }]</em>
+  }
+}</code></pre>
+
+<p>
+  Then in your app, when you use dynamic <code>import()</code>'s:
+</p>
+
+<pre><code>import("./module")</code></pre>
+
+<p>
+  You'll get something that looks like this:
+</p>
+
+<pre><code>import {report} from "import-inspector";
+const start = Date.now();
+
+report(<em>import("./module")</em>, {
+  currentModuleFileName: "path/to/file.js",
+  importedModulePath: "./module",
+  timeToImport: start - Date.now()
+})</code></pre>
+
+<p>
+  This is just a dumb wrapper around the promise returned by
+  <code>import()</code> and will not affect the way your code runs.
+</p>
+
+<p>
+  Using <code>report()</code> we now have a hook to send information back to
+  the server whenever we've executed an import. This is where the
+  <a href="https://github.com/thejameskyle/webpack-ml">webpack-ml</a> library
+  comes in.
+</p>
+
+<p>
+  First, we'll install webpack-ml:
+</p>
+
+<pre><code>yarn add webpack-ml</code></pre>
+
+<p>
+  Then, somewhere in the startup of our app we'll include this bit of code:
+</p>
+
+<pre><code>import {inspect} from "import-inspector";
+<em>import reportToAssetServer from "webpack-ml/client";</em>
+
+inspect(metadata => {
+  <em>reportImportMetadata("/bundles", metadata);</em>
+});</code></pre>
+
+<pre><code>const express = require("express");
+const path = require("path");
+<em>const serveWebpackBundles = require("webpack-ml/express");</em>
+const app = express();
+
+app.use("/bundles", <em>serveWebpackBundles({
+  stats: path.join(__dirname, "./webpack-stats.json")
+})</em>);
+
+app.get("/", ...);
+
+app.listen(8000);
+</code></pre>
+
+<footer>
+  <p>
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    Creative Commons Attribution 4.0 International License</a>.
+  </p>
+</footer>
+
+<script src="block-sites.js"></script>
+</body>
+</html>
