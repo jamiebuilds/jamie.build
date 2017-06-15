@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>React Loadable 4.0 – @thejameskyle</title>
+  <style media="screen">
+    body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2em 2em 4em;
+
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 1.2em;
+      line-height: 1.8;
+
+      background: #FFFAFA;
+      color: #1E0A09;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    p, h1, h2, h3, h4, h5, h6, ul, ol, li, pre, img, aside {
+      margin-top: 1.5em;
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-top: 0.5em;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: top;
+    }
+
+    a {
+      color: #FF594A;
+      text-decoration: none;
+      border-bottom: 1px dashed;
+    }
+
+    a:hover {
+      border-bottom-style: solid;
+    }
+
+    blockquote {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 1em 0;
+      background: #FF594A;
+      color: white;
+    }
+
+    blockquote :first-child {
+      margin-top: 0;
+    }
+
+    blockquote a {
+      color: white;
+    }
+
+    code {
+      padding: 0.15em 0.2em;
+
+      font-size: 0.95em;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+      background: #FFD3CF;
+      color: #B84035;
+    }
+
+    pre {
+      padding: 1em 1.5em;
+      background: #1E0A09;
+      color: #FFFAFA;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    pre code {
+      padding: 0;
+      background: transparent;
+      color: inherit;
+    }
+
+    pre em {
+      font-style: normal;
+      color: #FF594A;
+    }
+
+    hr {
+      margin: 2em 0;
+      border: none;
+      border-top: 2px solid #FF594A;
+    }
+
+    footer {
+      margin-top: 3em;
+      border-top: 2px solid #FF594A;
+      font-size: 0.8em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1>React Loadable 4.0</h1>
+
+<p>
+  A few months ago I introduced
+  <a href="http://thejameskyle.com/react-loadable.html">React Loadable</a> as a
+  way to push a component-centric code splitting model. 2,300
+  <a href="https://github.com/thejameskyle/react-loadable">GitHub</a> stars
+  later, several other ecosystems have adopted this model:
+</p>
+
+<ul>
+  <li><a href="https://vuejs.org/v2/guide/components.html#Advanced-Async-Components">Vue.js</a></li>
+  <li><a href="https://zeit.co/blog/next3-preview#dynamic-imports">Next.js</a></li>
+  <li><a href="https://blog.meteor.com/meteor-1-5-react-loadable-f029a320e59c">Meteor</a></li>
+</ul>
+
+<p>
+  People have lots of different takes on API design, but from what I've heard
+  the results have been great.
+</p>
+
+<blockquote>
+  <ul>
+    <li>
+      <a href="https://twitter.com/matzatorski/status/872059865350406144">
+        "I'm obsessed with this right now: CRA with React Router v4 and
+        react-loadable. Free code splitting, this is so easy."
+      </a>
+    </li>
+
+    <li>
+      <a href="https://twitter.com/jwbradley87/status/847191118269833216">
+        "Webpack 2 upgrade &amp; react-loadable; initial load from 1.1mb to
+        529kb in under 2 hours. Immense."
+      </a>
+    </li>
+
+    <li>
+      <a href="https://twitter.com/AdamRackis/status/846593080992153600">
+        "Oh hey - using loadable component I knocked 13K off my initial load.
+        Easy win!"
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/quran/quran.com-frontend/pull/701#issuecomment-287908551">
+        "Had a look and its awesome. shaved like 50kb off our main bundle."
+      </a>
+    </li>
+  </ul>
+</blockquote>
+
+<p>
+  Using dynamic <code>import()</code>'s and a component-centric code splitting
+  model, you can cut down the size of your app super quick.
+</p>
+
+<p>
+  I'm doing a lot of research right now on how we can take this model even
+  further by automatically optimizing bundles. In order to do that, we'll have
+  to first understand our imports a lot better. Especially timing information
+  about our imports.
+</p>
+
+<p>
+  In addition to a number of other changes, React Loadable 4 includes some
+  changes that are in preparation for further optimization.
+</p>
+
+<p>
+  The changes in React Loadable 4 should make it much more convienient to use.
+  I hope you all like it.
+</p>
+
+<h2>New in 4.0</h2>
+
+<h3><code>Loadable.Map</code></h3>
+
+<p>
+  One thing that often caused people to trip up was how to load multiple
+  resources in parallel. While it was possible before, React Loadable 4 adds a
+  new API to help you out with this.
+</p>
+
+<p>
+  <code>Loadable.Map</code> accepts an object as a <code>loader</code> instead
+  of a function. You then need to specify a <code>render()</code> method to
+  stitch everything together.
+</p>
+
+<pre><code>Loadable.Map({
+  <em>loader: {
+    Component: () => import('./my-component'),
+    translations: () => fetch('./i18n/foo.json').then(...),
+  },</em>
+  render(loaded, props) {
+    let Component = <em>loaded.Component.default;</em>
+    let i18n = <em>loaded.translations;</em>
+    return <em>&lt;Component {...props} translations={i18n}/&gt;;</em>
+  }
+});</code></pre>
+
+<h3><code>import-inspector</code></h3>
+
+<p>
+  In previous versions of React Loadable there were special options
+  (<code>serverSideRequirePath</code> and <code>webpackRequireWeakId</code>) to
+  allow loadable components to render synchronously when the components were
+  available on either the client or server.
+</p>
+
+<p>
+  This API turned out to be a real hassle to automate using a Babel plugin and
+  didn't allow for a number of future experiments. So it has been replaced with
+  a new library <a href="https://github.com/thejameskyle/import-inspector">import-inspector</a>.
+  It looks like this:
+</p>
+
+<pre><code><em>import {report} from 'import-inspector';
+import path from 'path';</em>
+
+Loadable({
+  loader: () => <em>report(</em>import('./my-component')<em>, {
+    serverSideRequirePath: path.join(__dirname, './my-component'),
+    webpackRequireWeakId: () => require.resolveWeak('./my-component')
+  })</em>
+})</code></pre>
+
+<p>
+  Instead of using this directly, you can automate the manual configuration
+  using:
+</p>
+
+<h3><code>babel-plugin-import-inspector</code></h3>
+
+<p>
+  The <code>react-loadable/babel</code> plugin has been replaced in favor of
+  <a href="https://github.com/thejameskyle/babel-plugin-import-inspector">babel-plugin-import-inspector</a>
+  which is much more reliable and works everywhere.
+</p>
+
+<p>
+  <strong>Install</strong>
+</p>
+
+<pre><code>yarn add import-inspector
+yarn add --dev babel-plugin-import-inspector</code></pre>
+
+<p>
+  <strong>.babelrc</strong>
+</p>
+
+<pre><code>{
+  "plugins": [
+    ["import-inspector", {
+      "serverSideRequirePath": true,
+      "webpackRequireWeakId": true
+    }]
+  ]
+}</code></pre>
+
+<p>
+  <strong>Input</strong>
+</p>
+
+<pre><code>Loadable({
+  loader: () => import('./my-component')
+})</code></pre>
+
+<p>
+  <strong>Output</strong>
+</p>
+
+<pre><code><em>import {report} from 'import-inspector';
+import path from 'path';</em>
+
+Loadable({
+  loader: () => <em>report(</em>import('./my-component')<em>, {
+    serverSideRequirePath: path.join(__dirname, './my-component'),
+    webpackRequireWeakId: () => require.resolveWeak('./my-component')
+  })</em>
+})</code></pre>
+
+
+
+
+
+
+
+<h2>API Changes</h2>
+
+<h3><code>opts.LoadingComponent</code> &rarr; <code>opts.loading</code></h3>
+
+<p>
+  <code>LoadingComponent</code> was unnecessarily verbose, <code>loading</code>
+  is better.
+</p>
+
+<h3><code>opts.render</code></h3>
+
+<p>
+  This replaces <code>opts.resolveModule</code> to give more control over the
+  actual rendering of the component.
+</p>
+
+<pre><code>const LoadableComponent = Loadable({
+  loader: () => import('./my-component'),
+  loading: Loading,
+  <em>render(loaded, props) {
+    let Component = loaded.namedExport;
+    return &lt;Component {...props}/&gt;;
+  }</em>
+});</code></pre>
+
+<h3><code>opts.timeout</code></h3>
+
+<p>
+  Vue.js added this in
+  <a href="https://vuejs.org/v2/guide/components.html#Advanced-Async-Components">their implementation</a>.
+  I liked it so I stole it.
+</p>
+
+<p>
+  Your <code>loading</code> Component will now receive an additional prop
+  <code>timedOut</code> which will be true after the set timeout expires.
+</p>
+
+<pre><code>function Loading(props) {
+  if (<em>props.timedOut</em>) {
+    return &lt;div&gt;Timed Out&lt;/div&gt;;
+  } else {
+    return &lt;div&gt;Loading...&lt;/div&gt;;
+  }
+}
+
+const LoadableComponent = Loadable({
+  // ...
+  loading: Loading,
+  <em>timeout: 10000</em>
+});</code></pre>
+
+<h3><code>flushServerSideRequirePaths</code> and <code>flushWebpackRequireWeakIds</code></h3>
+
+<p>
+  This functionality is no longer necessary when using import-inspector.
+  Instead you can use import-inspector to watch which imports are reported
+  (<a href="https://gist.github.com/thejameskyle/2d5ebd002586324d0400135a1ef4498f">example</a>).
+</p>
+
+<hr>
+
+<p>
+  That about covers it. For a full change log, see the <a href="https://github.com/thejameskyle/react-loadable/pull/46">4.0 pull request</a>.
+</p>
+
+<p>
+  As always, be sure to give
+  <a href="https://github.com/thejameskyle/react-loadable">React Loadable</a> a
+  star on GitHub and be sure to download this shit:
+</p>
+
+<pre><code>yarn add react-loadable</code></pre>
+
+<footer>
+  <p>
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    Creative Commons Attribution 4.0 International License</a>.
+  </p>
+</footer>
+
+<script src="block-sites.js"></script>
+</body>
+</html>
