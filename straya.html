@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The Australia Files – @thejameskyle</title>
+
+  <style media="screen">
+    html {
+      position: relative;
+      background: #93433F;
+      border: 0.5rem dotted #3C312F;
+      padding: 0.25rem;
+
+      box-shadow: 0 0 0 0.2rem #93433F, 0 0 0 500px #3C312F;
+    }
+
+    html,
+    body {
+      padding: 0.25rem;
+    }
+
+    html::before,
+    html::after,
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      display: none;
+      border: 0.5rem dotted;
+    }
+
+    html::before,
+    body::before {
+      border-width: 0.51rem;
+    }
+
+    html::after,
+    body::after {
+      border-width: 0.52rem;
+    }
+
+    html::before, html::after { border-color: #3C312F; }
+    body::before, body::after { border-color: #BB8159; }
+
+    html { border-radius: 3.75rem 4.75rem / 4.75rem 3.75rem; }
+    body { border-radius: 3.00rem 4.00rem / 4.00rem 3.00rem; }
+
+    @media (min-width: 30rem) {
+      html, body { padding: 1rem; }
+      html::before, body::before {
+        display: block;
+        top: 0.25rem; bottom: 0.25rem;
+        left: 0.25rem; right: 0.25rem;
+      }
+
+      html         { border-radius: 5.25rem 6.25rem / 6.25rem 5.25rem; }
+      html::before { border-radius: 4.50rem 5.50rem / 5.50rem 4.50rem; }
+      body         { border-radius: 3.75rem 4.75rem / 4.75rem 3.75rem; }
+      body::before { border-radius: 3.00rem 4.00rem / 4.00rem 3.00rem; }
+    }
+
+    @media (min-width: 40rem) {
+      html, body { padding: 1.75rem; }
+      html::after, body::after {
+        display: block;
+        top: 1rem; bottom: 1rem;
+        left: 1rem; right: 1rem;
+      }
+
+      html         { border-radius: 6.75rem 7.75rem / 7.75rem 6.75rem; }
+      html::before { border-radius: 6.00rem 7.00rem / 7.00rem 6.00rem; }
+      html::after  { border-radius: 5.25rem 6.25rem / 6.25rem 5.25rem; }
+      body         { border-radius: 4.50rem 5.50rem / 5.50rem 4.50rem; }
+      body::before { border-radius: 3.75rem 4.75rem / 4.75rem 3.75rem; }
+      body::after  { border-radius: 3.00rem 4.00rem / 4.00rem 3.00rem; }
+    }
+
+    body {
+      position: relative;
+      margin: 0;
+
+      font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+      font-size: 1.2em;
+      line-height: 1.6;
+
+      text-align: center;
+
+      color: #EEDED1;
+      -webkit-font-smoothing: antialiased;
+
+      border: 0.5rem dotted #BB8159;
+    }
+
+    @media (min-width: 40rem) {
+      body {
+        font-size: 2em;
+      }
+    }
+
+    p, h1, h2, h3, h4, h5, h6, ul, ol, li, pre, img, aside {
+      margin-top: 0.5em;
+      margin-bottom: 0;
+    }
+
+    header,
+    section {
+      position: relative;
+      background: #483939;
+      color: #F2E2D6;
+      margin: 0.25rem;
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+
+    @media (min-width: 50rem) {
+      header, section {
+        padding-left: 15%;
+        padding-right: 15%;
+      }
+    }
+
+    header::before,
+    section::before {
+      content: "";
+      position: absolute;
+      border: 0.5rem dotted #F2E2D6;
+      top: -0.1rem;
+      bottom: -0.1rem;
+      left: -0.1rem;
+      right: -0.1rem;
+      border-radius: 1rem;
+    }
+
+    header {
+      color: #E1BA78;
+      border-top-left-radius: 2rem 3rem;
+      border-top-right-radius: 3rem 2rem;
+    }
+
+    header::before {
+      border-top-left-radius: 2rem 3rem;
+      border-top-right-radius: 3rem 2rem;
+    }
+
+    section:last-child {
+      border-bottom-left-radius: 3rem 2rem;
+      border-bottom-right-radius: 2rem 3rem;
+    }
+
+    section:last-child::before {
+      border-bottom-left-radius: 3rem 2rem;
+      border-bottom-right-radius: 2rem 3rem;
+    }
+
+    header::before {
+      border-color: #F2E2D6;
+    }
+
+    section::before {
+      border-color: #B37D5E;
+    }
+
+    header :first-child,
+    section :first-child {
+      margin-top: 0;
+    }
+
+    header h1,
+    header p {
+      margin-top: 0;
+      padding: 0.5rem 0;
+      line-height: 1.2;
+    }
+
+    header h1 {
+      border-bottom: 0.5rem dotted #A33E4F;
+    }
+
+    hr {
+      margin: 0.25em 0;
+      border: none;
+      border-top: 8px dotted #B37D5E;
+    }
+
+    hr::before,
+    hr::after {
+      display: block;
+      content: "";
+      margin-top: 0.25rem;
+      border-bottom: 0.5rem dotted #B37D5E;
+    }
+
+    hr::before {
+      border-bottom-color: #F3ECE5;
+      margin-left: 0.5rem;
+    }
+
+    section h3 {
+      color: #E1BA78;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>It's sorta like Outback Steakhouse right?</h1>
+  <p>An American's journey immigrating to Australia</p>
+</header>
+
+<hr>
+
+<section>
+
+  <p>
+    Hi, my name is James.
+  </p>
+
+  <p>
+    On June 25th 2017, I left San Francisco and moved to Sydney.
+  </p>
+
+  <p>
+    The following is a log of everything I learned while living in Australia.
+  </p>
+  </p>
+</section>
+
+<hr>
+
+<section>
+  <h3>June 27th, 2017</h3>
+
+  <p>
+    Pizza comes in much smaller sizes here for about the same price– but all
+    Coke is Mexi-Coke which more than makes up for it.
+  </p>
+</section>
+
+<hr>
+
+<section>
+  <h3>June 28th, 2017</h3>
+
+  <p>
+    Australians are very proud of their coffee– which is not that special,
+    telling them this upsets them greatly.
+  </p>
+</section>
+
+<hr>
+
+<section>
+  <h3>June 29th, 2017</h3>
+
+  <p>
+    I held up a line at the Opal "top-up" thing today cause I didn't know what
+    "cheque" meant.
+  </p>
+
+  <p>
+    Still have not seen a kangaroo.
+  </p>
+</section>
+
+<hr>
+
+<section>
+  <h3>June 30th, 2017</h3>
+
+  <p>
+    The have this thing called "Fairy bread" which is made up of cheap white
+    bread, butter, and jimmies. It looks disgusting, but this seems to be a
+    hill they are willing to die on.
+  </p>
+</section>
+
+<hr>
+
+<section>
+  <h3>July 1st, 2017</h3>
+
+  <p>
+    "Chips" is a stupid name. They're called french fries damnit. If anyone
+    owns the naming rights to fried food, it's America.
+  </p>
+</section>
+
+</body>
+</html>
