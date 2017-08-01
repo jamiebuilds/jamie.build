@@ -1,0 +1,601 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>styled-theming – @thejameskyle</title>
+  <style media="screen">
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-size: 1.2em;
+      line-height: 1.8;
+
+      background: white;
+      color: rgb(46, 68, 78);
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      display: block;
+      height: 10px;
+      background: linear-gradient(20deg, rgb(219,112,147), #daa357);
+    }
+
+    h1, h2, h3, h4, h5, h6, header {
+      font-family: "Avenir Next",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+
+    p, h1, h2, h3, h4, h5, h6, ul, ol, li, pre, img, aside {
+      margin-top: 1.5em;
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-top: 0.5em;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: top;
+    }
+
+    a {
+      color: rgb(219,112,147);
+      font-weight: 600;
+    }
+
+    aside {
+      padding: 1em;
+      background: linear-gradient(20deg, rgb(219,112,147), #daa357);
+      color: white;
+    }
+
+    aside a {
+       color: white;
+    }
+
+    blockquote {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 1em 0;
+    }
+
+    blockquote :first-child {
+      margin-top: 0;
+    }
+
+    blockquote a {
+      color: white;
+    }
+
+    code {
+      padding: 0.15em 0.2em;
+
+      font-size: 0.95em;
+      font-weight: 900;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+      /* background: #FFD3CF;
+      color: #B84035; */
+    }
+
+    pre {
+      font-size: 0.9em;
+      padding: 1em 1.5em;
+      background: #222;
+      color: #C5C8C6;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    pre.sh {
+      background: #DB7093;
+      color: white;
+    }
+
+    pre code {
+      padding: 0;
+      background: transparent;
+      color: inherit;
+      font-weight: inherit;
+    }
+
+    pre em {
+      font-style: normal;
+      color: hsl(350, 40%, 70%);
+    }
+
+    hr {
+      margin: 2em 0;
+      border: none;
+      /* border-top: 2px solid #FF594A; */
+    }
+
+    header {
+      padding-bottom: 1em;
+    }
+
+    header h1 {
+      color: rgb(243, 182, 97);
+    }
+
+    header p {
+      margin-top: 0;
+      font-size: 1.3em;
+      line-height: 1.2;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 3em;
+      border-top: 2px solid #DB7093;
+      font-size: 0.8em;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2em 2em 4em;
+    }
+
+    .preview {
+      // ...
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <header>
+      <h1>styled-theming</h1>
+      <p>Create themes for your app using styled-components</p>
+    </header>
+  </div>
+
+<script type="text" class="example">
+const colors = {
+  white: '#fff',
+
+  grayLighter: '#eee',
+  grayLight: '#ccc',
+  grayDark: '#444',
+  grayDarker: '#222',
+
+  blueLight: '#2196F3',
+  blueDark: '#104977',
+
+  greenLight: '#8bc34a',
+  greenDark: '#3b5221',
+
+  yellowLight: '#ffc107',
+  yellowDark: '#715605',
+
+  redLight: '#e91e63',
+  redDark: '#670a2a',
+};
+
+const fontSize = theme('size', {
+  normal: '0.8em',
+  large: '1em',
+});
+
+const boxBackgroundColor = theme('mode', {
+  light: colors.white,
+  dark: colors.grayDarker,
+});
+
+const boxColor = theme('mode', {
+  light: colors.grayDarker,
+  dark: colors.grayLighter,
+});
+
+const Box = styled.div`
+  padding: 4em 2em;
+  font-size: ${fontSize};
+  background-color: ${boxBackgroundColor};
+  color: ${boxColor};
+  text-align: center;
+`;
+
+const buttonBackgroundColor = theme.variants('mode', 'kind', {
+  default: { light: colors.grayLight, dark: colors.grayDark },
+  primary: { light: colors.blueLight, dark: colors.blueDark },
+  success: { light: colors.greenLight, dark: colors.greenDark, },
+  warning: { light: colors.yellowLight, dark: colors.yellowDark, },
+  danger: { light: colors.redLight, dark: colors.redDark, },
+});
+
+const buttonColor = theme.variants('mode', 'kind', {
+  default: { light: colors.grayDarker, dark: colors.grayLighter },
+  primary: { light: colors.blueDark, dark: colors.blueLight },
+  success: { light: colors.greenDark, dark: colors.greenLight },
+  warning: { light: colors.yellowDark, dark: colors.yellowLight },
+  danger: { light: colors.redDark, dark: colors.redLight },
+});
+
+const buttonPadding = theme('size', {
+  normal: '0.5em 1em',
+  large: '0.4em 0.7em',
+});
+
+const buttonMargin = theme('size', {
+  normal: '0.5em',
+  large: '0.2em 0.2em',
+});
+
+const Button = styled.button`
+  font: inherit;
+  padding: ${buttonPadding};
+  margin: ${buttonMargin};
+  border: none;
+  background-color: ${buttonBackgroundColor};
+  color: ${buttonColor};
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  cursor: pointer;
+`;
+
+Button.defaultProps = {
+  kind: 'default'
+};
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      mode: 'dark',
+      size: 'normal',
+    };
+
+    this.handleToggleMode = this.handleToggleMode.bind(this);
+    this.handleToggleSize = this.handleToggleSize.bind(this);
+  }
+
+  handleToggleMode() {
+    this.setState({ mode: this.state.mode === 'light' ? 'dark' : 'light' });
+  }
+
+  handleToggleSize() {
+    this.setState({ size: this.state.size === 'normal' ? 'large' : 'normal' });
+  }
+
+  render() {
+    return (
+      <ThemeProvider theme={{ mode: this.state.mode, size: this.state.size }}>
+        <Box>
+          <Button onClick={this.handleToggleMode}>Toggle Mode</Button>
+          <Button kind="primary" onClick={this.handleToggleSize}>Toggle Size</Button>
+          <Button kind="success" onClick={this.handleToggleMode}>Toggle Mode</Button>
+          <Button kind="warning" onClick={this.handleToggleSize}>Toggle Size</Button>
+          <Button kind="danger" onClick={this.handleToggleMode}>Toggle Mode</Button>
+        </Box>
+      </ThemeProvider>
+    );
+  }
+}
+
+render(<App/>);
+</script>
+
+  <div class="content">
+    <aside>
+      This article is best enjoyed while listening to: <br/>
+      <a href="https://www.youtube.com/watch?v=LSnGm_DCw6U" target="_blank">
+        "Show Me The Way" – Penguin Prison
+      </a>
+    </aside>
+
+    <p>
+      If you set out to write a theme for your entire app, you need to set
+      yourself up to manage all the complexity that it can add.
+    </p>
+
+    <p>
+      <a href="https://www.styled-components.com/">styled-components</a> makes
+      it easy to get started creating themes.
+    </p>
+
+    <pre><code>const Button = styled.button`
+  color: <em>${props => props.theme.main}</em>;
+`;
+
+<em>const theme = {
+  main: 'mediumseagreen',
+};</em>
+
+<em>&lt;ThemeProvider theme={theme}&gt;</em>
+  &lt;Button&gt;Themed&lt;/Button&gt;
+<em>&lt;/ThemeProvider&gt;</em>
+</code></pre>
+
+  <p>
+    Passing CSS values down this way works for a bit. But when you start using
+    this in hundreds of places in your app, you'll notice it gets a bit
+    painful.
+  </p>
+
+  <p>
+    The problem is that we're back to having a separate set of styles that
+    lives at the top of our app in giant objects.
+  </p>
+
+  <pre><code>const themeOne = {
+  <em>buttonDefaultColor</em>: "#123456",
+  <em>buttonDefaultHoverColor</em>: "#123456",
+  <em>buttonDefaultActiveColor</em>: "#123456",
+  <em>buttonDefaultFocusColor</em>: "#123456",
+  <em>buttonPrimaryColor</em>: "#123456",
+  <em>buttonPrimaryHoverColor</em>: "#123456",
+  <em>buttonPrimaryActiveColor</em>: "#123456",
+  <em>buttonPrimaryFocusColor</em>: "#123456",
+  // ...
+};
+
+const themeTwo = {
+  <em>buttonDefaultColor</em>: "#123456",
+  <em>buttonDefaultHoverColor</em>: "#123456",
+  <em>buttonDefaultActiveColor</em>: "#123456",
+  // ...
+};</code></pre>
+
+  <p>
+    And our component styles have tons of lookup functions:
+  </p>
+
+<pre><code>const Button = styled.button`
+  color: <em>${props => props.theme.buttonDefaultColor};</em>
+  background-color: <em>${props => props.theme.buttonDefaultBackgroundColor}</em>;
+  border-color: <em>${props => props.theme.buttonDefaultBorderColor}</em>;
+
+  &:hover {
+    color: <em>${props => props.theme.buttonDefaultHoverColor}</em>;
+    background-color: <em>${props => props.theme.buttonDefaultHoverBackgroundColor}</em>;
+    border-color: <em>${props => props.theme.buttonDefaultHoverBorderColor}</em>;
+  }
+
+  &:active {
+    color: <em>${props => props.theme.buttonDefaultActiveColor}</em>;
+    background-color: <em>${props => props.theme.buttonDefaultActiveBackgroundColor}</em>;
+    border-color: <em>${props => props.theme.buttonDefaultActiveBorderColor}</em>;
+  }
+
+  &:focus {
+    color: <em>${props => props.theme.buttonDefaultFocusColor}</em>;
+    background-color: <em>${props => props.theme.buttonDefaultFocusBackgroundColor}</em>;
+    border-color: <em>${props => props.theme.buttonDefaultFocusBorderColor}</em>;
+  }
+`;</code></pre>
+
+  <p>
+    Not to mention how weird it gets trying to manage variants:
+  </p>
+
+  <pre><code>const Button = styled.button`
+  color: ${props => {
+    <em>if (props.kind === "default")</em> return props.theme.buttonDefaultColor;
+    <em>if (props.kind === "primary")</em> return props.theme.buttonPrimaryColor;
+    <em>if (props.kind === "success")</em> return props.theme.buttonSuccessColor;
+    <em>if (props.kind === "warning")</em> return props.theme.buttonWarningColor;
+    <em>if (props.kind === "danger")</em> return props.theme.buttonDangerColor;
+  }};
+  // ...
+`;
+
+Button.defaultProps = {
+  kind: "default",
+};</code></pre>
+
+  <p>
+    You also have to be careful about how you abstract all of this code so that
+    you are not accidentally running tons of extra code during a render cycle
+    or you can introduce a performance problem.
+  </p>
+
+  <p>
+    Instead of all of this, what if we reverse the relationship between themes
+    and abstracted all the repetition into helpers?
+  </p>
+
+  <h2>Introducing styled-theming</h2>
+
+  <p>
+    <a href="https://github.com/thejameskyle/styled-theming">styled-theming</a>
+    makes it easier to manage themes by allowing you to declare your themes
+    alongside your components instead of at the top of your app.
+  </p>
+
+  <p>
+    Instead of passing down values from the root of your app, you pass down
+    names instead.
+  </p>
+
+  <pre><code>&lt;ThemeProvider theme={<em>{ mode: "light" }</em>}&gt;</code></pre>
+
+  <p>
+    Then when you declare your components, you can use the <code>theme</code>
+    helper.
+  </p>
+
+  <pre><code>import <em>theme</em> from <em>"styled-theming";</em>
+
+const <em>backgroundColor</em> = <em>theme("mode", {
+  light: "#fff",
+  dark: "#000",
+});</em>
+
+const Button = styled.button`
+  background-color: <em>${backgroundColor}</em>;
+`;</code></pre>
+
+  <p>
+    <code>theme()</code> is a tiny little function that returns another
+    function which you can use as a value in styled-components. It looks up the
+    correct value using the <code>theme</code> prop you provided to
+    <code>&lt;ThemeProvider&gt;</code>.
+  </p>
+
+  <p>
+    You're encouraged to create your own helper functions that wrap
+    <code>theme()</code> to make it easier to declare your themes. Just make
+    sure that you're doing as much work as possible ahead of time (or only once).
+  </p>
+
+  <h3>Variants</h3>
+
+  <p>
+    In addition to the <code>theme()</code> function, there's also a
+    <code>theme.variants()</code> function to help you declare variantions of
+    the same component based on a prop.
+  </p>
+
+  <pre><code>import theme from "styled-theming";
+
+const <em>backgroundColor</em> = <em>theme.variants("mode", "kind", {
+  default: { light: "#123456", dark: "#123456" },
+  primary: { light: "#123456", dark: "#123456" },
+  success: { light: "#123456", dark: "#123456" },
+  danger: { light: "#123456", dark: "#123456" },
+  warning: { light: "#123456", dark: "#123456" },
+});</em>
+
+const Button = styled.button`
+  background-color: <em>${backgroundColor}</em>;
+`;
+
+Button.propTypes = {
+  <em>kind</em>: PropTypes.oneOf(["default", "primary", ...]),
+};
+
+Button.defaultProps = {
+  <em>kind</em>: "default",
+};</code></pre>
+
+
+  <h3>Multi-dimensional theming</h3>
+
+  <p>
+    Theming can sometimes happen across multiple dimensions:
+  </p>
+
+  <ul>
+    <li>Light vs Dark mode</li>
+    <li>Cosy vs Compact spacing</li>
+    <li>Accessibility modes</li>
+    <li>(whatever...)</li>
+  </ul>
+
+  <p>
+    This is why the first parameter to <code>theme()</code> and
+    <code>theme.variants()</code> exists.
+  </p>
+
+  <pre><code>theme(<em>"mode"</em>, {...})</code></pre>
+
+  <p>
+    This matches against the object that you've passed to
+    <code>&lt;ThemeProvider&gt;</code> so you can have multiple of them.
+  </p>
+
+  <pre><code>theme(<em>"mode"</em>, { light: ..., dark: ... });
+theme(<em>"size"</em>, { normal: ..., compact: ... });
+
+&lt;ThemeProvider theme={<em>{ mode: 'dark', size: 'compact' }</em>}&gt;
+</code></pre>
+
+  <h3>In closing</h3>
+
+  <p>
+    This library is really a pattern moreso than code. You and Jason Miller
+    will be happy to know this library is like
+    <a href="https://github.com/thejameskyle/styled-theming/blob/master/index.js">
+    300 bytes of code minified</a>.
+  </p>
+
+  <p>
+    Now go install this hot shit:
+  </p>
+
+  <pre class="sh"><code>yarn add styled-components styled-theming</code></pre>
+
+  <p>
+    Oh, and <a href="https://github.com/thejameskyle/styled-theming">give me a star</a>.
+    <small>
+      I like stars.
+      <small>
+        I am a star.
+        <small>
+          Don't tell me I'm not a star
+          <small>because I am a star.</small>
+        </small>
+      </small>
+    </small>
+  </p>
+
+  <footer>
+    <p>
+      This work is licensed under a <br/>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+      Creative Commons Attribution 4.0 International License</a>.
+    </p>
+  </footer>
+</div>
+
+<script src="block-sites.js"></script>
+
+<script src="https://unpkg.com/react@15.5.1/dist/react.js"></script>
+<script src="https://unpkg.com/react-dom@15.5.1/dist/react-dom.js"></script>
+<script src="https://unpkg.com/styled-components@2.1.1/dist/styled-components.js"></script>
+<script src="https://unpkg.com/styled-theming@2.1.1/dist/styled-theming.js"></script>
+<script src="https://unpkg.com/react-live@1.7.0/dist/react-live.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/react-live@1.7.0/react-live.css"/>
+
+<script>
+  var h = React.createElement;
+  var ReactLive = window['react-live'];
+
+  var examples = document.getElementsByClassName('example');
+
+  for (var i = 0; i < examples.length; i++) {
+    var el = examples[i];
+    var div = document.createElement('div');
+    var code = el.textContent;
+
+    div.className = 'example-preview';
+
+    el.parentElement.insertBefore(div, el);
+
+    ReactDOM.render(
+      h(ReactLive.LiveProvider, {
+        code: code,
+        noInline: true,
+        scope: {
+          styled: window.styled.default,
+          ThemeProvider: window.styled.ThemeProvider,
+          theme: window.theme,
+        }
+      }, (
+        h(ReactLive.LiveEditor),
+        h(ReactLive.LiveError),
+        h(ReactLive.LivePreview)
+      )),
+      div
+    );
+  }
+
+
+</script>
+
+</body>
+</html>
