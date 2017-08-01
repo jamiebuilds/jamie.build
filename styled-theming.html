@@ -148,10 +148,6 @@
       margin: 0 auto;
       padding: 2em 2em 4em;
     }
-
-    .preview {
-      // ...
-    }
   </style>
 </head>
 <body>
@@ -163,131 +159,7 @@
     </header>
   </div>
 
-<script type="text" class="example">
-const colors = {
-  white: '#fff',
-
-  grayLighter: '#eee',
-  grayLight: '#ccc',
-  grayDark: '#444',
-  grayDarker: '#222',
-
-  blueLight: '#2196F3',
-  blueDark: '#104977',
-
-  greenLight: '#8bc34a',
-  greenDark: '#3b5221',
-
-  yellowLight: '#ffc107',
-  yellowDark: '#715605',
-
-  redLight: '#e91e63',
-  redDark: '#670a2a',
-};
-
-const fontSize = theme('size', {
-  normal: '0.8em',
-  large: '1em',
-});
-
-const boxBackgroundColor = theme('mode', {
-  light: colors.white,
-  dark: colors.grayDarker,
-});
-
-const boxColor = theme('mode', {
-  light: colors.grayDarker,
-  dark: colors.grayLighter,
-});
-
-const Box = styled.div`
-  padding: 4em 2em;
-  font-size: ${fontSize};
-  background-color: ${boxBackgroundColor};
-  color: ${boxColor};
-  text-align: center;
-`;
-
-const buttonBackgroundColor = theme.variants('mode', 'kind', {
-  default: { light: colors.grayLight, dark: colors.grayDark },
-  primary: { light: colors.blueLight, dark: colors.blueDark },
-  success: { light: colors.greenLight, dark: colors.greenDark, },
-  warning: { light: colors.yellowLight, dark: colors.yellowDark, },
-  danger: { light: colors.redLight, dark: colors.redDark, },
-});
-
-const buttonColor = theme.variants('mode', 'kind', {
-  default: { light: colors.grayDarker, dark: colors.grayLighter },
-  primary: { light: colors.blueDark, dark: colors.blueLight },
-  success: { light: colors.greenDark, dark: colors.greenLight },
-  warning: { light: colors.yellowDark, dark: colors.yellowLight },
-  danger: { light: colors.redDark, dark: colors.redLight },
-});
-
-const buttonPadding = theme('size', {
-  normal: '0.5em 1em',
-  large: '0.4em 0.7em',
-});
-
-const buttonMargin = theme('size', {
-  normal: '0.5em',
-  large: '0.2em 0.2em',
-});
-
-const Button = styled.button`
-  font: inherit;
-  padding: ${buttonPadding};
-  margin: ${buttonMargin};
-  border: none;
-  background-color: ${buttonBackgroundColor};
-  color: ${buttonColor};
-  border-radius: 0.25em;
-  margin-right: 0.5em;
-  cursor: pointer;
-`;
-
-Button.defaultProps = {
-  kind: 'default'
-};
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      mode: 'dark',
-      size: 'normal',
-    };
-
-    this.handleToggleMode = this.handleToggleMode.bind(this);
-    this.handleToggleSize = this.handleToggleSize.bind(this);
-  }
-
-  handleToggleMode() {
-    this.setState({ mode: this.state.mode === 'light' ? 'dark' : 'light' });
-  }
-
-  handleToggleSize() {
-    this.setState({ size: this.state.size === 'normal' ? 'large' : 'normal' });
-  }
-
-  render() {
-    return (
-      <ThemeProvider theme={{ mode: this.state.mode, size: this.state.size }}>
-        <Box>
-          <Button onClick={this.handleToggleMode}>Toggle Mode</Button>
-          <Button kind="primary" onClick={this.handleToggleSize}>Toggle Size</Button>
-          <Button kind="success" onClick={this.handleToggleMode}>Toggle Mode</Button>
-          <Button kind="warning" onClick={this.handleToggleSize}>Toggle Size</Button>
-          <Button kind="danger" onClick={this.handleToggleMode}>Toggle Mode</Button>
-        </Box>
-      </ThemeProvider>
-    );
-  }
-}
-
-render(<App/>);
-</script>
+  <div id="example"></div>
 
   <div class="content">
     <aside>
@@ -554,47 +426,142 @@ theme(<em>"size"</em>, { normal: ..., compact: ... });
 
 <script src="block-sites.js"></script>
 
-<script src="https://unpkg.com/react@15.5.1/dist/react.js"></script>
-<script src="https://unpkg.com/react-dom@15.5.1/dist/react-dom.js"></script>
-<script src="https://unpkg.com/styled-components@2.1.1/dist/styled-components.js"></script>
-<script src="https://unpkg.com/styled-theming@2.1.1/dist/styled-theming.js"></script>
-<script src="https://unpkg.com/react-live@1.7.0/dist/react-live.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/react-live@1.7.0/react-live.css"/>
+<script src="https://unpkg.com/react@15.5.1/dist/react.min.js"></script>
+<script src="https://unpkg.com/react-dom@15.5.1/dist/react-dom.min.js"></script>
+<script src="https://unpkg.com/create-react-class@15.6.0/create-react-class.min.js"></script>
+<script src="https://unpkg.com/styled-components@2.1.1/dist/styled-components.min.js"></script>
+<script src="https://unpkg.com/styled-theming@2.1.1/dist/styled-theming.min.js"></script>
 
 <script>
-  var h = React.createElement;
-  var ReactLive = window['react-live'];
+  (function() {
+    var h = window.React.createElement;
+    var createReactClass = window.createReactClass;
+    var render = window.ReactDOM.render;
+    var styled = window.styled.default;
+    var ThemeProvider = window.styled.ThemeProvider;
+    var theme = window.theme;
 
-  var examples = document.getElementsByClassName('example');
+    var colors = {
+      white: '#fff',
 
-  for (var i = 0; i < examples.length; i++) {
-    var el = examples[i];
-    var div = document.createElement('div');
-    var code = el.textContent;
+      grayLighter: '#eee',
+      grayLight: '#ccc',
+      grayDark: '#444',
+      grayDarker: '#222',
 
-    div.className = 'example-preview';
+      blueLight: '#2196F3',
+      blueDark: '#104977',
 
-    el.parentElement.insertBefore(div, el);
+      greenLight: '#8bc34a',
+      greenDark: '#3b5221',
 
-    ReactDOM.render(
-      h(ReactLive.LiveProvider, {
-        code: code,
-        noInline: true,
-        scope: {
-          styled: window.styled.default,
-          ThemeProvider: window.styled.ThemeProvider,
-          theme: window.theme,
-        }
-      }, (
-        h(ReactLive.LiveEditor),
-        h(ReactLive.LiveError),
-        h(ReactLive.LivePreview)
-      )),
-      div
+      yellowLight: '#ffc107',
+      yellowDark: '#715605',
+
+      redLight: '#e91e63',
+      redDark: '#670a2a',
+    };
+
+    var fontSize = theme('size', {
+      normal: '0.8em',
+      large: '1em',
+    });
+
+    var boxBackgroundColor = theme('mode', {
+      light: colors.white,
+      dark: colors.grayDarker,
+    });
+
+    var boxColor = theme('mode', {
+      light: colors.grayDarker,
+      dark: colors.grayLighter,
+    });
+
+    var Box = styled.div([
+      'padding: 4em 2em;\n' +
+      'text-align: center;\n' +
+      'font-size: ', /* 0 */ ';\n' +
+      'background-color: ', /* 1 */ ';\n' +
+      'color: ', /* 2 */ ';'
+    ], fontSize, boxBackgroundColor, boxColor);
+
+    var buttonBackgroundColor = theme.variants('mode', 'kind', {
+      default: { light: colors.grayLight, dark: colors.grayDark },
+      primary: { light: colors.blueLight, dark: colors.blueDark },
+      success: { light: colors.greenLight, dark: colors.greenDark, },
+      warning: { light: colors.yellowLight, dark: colors.yellowDark, },
+      danger: { light: colors.redLight, dark: colors.redDark, },
+    });
+
+    var buttonColor = theme.variants('mode', 'kind', {
+      default: { light: colors.grayDarker, dark: colors.grayLighter },
+      primary: { light: colors.blueDark, dark: colors.blueLight },
+      success: { light: colors.greenDark, dark: colors.greenLight },
+      warning: { light: colors.yellowDark, dark: colors.yellowLight },
+      danger: { light: colors.redDark, dark: colors.redLight },
+    });
+
+    var buttonPadding = theme('size', {
+      normal: '0.5em 1em',
+      large: '0.4em 0.7em',
+    });
+
+    var buttonMargin = theme('size', {
+      normal: '0.5em',
+      large: '0.2em 0.2em',
+    });
+
+    var Button = styled.button([
+      'font: inherit;\n' +
+      'border: none;\n' +
+      'border-radius: 0.25em;\n' +
+      'cursor: pointer;\n' +
+      'padding: ', /* 0 */ ';\n' +
+      'margin: ', /* 1 */ ';\n' +
+      'background-color: ', /* 2 */ ';\n' +
+      'color: ', /* 3 */ ';'
+    ], buttonPadding, buttonMargin, buttonBackgroundColor, buttonColor);
+
+    Button.defaultProps = {
+      kind: 'default'
+    };
+
+    var App = createReactClass({
+      getInitialState: function() {
+        return {
+          mode: 'dark',
+          size: 'normal',
+        };
+      },
+
+      handleToggleMode: function() {
+        this.setState({ mode: this.state.mode === 'light' ? 'dark' : 'light' });
+      },
+
+      handleToggleSize: function() {
+        this.setState({ size: this.state.size === 'normal' ? 'large' : 'normal' });
+      },
+
+      render: function() {
+        return (
+          h(ThemeProvider, { theme: { mode: this.state.mode, size: this.state.size } },
+            h(Box, null,
+              h(Button, { onClick: this.handleToggleMode }, 'Toggle Mode'),
+              h(Button, { kind: "primary", onClick: this.handleToggleSize }, 'Toggle Size'),
+              h(Button, { kind: "success", onClick: this.handleToggleMode }, 'Toggle Mode'),
+              h(Button, { kind: "warning", onClick: this.handleToggleSize }, 'Toggle Size'),
+              h(Button, { kind: "danger", onClick: this.handleToggleMode }, 'Toggle Mode')
+            )
+          )
+        );
+      }
+    });
+
+    render(
+      h(App),
+      document.getElementById('example')
     );
-  }
-
-
+  }());
 </script>
 
 </body>
