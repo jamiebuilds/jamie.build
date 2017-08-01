@@ -470,18 +470,18 @@ theme(<em>"size"</em>, { normal: ..., compact: ... });
     };
 
     var fontSize = theme('size', {
-      normal: '0.8em',
-      large: '1em',
+      normal: '0.9em',
+      large: '1.1em',
     });
 
     var boxBackgroundColor = theme('mode', {
-      light: colors.white,
-      dark: colors.grayDarker,
+      light: "aliceblue",
+      dark: "#222",
     });
 
     var boxColor = theme('mode', {
-      light: colors.grayDarker,
-      dark: colors.grayLighter,
+      light: "rgb(46, 68, 78)",
+      dark: "#C5C8C6",
     });
 
     var Box = styled.div([
@@ -493,19 +493,11 @@ theme(<em>"size"</em>, { normal: ..., compact: ... });
     ], fontSize, boxBackgroundColor, boxColor);
 
     var buttonBackgroundColor = theme.variants('mode', 'kind', {
-      default: { light: colors.grayLight, dark: colors.grayDark },
-      primary: { light: colors.blueLight, dark: colors.blueDark },
-      success: { light: colors.greenLight, dark: colors.greenDark, },
-      warning: { light: colors.yellowLight, dark: colors.yellowDark, },
-      danger: { light: colors.redLight, dark: colors.redDark, },
-    });
-
-    var buttonColor = theme.variants('mode', 'kind', {
-      default: { light: colors.grayDarker, dark: colors.grayLighter },
-      primary: { light: colors.blueDark, dark: colors.blueLight },
-      success: { light: colors.greenDark, dark: colors.greenLight },
-      warning: { light: colors.yellowDark, dark: colors.yellowLight },
-      danger: { light: colors.redDark, dark: colors.redLight },
+      default: { light: "slategray", dark: "slategray" },
+      primary: { light: "palevioletred", dark: "hotpink" },
+      success: { light: "mediumseagreen", dark: "seagreen", },
+      warning: { light: "sandybrown", dark: "peru", },
+      danger: { light: "tomato", dark: "brown", },
     });
 
     var buttonPadding = theme('size', {
@@ -526,8 +518,8 @@ theme(<em>"size"</em>, { normal: ..., compact: ... });
       'padding: ', /* 0 */ ';\n' +
       'margin: ', /* 1 */ ';\n' +
       'background-color: ', /* 2 */ ';\n' +
-      'color: ', /* 3 */ ';'
-    ], buttonPadding, buttonMargin, buttonBackgroundColor, buttonColor);
+      'color: white;'
+    ], buttonPadding, buttonMargin, buttonBackgroundColor);
 
     Button.defaultProps = {
       kind: 'default'
@@ -536,7 +528,7 @@ theme(<em>"size"</em>, { normal: ..., compact: ... });
     var App = createReactClass({
       getInitialState: function() {
         return {
-          mode: 'dark',
+          mode: 'light',
           size: 'normal',
         };
       },
