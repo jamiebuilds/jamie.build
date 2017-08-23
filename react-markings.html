@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React Markings - @thejameskyle</title>
+    <style media="screen">
+      html {
+        font-size: 62.5%;
+        background: orchid;
+      }
+
+      body {
+        max-width: 600px;
+        margin: 6em auto;
+        padding: 1.5em;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-family: Consolas, monaco, monospace;
+        -webkit-font-smoothing: antialiased;
+        background: white;
+        counter-reset: a;
+      }
+
+      p, h1, h2, h3, h4, h5, h6, ul, ol, pre, img, aside {
+        line-height: 2.4rem;
+        margin-top: 2.4rem;
+        margin-bottom: 0;
+      }
+
+      h1, h2 { line-height: 4.8rem; }
+
+      h1 { font-size: 3.0rem; }
+      h2 { font-size: 2.6rem; }
+      h3 { font-size: 2.2rem; }
+      h4 { font-size: 2.0rem; }
+      h5 { font-size: 1.8rem; }
+      h6 { font-size: 1.6rem; }
+
+      a { color: deeppink; text-decoration: none; }
+      a::before, a::after { color: blue; }
+      a::before { content: "["; }
+      /* a::after { content: "][" counter(a) "]"; counter-increment: a; } */
+      a::after { content: "](" attr(href) ")"; }
+
+      h1::before { content: "# "; }
+      h2::before { content: "## "; }
+      h3::before { content: "### "; }
+      h4::before { content: "#### "; }
+      h5::before { content: "##### "; }
+      h6::before { content: "###### "; }
+
+      em::before, i::before { content: "_"; }
+      em::after, i::after { content: "_"; }
+
+      strong::before, b::before { content: "**"; }
+      strong::after, b::after { content: "**"; }
+
+      code { font: inherit; }
+      code::before { content: "`"; }
+      code::after { content: "`"; }
+
+      ul, ol { padding-left: 0; list-style: none; }
+      ol { counter-reset: ol; }
+      ul > li::before { content: "- "; }
+      ol > li::before { content: counter(ol) ". "; counter-increment: ol; }
+
+      pre, aside, blockquote {
+        padding: 1.2rem;
+        margin: -1.2rem;
+        margin-top: 1.2rem;
+      }
+
+      aside, blockquote {
+        position: relative;
+        padding-left: 2.9rem;
+        padding-left: 3ch;
+      }
+
+      blockquote:after,
+      aside:after {
+        content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+        white-space: pre;
+        position: absolute;
+        overflow: hidden;
+        top: 1.2rem;
+        bottom: 1.2rem;
+        left: 1.2rem;
+      }
+
+      blockquote { background: #eee; }
+      aside { background: springgreen; }
+      aside::after { color: teal; }
+      pre { background: blueviolet; color: white; }
+
+      pre { font: inherit; }
+      pre::before, pre::after { color: violet; }
+      pre::before { content: "```\A"; }
+      pre::after { content: "\A```"; }
+
+      pre code::before, pre code::after,
+      pre em::before, pre em::after {
+        content: none;
+      }
+
+      pre em { font-style: normal; font-weight: bold; color: orange; }
+    </style>
+  </head>
+  <body>
+    <h1>Introducing React Markings</h1>
+
+    <aside>
+      This article is best enjoyed while listening to:
+      <br/>
+      <a href="https://www.youtube.com/watch?v=mPRy1B4t5YA" target="_blank">"Boys" – Charli XCX</a>
+    </aside>
+
+    <p>
+      Markdown is great for writing, but it's not very extensible. If you want
+      something more than lists, code blocks, or block quotes, you're shit out
+      of luck.
+    </p>
+
+    <p>
+      On the other hand, React is great for building out really complex
+      components that do whatever you need.
+    </p>
+
+    <p>
+      So what if the two were to meet?
+    </p>
+
+    <p>
+      Well now they do! (thank god or that would have been anti-climatic)
+    </p>
+
+    <p>
+      Check it:
+    </p>
+
+    <pre><code><em>import md from 'react-markings';</em>
+
+const content = <em>md`
+  # Look mom, markdown!
+
+  ${&lt;div&gt;Oh shit, waddup&lt;/div&gt;}
+
+  - *dope*
+  - _shit_
+  - ~~everyday~~
+
+  ${&lt;Mic drop/&gt;}
+`</em>;</code></pre>
+
+    <p>
+      That's right, I heard you like React and Markdown, so I put React in your
+      Markdown, and your Markdown in React, so you can Markdown when you React,
+      and React when you Markdown.
+    </p>
+
+    <p>
+      The <code>md</code> tag will return real React elements using
+      <a href="https://github.com/commonmark/commonmark.js">commonmark.js</a> and
+      <a href="https://github.com/rexxars/commonmark-react-renderer">commonmark-react-renderer</a>.
+    </p>
+
+    <p>
+      You can interpolate your own React elements in any "block" position
+      (places where you can put paragraphs).
+    </p>
+
+    <p>
+      Cool, so install this shit:
+    </p>
+
+    <pre><code>yarn add react-markings</code></pre>
+
+    <p>
+      Also <a href="https://github.com/thinkmill/react-markings">give me a star</a>
+      and share with 3 friends in 10 minutes or a spooky ghost will haunt you.
+    </p>
+
+    <script src="block-sites.js"></script>
+  </body>
+</html>
