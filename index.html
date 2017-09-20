@@ -27,6 +27,13 @@
           padding-left: 0;
         }
 
+        li ul, li ol {
+          padding-left: 3ch;
+        }
+
+        li ol { list-style-type: lower-alpha; }
+        li li ol { list-style-type: lower-roman; }
+
         a {
           color: white;
           text-decoration: none;
@@ -114,6 +121,9 @@
           text-decoration: underline;
         }
 
+        li ol { list-style-type: lower-alpha; }
+        li li ol { list-style-type: lower-roman; }
+
         h2 {
           margin-bottom: 0;
         }
@@ -181,7 +191,12 @@
         I have worked at...
       </h2>
       <ol>
-        <li>Thinkmill - (April 2017 - Present)</li>
+        <li>
+          <span>Thinkmill - (April 2017 - Present)</span>
+          <ol>
+            <li>Atlassian - (April 2017 - Present) - Contractor</li>
+          </ol>
+        </li>
         <li>Facebook - (June 2016 - March 2017)</li>
         <li>CloudFlare - (September 2014 - June 2016)</li>
         <li>Pole Star Space Applications - (December 2013 - September 2014)</li>
@@ -317,6 +332,25 @@
         <li><a href="https://flow.org/">flow.org</a></li>
         <li><a href="https://yarnpkg.com/">yarnpkg.com</a></li>
         <li><a href="http://babeljs.io/">babeljs.io</a></li>
+      </ol>
+    </section>
+
+    <section id="working-on">
+      <h2>
+        <a class="ref" href="#code">#</a>
+        Things I'm working on...
+      </h2>
+      <ol>
+        <li><a href="https://atlaskit.atlassian.com/">atlaskit</a></li>
+        <li><a href="https://github.com/pyarn/pyarn">pyarn</a></li>
+        <li><a href="https://github.com/projector">projector</a></li>
+        <li>get-typed (private)</li>
+        <li>pyarn-changesets (private)</li>
+        <li>pyarn-land (private)</li>
+        <li>pyarn-doc (private)</li>
+        <li>exmplr (private)</li>
+        <li>jrvs (private)</li>
+        <li>semipack (private)</li>
       </ol>
     </section>
 
