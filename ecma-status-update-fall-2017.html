@@ -491,6 +491,47 @@ for (<em>let match of matches</em>) {
     </header>
 
     <header class="proposal">
+      <h3>Null Coalescing</h3>
+      <p>
+        <a href="https://github.com/gisenberg/proposal-null-coalescing">Stage 1 Proposal</a>
+        by Gabriel Isenberg
+      </p>
+    </header>
+
+    <p>
+      It's common in JavaScript to have an expression followed by a
+      <code>|| value</code> to provide a default.
+    </p>
+
+    <pre><code>let value = response.value <em>|| 42</em>;</code></pre>
+
+    <p>
+      However, using <code>||</code> means that any falsy value
+      <code>false/0/""</code> will get the default value. The safer alternative
+      to this would be to check against <code>null</code> and
+      <code>undefined</code> manually.
+    </p>
+
+    <pre><code>let value = <em>response.value == null</em> ? response.value : 42;</code></pre>
+
+    <p>
+      Using this proposal, you could simplify that to this syntax.
+    </p>
+
+    <pre><code>let value = response.value <em>?? 42</em>;</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      This proposal just made it from Stage 0 to Stage 1. It is very risky to
+      use at this point.
+    </p>
+
+    <p>
+      Babel is <a href="https://github.com/babel/proposals/issues/14">tracking this proposal</a>.
+    </p>
+
+    <header class="proposal">
       <h3>Binary AST</h3>
       <p>
         <a href="https://github.com/syg/ecmascript-binary-ast">Stage 1 Proposal</a>
