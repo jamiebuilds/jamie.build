@@ -1,0 +1,843 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Proposals Status Update: Fall 2017 - @thejameskyle</title>
+
+    <style media="screen">
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+        background: #06D6A0;
+      }
+
+      body {
+        max-width: 700px;
+        margin: 6em auto;
+        padding: 1.5em;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        -webkit-font-smoothing: antialiased;
+        background: #FCFCFC;
+        color: #333;
+      }
+
+      p, h1, h2, h3, h4, h5, h6, ul, ol, pre, img, aside {
+        line-height: 2.4rem;
+        margin-top: 2.4rem;
+        margin-bottom: 0;
+      }
+
+      h1, h2 { line-height: 4.8rem; }
+
+      h1 { font-size: 3.0rem; }
+      h2 { font-size: 2.6rem; }
+      h3 { font-size: 2.2rem; }
+      h4 { font-size: 2.0rem; }
+      h5 { font-size: 1.8rem; }
+      h6 { font-size: 1.6rem; }
+
+      a {
+        color: #EF476F;
+        font-weight: 500;
+      }
+
+      body h1 {
+        margin-top: 0;
+      }
+
+      .proposal {
+        margin: 2.4rem -2.4rem;
+        padding: 2.4rem;
+        background: #F6DD3B;
+      }
+
+      @media (min-width: 760px) {
+        .proposal {
+          margin-left: -4.8rem;
+          margin-right: 0;
+        }
+      }
+
+      .proposal h3 {
+        margin-top: 0;
+      }
+
+      .proposal h3 code {
+        background: transparent;
+        color: inherit;
+        padding: 0;
+      }
+
+      .proposal p {
+        margin-top: 0.6rem;
+      }
+
+      .proposal a {
+        color: #26547C;
+      }
+
+      pre, code {
+        background: #26547C;
+        color: white;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      }
+
+      code {
+        padding: 0.1em 0.2em;
+      }
+
+      pre {
+        padding: 2.4rem;
+        margin: 2.4rem -2.4rem;
+        overflow: auto;
+      }
+
+      pre code {
+        padding: 0;
+      }
+
+
+      pre code em {
+        font-style: normal;
+        color: #F6DD3B;
+      }
+
+      hr {
+        margin: 2.4rem -2.4rem;
+        border: none;
+        border-top: 7.2rem solid #06D6A0;
+      }
+
+      dialog {
+        position: fixed;
+        top: 2.4rem;
+        max-width: 700px;
+        width: auto;
+        border-color: red;
+        background: red;
+        color: white;
+        font-weight: 900;
+        font-size: 2.4rem;
+        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 2.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <dialog open>
+      This is a work in progress, please don't share it yet.
+    </dialog>
+
+    <h1>JavaScript Proposals Status Update: Fall 2017</h1>
+
+    <p>
+      I thought I might start doing quarterly updates on the status of
+      ECMAScript (the JavaScript standard) proposals.
+    </p>
+
+    <hr>
+
+    <h2>1. Regular Expressions are on fire</h2>
+
+    <p>
+      There are currently <strong>five</strong>(!!) active proposals to improve
+      regular expressions, all of which are currently at
+      <strong>Stage 3</strong>. There is also the new <code>matchAll</code> API
+      currently at <strong>Stage 1</strong>.
+    </p>
+
+    <p>
+    </p>
+
+    <header class="proposal">
+      <h3>RegExp Lookbehind Assertions</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-regexp-lookbehind">Stage 3 Proposal</a>
+        by Gorkem Yakin, Nozomu Katō, and Daniel Ehrenberg
+      </p>
+    </header>
+
+    <p>
+      One of the lesser used, but extremely powerful features of JavaScript's
+      regular expressions is "lookahead assertions". That is, the ability to
+      assert that a sequence of characters is followed by another sequence of
+      characters.
+    </p>
+
+    <p>
+      For example, if you want to match a number followed by a percentage sign,
+      you could write the regex:
+    </p>
+
+    <pre><code>/\d+<em>(?=%)</em>/.exec("123 or <em>456%</em>") // ["456"]</code></pre>
+
+    <p>
+      Alternatively, if you want to match a number that is <em>not</em> followed
+      by a percentage sign, you could write:
+    </p>
+
+    <pre><code>/\d+<em>(?!%)</em>/.exec("<em>123</em> or 456%") // ["123"]</code></pre>
+
+    <p>
+      However, (until this proposal is standardized) we don't have a way to do
+      the inverse operations, "lookbehind assertions". Or rather, to match a
+      sequence of characters that is lead by another sequence of characters.
+    </p>
+
+    <p>
+      This proposal adds the syntaxes <code>(?&lt;=...)</code> and
+      <code>(?&lt;!...)</code> to regular expressions. So if you wanted to
+      match a number lead by a dollar sign, you could write the regex:
+    </p>
+
+    <pre><code>/<em>(?&lt;=\$)</em>\d+/.exec("123 or <em>$456</em>") // ["456"]</code></pre>
+
+    <p>
+      And if you wanted to match any number not lead by a dollar sign you could
+      write:
+    </p>
+
+    <pre><code>/<em>(?&lt;!\$)</em>\d+/.exec("<em>123</em> or $456") // ["123"]</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      There are currently no issues raised with this proposal and it is
+      expected to move forward to Stage 4 pending engine implementations.
+    </p>
+
+    <p>
+      Due to the difficulty involved in compiling lookbehind assertions into
+      something that works today, there is no Babel plugin to enable this
+      feature at this time.
+    </p>
+
+    <header class="proposal">
+      <h3>RegExp Unicode Property Escapes</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-regexp-unicode-property-escapes">Stage 3 Proposal</a>
+        by Mathias Bynens, Brian Terlson, and Daniel Ehrenberg
+      </p>
+    </header>
+
+    <p>
+      If you wanted to write a regular expression that matches every Greek
+      character, you'd have a tough time. Your only option would be to get a
+      list of them all and specify every single one of them manually.
+    </p>
+
+    <pre><code>/[\u0370-\u0373\u0375-\u0377\u037A-\u037D\u037F\u0384\u0386.../</code></pre>
+
+    <p>
+      You'd also have to keep track of when the Unicode standard updates,
+      because you'll need to keep this list up to date. Unless your name is
+      Mathias Bynens, you're probably not going to do that.
+    </p>
+
+    <p>
+      Instead, with this proposal, you can specify a character set using the
+      properties that the Unicode standard provides. Using the syntax:
+    </p>
+
+    <pre><code>/<em>\p{UnicodePropertyName=UnicodePropertyValue}</em>/<em>u</em></code></pre>
+
+    <ol>
+      <li><code>/u</code> unicode regex flag</li>
+      <li><code>\p{...}</code> unicode property escapes</li>
+    </ol>
+
+    <p>
+      So if you want to match any greek character:
+    </p>
+
+    <pre><code>/\p{<em>Script=Greek</em>}/u.test('<em>π</em>'); // true</code></pre>
+
+    <p>
+      There's all sorts of properties you can use, from
+      <code>\p{White_Space}</code> to <code>\p{Emoji}</code>, you can see a
+      list of them in the
+      <a href="https://github.com/tc39/proposal-regexp-unicode-property-escapes#high-level-api">proposal</a>.
+    </p>
+
+    <h4>Status</h4>
+
+    <p>
+      There are currently no major issues raised with this proposal and it is
+      expected to move forward to Stage 4 pending engine implementations.
+    </p>
+
+    <p>
+      The <a href="https://github.com/tc39/proposal-regexp-unicode-property-escapes#motivation">proposal includes two methods</a>
+      that you might use in order to work with unicode properties today. At this
+      time there is no Babel plugin implementing this feature.
+    </p>
+
+    <header class="proposal">
+      <h3>RegExp named capture groups</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-regexp-named-groups">Stage 3 Proposal</a>
+        by Daniel Ehrenberg and Brian Terlson
+      </p>
+    </header>
+
+    <p>
+      Imagine you have this regex for matching a date:
+    </p>
+
+    <pre><code>/<em>(\d{4})</em>-<em>(\d{2})</em>-<em>(\d{2})</em>/.exec('2017-12-01');
+// result = ['2017-12-01', <em>'2017'</em>, <em>'12'</em>, <em>'01'</em>]</code></pre>
+
+    <p>
+      Each <code>(capture)</code> group is assigned to an index in the returned
+      array. The problem with this is that if you change your regex, these
+      indexes can also change, and you'll have to keep your code in sync.
+    </p>
+
+    <p>
+      Instead, if you could use the new named capture group proposal. You can
+      write the regex like this:
+    </p>
+
+    <pre><code>/(<em>?&lt;year></em>\d{4})-(<em>?&lt;month></em>\d{2})-(<em>?&lt;day></em>\d{2})/u.exec('2017-12-01');
+// result = [...]
+// result.groups = { year: <em>'2017'</em>, month: <em>'12'</em>, day: <em>'01'</em> }]</code></pre>
+
+    <p>
+      Getting back named properties is much easier to use and maintain.
+    </p>
+
+    <p>
+      These named properties can then be used in replacement targets.
+    </p>
+
+    <pre><code>'2017-12-01'.replace(dateRegex, '<em>$&lt;day></em>/<em>$&lt;month></em>/<em>$&lt;year></em>');
+// result = '01/12/2017'</code></pre>
+
+    <p>
+      You can even back reference named properties in your regex.
+    </p>
+
+    <pre><code>let duplicate = /^<em>(?&lt;half>.*)</em>.<em>\k&lt;half></em>$/u;
+duplicate.test('a*b'); // false
+duplicate.test('a*a'); // true</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      There are currently no major issues raised with this proposal and it is
+      expected to move forward to Stage 4 pending engine implementations.
+    </p>
+
+    <p>
+      You can enable this feature today using the
+      <a href="https://github.com/DmitrySoshnikov/babel-plugin-transform-modern-regexp/">transform-modern-regexp</a>
+      Babel plugin by Dmitry Soshnikov.
+    </p>
+
+    <header class="proposal">
+      <h3><code>s</code> (dotAll) flag for regular expressions</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-regexp-dotall-flag">Stage 3 Proposal</a>
+        by Mathias Bynens and Brian Terlson
+      </p>
+    </header>
+
+    <p>
+      In regular expressions, a <code>.</code> matches a single character,
+      regardless of what character it is. But in JavaScript, there are some
+      <a href="https://github.com/tc39/proposal-regexp-dotall-flag#motivation">weird edge cases</a>
+      with newlines.
+    </p>
+
+    <p>
+      This proposal adds a new "dot all" <code>s</code> flag to fix the problem.
+    </p>
+
+    <pre><code>/foo<em>.</em>bar/<em>s</em>.test('foo<em>\n</em>bar'); // <em>true</em></code></pre>
+
+    <h3>Status</h3>
+
+    <p>
+      There are currently no major issues raised with this proposal and it is
+      expected to move forward to Stage 4 pending engine implementations.
+    </p>
+
+    <p>
+      You can enable this feature today using the
+      <a href="https://github.com/DmitrySoshnikov/babel-plugin-transform-modern-regexp/#dotall-s-flag">transform-modern-regexp</a>
+      Babel plugin by Dmitry Soshnikov.
+    </p>
+
+    <header class="proposal">
+      <h3>Legacy RegExp features in JavaScript</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-regexp-legacy-features">Stage 3 Proposal</a>
+        by Mark Miller and Claude Pache
+      </p>
+    </header>
+
+    <p>
+      This proposal specifies the behavior of "deprecated" JavaScript RegExp
+      APIs:
+    </p>
+
+    <ul>
+      <li>Static properties <code>RegExp.$1</code></li>
+      <li><code>RegExp.prototype.compile</code></li>
+    </ul>
+
+    <p>
+      These features already exist in implementations (with inconsistencies),
+      this proposal formalizes the "least bad thing" they should do to maintain
+      web compatibility.
+    </p>
+
+    <header class="proposal">
+      <h3><code>String#matchAll</code></h3>
+      <p>
+        <a href="https://github.com/tc39/String.prototype.matchAll">Stage 1 Proposal</a>
+        by Jordan Harband
+      </p>
+    </header>
+
+    <p>
+      If you call <code>String#match()</code> with a global <code>g</code>
+      regex with multiple capturing groups like:
+    </p>
+
+    <pre><code>'1+2 3+4'.match(/(\d+)\+(\d+)/)
+// ['1+2', '3+4']</code></pre>
+
+    <p>
+      You'll get an array with the matches back. However, these matches don't
+      include the capture groups. In fact, it's
+      <a href="https://github.com/tc39/proposal-string-matchall#rationale">really annoying</a>
+      to get all the capture groups back.
+    </p>
+
+    <p>
+      Instead, the proposed <code>String#matchAll</code> API would return an
+      iterator of the matches like:
+    </p>
+
+    <pre><code>let matches = '1+2 3+4'.<em>matchAll</em>(/(\d+)\+(\d+)/);
+
+for (<em>let match of matches</em>) {
+  // 1. match = <em>['1+2', '1', '2']</em>
+  // 2. match = <em>['3+4', '3', '4']</em>
+}</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      There's a lot <a href="https://github.com/tc39/proposal-string-matchall/issues/21">still to be done</a>
+      with this proposal to get it to Stage 4, it's promising, but use at your
+      own risk. There is a <a href="https://www.npmjs.com/package/string.prototype.matchall">shim/polyfill available on npm</a>
+      by Jordan Harband.
+    </p>
+
+    <hr>
+
+    <h2>2. Lots of awesome new features for classes</h2>
+
+    <p>
+      There are several proposals that are
+    </p>
+
+    <header class="proposal">
+      <h3>Class Fields</h3>
+      <p>
+        <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 3 Proposal</a>
+        by Daniel Ehrenberg and Jeff Morrison
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Class and Property Decorators</h3>
+      <p>
+        <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 2 Proposal</a>
+        by Yehuda Katz, Brian Terlson, and Daniel Ehrenberg
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Private methods and accessors</h3>
+      <p>
+        <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 2 Proposal</a>
+        by Daniel Ehrenberg and Kevin Gibbons
+      </p>
+    </header>
+
+    <hr>
+
+    <h2>3. New hot stage 1 proposals</h2>
+
+    <header class="proposal">
+      <h3>Optional Chaining</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-optional-chaining">Stage 1 Proposal</a>
+        by Gabriel Isenberg
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Binary AST</h3>
+      <p>
+        <a href="https://github.com/syg/ecmascript-binary-ast">Stage 1 Proposal</a>
+        by Shu-yu Guo
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Temporal</h3>
+      <p>
+        <a href="https://github.com/maggiepint/proposal-temporal">Stage 1 Proposal</a>
+        by Maggie Pint and Brian Terlson
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>First-Class Protocols</h3>
+      <p>
+        <a href="https://github.com/michaelficarra/proposal-first-class-protocols">Stage 1 Proposal</a>
+        by Michael Ficarra
+      </p>
+    </header>
+
+    <hr>
+
+    <h2>4. Syntax proposals at stage 3</h2>
+
+    <header class="proposal">
+      <h3>BigInt</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-bigint">Stage 3 Proposal</a>
+        by Daniel Ehrenberg
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Rest/Spread Properties</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-object-rest-spread">Stage 3 Proposal</a>
+        by Sebastian Markbage
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Asynchronous Iteration</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-async-iteration">Stage 3 Proposal</a>
+        by Domenic Denicola
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>import()</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-dynamic-import">Stage 3 Proposal</a>
+        by Domenic Denicola
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Optional catch binding</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-optional-catch-binding">Stage 3 Proposal</a>
+        by Michael Ficarra
+      </p>
+    </header>
+
+
+    <hr>
+
+    <h3>5. API proposals at Stage 3</h3>
+
+
+
+
+
+    <hr>
+
+    <header class="proposal">
+      <h3><code>function.sent</code> metaproperty</h3>
+      <p>
+        <a href="https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md">Stage 2 Proposal</a>
+        by Allen Wirfs-Brock
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>import.meta</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-import-meta">Stage 2 Proposal</a>
+        by Domenic Denicola
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Numeric separators</h3>
+      <p>
+        <a href="https://github.com/samuelgoto/proposal-numeric-separator">Stage 2 Proposal</a>
+        by Sam Goto and Rick Waldron
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Throw expressions</h3>
+      <p>
+        <a href="https://github.com/rbuckton/proposal-throw-expressions">Stage 2 Proposal</a>
+        by Rob Buckton
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>export v from "mod";</code> statements</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-export-default-from">Stage 1 Proposal</a>
+        by Ben Newman and John-David Dalton
+      </p>
+    </header>
+
+
+
+    <header class="proposal">
+      <h3>Generator arrow functions (<code>=>*</code>)</h3>
+      <p>
+        <span>Stage 1 Proposal</span>
+        by Brendan Eich and Domenic Denicola
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>do</code> expressions</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-do-expressions">Stage 1 Proposal</a>
+        by Dave Herman
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Pipeline Operator</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-pipeline-operator">Stage 1 Proposal</a>
+        by Daniel Ehrenberg
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Extensible numeric literals</h3>
+      <p>
+        <a href="https://github.com/littledan/proposal-extensible-numeric-literals">Stage 1 Proposal</a>
+        by Daniel Ehrenberg
+      </p>
+    </header>
+
+
+
+
+    <header class="proposal">
+      <h3><code>Intl.Segmenter</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-intl-segmenter">Stage 2 Proposal</a>
+        by Daniel Ehrenberg
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>Intl.RelativeTimeFormat</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-intl-relative-time">Stage 2 Proposal</a>
+        by Zibi Braniecki and Daniel Ehrenberg
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>Function.prototype.toString</code> revision</h3>
+      <p>
+        <a href="https://github.com/tc39/Function-prototype-toString-revision">Stage 3 Proposal</a>
+        by Michael Ficarra
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>Promise.prototype.finally</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-promise-finally">Stage 3 Proposal</a>
+        by Jordan Harband
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>Promise.try</code></h3>
+      <p>
+        <a href="https://github.com/ljharb/proposal-promise-try">Stage 1 Proposal</a>
+        by Jordan Harband
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>global</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-global">Stage 3 Proposal</a>
+        by Jordan Harband
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>String.prototype.{trimStart,trimEnd}</code></h3>
+      <p>
+        <a href="https://github.com/sebmarkbage/ecmascript-string-left-right-trim">Stage 2 Proposal</a>
+        by Sebastian Markbage
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>Array.prototype.flat{Map,ten}</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-flatMap">Stage 2 Proposal</a>
+        by Brian Terlson and Michael Ficarra
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>Date.parse</code> fallback semantics</h3>
+      <p>
+        <a href="https://github.com/mrrrgn/proposal-date-time-string-format">Stage 1 Proposal</a>
+        by Morgan Phillips
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Math Extensions</h3>
+      <p>
+        <a href="https://github.com/rwaldron/proposal-math-extensions">Stage 1 Proposal</a>
+        by Rick Waldron
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>of</code> and <code>from</code> on collection constructors</h3>
+      <p>
+        <a href="https://github.com/leobalter/proposal-setmap-offrom">Stage 1 Proposal</a>
+        by Leo Balter
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>Math.signbit</code>: IEEE-754 sign bit</h3>
+      <p>
+        <a href="http://jfbastien.github.io/papers/Math.signbit.html">Stage 1 Proposal</a>
+        by JF Bastien
+      </p>
+    </header>
+
+
+
+    <header class="proposal">
+      <h3>Float16 on TypedArrays, DataView, Math.hfround</h3>
+      <p>
+        <a href="https://docs.google.com/presentation/d/1Ta_IbravBUOvu7LUhlN49SvLU-8G8bIQnsS08P3Z4vY/edit?usp=sharing">Stage 1 Proposal</a>
+        by Leo Balter
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Atomics.waitNonblocking</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-atomics-wait-async">Stage 2 Proposal</a>
+        by Shu-yu Guo and Lars Hansen
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>Symbol.prototype.description</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-Symbol-description">Stage 1 Proposal</a>
+        by Michael Ficarra
+      </p>
+    </header>
+
+
+
+    <header class="proposal">
+      <h3>Error stacks</h3>
+      <p>
+        <a href="https://github.com/ljharb/proposal-error-stacks">Stage 1 Proposal</a>
+        by Jordan Harband
+      </p>
+    </header>
+
+
+
+    <header class="proposal">
+      <h3>Observable</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-observable">Stage 1 Proposal</a>
+        by Jafar Husain and Mark Miller
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>WeakRefs</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-weakrefs">Stage 1 Proposal</a>
+        by Dean Tribble
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Realms</h3>
+      <p>
+        <a href="https://github.com/caridy/proposal-realms">Stage 1 Proposal</a>
+        by Dave Herman, Mark Miller, and Caridy Patiño
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Frozen Realms</h3>
+      <p>
+        <a href="https://github.com/FUDCo/frozen-realms">Stage 1 Proposal</a>
+        by Mark S. Miller, Chip Morningstar, and Caridy Patiño
+      </p>
+    </header>
+
+
+
+
+
+
+
+
+
+    <h2>Editorial</h2>
+
+    <header class="proposal">
+      <h3>Change <code>Number.parse{Int,Float}</code> to not coerce <code>null/undefined/NaN</code></h3>
+      <p>
+        <span>Stage 1 Proposal</span>
+        by Brendan Eich
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>JSON superset</h3>
+      <p>
+        <a href="https://github.com/gibson042/ecma262-proposal-json-superset">Stage 1 Proposal</a>
+        by Mark Miller, Richard Gibson, and Mathias Bynens
+      </p>
+    </header>
+
+    <script src="block-sites.js"></script>
+  </body>
+</html>
