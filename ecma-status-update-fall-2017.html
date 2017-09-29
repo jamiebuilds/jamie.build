@@ -54,6 +54,13 @@
         margin-top: 0;
       }
 
+      h2 {
+        background: #EF476F;
+        color: #FCFCFC;
+        padding: 2.4rem;
+        margin: -2.4rem -2.4rem 2.4rem;
+      }
+
       .proposal {
         margin: 2.4rem -2.4rem;
         padding: 2.4rem;
@@ -405,7 +412,7 @@ duplicate.test('a*a'); // true</code></pre>
     <header class="proposal">
       <h3><code>String#matchAll</code></h3>
       <p>
-        <a href="https://github.com/tc39/String.prototype.matchAll">Stage 1 Proposal</a>
+        <a href="https://github.com/tc39/String.prototype.matchAll">Stage 2 Proposal</a>
         by Jordan Harband
       </p>
     </header>
@@ -441,8 +448,8 @@ for (<em>let match of matches</em>) {
 
     <p>
       There's a lot <a href="https://github.com/tc39/proposal-string-matchall/issues/21">still to be done</a>
-      with this proposal to get it to Stage 4, it's promising, but use at your
-      own risk. There is a <a href="https://www.npmjs.com/package/string.prototype.matchall">shim/polyfill available on npm</a>
+      with this proposal to get it to Stage 4, but at Stage 2 it is promising.
+      There is a <a href="https://www.npmjs.com/package/string.prototype.matchall">shim/polyfill available on npm</a>
       by Jordan Harband.
     </p>
 
@@ -473,14 +480,120 @@ for (<em>let match of matches</em>) {
     <header class="proposal">
       <h3>Private methods and accessors</h3>
       <p>
-        <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 2 Proposal</a>
+        <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 3 Proposal</a>
         by Daniel Ehrenberg and Kevin Gibbons
       </p>
     </header>
 
     <hr>
 
-    <h2>3. New hot stage 1 proposals</h2>
+    <h2>3. Intl additions</h2>
+
+    <header class="proposal">
+      <h3><code>Intl.PluralRules</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-intl-formatToParts">Stage 4 Proposal</a>
+        by Caridy Patiño, Eric Ferraiuolo, and Alex Sexton
+      </p>
+    </header>
+
+    <p>
+      Pluralization can be difficult to get right, there are many different
+      rules in different languages.
+    </p>
+
+    <p>
+      This proposal adds an API for getting a pluralization "category" for a
+      number in a specified language.
+    </p>
+
+    <pre><code>let pluralization = new Intl.PluralRules('en', {
+  style: 'cardinal',
+});
+
+pluralization.select(0); // 'other'
+pluralization.select(1); // 'one'
+pluralization.select(2); // 'other'</code></pre>
+
+    <p>
+      You can then use this category to correctly pluralize your translations.
+    </p>
+
+    <h4>Status</h4>
+
+    <p>
+      As of the September 2017 meeting, this proposal moved to Stage 4 and is
+      ready to be included in the next edition of the ECMAScript.
+    </p>
+
+    <header class="proposal">
+      <h3><code>Intl.{DateTime,Number}Format#formatToParts</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-intl-formatToParts">Stage 4 Proposal</a>
+        by Zibi Braniecki and Daniel Ehrenberg
+      </p>
+    </header>
+
+    <p>
+      Using the <code>Intl</code> formatting APIs you can do things like
+      formatting dates to a particular locale.
+    </p>
+
+    <pre><code>let dateFormatter = Intl.DateTimeFormat('en', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+
+console.log(<em>dateFormatter.format(new Date())</em>);
+// <em>"September 29, 2017"</em></code></pre>
+
+  <p>
+    But if you wanted to do something like make the month bold, there's no
+    supported way to do that until this proposal.
+  </p>
+
+  <pre><code>let dateFormatter = Intl.DateTimeFormat('en', {...});
+let dateFormatParts = <em>dateFormatter.formatToParts(new Date())</em>;
+
+let dateStr = dateFormatParts.map(part => {
+  if (<em>part.type === 'month'</em>) {
+    return `&lt;b>${part.value}&lt;/b>`;
+  } else {
+    return part.value;
+  }
+}).join('');
+
+console.log(dateStr);
+// <em>"&lt;b>September&lt;/b> 29, 2017"</em></code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      As of the September 2017 meeting, this proposal moved to Stage 4 and is
+      ready to be included in the next edition of the ECMAScript. It is
+      implemented in SpiderMonkey and Chrome Canary.
+    </p>
+
+    <header class="proposal">
+      <h3><code>Intl.Segmenter</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-intl-segmenter">Stage 3 Proposal</a>
+        by Daniel Ehrenberg
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3><code>Intl.RelativeTimeFormat</code></h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-intl-relative-time">Stage 3 Proposal</a>
+        by Zibi Braniecki and Daniel Ehrenberg
+      </p>
+    </header>
+
+    <hr>
+
+    <h2>4. Hot/New stage 1 proposals</h2>
 
     <header class="proposal">
       <h3>Optional Chaining</h3>
@@ -489,6 +602,56 @@ for (<em>let match of matches</em>) {
         by Gabriel Isenberg
       </p>
     </header>
+
+    <p>
+      When looking for a deeply nested property in an object, you often need to
+      check if parent properties exist.
+    </p>
+
+    <pre><code>let street = <em>user.address &amp;&amp; user.address.street</em>;</code></pre>
+
+    <p>
+      And lots of APIs will either return an object or null/undefined, and to
+      get a property you need to check that it is defined.
+    </p>
+
+    <pre><code>let fooInput = myForm.querySelector('input[name=foo]');
+let fooValue = <em>fooInput ? fooInput.value : undefined</em>;</code></pre>
+
+    <p>
+      This proposal adds a new operator which allows you to handle these cases
+      much easier:
+    </p>
+
+    <pre><code>let street = user.address<em>?.</em>street;
+let fooValue = myForm.querySelector('input[name=foo]')<em>?.</em>value;</code></pre>
+
+    <p>
+      There's even a form that helps you when calling methods that are only
+      sometimes defined.
+    </p>
+
+    <pre><code>iterator.return<em>?.()</em> // manually close an iterator</code></pre>
+
+    <pre><code>// skip the test in older web browsers
+if (myForm.checkValidity<em>?.()</em> === false) {
+  // form validation fails
+  return;
+}</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      At Stage 1, this proposal still has a lot of details to work out, and
+      very well may change drastically or not make it into the standard at all.
+      In July it was presented to TC39, seeking Stage 2, and did not reach
+      consensus to move forward. So use at your own risk.
+    </p>
+
+    <p>
+      There is a <a href="https://yarnpkg.com/en/package/babel-plugin-transform-optional-chaining">Babel 7 plugin</a>
+      to try this feature out today if you are using Babel 7 (which is in beta).
+    </p>
 
     <header class="proposal">
       <h3>Null Coalescing</h3>
@@ -532,6 +695,22 @@ for (<em>let match of matches</em>) {
     </p>
 
     <header class="proposal">
+      <h3>Pipeline Operator</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-pipeline-operator">Stage 1 Proposal</a>
+        by Daniel Ehrenberg
+      </p>
+    </header>
+
+    <header class="proposal">
+      <h3>Partial Application Syntax</h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-import-meta">Stage 1 Proposal</a>
+        by Ron Buckton
+      </p>
+    </header>
+
+    <header class="proposal">
       <h3>Binary AST</h3>
       <p>
         <a href="https://github.com/syg/ecmascript-binary-ast">Stage 1 Proposal</a>
@@ -539,13 +718,7 @@ for (<em>let match of matches</em>) {
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Temporal</h3>
-      <p>
-        <a href="https://github.com/maggiepint/proposal-temporal">Stage 1 Proposal</a>
-        by Maggie Pint and Brian Terlson
-      </p>
-    </header>
+
 
     <header class="proposal">
       <h3>First-Class Protocols</h3>
@@ -602,7 +775,7 @@ for (<em>let match of matches</em>) {
 
     <hr>
 
-    <h3>5. API proposals at Stage 3</h3>
+    <h2>5. API proposals at Stage 3</h2>
 
 
 
@@ -611,18 +784,18 @@ for (<em>let match of matches</em>) {
     <hr>
 
     <header class="proposal">
-      <h3><code>function.sent</code> metaproperty</h3>
+      <h3><code>import.meta</code></h3>
       <p>
-        <a href="https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md">Stage 2 Proposal</a>
-        by Allen Wirfs-Brock
+        <a href="https://github.com/tc39/proposal-import-meta">Stage 3 Proposal</a>
+        by Domenic Denicola
       </p>
     </header>
 
     <header class="proposal">
-      <h3><code>import.meta</code></h3>
+      <h3><code>function.sent</code></h3>
       <p>
-        <a href="https://github.com/tc39/proposal-import-meta">Stage 2 Proposal</a>
-        by Domenic Denicola
+        <a href="https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md">Stage 2 Proposal</a>
+        by Allen Wirfs-Brock
       </p>
     </header>
 
@@ -643,7 +816,7 @@ for (<em>let match of matches</em>) {
     </header>
 
     <header class="proposal">
-      <h3><code>export v from "mod";</code> statements</h3>
+      <h3>Export Extensions</h3>
       <p>
         <a href="https://github.com/tc39/proposal-export-default-from">Stage 1 Proposal</a>
         by Ben Newman and John-David Dalton
@@ -651,6 +824,7 @@ for (<em>let match of matches</em>) {
     </header>
 
 
+    <hr>
 
     <header class="proposal">
       <h3>Generator arrow functions (<code>=>*</code>)</h3>
@@ -669,14 +843,6 @@ for (<em>let match of matches</em>) {
     </header>
 
     <header class="proposal">
-      <h3>Pipeline Operator</h3>
-      <p>
-        <a href="https://github.com/tc39/proposal-pipeline-operator">Stage 1 Proposal</a>
-        by Daniel Ehrenberg
-      </p>
-    </header>
-
-    <header class="proposal">
       <h3>Extensible numeric literals</h3>
       <p>
         <a href="https://github.com/littledan/proposal-extensible-numeric-literals">Stage 1 Proposal</a>
@@ -685,31 +851,9 @@ for (<em>let match of matches</em>) {
     </header>
 
 
+    <hr>
 
 
-    <header class="proposal">
-      <h3><code>Intl.Segmenter</code></h3>
-      <p>
-        <a href="https://github.com/tc39/proposal-intl-segmenter">Stage 2 Proposal</a>
-        by Daniel Ehrenberg
-      </p>
-    </header>
-
-    <header class="proposal">
-      <h3><code>Intl.RelativeTimeFormat</code></h3>
-      <p>
-        <a href="https://github.com/tc39/proposal-intl-relative-time">Stage 2 Proposal</a>
-        by Zibi Braniecki and Daniel Ehrenberg
-      </p>
-    </header>
-
-    <header class="proposal">
-      <h3><code>Function.prototype.toString</code> revision</h3>
-      <p>
-        <a href="https://github.com/tc39/Function-prototype-toString-revision">Stage 3 Proposal</a>
-        by Michael Ficarra
-      </p>
-    </header>
 
     <header class="proposal">
       <h3><code>Promise.prototype.finally</code></h3>
@@ -860,8 +1004,17 @@ for (<em>let match of matches</em>) {
 
 
 
+    <hr>
 
     <h2>Editorial</h2>
+
+    <header class="proposal">
+      <h3><code>Function.prototype.toString</code> revision</h3>
+      <p>
+        <a href="https://github.com/tc39/Function-prototype-toString-revision">Stage 3 Proposal</a>
+        by Michael Ficarra
+      </p>
+    </header>
 
     <header class="proposal">
       <h3>Change <code>Number.parse{Int,Float}</code> to not coerce <code>null/undefined/NaN</code></h3>
