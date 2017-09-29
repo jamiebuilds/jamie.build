@@ -61,6 +61,16 @@
         margin: -2.4rem -2.4rem 2.4rem;
       }
 
+      a[href^="#"] {
+        color: inherit !important;
+        font-weight: inherit !important;
+        text-decoration: none;
+      }
+
+      a[href^="#"]:hover::after {
+        content: "#";
+      }
+
       .proposal {
         margin: 2.4rem -2.4rem;
         padding: 2.4rem;
@@ -93,23 +103,29 @@
       }
 
       pre, code {
-        background: #26547C;
-        color: white;
         font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-size: 0.9em;
       }
 
       code {
-        padding: 0.1em 0.2em;
+        padding: 0.2em 0.4em;
+        background: #eee;
+        border-radius: 0.1em;
       }
 
       pre {
         padding: 2.4rem;
         margin: 2.4rem -2.4rem;
         overflow: auto;
+        background: #26547C;
+        color: white;
       }
 
       pre code {
         padding: 0;
+        background: transparent;
+        color: inherit;
+        font-size: 1em;
       }
 
 
@@ -154,7 +170,11 @@
 
     <hr>
 
-    <h2>1. Regular Expressions are on fire</h2>
+    <h2 id="regexps">
+      <a href="#regexps">
+        1. Regular Expressions are on fire
+      </a>
+    </h2>
 
     <p>
       There are currently <strong>five</strong>(!!) active proposals to improve
@@ -166,8 +186,12 @@
     <p>
     </p>
 
-    <header class="proposal">
-      <h3>RegExp Lookbehind Assertions</h3>
+    <header class="proposal" id="regexp-lookbehind-assertions">
+      <h3>
+        <a href="#regexp-lookbehind-assertions">
+          RegExp Lookbehind Assertions
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-regexp-lookbehind">Stage 3 Proposal</a>
         by Gorkem Yakin, Nozomu Katō, and Daniel Ehrenberg
@@ -229,8 +253,12 @@
       feature at this time.
     </p>
 
-    <header class="proposal">
-      <h3>RegExp Unicode Property Escapes</h3>
+    <header class="proposal" id="regexp-unicode-property-escapes">
+      <h3>
+        <a href="#regexp-unicode-property-escapes">
+          RegExp Unicode Property Escapes
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-regexp-unicode-property-escapes">Stage 3 Proposal</a>
         by Mathias Bynens, Brian Terlson, and Daniel Ehrenberg
@@ -289,8 +317,12 @@
       time there is no Babel plugin implementing this feature.
     </p>
 
-    <header class="proposal">
-      <h3>RegExp named capture groups</h3>
+    <header class="proposal" id="regexp-named-capture-groups">
+      <h3>
+        <a href="#regexp-named-capture-groups">
+          RegExp named capture groups
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-regexp-named-groups">Stage 3 Proposal</a>
         by Daniel Ehrenberg and Brian Terlson
@@ -351,8 +383,12 @@ duplicate.test('a*a'); // true</code></pre>
       Babel plugin by Dmitry Soshnikov.
     </p>
 
-    <header class="proposal">
-      <h3><code>s</code> (dotAll) flag for regular expressions</h3>
+    <header class="proposal" id="regexp-dotall-flag">
+      <h3>
+        <a href="#regexp-dotall-flag">
+          <code>s</code> (dotAll) flag for regular expressions
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-regexp-dotall-flag">Stage 3 Proposal</a>
         by Mathias Bynens and Brian Terlson
@@ -385,8 +421,12 @@ duplicate.test('a*a'); // true</code></pre>
       Babel plugin by Dmitry Soshnikov.
     </p>
 
-    <header class="proposal">
-      <h3>Legacy RegExp features in JavaScript</h3>
+    <header class="proposal" id="regexp-legacy-features">
+      <h3>
+        <a href="#regexp-legacy-features">
+          Legacy RegExp features in JavaScript
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-regexp-legacy-features">Stage 3 Proposal</a>
         by Mark Miller and Claude Pache
@@ -409,8 +449,12 @@ duplicate.test('a*a'); // true</code></pre>
       web compatibility.
     </p>
 
-    <header class="proposal">
-      <h3><code>String#matchAll</code></h3>
+    <header class="proposal" id="string-matchall">
+      <h3>
+        <a href="#string-matchall">
+          <code>String#matchAll</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/String.prototype.matchAll">Stage 2 Proposal</a>
         by Jordan Harband
@@ -455,30 +499,44 @@ for (<em>let match of matches</em>) {
 
     <hr>
 
-    <h2>2. Lots of awesome new features for classes</h2>
+    <h2 id="classes">
+      2. Lots of awesome new features for classes
+    </h2>
 
     <p>
-      There are several proposals that are
+      There are several proposals that are ...
     </p>
 
-    <header class="proposal">
-      <h3>Class Fields</h3>
+    <header class="proposal" id="class-fields">
+      <h3>
+        <a href="#class-fields">
+          Class Fields
+        </a>
+      </h3>
       <p>
         <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 3 Proposal</a>
         by Daniel Ehrenberg and Jeff Morrison
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Class and Property Decorators</h3>
+    <header class="proposal" id="class-decorators">
+      <h3>
+        <a href="#class-decorators">
+          Class and Property Decorators
+        </a>
+      </h3>
       <p>
         <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 2 Proposal</a>
         by Yehuda Katz, Brian Terlson, and Daniel Ehrenberg
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Private methods and accessors</h3>
+    <header class="proposal" id="class-privates">
+      <h3>
+        <a href="#class-privates">
+          Private methods and accessors
+        </a>
+      </h3>
       <p>
         <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 3 Proposal</a>
         by Daniel Ehrenberg and Kevin Gibbons
@@ -487,10 +545,18 @@ for (<em>let match of matches</em>) {
 
     <hr>
 
-    <h2>3. Intl additions moving forward</h2>
+    <h2 id="intl">
+      <a href="#intl">
+        3. Intl additions moving forward
+      </a>
+    </h2>
 
-    <header class="proposal">
-      <h3><code>Intl.PluralRules</code></h3>
+    <header class="proposal" id="intl-plural-rules">
+      <h3>
+        <a href="#intl-plural-rules">
+          <code>Intl.PluralRules</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-intl-formatToParts">Stage 4 Proposal</a>
         by Caridy Patiño, Eric Ferraiuolo, and Alex Sexton
@@ -519,8 +585,12 @@ pluralization.select(2); // 'other'</code></pre>
       ready to be included in the next edition of the ECMAScript.
     </p>
 
-    <header class="proposal">
-      <h3><code>Intl.{DateTime,Number}Format#formatToParts</code></h3>
+    <header class="proposal" id="intl-format-to-parts">
+      <h3>
+        <a href="#intl-format-to-parts">
+          <code>Intl.{DateTime,Number}Format#formatToParts</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-intl-formatToParts">Stage 4 Proposal</a>
         by Zibi Braniecki and Daniel Ehrenberg
@@ -568,8 +638,12 @@ console.log(dateStr);
       implemented in SpiderMonkey and Chrome Canary.
     </p>
 
-    <header class="proposal">
-      <h3><code>Intl.Segmenter</code></h3>
+    <header class="proposal" id="intl-segmenter">
+      <h3>
+        <a href="#intl-segmenter">
+          <code>Intl.Segmenter</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-intl-segmenter">Stage 3 Proposal</a>
         by Daniel Ehrenberg
@@ -601,8 +675,12 @@ for (<em>let {index, breakType} of segmentIterator</em>) {
       meeting.
     </p>
 
-    <header class="proposal">
-      <h3><code>Intl.RelativeTimeFormat</code></h3>
+    <header class="proposal" id="intl-relative-time-format">
+      <h3>
+        <a href="#intl-relative-time-format">
+          <code>Intl.RelativeTimeFormat</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-intl-relative-time">Stage 3 Proposal</a>
         by Zibi Braniecki and Daniel Ehrenberg
@@ -638,10 +716,18 @@ for (<em>let {index, breakType} of segmentIterator</em>) {
 
     <hr>
 
-    <h2>4. Hot/New stage 1 proposals</h2>
+    <h2>
+      <a href="#stage-1">
+        4. New/Interesting stage 1 proposals
+      </a>
+    </h2>
 
-    <header class="proposal">
-      <h3>Optional Chaining</h3>
+    <header class="proposal" id="optional-chaining">
+      <h3>
+        <a href="#optional-chaining">
+          Optional Chaining
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-optional-chaining">Stage 1 Proposal</a>
         by Gabriel Isenberg
@@ -698,8 +784,12 @@ if (myForm.checkValidity<em>?.()</em> === false) {
       to try this feature out today if you are using Babel 7 (which is in beta).
     </p>
 
-    <header class="proposal">
-      <h3>Null Coalescing</h3>
+    <header class="proposal" id="null-coalescing">
+      <h3>
+        <a href="#null-coalescing">
+          Null Coalescing
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/gisenberg/proposal-null-coalescing">Stage 1 Proposal</a>
         by Gabriel Isenberg
@@ -739,34 +829,143 @@ if (myForm.checkValidity<em>?.()</em> === false) {
       Babel is <a href="https://github.com/babel/proposals/issues/14">tracking this proposal</a>.
     </p>
 
-    <header class="proposal">
-      <h3>Pipeline Operator</h3>
+    <header class="proposal" id="pipeline-operator">
+      <h3>
+        <a href="#pipeline-operator">
+          Pipeline Operator
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-pipeline-operator">Stage 1 Proposal</a>
         by Daniel Ehrenberg
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Partial Application Syntax</h3>
+    <p>
+      Composing functions can be tedious in JavaScript. Your choices are either
+      wrapping function calls with more functions calls, or creating temporary
+      variables to unravel them.
+    </p>
+
+    <pre><code>let result = <em>generate(transform(parse(tokenize(code))))</em>;</code></pre>
+
+    <pre><code>let tokens = <em>tokenize(code)</em>;
+let ast = <em>parse(code)</em>;
+let transformed = <em>transform(ast)</em>;
+let result = <em>generate(transformed)</em>;</code></pre>
+
+    <p>
+      Instead, with this proposal, you could use the pipeline operator to pass
+      the result of calling one function into the next.
+    </p>
+
+    <pre><code>let result = tokenize(code) <em>|></em> parse <em>|></em> transform <em>|></em> generate;</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      This proposal is currently at Stage 1 and is popular within the community.
+      However, there are a lot of questions about it's design that it will have
+      to answer in order to make it further in the standardization process.
+      Use this syntax at your own risk.
+    </p>
+
+    <p>
+      There are some questions about how this proposal relates to the
+      <a href="https://github.com/tc39/proposal-bind-operator">Bind Operator</a>
+      proposal which is solving overlapping problems. It is likely that only
+      one of the two will be accepted.
+    </p>
+
+    <p>
+      Babel is <a href="https://github.com/babel/proposals/issues/29">tracking this proposal</a>.
+      Babylon is able to parse the syntax, and there is a third-party transform
+      to enable it.
+    </p>
+
+    <header class="proposal" id="partial-application">
+      <h3>
+        <a href="#partial-application">
+          Partial Application Syntax
+        </a>
+      </h3>
       <p>
-        <a href="https://github.com/tc39/proposal-import-meta">Stage 1 Proposal</a>
+        <a href="https://github.com/rbuckton/proposal-partial-application">Stage 1 Proposal</a>
         by Ron Buckton
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Binary AST</h3>
+    <p>
+      One of the major limitations to the pipeline operator is how it is
+      designed around single argument functions. If you want to pass multiple
+      arguments you need to create additional functions.
+    </p>
+
+    <pre><code>let result = tokenize(code, tokenizeOpts)
+  |> <em>tokens =></em> parse(<em>tokens</em>, parseOpts)
+  |> <em>ast =></em> transform(<em>ast</em>, transformOpts)
+  |> <em>transformed =></em> generate(<em>transformed</em>, generateOpts);</code></pre>
+
+    <p>
+      If we instead had a way to do partial application, which this proposal
+      adds to the language, we could avoid having to create additional functions.
+    </p>
+
+  <pre><code>let result = tokenize(code, tokenizeOpts)
+  |> parse(<em>?</em>, parseOpts)
+  |> transform(<em>?</em>, transformOpts)
+  |> generate(<em>?</em>, generateOpts);</code></pre>
+
+    <p>
+      Also in this proposal is the ability to have a non-fixed number of
+      arguments placeholder.
+    </p>
+
+    <pre><code>const maxGreaterThanZero = Math.max(0, <em>...</em>);
+maxGreaterThanZero(1, 2); // 2
+maxGreaterThanZero(-1, -2); // 0</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      As of the September 2017 meeting, this proposal sits at Stage 1. But
+      there was some hesitation to even give it that because of concerns about
+      the syntax. It is likely that if this proposal moves forward it will do
+      so with a much different syntax.
+    </p>
+
+    <p>
+      The non-fixed "spread" placeholder seems to be particularly conversial as
+      it adds a lot of complexity to the writing and teaching of the spec. It
+      could also be easily confused with <code>...spreading</code> arguments
+      into a function.
+    </p>
+
+    <pre><code>fn(<em>...b</em>); // spread args, calls fn
+fn(<em>...</em>,b); // placeholder, does not call fn</code></pre>
+
+    <p>
+      Babel is not yet tracking this proposal.
+    </p>
+
+    <header class="proposal" id="binary-ast">
+      <h3>
+        <a href="#binary-ast">
+          Binary AST
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/syg/ecmascript-binary-ast">Stage 1 Proposal</a>
         by Shu-yu Guo
       </p>
     </header>
 
-
-
-    <header class="proposal">
-      <h3>First-Class Protocols</h3>
+    <header class="proposal" id="protocols">
+      <h3>
+        <a href="#protocols">
+          First-Class Protocols
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/michaelficarra/proposal-first-class-protocols">Stage 1 Proposal</a>
         by Michael Ficarra
@@ -775,42 +974,66 @@ if (myForm.checkValidity<em>?.()</em> === false) {
 
     <hr>
 
-    <h2>4. Syntax proposals at stage 3</h2>
+    <h2 id="stage-3-syntax">
+      <a href="#stage-3-syntax">
+        4. Syntax proposals at stage 3
+      </a>
+    </h2>
 
-    <header class="proposal">
-      <h3>BigInt</h3>
+    <header class="proposal" id="big-int">
+      <h3>
+        <a href="#big-int">
+          BigInt
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-bigint">Stage 3 Proposal</a>
         by Daniel Ehrenberg
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Rest/Spread Properties</h3>
+    <header class="proposal" id="rest-spread-properties">
+      <h3>
+        <a href="#rest-spread-properties">
+          Rest/Spread Properties
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-object-rest-spread">Stage 3 Proposal</a>
         by Sebastian Markbage
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Asynchronous Iteration</h3>
+    <header class="proposal" id="async-iteration">
+      <h3>
+        <a href="#async-iteration">
+          Asynchronous Iteration
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-async-iteration">Stage 3 Proposal</a>
         by Domenic Denicola
       </p>
     </header>
 
-    <header class="proposal">
-      <h3><code>import()</code></h3>
+    <header class="proposal" id="dynamic-import">
+      <h3>
+        <a href="#dynamic-import">
+          <code>import()</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-dynamic-import">Stage 3 Proposal</a>
         by Domenic Denicola
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Optional catch binding</h3>
+    <header class="proposal" id="optional-catch-binding">
+      <h3>
+        <a href="#optional-catch-binding">
+          Optional catch binding
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-optional-catch-binding">Stage 3 Proposal</a>
         by Michael Ficarra
@@ -820,48 +1043,127 @@ if (myForm.checkValidity<em>?.()</em> === false) {
 
     <hr>
 
-    <h2>5. API proposals at Stage 3</h2>
+    <h2>
+      <a href="#promises">
+        5. Promises
+      </a>
+    </h2>
 
+    <p>
+      If you're looking for more of the Bluebird/etc extensions to Promises,
+      Jordan Harband is your new best friend. He's been pushing through two
+      proposals to standardize some of the more popular extensions.
+    </p>
 
+    <header class="proposal" id="promise-finally">
+      <h3>
+        <a href="#promise-finally">
+          <code>Promise.prototype.finally</code>
+        </a>
+      </h3>
+      <p>
+        <a href="https://github.com/tc39/proposal-promise-finally">Stage 3 Proposal</a>
+        by Jordan Harband
+      </p>
+    </header>
 
+    <p>
+      If you want to add a step to a promise chain which responds whether or
+      not there was an error. You currently need to write it like this.
+    </p>
+
+    <pre><code><em>function respondAlways() { ... }</em>
+promise.then(<em>respondAlways</em>, <em>respondAlways</em>)</code></pre>
+
+    <p>
+      Even then you still have the problem that you are catching errors when
+      you probably don't want to. In effect, we have promise equivalents to
+      <code>try/catch</code> but not <code>finally</code>.
+    </p>
+
+    <p>
+      This proposal adds a <code>.finally</code> method that reflects the behavior of
+      <code>finally {}</code>.
+    </p>
+
+    <pre><code>promise<em>.finally(() => { ... })</em></code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      This proposal is currently at Stage 3 and is preparing to move to Stage 4
+      in a future meeting.
+    </p>
+
+    <header class="proposal" id="promise-try">
+      <h3>
+        <a href="#promise-try">
+          <code>Promise.try</code>
+        </a>
+      </h3>
+      <p>
+        <a href="https://github.com/ljharb/proposal-promise-try">Stage 1 Proposal</a>
+        by Jordan Harband
+      </p>
+    </header>
 
 
     <hr>
 
-    <header class="proposal">
-      <h3><code>import.meta</code></h3>
+    <header class="proposal" id="import-meta">
+      <h3>
+        <a href="#import-meta">
+          <code>import.meta</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-import-meta">Stage 3 Proposal</a>
         by Domenic Denicola
       </p>
     </header>
 
-    <header class="proposal">
-      <h3><code>function.sent</code></h3>
+    <header class="proposal" id="function-sent">
+      <h3>
+        <a href="#function-sent">
+          <code>function.sent</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md">Stage 2 Proposal</a>
         by Allen Wirfs-Brock
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Numeric separators</h3>
+    <header class="proposal" id="numeric-separators">
+      <h3>
+        <a href="#numeric-separators">
+          Numeric separators
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/samuelgoto/proposal-numeric-separator">Stage 2 Proposal</a>
         by Sam Goto and Rick Waldron
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Throw expressions</h3>
+    <header class="proposal" id="throw-expressions">
+      <h3>
+        <a href="#throw-expressions">
+          Throw expressions
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/rbuckton/proposal-throw-expressions">Stage 2 Proposal</a>
         by Rob Buckton
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Export Extensions</h3>
+    <header class="proposal" id="export-extensions">
+      <h3>
+        <a href="#export-extensions">
+          Export Extensions
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-export-default-from">Stage 1 Proposal</a>
         by Ben Newman and John-David Dalton
@@ -871,24 +1173,36 @@ if (myForm.checkValidity<em>?.()</em> === false) {
 
     <hr>
 
-    <header class="proposal">
-      <h3>Generator arrow functions (<code>=>*</code>)</h3>
+    <header class="proposal" id="generator-arrow-functions">
+      <h3>
+        <a href="#generator-arrow-functions">
+          Generator arrow functions (<code>=>*</code>)
+        </a>
+      </h3>
       <p>
         <span>Stage 1 Proposal</span>
         by Brendan Eich and Domenic Denicola
       </p>
     </header>
 
-    <header class="proposal">
-      <h3><code>do</code> expressions</h3>
+    <header class="proposal" id="do-expressions">
+      <h3>
+        <a href="#do-expressions">
+          <code>do</code> expressions
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-do-expressions">Stage 1 Proposal</a>
         by Dave Herman
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Extensible numeric literals</h3>
+    <header class="proposal" id="extensible-numeric-literals">
+      <h3>
+        <a href="#extensible-numeric-literals">
+          Extensible numeric literals
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/littledan/proposal-extensible-numeric-literals">Stage 1 Proposal</a>
         by Daniel Ehrenberg
@@ -900,108 +1214,134 @@ if (myForm.checkValidity<em>?.()</em> === false) {
 
 
 
-    <header class="proposal">
-      <h3><code>Promise.prototype.finally</code></h3>
-      <p>
-        <a href="https://github.com/tc39/proposal-promise-finally">Stage 3 Proposal</a>
-        by Jordan Harband
-      </p>
-    </header>
 
-    <header class="proposal">
-      <h3><code>Promise.try</code></h3>
-      <p>
-        <a href="https://github.com/ljharb/proposal-promise-try">Stage 1 Proposal</a>
-        by Jordan Harband
-      </p>
-    </header>
 
-    <header class="proposal">
-      <h3><code>global</code></h3>
+    <header class="proposal" id="global">
+      <h3>
+        <a href="#global">
+          <code>global</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-global">Stage 3 Proposal</a>
         by Jordan Harband
       </p>
     </header>
 
-    <header class="proposal">
-      <h3><code>String.prototype.{trimStart,trimEnd}</code></h3>
+    <header class="proposal" id="string-trim-start-end">
+      <h3>
+        <a href="#string-trim-start-end">
+          <code>String.prototype.{trimStart,trimEnd}</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/sebmarkbage/ecmascript-string-left-right-trim">Stage 2 Proposal</a>
         by Sebastian Markbage
       </p>
     </header>
 
-    <header class="proposal">
-      <h3><code>Array.prototype.flat{Map,ten}</code></h3>
+    <header class="proposal" id="array-flatmap-flatten">
+      <h3>
+        <a href="#array-flatmap-flatten">
+          <code>Array.prototype.flat{Map,ten}</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-flatMap">Stage 2 Proposal</a>
         by Brian Terlson and Michael Ficarra
       </p>
     </header>
 
-    <header class="proposal">
-      <h3><code>Date.parse</code> fallback semantics</h3>
-      <p>
-        <a href="https://github.com/mrrrgn/proposal-date-time-string-format">Stage 1 Proposal</a>
-        by Morgan Phillips
-      </p>
-    </header>
-
-    <header class="proposal">
-      <h3>Math Extensions</h3>
-      <p>
-        <a href="https://github.com/rwaldron/proposal-math-extensions">Stage 1 Proposal</a>
-        by Rick Waldron
-      </p>
-    </header>
-
-    <header class="proposal">
-      <h3><code>of</code> and <code>from</code> on collection constructors</h3>
-      <p>
-        <a href="https://github.com/leobalter/proposal-setmap-offrom">Stage 1 Proposal</a>
-        by Leo Balter
-      </p>
-    </header>
-
-    <header class="proposal">
-      <h3><code>Math.signbit</code>: IEEE-754 sign bit</h3>
-      <p>
-        <a href="http://jfbastien.github.io/papers/Math.signbit.html">Stage 1 Proposal</a>
-        by JF Bastien
-      </p>
-    </header>
-
-
-
-    <header class="proposal">
-      <h3>Float16 on TypedArrays, DataView, Math.hfround</h3>
-      <p>
-        <a href="https://docs.google.com/presentation/d/1Ta_IbravBUOvu7LUhlN49SvLU-8G8bIQnsS08P3Z4vY/edit?usp=sharing">Stage 1 Proposal</a>
-        by Leo Balter
-      </p>
-    </header>
-
-    <header class="proposal">
-      <h3>Atomics.waitNonblocking</h3>
+    <header class="proposal" id="atomics-wait-non-blocking">
+      <h3>
+        <a href="#atomics-wait-non-blocking">
+          Atomics.waitNonblocking
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-atomics-wait-async">Stage 2 Proposal</a>
         by Shu-yu Guo and Lars Hansen
       </p>
     </header>
 
-    <header class="proposal">
-      <h3><code>Symbol.prototype.description</code></h3>
+    <header class="proposal" id="date-parse-fallback">
+      <h3>
+        <a href="#date-parse-fallback">
+          <code>Date.parse</code> fallback semantics
+        </a>
+      </h3>
+      <p>
+        <a href="https://github.com/mrrrgn/proposal-date-time-string-format">Stage 1 Proposal</a>
+        by Morgan Phillips
+      </p>
+    </header>
+
+    <header class="proposal" id="math-extensions">
+      <h3>
+        <a href="#math-extensions">
+          Math Extensions
+        </a>
+      </h3>
+      <p>
+        <a href="https://github.com/rwaldron/proposal-math-extensions">Stage 1 Proposal</a>
+        by Rick Waldron
+      </p>
+    </header>
+
+    <header class="proposal" id="collection-of-from">
+      <h3>
+        <a href="#collection-of-from">
+          <code>of</code> and <code>from</code> on collection constructors
+        </a>
+      </h3>
+      <p>
+        <a href="https://github.com/leobalter/proposal-setmap-offrom">Stage 1 Proposal</a>
+        by Leo Balter
+      </p>
+    </header>
+
+    <header class="proposal" id="math-signbit">
+      <h3>
+        <a href="#math-signbit">
+          <code>Math.signbit</code>
+        </a>
+      </h3>
+      <p>
+        <a href="http://jfbastien.github.io/papers/Math.signbit.html">Stage 1 Proposal</a>
+        by JF Bastien
+      </p>
+    </header>
+
+    <header class="proposal" id="float16">
+      <h3>
+        <a href="#float16">
+          Float16 on TypedArrays, DataView, Math.hfround
+        </a>
+      </h3>
+      <p>
+        <a href="https://docs.google.com/presentation/d/1Ta_IbravBUOvu7LUhlN49SvLU-8G8bIQnsS08P3Z4vY/edit?usp=sharing">Stage 1 Proposal</a>
+        by Leo Balter
+      </p>
+    </header>
+
+    <header class="proposal" id="symbol-description">
+      <h3>
+        <a href="#symbol-description">
+          <code>Symbol.prototype.description</code>
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-Symbol-description">Stage 1 Proposal</a>
         by Michael Ficarra
       </p>
     </header>
 
-
-
-    <header class="proposal">
-      <h3>Error stacks</h3>
+    <header class="proposal" id="error-stacks">
+      <h3>
+        <a href="#error-stacks">
+          Error stacks
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/ljharb/proposal-error-stacks">Stage 1 Proposal</a>
         by Jordan Harband
@@ -1010,32 +1350,48 @@ if (myForm.checkValidity<em>?.()</em> === false) {
 
 
 
-    <header class="proposal">
-      <h3>Observable</h3>
+    <header class="proposal" id="observable">
+      <h3>
+        <a href="#observable">
+          Observable
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-observable">Stage 1 Proposal</a>
         by Jafar Husain and Mark Miller
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>WeakRefs</h3>
+    <header class="proposal" id="weakrefs">
+      <h3>
+        <a href="#weakrefs">
+          WeakRefs
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/proposal-weakrefs">Stage 1 Proposal</a>
         by Dean Tribble
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Realms</h3>
+    <header class="proposal" id="realms">
+      <h3>
+        <a href="#realms">
+          Realms
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/caridy/proposal-realms">Stage 1 Proposal</a>
         by Dave Herman, Mark Miller, and Caridy Patiño
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Frozen Realms</h3>
+    <header class="proposal" id="frozen-realms">
+      <h3>
+        <a href="#frozen-realms">
+          Frozen Realms
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/FUDCo/frozen-realms">Stage 1 Proposal</a>
         by Mark S. Miller, Chip Morningstar, and Caridy Patiño
@@ -1051,26 +1407,42 @@ if (myForm.checkValidity<em>?.()</em> === false) {
 
     <hr>
 
-    <h2>Editorial</h2>
+    <h2 id="editorial">
+      <a href="#editorial">
+        Editorial
+      </a>
+    </h2>
 
-    <header class="proposal">
-      <h3><code>Function.prototype.toString</code> revision</h3>
+    <header class="proposal" id="function-tostring-revision">
+      <h3>
+        <a href="#function-tostring-revision">
+          <code>Function.prototype.toString</code> revision
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/tc39/Function-prototype-toString-revision">Stage 3 Proposal</a>
         by Michael Ficarra
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>Change <code>Number.parse{Int,Float}</code> to not coerce <code>null/undefined/NaN</code></h3>
+    <header class="proposal" id="number-parse-coercion">
+      <h3>
+        <a href="#number-parse-coercion">
+          Change <code>Number.parse{Int,Float}</code> to not coerce <code>null/undefined/NaN</code>
+        </a>
+      </h3>
       <p>
         <span>Stage 1 Proposal</span>
         by Brendan Eich
       </p>
     </header>
 
-    <header class="proposal">
-      <h3>JSON superset</h3>
+    <header class="proposal" id="json-superset">
+      <h3>
+        <a href="#json-superset">
+          JSON superset
+        </a>
+      </h3>
       <p>
         <a href="https://github.com/gibson042/ecma262-proposal-json-superset">Stage 1 Proposal</a>
         by Mark Miller, Richard Gibson, and Mathias Bynens
