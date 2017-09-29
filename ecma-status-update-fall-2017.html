@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JavaScript Proposals Status Update: Fall 2017 - @thejameskyle</title>
+    <title>TC39 Status Update: Fall 2017 - @thejameskyle</title>
 
     <style media="screen">
       * {
@@ -145,7 +145,7 @@
       This is a work in progress, please don't share it yet.
     </dialog>
 
-    <h1>JavaScript Proposals Status Update: Fall 2017</h1>
+    <h1>TC39 Proposals: Fall 2017 Status Update</h1>
 
     <p>
       I thought I might start doing quarterly updates on the status of
@@ -487,7 +487,7 @@ for (<em>let match of matches</em>) {
 
     <hr>
 
-    <h2>3. Intl additions</h2>
+    <h2>3. Intl additions moving forward</h2>
 
     <header class="proposal">
       <h3><code>Intl.PluralRules</code></h3>
@@ -499,12 +499,9 @@ for (<em>let match of matches</em>) {
 
     <p>
       Pluralization can be difficult to get right, there are many different
-      rules in different languages.
-    </p>
-
-    <p>
-      This proposal adds an API for getting a pluralization "category" for a
-      number in a specified language.
+      rules in different languages. This proposal adds an API for getting a
+      pluralization "category" for a number in a specified language. You can
+      then use this category to correctly pluralize your translations.
     </p>
 
     <pre><code>let pluralization = new Intl.PluralRules('en', {
@@ -514,10 +511,6 @@ for (<em>let match of matches</em>) {
 pluralization.select(0); // 'other'
 pluralization.select(1); // 'one'
 pluralization.select(2); // 'other'</code></pre>
-
-    <p>
-      You can then use this category to correctly pluralize your translations.
-    </p>
 
     <h4>Status</h4>
 
@@ -583,6 +576,31 @@ console.log(dateStr);
       </p>
     </header>
 
+    <p>
+      Across languages there are many different rules on how characters
+      (graphemes), words, and sentences are broken up. This proposal adds an
+      API that allows you to iterate of the different segments of text
+      depending on the language.
+    </p>
+
+    <pre><code>let segmenter = <em>Intl.Segmenter("fr", {type: "word"});</em>
+let segments = <em>segmenter.segment("Ceci n'est pas une pipe")</em>;
+
+for (<em>let {index, breakType} of segmentIterator</em>) {
+  console.log(`index: ${index}, breakType: ${breakType}`);
+  break;
+}
+
+// <em>index: 3, breakType: letter</em></code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      In the September 2017 meeting, this proposal moved forward to Stage 3.
+      Pending implementations, this should move forward to Stage 4 in a future
+      meeting.
+    </p>
+
     <header class="proposal">
       <h3><code>Intl.RelativeTimeFormat</code></h3>
       <p>
@@ -590,6 +608,33 @@ console.log(dateStr);
         by Zibi Braniecki and Daniel Ehrenberg
       </p>
     </header>
+
+    <p>
+      It's very common to want to display dates and times relatively to the
+      current time. Saying something happened "yesterday" can be much nicer
+      than saying "September 28, 2017".
+    </p>
+
+    <p>
+      Many people use libraries like
+      <a href="https://momentjs.com/">MomentJS</a> for this purpose. But with
+      this proposal, it will be built into JavaScript.
+    </p>
+
+    <pre><code>let formatter = <em>new Intl.RelativeTimeFormat("en", {
+  style: "long",
+})</em>;
+
+<em>formatter.format(-1, "day")</em>;
+// "yesterday"</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      In the September 2017 meeting, this proposal moved forward to Stage 3.
+      Pending implementations, this should move forward to Stage 4 in a future
+      meeting.
+    </p>
 
     <hr>
 
