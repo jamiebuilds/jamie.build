@@ -590,6 +590,66 @@ for (<em>let match of matches</em>) {
       </p>
     </header>
 
+    <p>
+      Today, every method and property defined on a class is public.
+    </p>
+
+    <pre><code>class Foo {
+  <em>prop</em> = 42;
+
+  constructor() {
+    <em>this.method</em>();
+  }
+
+  <em>method</em>() {
+    // ...
+  }
+}
+
+new Foo()<em>.method</em>; // Exists
+new Foo()<em>.prop</em>; // Exists</code></pre>
+
+    <p>
+      This proposal allows you to create private methods and fields.
+    </p>
+
+    <pre><code>class Foo {
+  <em>#prop</em> = 42;
+
+  constructor() {
+    <em>this.#method</em>();
+  }
+
+  <em>#method</em>() {
+    // ...
+  }
+}
+
+new Foo()<em>.#method</em>; // SyntaxError
+new Foo()<em>.#prop</em>; // SyntaxError
+new Foo()<em>.method</em>; // undefined
+new Foo()<em>.prop</em>; // undefined
+</code></pre>
+
+    <p>
+      If you want to read more about this proposal, check out
+      <a href="http://thejameskyle.com/javascripts-new-private-class-fields.html">my article on it</a>.
+    </p>
+
+    <h4>Status</h4>
+
+    <p>
+      Through the "Unified Class Features" proposal, Private Methods and
+      Accessors are now at Stage 3. At the September 2017 meeting, there was
+      some hesitation to move them up from Stage 2 due to some remaining
+      concerns around static properties. But those will be worked out before
+      Stage 4 alongside partial implementations in engines.
+    </p>
+
+    <p>
+      Babel is able to parse this syntax but there isn't a transform plugin yet.
+    </p>
+
     <header class="proposal" id="class-decorators">
       <h3>
         <a href="#class-decorators">
@@ -602,7 +662,42 @@ for (<em>let match of matches</em>) {
       </p>
     </header>
 
+    <p>
+      In class definitions, the class and all of its members need to be defined
+      statically. But sometimes you want to "wrap" the class or one of it's
+      members with some special functionality.
+    </p>
 
+    <pre><code>class Foo {}
+
+Foo.prototype.method = <em>memoize(</em>function method() {
+  // ...
+}<em>)</em>;</code></pre>
+
+    <p>
+      This proposal adds a way to do this syntactically as part of the class
+      definition itself.
+    </p>
+
+    <pre><code>class Foo {
+  <em>@memoize</em> method() {
+    // ...
+  }
+}</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      While the other proposals nested within the "Unified Class Features"
+      proposal are at Stage 3, decorators remains at Stage 2 while it works out
+      semantics around private fields. It's not very conteversial overall and
+      is expected to become part of the standard.
+    </p>
+
+    <p>
+      You can use parts of the decorators proposal today in Babel using the
+      transform-decorators plugin.
+    </p>
 
     <hr>
 
@@ -1021,6 +1116,41 @@ fn(<em>...</em>,b); // placeholder, does not call fn</code></pre>
       </p>
     </header>
 
+    <p>
+      As JavaScript apps get larger and more complex, the parse times also
+      increase. This proposal seeks to improve parse times by shipping
+      "pre-parsed" code.
+    </p>
+
+    <p>
+      This is done through an "AST" or Abstract Syntax Tree. The proposal is
+      currently suggesting the Babylon AST (the one used by Babel) as the
+      standard to be implemented. Engines can convert this AST into their own
+      format much faster than they can parse the code at runtime. The AST can
+      also be used for additional optimizations and validations to improve load
+      times.
+    </p>
+
+    <p>
+      This AST will be shipped in a binary format for optimal data transfer.
+      Between that and GZIP, the size of scripts being loaded stays about the
+      same.
+    </p>
+
+    <p>
+      A prototype of this proposal was implemented in SpiderMonkey with
+      promising results (time to create a full AST for Facebook.com was reduced
+      by ~70-90% which translates to about 500-800ms).
+    </p>
+
+    <h4>Status</h4>
+
+    <p>
+      This is a very ambitious proposal which is still early in the process.
+      There isn't an public implementation yet, and it will be some time before
+      you can use one.
+    </p>
+
     <header class="proposal" id="protocols">
       <h3>
         <a href="#protocols">
@@ -1032,6 +1162,67 @@ fn(<em>...</em>,b); // placeholder, does not call fn</code></pre>
         by Michael Ficarra
       </p>
     </header>
+
+    <p>
+      Newer ES2015 standard library APIs have been using protocol-based APIs
+      which use Symbols.
+    </p>
+
+    <pre><code>class Collection {
+  <em>[Symbol.iterator]() {
+    // ...
+  }</em>
+}
+
+// Calls [Symbol.iterator]
+for (<em>let item of new Collection()</em>) {
+  // ...
+}</code></pre>
+
+    <p>
+      This proposal adds a syntax for describing these protocols.
+    </p>
+
+    <pre><code><em>protocol Iterable {
+  iterator; // must be implemented
+}</em>
+
+class Collection implements Iterable {
+  [<em>Iterable.iterator</em>]() {
+    // ...
+  }
+}</code></pre>
+
+    <p>
+      These protocols can also extend eachother and even add their own methods.
+    </p>
+
+    <pre><code>protool IterableWithMethods <em>extends Iterable</em> {
+  <em>forEach(fn) { ... }</em>
+  <em>map(fn) { ... }</em>
+}
+
+class Collection implements <em>IterableWithMethods</em> {
+  [<em>Iterable.iterator</em>]() {...}
+}
+
+let collection = new Collection();
+
+<em>collection.forEach(() => { ... });
+collection.map(() => { ... });</em></code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      This is a fairly new proposal that just made it to Stage 1 in the
+      September 2017 meeting with lots of concerns. It is competing with other
+      proposals for Traits and Mixins.
+    </p>
+
+    <p>
+      There is a <a href="https://github.com/disnet/sweet-interfaces">Sweet.js
+      transform</a> for this proposal.
+    </p>
 
     <hr>
 
