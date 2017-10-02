@@ -92,6 +92,7 @@
         background: transparent;
         color: inherit;
         padding: 0;
+        word-break: break-all;
       }
 
       .proposal p {
@@ -157,6 +158,8 @@
     </style>
   </head>
   <body>
+    <script src="block-sites.js"></script>
+
     <dialog open>
       This is a work in progress, please don't share it yet.
     </dialog>
@@ -166,6 +169,14 @@
     <p>
       I thought I might start doing quarterly updates on the status of
       ECMAScript (the JavaScript standard) proposals.
+    </p>
+
+    <p>
+      And for those of you who would rather complain about "language
+      bloat" than to think critically for a second. Please remember
+      that not every proposal makes it into the language. It is worth
+      evaluating many different ideas even if most of them get
+      rejected. Knowing why it wasn't a fit is valuable.
     </p>
 
     <hr>
@@ -504,7 +515,14 @@ for (<em>let match of matches</em>) {
     </h2>
 
     <p>
-      There are several proposals that are ...
+      There are three long-desired additions to classes that are now making through
+      the final stretch of standardization.
+    </p>
+
+    <p>
+      TC39 typically likes to get smaller proposals in one at a time, but since these
+      proposal were all closely related, it took unifying them into a single proposal
+      in order to work out all the details.
     </p>
 
     <header class="proposal" id="class-fields">
@@ -516,6 +534,59 @@ for (<em>let match of matches</em>) {
       <p>
         <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 3 Proposal</a>
         by Daniel Ehrenberg and Jeff Morrison
+      </p>
+    </header>
+
+    <p>
+      Right now, you can only define methods, getters, and setters within class
+      definitions. So to assign properties, you had to do so within the constructor.
+    </p>
+
+    <pre><code>class Child extends Parent {
+  constructor() {
+    super();
+    <em>this.state = {
+      active: true,
+    };</em>
+  }
+}</code></pre>
+
+    <p>
+      This proposal adds a way to do this within the class definition itself.
+    </p>
+
+    <pre><code>class Child extends Parent {
+  <em>state = {
+    active: true,
+  };</em>
+}</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      Through the "Unified Class Features" proposal, Class Fields are now at Stage 3.
+      <a href="https://chromium-review.googlesource.com/c/v8/v8/+/658857">V8</a> and
+      <a href="https://bugs.webkit.org/show_bug.cgi?id=174212">JSC</a> are working on
+      implementations now. There is some hesitation in the committee around ASI
+      (Automatic Semicolon Insertion) because classes are rapidly evolving and
+      allowing semicolons to be ommitted could cause problems later on.
+    </p>
+
+    <p>
+      You can use class fields today in Babel using the
+      <a href="http://babeljs.io/docs/plugins/transform-class-properties/">transform-class-properties</a>
+      plugin.
+    </p>
+
+    <header class="proposal" id="class-privates">
+      <h3>
+        <a href="#class-privates">
+          Private methods and accessors
+        </a>
+      </h3>
+      <p>
+        <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 3 Proposal</a>
+        by Daniel Ehrenberg and Kevin Gibbons
       </p>
     </header>
 
@@ -531,17 +602,7 @@ for (<em>let match of matches</em>) {
       </p>
     </header>
 
-    <header class="proposal" id="class-privates">
-      <h3>
-        <a href="#class-privates">
-          Private methods and accessors
-        </a>
-      </h3>
-      <p>
-        <a href="https://tc39.github.io/proposal-unified-class-features/">Stage 3 Proposal</a>
-        by Daniel Ehrenberg and Kevin Gibbons
-      </p>
-    </header>
+
 
     <hr>
 
@@ -992,6 +1053,41 @@ fn(<em>...</em>,b); // placeholder, does not call fn</code></pre>
       </p>
     </header>
 
+    <p>
+      JavaScript has only ever had one number type, double-precision floats which
+      limits the math that you can do in JavaScript greatly.
+    </p>
+
+    <p>
+      This proposal BigInt's which are arbitrary precision integers. The syntax is:
+    </p>
+
+    <pre><code>let value = <em>42n</em>;</code></pre>
+
+    <p>
+      With this proposal you can continue using the same operators for doing math.
+    </p>
+
+    <pre><code>1n <em>+</em> 2n
+1n <em>-</em> 2n
+1n <em>*</em> 2n
+1n <em>/</em> 2n
+1n <em>%</em> 2n
+...</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      This proposal is currently at Stage 3 waiting on
+      implementations to make progress and to finalize some
+      decisions.
+    </p>
+
+    <p>
+      Babel can parse the syntax, but it is not possible to transform
+      these.
+    </p>
+
     <header class="proposal" id="rest-spread-properties">
       <h3>
         <a href="#rest-spread-properties">
@@ -1107,6 +1203,31 @@ promise.then(<em>respondAlways</em>, <em>respondAlways</em>)</code></pre>
       </p>
     </header>
 
+    <p>
+      It's often non-obvious to new users of promises how you are supposed to start
+      off a new chain.
+    </p>
+
+    <pre><code><em>Promise.resolve().then</em>(() => {
+  // ...
+});</code></pre>
+
+    <p>
+      This proposal suggests we add a new method <code>Promise.try</code> in order
+      to make it more obvious how to start
+    </p>
+
+    <pre><code><em>Promise.try</em>(() => {
+  // ...
+});</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      The last time this proposal was discussed, there were a lot of questions about
+      its necessity, especially now with async functions becoming more available. For
+      now it stays at Stage 1.
+    </p>
 
     <hr>
 
@@ -1121,6 +1242,47 @@ promise.then(<em>respondAlways</em>, <em>respondAlways</em>)</code></pre>
         by Domenic Denicola
       </p>
     </header>
+
+    <p>
+      Every JavaScript environment has different ways of describing the active
+      module.
+    </p>
+
+    <pre><code>// DOM
+<em>document.currentScript</em>
+// Node, Webpack, etc.
+<em>__dirname</em>
+<em>__filename</em>
+</code></pre>
+
+    <p>
+      <code>document.currentScript</code> is problematic because it is effectively a
+      global variable. <code>__dirname</code> and such are also non-standardized
+      global variables scoped to the currently running module.
+    </p>
+
+    <p>
+      This proposal adds the syntax <code>import.meta</code> which returns a
+      configurable object which describes the current module. It allows environments
+      to extend it in whatever way they want.
+    </p>
+
+    <pre><code><em>import.meta</em>.currentScript;
+<em>import.meta</em>.dirname</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      As of the September 2017 meeting, this proposal is now at Stage 3. It should
+      make its way through to Stage 4 pending more implementations. The only
+      remaining questions are if/how this syntax should be supported within scripts
+      and <code>eval()</code>.
+    </p>
+
+    <p>
+      Babel can parse this syntax, but there isn't a transform for it at this time.
+      There will likely have to be separate transformations for Node and Webpack.
+    </p>
 
     <header class="proposal" id="function-sent">
       <h3>
@@ -1146,6 +1308,39 @@ promise.then(<em>respondAlways</em>, <em>respondAlways</em>)</code></pre>
       </p>
     </header>
 
+    <p>
+      Long numbers can be hard to read without any separators to distinguish groups
+      of digits.
+    </p>
+
+    <pre><code><em>1000000000</em>   // Is this a billion? a hundred millions? Ten millions?
+<em>101475938.38</em> // what scale is this? what power of 10?</code></pre>
+
+    <p>
+      This proposal changes how numbers are parsed to allow underscores as visual
+      separators.
+    </p>
+
+<pre><code><em>1_000_000_000</em>           // Ah, so a billion
+<em>101_475_938.38</em>          // And this is hundreds of millions
+
+let fee = <em>123_00</em>;       // $123 (12300 cents, apparently)
+let fee = <em>12_300</em>;       // $12,300 (woah, that fee!)
+let amount = <em>12345_00</em>;  // 12,345 (1234500 cents, apparently)
+let amount = <em>123_4500</em>;  // 123.45 (4-fixed financial)
+let amount = <em>1_234_500</em>; // 1,234,500</code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      As of the July 2017 meeting, this proposal is at Stage 2. It is considered
+      fairly stable and expected to move forward pending the defined process.
+    </p>
+
+    <p>
+      The Babel 7 beta includes a transform for this syntax.
+    </p>
+
     <header class="proposal" id="throw-expressions">
       <h3>
         <a href="#throw-expressions">
@@ -1157,6 +1352,50 @@ promise.then(<em>respondAlways</em>, <em>respondAlways</em>)</code></pre>
         by Rob Buckton
       </p>
     </header>
+
+    <p>
+      Today, <code>throw</code> is a statement just like <code>return</code> or
+      <code>if-else</code>, and are only available in statement positions.
+    </p>
+
+    <pre><code>function foo() {
+  <em>if</em> (cond) {
+    <em>return</em> true;
+  } else {
+    <em>throw</em> new Error();
+  }
+}</code></pre>
+
+    <p>
+      However, there are expression equivalents for "returning" and for conditions,
+      but not for throwing an error.
+    </p>
+
+    <pre><code>let foo = <em>() => 42</em>; // "returning"
+let bar = <em>() => cond ? 1 : 2</em>; // conditions</code></pre>
+
+    <p>
+      This proposal allows you to throw errors within expression positions.
+    </p>
+
+    <pre><code>let foo = cond ? true : <em>throw new Error();</em></code></pre>
+
+    <h4>Status</h4>
+
+    <p>
+      As of the September 2017 meeting, this proposal is now at Stage 2 with some
+      concerns that will need to be resolved before Stage 3.
+    </p>
+
+    <p>
+      In general, TC39 wants to make it easier to use statements within expression
+      positions through do-expressions and even possibly making all statements into
+      expressions. This proposal might not be ambitious enough to get through.
+    </p>
+
+    <p>
+      Throw expressions are implemented in Babel on the master branch.
+    </p>
 
     <header class="proposal" id="export-extensions">
       <h3>
@@ -1449,6 +1688,6 @@ promise.then(<em>respondAlways</em>, <em>respondAlways</em>)</code></pre>
       </p>
     </header>
 
-    <script src="block-sites.js"></script>
+
   </body>
 </html>
