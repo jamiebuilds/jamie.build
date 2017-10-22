@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Babel Plugin "Ordering" – @thejameskyle</title>
+  <style media="screen">
+    body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2em 2em 6em;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 1.2em;
+      line-height: 1.8;
+      background: #F5ECD7;
+      color: #9e0059;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    p, h1, h2, h3, h4, h5, h6, ul, ol, li, pre, img, aside, hr {
+      margin-top: 1.5em;
+      margin-bottom: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: top;
+      border: 1px solid #171826;
+    }
+
+    header {
+      text-align: center;
+      color: #FF0054;
+    }
+
+    header h1 {
+      font-size: 4em;
+      line-height: 1.2;
+      color: #ffbd00;
+      text-shadow:
+        0.05em 0.05em #ff5400,
+        0.10em 0.10em #ff0054,
+        0.15em 0.15em #9e0059,
+        0.20em 0.20em #320d6d;
+    }
+
+    header p {
+      margin-top: 0;
+      font-size: 1.7em;
+      font-weight: 200;
+      color: #ff0054;
+    }
+
+    footer {
+      margin-top: 2em;
+      font-size: 0.8em;
+      color: #9e0059;
+      text-align: center;
+    }
+
+    a {
+      color: #ff5400;
+    }
+
+    code {
+      font-size: 0.95em;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      color: #ff0054;
+    }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1em;
+      border-left: 5px solid;
+    }
+
+    hr {
+      height: 1em;
+      border: none;
+      background: #320d6d;
+      box-shadow:
+        0.2em 0.2em #9e0059,
+        0.4em 0.4em #ff0054,
+        0.6em 0.6em #ff5400,
+        0.8em 0.8em #ffbd00;
+    }
+
+    pre {
+      background: #320d6d;
+      box-shadow:
+        0.2em 0.2em #9e0059,
+        0.4em 0.4em #ff0054,
+        0.6em 0.6em #ff5400,
+        0.8em 0.8em #ffbd00;
+      color: #ffbd00;
+      padding: 1em;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    pre code {
+      color: inherit;
+    }
+
+    pre em {
+      font-style: normal;
+      color: #ff5400;
+    }
+
+    aside {
+      color: #ffbd00;
+      background: #320d6d;
+      box-shadow:
+        0.2em 0.2em #9e0059,
+        0.4em 0.4em #ff0054,
+        0.6em 0.6em #ff5400,
+        0.8em 0.8em #ffbd00;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>React Loadable 5</h1>
+  <p>Code Splitting + Server Side Rendering Made Easy</p>
+</header>
+
+<aside>
+  This article is best enjoyed while listening to:
+  <a href="https://www.youtube.com/watch?v=xX5oQM_5UTg" target="_blank">
+    "Joy" – Levin Kali
+  </a>
+</aside>
+
+<p>
+  If you're unfamiliar, React Loadable is a small library designed to make it
+  easy to code split your React app whereever you render a component
+  (everywhere). It looks like this:
+</p>
+
+<pre><code><em>import Loadable from 'react-loadable';</em>
+import Loading from './my-loading-component';
+
+const LoadableComponent = <em>Loadable({
+  loader: () => import('./my-component'),
+  loading: Loading,
+});</em>
+
+export default class App extends React.Component {
+  render() {
+    return &lt;LoadableComponent/>;
+  }
+}</code></pre>
+
+<p>
+  Notice the <code>import()</code>, this is a new feature in JavaScript
+  currently at Stage 3 of the standardization process. Instead of writing your
+  imports at the top of your file, you can use <code>import()</code> anywhere
+  and it will return a promise that will resolve with your module.
+</p>
+
+<p>
+  Webpack makes use of <code>import()</code> to "code split" your bundles
+  automatically. This means instead of serving one massive bundle, you can
+  serve many small ones.
+</p>
+
+<pre><code>import express from 'express';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+<em>import Loadable from 'react-loadable';</em>
+import App from './components/App';
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send(`
+    &lt;!doctype html>
+    &lt;html>
+      &lt;head>
+        &lt;title>My App&lt;/title>
+      &lt;/head>
+      &lt;body>
+        &lt;div id="app">
+          ${<em>ReactDOMServer.renderToString(&lt;App/>)</em>}
+        &lt;/div>
+      &lt;/body>
+    &lt;/html>
+  `);
+});
+
+<em>Loadable.preloadAll().then(() => {</em>
+  app.listen(3000, () => {
+    console.log('Running on http://localhost:3000/');
+  });
+<em>});</em></code></pre>
+
+<footer>
+  <hr>
+  <p>
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    Creative Commons Attribution 4.0 International License</a>.
+  </p>
+</footer>
+
+<script src="block-sites.js"></script>
+</body>
+</html>
