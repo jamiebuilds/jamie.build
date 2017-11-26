@@ -28,12 +28,24 @@
       }
 
       .year {
+        position: relative;
         display: block;
-        background: black;
+        background: transparent;
         clear: both;
       }
 
-      .year:last-of-type {
+      .year::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 1px;
+        background: black;
+      }
+
+      .year:last-of-type::before {
         background: transparent;
       }
 
