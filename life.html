@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Life Progress – @thejameskyle</title>
+    <style>
+      body {
+        margin: 0 auto;
+        padding: 2em 0 10rem;
+
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 1.2em;
+        line-height: 1.8;
+
+        background: #66D9EF;
+        color: white;
+
+        -webkit-font-smoothing: antialiased;
+      }
+
+
+      h1 {
+        text-align: center;
+        line-height: 1;
+        font-size: 10vw;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+
+      .year {
+        display: block;
+        background: black;
+        clear: both;
+      }
+
+      .year:last-of-type {
+        background: transparent;
+      }
+
+      .year::after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+
+      .week {
+        width: 1.923vw;
+        height: 1.923vw;
+        float: left;
+        background: #eee;
+      }
+
+      .passed {
+        background: #325479;
+      }
+
+      .active {
+        background: #DD5571;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Life Progress</h1>
+
+    <div id="app"></div>
+
+    <script>
+      var app = document.getElementById('app');
+      var years = 78.74;
+      var days = years * 365;
+      var weeks = Math.floor(days / 7);
+
+      var MS_TO_WEEK = 1000 * 60 * 60 * 24 * 7;
+
+      var birth = new Date(1993, 11, 1);
+      var today = new Date();
+      var progress = Math.floor((today - birth) / MS_TO_WEEK);
+
+      var row;
+
+      for (var i = 0; i < weeks; i++) {
+        if (i % 52 === 0) {
+          row = document.createElement('div');
+          row.className = 'year';
+          app.appendChild(row);
+        }
+
+        var div = document.createElement('div');
+        div.className = 'week';
+
+        if (i < progress) {
+          div.className += ' passed';
+        }
+
+        if (i === progress) {
+          div.className += ' active';
+        }
+
+        row.appendChild(div);
+      }
+    </script>
+  </body>
+</html>
