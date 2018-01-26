@@ -423,7 +423,7 @@
           request(url, function(xhr) {
             if (xhr.readyState !== 4) return;
 
-            repos = repos.concat(JSON.parse(xhr.responseText)).map(repo => {
+            repos = repos.concat(JSON.parse(xhr.responseText).map(repo => {
               return {
                 name: repo.name,
                 url: repo.html_url,
@@ -432,7 +432,7 @@
                 forks: repo.forks_count,
                 owner: repo.owner.login,
               };
-            });
+            }));
 
             var linkHeader = xhr.getResponseHeader('Link');
 
