@@ -423,7 +423,16 @@
           request(url, function(xhr) {
             if (xhr.readyState !== 4) return;
 
-            repos = repos.concat(JSON.parse(xhr.responseText));
+            repos = repos.concat(JSON.parse(xhr.responseText)).map(repo => {
+              return {
+                name: repo.name,
+                url: repo.html_url,
+                isFork: !!repo.fork,
+                stars: repo.stargazers_count,
+                forks: repo.forks_count,
+                owner: repo.owner.login,
+              };
+            });
 
             var linkHeader = xhr.getResponseHeader('Link');
 
@@ -466,35 +475,35 @@
         repos
           .filter(function(repo) {
             return (
-              !repo.fork &&
-              repo.stargazers_count > 0 &&
+              !repo.isFork &&
+              repo.stars > 0 &&
               repo.name.indexOf('__') !== 0
             );
           })
           .sort(function(a, b) {
-            return b.stargazers_count - a.stargazers_count;
+            return b.stars - a.stars;
           })
           .forEach(function(repo) {
             var li = document.createElement('li');
             var a = document.createElement('a');
 
-            a.href = repo.html_url;
+            a.href = repo.url;
             a.innerText = (
-              (repo.owner.login === 'thejameskyle' ? '' : repo.owner.login + '/') +
+              (repo.owner === 'thejameskyle' ? '' : repo.owner + '/') +
               repo.name +
-              ' (' + repo.stargazers_count + ' stars, ' +
-              repo.forks_count + ' forks)'
+              ' (' + repo.stars + ' stars, ' +
+              repo.forks + ' forks)'
             );
 
-            if (repo.stargazers_count < 30) {
+            if (repo.stars < 30) {
               li.className = 'screen';
             }
 
             li.appendChild(a);
             ol.appendChild(li);
 
-            totalStars += repo.stargazers_count;
-            totalForks += repo.forks_count;
+            totalStars += repo.stars;
+            totalForks += repo.forks;
           });
 
         console.log('Total stars: ' + totalStars);
