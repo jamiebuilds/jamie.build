@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Why are we testing like this? – @thejameskyle</title>
+  <style media="screen">
+    body {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 2em 2em 6em;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 1.2em;
+      line-height: 1.8;
+      background: #212136;
+      color: white;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    p, h1, h2, h3, h4, h5, h6, ul, ol, li, pre, img, aside {
+      margin-top: 1.5em;
+      margin-bottom: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: top;
+      border: 1px solid #171826;
+    }
+
+    header {
+      padding-bottom: 1em;
+      border-bottom: 1px solid #171826;
+    }
+
+    header p {
+      margin-top: 0;
+      font-size: 1.4em;
+      font-weight: 300;
+      color: #999BB7;
+    }
+
+    footer {
+      margin-top: 2em;
+      border-top: 1px solid #171826;
+      font-size: 0.8em;
+      color: #999BB7;
+    }
+
+    a {
+      color: #6BD9ED;
+    }
+
+    code {
+      font-size: 0.95em;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
+
+    blockquote {
+      margin-left: 0;
+      padding-left: 1em;
+      border-left: 5px solid;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid;
+    }
+
+    pre {
+      background: #292A44;
+      border: 1px solid #171826;
+      color: white;
+      padding: 1em;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    pre code {
+      color: inherit;
+    }
+
+    pre em {
+      font-style: normal;
+      color: #F86F9C;
+    }
+
+    code {
+      color: #F86F9C;
+    }
+
+    aside {
+      background: #171826;
+      padding: 1em;
+    }
+
+    aside :first-child {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Why are we testing like this?</h1>
+  <p>Alternate title: "BDD testing style is considered harmful, lol"</p>
+</header>
+
+<aside class="song">
+  This article is best enjoyed while listening to:
+  <a href="https://www.youtube.com/watch?v=E9MVd7a-VkQ" target="_blank">
+    "Keep It Low" – Generationals
+  </a>
+</aside>
+
+<p>
+  Hey before I start this post about the very non-controversial topic of how
+  people write tests, might I start off by saying that spaces are dumb and we
+  all secretly know it, and that semicolons are necessary if you want to be a
+  <em>real</em> programmer.
+</p>
+
+<p>
+  Now that I've got all of you on my side, let's get into the fun part: Talking
+  at length about testing code.
+</p>
+
+<aside>
+  <p>
+    <em>Note:</em> I'm going to use a syntax that I made up for this post because
+    I think I know better than everyone who has ever designed a programming
+    language and I feel like people might get too caught up on the syntax of
+    other languages.
+  </p>
+</aside>
+
+<p>
+  Let's imagine a test suite that tests some very important code:
+  <code>Foo</code>, <code>Bar</code>, and <code>Baz</code>. We'll write our
+  test suite in two different styles (but will otherwise test the same code
+  paths), carefully named "BDD-style" and "Not BDD-style".
+</p>
+
+<h3>BDD-style</h3>
+
+<pre><code><em>describe</em> foo
+  <em>beforeEach</em>
+    foo = new Foo
+
+  <em>it</em> should do something
+    <em>expect</em> foo.doSomething() <em>is</em> false
+
+  <em>describe</em> with bar
+    <em>beforeEach</em>
+      bar = new Bar
+
+    <em>it</em> should do something else
+      <em>expect</em> foo.doSomething(bar) <em>is</em> true
+
+<em>describe</em> baz
+  <em>beforeEach</em>
+    baz = new Baz
+
+  <em>it</em> should do something
+    <em>expect</em> baz.doSomething() <em>is</em> true</code></pre>
+
+<p><strong>Results:</strong></p>
+
+<pre><code><em>foo</em>
+  should do something <em>✔︎</em>
+  <em>with bar</em>
+    should do something else <em>✔︎</em>
+<em>baz</em>
+  should do something <em>✔︎</em></code></pre>
+
+<h3>Not BDD-style</h3>
+
+<pre><code><em>setupFoo</em> = () => new Foo
+<em>setupBar</em> = () => new Bar
+<em>setupBaz</em> = () => new Baz
+
+<em>test</em> foo does something
+  foo = <em>setupFoo()</em>
+  <em>assert</em> foo.doSomething() <em>is</em> false
+
+<em>test</em> foo with bar does something else
+  foo = <em>setupFoo()</em>
+  bar = <em>setupBar()</em>
+  <em>assert</em> foo.doSomething(bar) <em>is</em> true
+
+<em>test</em> baz does something
+  baz = <em>setupBaz()</em>
+  <em>assert</em> foo.doSomething() <em>is</em> false</code></pre>
+
+<p><strong>Results:</strong></p>
+
+<pre><code><em>✔︎</em> foo does something
+<em>✔︎</em> foo with bar does something else
+<em>✔︎</em> baz does something</code></pre>
+
+<p>
+  If you're wondering how I learned how to write such awesome tests: too bad,
+  because I'm not letting you know my secrets.
+</p>
+
+<p>
+  I think we all know that the most important thing to deciding which of these
+  is better is the number of lines each takes up. But if you'll indulge me, I'd
+  like to discuss some obviously less important things.
+</p>
+
+<p>
+  But before we do that, I need to quickly make some changes to my test suite.
+</p>
+
+<p>
+  I just realized I never wrote a test for when <code>Foo</code>,
+  <code>Bar</code>, and <code>Baz</code> are all used together.
+</p>
+
+<h3>BDD-style</h3>
+
+<p>
+  Cool, so this is mostly a variant on the foo with bar test. But I don't have
+  my baz setup code there, so I'll duplicate that in another block.
+</p>
+
+<pre><code>describe foo
+  beforeEach
+    foo = new Foo
+
+  it should do something
+    expect foo.doSomething() is false
+
+  describe with bar
+    beforeEach
+      bar = new Bar
+
+    it should do something else
+      expect foo.doSomething(bar) is true
+
+    <em>describe with baz
+      beforeEach
+        baz = new Baz
+
+      it should do something else altogether
+        expect foo.doSomething(bar, baz) is 42</em>
+
+describe baz
+  beforeEach
+    baz = new Baz
+
+  it should do something
+    expect baz.doSomething() is true</code></pre>
+
+<h3>Not BDD-style</h3>
+
+<p>
+  Okay, this is mostly just a variant on the foo with bar test, so I'll just
+  copy and paste that and add baz.
+</p>
+
+<pre><code>setupFoo = () => new Foo
+setupBar = () => new Bar
+setupBaz = () => new Baz
+
+test foo does something
+  foo = setupFoo()
+  assert foo.doSomething() is false
+
+test foo with bar does something else
+  foo = setupFoo()
+  bar = setupBar()
+  assert foo.doSomething(bar) is false
+
+<em>test foo with bar and baz does something
+  foo = setupFoo()
+  bar = setupBar()
+  baz = setupBaz()
+  assert foo.doSomething(foo, bar) is 42</em>
+
+test baz does something
+  baz = setupBaz()
+  assert foo.doSomething() is false</code></pre>
+
+<p>
+  Alright, that was all easy enousdjcxcccccccccccccccccccccccccccccccccccccccccccccccccccccc
+</p>
+
+<aside>
+  <p>
+    At this point in writing the blog post, Mr. Kyle suffered from minor stoke
+    and had to be taken to the hospital. Doctors ran tests on him for weeks on
+    end because they couldn't understand why a fit, healthy, and I'll say it,
+    <em>sexy</em> 24 year old would have a stroke for any reason other than to
+    move the plot along.
+  </p>
+</aside>
+
+<p>
+  Sorry about that. I'm back now and I'm doing just fine, thanks for asking.
+</p>
+
+<p>
+  I 
+  So I just realized I need to pass some values into <code>Foo</code>,
+  <code>Bar</code>, and <code>Baz</code> or they get really cranky.
+</p>
+
+<h3>BDD-style</h3>
+
+<p>
+  Cool, so I'll just go to the three places where
+</p>
+
+<pre><code>describe foo
+  beforeEach
+    <em>foo = new Foo({ someFooOption: "default" })</em>
+
+  it should do something
+    expect foo.doSomething() is false
+
+  describe with bar
+    beforeEach
+      <em>bar = new Bar({ someBarOption: "default" })</em>
+
+    it should do something else
+      expect foo.doSomething(bar) is true
+
+    describe with baz
+      beforeEach
+        baz = new Baz
+
+      it should do something else altogether
+        expect foo.doSomething(bar, baz) is 42
+
+describe baz
+  beforeEach
+    <em>baz = new Baz({ someBazOption: "default" })</em>
+
+  it should do something
+    expect baz.doSomething() is true</code></pre>
+
+
+<footer>
+  <p>
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    Creative Commons Attribution 4.0 International License</a>.
+  </p>
+</footer>
+
+<script src="block-sites.js"></script>
+</body>
+</html>
