@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>I don't want to write today - @thejameskyle</title>
+
+    <style>
+      body {
+        background: white;
+        color: black;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        -webkit-font-smoothing: antialiased;
+        font-size: 3.7vw;
+        line-height: 1.4;
+        padding: 10vw;
+        animation: flicker 10s linear alternate infinite;
+        animation-play-state: paused;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      p {
+        margin: 4em 0;
+      }
+
+      @keyframes flicker {
+        0% { background: white; color: black; }
+        0.01% { background: red; color: white }
+        100% { background: white; color: red; }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I don't want to write today</h1>
+
+    <p>
+      They’re getting worse, not better.<br>
+      These characters.<br>
+      The praise.<br>
+      The abusive relationship that I want so badly.<br>
+      This idea.<br>
+      This enclosure.<br>
+      They are trying to push me.<br>
+      I’m scared.<br>
+      I’m alone.<br>
+      I’m surrounded by stages.
+    </p>
+
+    <p>
+      They’re getting worse, not better.<br>
+      These feelings.<br>
+      The grin.<br>
+      The abusive family that I want so badly.<br>
+      This story.<br>
+      This wall.<br>
+      They are trying to tell me.<br>
+      I’m scared.<br>
+      I’m alone.<br>
+      I’m not sure who isn’t trying.
+    </p>
+
+    <p>
+      They’re getting worse, not better.<br>
+      These thoughts.<br>
+      The person.<br>
+      The abusive purpose that I want so badly.<br>
+      This fear.<br>
+      This cage.<br>
+      They are trying to kill me.<br>
+      I’m scared.<br>
+      I’m alone.<br>
+      I’m going to die in my mirror.
+    </p>
+
+    <p>
+      I’m getting worse, not better.
+    </p>
+
+    <script>
+      let update = () => {
+        let pageHeight = document.body.scrollHeight;
+        let windowHeight = window.innerHeight;
+        let scrollDistance = window.scrollY;
+
+        let maxScrollDistance = pageHeight - windowHeight;
+        let percentScrolled = scrollDistance / maxScrollDistance * 100;
+        let percentLeft = 100 - percentScrolled;
+
+        let flickerSpeed = Math.max(10 * (percentLeft / 100), 0.1);
+        let roundedFlickerSpeed = Math.round(flickerSpeed * 100) / 100
+
+        document.body.style.animationDuration = roundedFlickerSpeed + 's';
+
+        if (percentLeft !== 100) {
+          document.body.style.animationPlayState = 'running';
+        }
+      };
+
+      window.onscroll = update;
+      setImmediate(update);
+    </script>
+
+    <script src="block-sites.js"></script>
+  </body>
+</html>
