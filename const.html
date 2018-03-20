@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>A fucking rant about fucking const vs fucking let - @jamiebuilds</title>
+    <script src="block-sites.js"></script>
+    <style media="screen">
+      body {
+        margin: 5em auto 10em;
+        padding: 0 1em;
+        max-width: 40em;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        -webkit-font-smoothing: antialiased;
+        font-size: 1.2em;
+        line-height: 1.6;
+      }
+
+      pre, code {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      }
+
+      pre {
+        background: black;
+        color: white;
+        padding: 1em;
+        overflow: auto;
+      }
+
+      pre em {
+        color: red;
+        font-style: normal;
+      }
+
+      code {
+        background: black;
+        color: white;
+        padding: 0.1em 0.25em;
+      }
+
+      pre > code {
+        background: transparent;
+        color: inherit;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 3em;
+        line-height: 1;
+        font-weight: 900;
+      }
+
+      h1 code {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      @media (min-width: 720px) {
+        h1 {
+          font-size: 5em;
+        }
+      }
+
+      h3 {
+        font-size: 3em;
+        font-weight: 900;
+        line-height: 1.2;
+      }
+
+      strong > em {
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+      }
+
+      .breakmeupinside {
+        word-break: break-all;
+      }
+
+      a {
+        color: red;
+        font-weight: 600;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>A fucking rant about fucking <code>const</code> vs fucking <code>let</code></h1>
+
+    <p>
+      I didn't want to be the guy write this post, but I am because Chris told
+      me to so blame that fuckin guy. I'm a victim here.
+    </p>
+
+    <p>
+      But you're all using <code>const</code> in JavaScript too much and it
+      does bug me just ever so little.
+    </p>
+
+    <h3>1. <code>const</code> doesn't do shit and we all know it</h3>
+
+    <p>
+      For starters, let's agree that <code>const</code> is fucking useless and
+      we're inventing meaning...
+    </p>
+
+    <pre><code><em>const</em> THIS_SHOULDNT_CHANGE = { right: "?" };
+THIS_SHOULDNT_CHANGE.right = <em>"wrong"</em>;
+THIS_SHOULDNT_CHANGE.<em>fucking</em> = <em>"deal with it"</em>;</code></pre>
+
+    <p>
+      <code>const</code> does not imply any kind of immutability of the value
+      itself, it only implies immutability of the <em>binding</em>.
+    </p>
+
+    <p>
+      Which... Cool.
+    </p>
+
+    <h3>2. The linters can't save you now</h3>
+
+    <p>
+      Let's also eliminate the idea that we could somehow statically enforce
+      that <em>const</em> values are immutable with a linter.
+    </p>
+
+    <p>
+      Like, sure, you could for the simple case:
+    </p>
+
+    <pre><code>const FOO = { prop: true };
+FOO.prop = false; <em>// LINT ERR >XD</em></code></pre>
+
+    <p>
+      But then like... side effects exist and shit will hurt you
+    </p>
+
+    <pre><code>export function mutatesProp(obj) {
+  obj.prop = false;
+}</code></pre>
+
+    <pre><code>import { mutatesProp } from './mutatesProp';
+const FOO = { prop: true };
+mutatesProp(FOO); <em>// no lint err :(</em></code></pre>
+
+    <p>
+      And yeah, type systems like Flow and <a class="breakmeupinside" href="https://twitter.com/search?q=have%20you%20tried%20typescript&src=typd">HiHaveYouTriedTypeScriptYouShouldReallyTryTypeScriptIWriteTypeScriptAndImFuckingObnoxiousImGonnaStickMyHeadInAMicrowaveAndScreamTypeScript™</a> could do
+      <em>something</em> with this, but like... they don't... sooooo
+    </p>
+
+    <h3>3. No it's not useful for compilers</h3>
+
+    <p>
+      You might be thinking, "Oh but it can still be used to optimize code or
+      whatever"
+    </p>
+
+    <p>
+      You would be right in thinking that compiler optimizations would make it
+      interesting enough to use. But...
+    </p>
+
+    <p>
+      You would be wrong in thinking that <code>const</code> is at all useful
+      to optimizing compilers.
+    </p>
+
+    <p>
+      It's already really really easy to identify a binding and figure out if
+      it's never reassigned. All of the relevant optimizations are already
+      possible without <code>const</code> ever being a thing.
+    </p>
+
+    <p>
+      Also, V8 and friends have been doing these optimizations without
+      <code>const</code> for a really long time. Benedikt or Franziska or
+      whoever can correct me if I'm wrong, but Babel definitely can already do
+      this shit.
+    </p>
+
+    <h3>4. So what are we going to do?</h3>
+
+    <p>
+      First off, like... we don't <em>have</em> to <em>do</em> anything. There is no
+      reason you would ever <em>have</em> to use <code>const</code>, and
+      whereever we are using it, we could just as easily use <code>let</code>
+      and our code wouldn't be impacted in any way.
+    </p>
+
+    <p>
+      Honestly, if you just want to stop here and never use <code>const</code>
+      again and never question it further, you will save literally whole...
+      minutes of your life.
+    </p>
+
+    <p>
+      But like... we <em>have</em> <code>const</code> so why don't we use it for
+      <em>something</em> ...right? We could like use it to <strong><em>communicate</em></strong>.
+    </p>
+
+    <p>
+      Sure.
+    </p>
+
+    <h3>5. But what you've chosen to communicate is stupid and annoying</h3>
+
+    <p>
+      So, lots of people (okay maybe not you, you special little shit) are
+      doing this... <em>thing</em> where they change every <code>let</code>
+      variable which is never re-assigned to <code>const</code>.
+    </p>
+
+    <pre><code><em>let</em> answer = 42;
+neverChangeTheAnswer(answer);
+justKeepDoingOtherStuffWithTheValue(answer);</code></pre>
+
+    <p>
+      They would see the above code and say "that <code>let</code> should be a
+      <code>const</code> so that the reader knows at the declaration of
+      <code>answer</code> that it never changes."
+    </p>
+
+    <p>
+      And many of them will include linter tools for enforcing that rule on
+      every variable declaration, even sometimes applying the "fix"
+      automatically.
+    </p>
+
+    <pre><code><em>const</em> answer = 42;
+neverChangeTheAnswer(answer);
+justKeepDoingOtherStuffWithTheValue(answer);</code></pre>
+
+    <p>
+      "That's better."
+    </p>
+
+    <p>
+      But... is it better?
+    </p>
+
+    <p>
+      Did you <em>really</em> mean to <strong><em>communicate</em></strong> that
+      we should never change the <code>answer</code> or do we just
+      <em>happen</em> to never change it?
+    </p>
+
+    <p>
+      What if we came along later and decided we are okay changing the answer?
+      But now it's a <code>const</code> and we aren't really sure if we're
+      going to break someone's expectation for <code>answer</code> if we do
+      change it.
+    </p>
+
+    <p>
+      There are lots of bindings that we <em>happen</em> to never change that
+      we're totally fine if they do change. In fact, that's probably true for
+      <em>most</em> bindings. It's not something your code will generally care
+      about.
+    </p>
+
+    <p>
+      But by automatically applying this rule to every binding no matter what
+      the author's actual intent was, we actually throw out our opportunity to
+      <strong><em>communicate</em></strong> something.
+    </p>
+
+    <h3>6. So what should we actually use <code>const</code> for?</h3>
+
+    <p>
+      It's probably still a good idea to communicate that you really
+      <em>don't</em> intend for something to be changed.
+    </p>
+
+    <p>
+      But in order to communicate that, we need to only use it when
+      appropriate.
+    </p>
+
+    <pre><code>const I_ACTUALLY_GIVE_A_SHIT_IF_THIS_CHANGES = 42;</code></pre>
+
+    <p>
+      If you want some good rules to follow, here's my best attempt:
+    </p>
+
+    <p>
+      <strong>1. Only use <code>const</code> at the top level scope</strong>
+    </p>
+
+    <pre><code>const <em>HERE</em> = "is okay";
+
+function nested() {
+  const <em>NOT_HERE</em> = "never seen a reason to";
+}</code></pre>
+
+    <p>
+      I'm pretty sure I've never seen a binding created in a function that will
+      actually be upset if it changes. I never use <code>const</code> inside
+      nested scopes, and I don't intend to. Why? Because my mom raised me
+      right (see my usage of semicolons), that's why.
+    </p>
+
+    <p>
+      <strong>2. Avoid using <code>let</code> at the top level scope</strong>
+    </p>
+
+    <p>
+      On the other hand, if you need to use <code>let</code> at the top-level
+      scope, that's a sign you have some sort of global singleton state which
+      could cause you problems.
+    </p>
+
+    <pre><code><em>let globalState</em> = "hmmm...";
+
+function fn() {
+  <em>globalState =</em> "this seems fragile to test...";
+}</code></pre>
+
+    <p>
+      And like... that's basically it...
+    </p>
+
+    <p>
+      And for the love of all that is not shit, please don't try enforcing this
+      with a linter. Let people communicate what they want to communicate.
+      Ya'll drive me crazy with that shit.
+    </p>
+
+    <p>
+      Now get the fuck out of my house.
+    </p>
+  </body>
+</html>
