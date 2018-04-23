@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      *, ::before, ::after {
+        -webkit-font-smoothing: inherit;
+      }
+
+      body {
+        margin: 2% 2% 10em;
+        padding: 0 1em;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        -webkit-font-smoothing: antialiased;
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 1.6;
+        background: #F92672;
+        color: white;
+      }
+
+      @media (min-width: 720px) {
+        body {
+          font-size: 1.6em;
+        }
+      }
+
+      @media (min-width: 960px) {
+        body {
+          font-size: 2em;
+        }
+      }
+
+      p {
+        max-width: 30em;
+      }
+
+      pre, code {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      }
+
+      pre {
+        background: black;
+        color: white;
+        padding: 1em;
+        overflow: auto;
+      }
+
+      pre em {
+        color: red;
+        font-style: normal;
+      }
+
+      code {
+        background: black;
+        color: white;
+        padding: 0.1em 0.25em;
+      }
+
+      pre > code {
+        background: transparent;
+        color: inherit;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 10vw;
+        line-height: 1;
+        font-weight: 100;
+      }
+
+      h3 {
+        font-size: 3em;
+        font-weight: 900;
+        line-height: 1.2;
+      }
+
+      strong > em {
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+      }
+
+      .breakmeupinside {
+        word-break: break-all;
+      }
+
+      a {
+        background: white;
+        color: #F92672;
+        padding: 0.1em 0.25em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>"last 2 versions" <s>considered</s> harmful</h1>
+
+    <p>
+      There comes a time in every developer's life when they come to realize
+      their thoughtleaders misled them.
+    </p>
+
+    <p>Oh, we've really done it now.</p>
+
+    <p>
+      So remember how we told you all to use <code>babel-preset-env</code>?
+    </p>
+
+    <pre><code>{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      }
+    }]
+  ]
+}</code></pre>
+
+    <p>
+      <a href="http://browserl.ist/?q=last+2+versions">See browserlist coverage</a>
+    </p>
+
+    <p>
+      We told you to use it because it would only compile the things that the
+      browsers you support actually needed to be compiled. So if all the
+      browsers you cared about supported arrow functions, Babel would stop
+      compiling away arrow functions.
+    </p>
+
+    <p>
+      Except, if you use <code>babel-preset-env</code> the way I did above.
+      Arrow functions will never stop being compiled... no, like never ever. It
+      could be the year 2418 and Babel will still be compiling away arrow
+      functions.
+    </p>
+
+    <p>
+      This is because of that one little <code>"last 2 versions"</code> bit.
+    </p>
+
+    <p>
+      When you say "We support the last 2 versions of every browser", you
+      probably don't mean browsers like:
+    </p>
+
+    <ul>
+      <li>Internet Explorer Mobile (0.23% market share globally)</li>
+      <li>Blackberry Browser (0.07%)</li>
+      <li>Opera Mobile (0.01%)</li>
+      <li>QQ Browser (0%)</li>
+      <li>Baidu Browser (0%)</li>
+    </ul>
+
+    <p>
+      But guess what? "last 2 versions" will always match those... forever.
+    </p>
+
+    <p>
+      Take Internet Explorer for example. It's been replaced by Edge and will
+      never have any new versions after Internet Explorer 11. Microsoft gave us
+      that gift.
+    </p>
+
+    <p>
+      But if you say that you support the "last 2 versions" of every browser,
+      that means you support the last 2 versions of Edge <strong>AND</strong>
+      the last 2 versions of Internet Explorer.
+    </p>
+
+    <p>
+      And since there's never going to be another version of Internet Explorer,
+      you will be supporting Internet Explorer 10 &amp; 11... forever.
+    </p>
+
+    <h3>What to do instead</h3>
+
+    <p>
+      This would be my personal recommendation:
+    </p>
+
+    <pre><code>"browsers": [
+  ">0.25%",
+  "not ie 11",
+  "not op_mini all"
+]</code></pre>
+
+    <p>
+      <a href="http://browserl.ist/?q=%3E0.25%25%2C+not+ie+11%2C+not+op_mini+all">See browserlist coverage</a>
+    </p>
+
+    <p>
+      Then you can adjust it as needed with specific browsers. You can read
+      about how it works in the <a href="https://github.com/browserslist/browserslist#queries">browserlist documentation</a>.
+    </p>
+
+    <p>
+      Using market share percentages as your baseline is much better than some
+      arbitrary number of previous versions. If a browser is used by 0 people,
+      then market percentages will reflect that.
+    </p>
+
+    <p>
+      I would make this adjustment in your apps immediately, it will likely
+      lead to a fairly big drop in your app's size (depending on the features
+      that you are using and how often).
+    </p>
+
+  </body>
+</html>
