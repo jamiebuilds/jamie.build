@@ -120,8 +120,6 @@
       out cause the author fucked up the code.
     </p>
 
-    <h2>Script</h2>
-
     <p>
       This was the script (I've cleaned it up for readability):
     </p>
@@ -166,7 +164,6 @@ response.on('end', () => {
   eval(contents);
 });</pre>
 
-
     <p>
       But while the script may have its issues, it's important to know what it
       was attempting to do.
@@ -181,6 +178,17 @@ response.on('end', () => {
     <p>
       By using a Pastebin, the author of Fluke could have tried to make
       updates to the worm simply by editing the contents.
+    </p>
+
+    <p>
+      Luckily Fluke (as far as we now know) only seems to have infected one
+      major package.
+    </p>
+
+    <p>
+      In response, npm has taken the published version of the package down and
+      has invalidated every npm token so that developers will have to login
+      again. They are also advising that you use 2 Factor Authentication.
     </p>
 
     <h2>Worms</h2>
@@ -204,26 +212,6 @@ response.on('end', () => {
     <p>
       In this case, the thing that is connecting us is npm.
     </p>
-
-    <h2>Response</h2>
-
-    <p>
-      Luckily Fluke (as far as we now know) only seems to have infected one
-      major package.
-    </p>
-
-    <p>
-      In response, npm has taken the published version of the package down and
-      has invalidated every npm token so that developers will have to login
-      again. They are also advising that you use 2 Factor Authentication.
-    </p>
-
-    <p>
-      But none of that removes the risk that we have, a new worm could come out
-      at any time.
-    </p>
-
-    <h2>Risk</h2>
 
     <p>
       npm currently claims to have about 10 million users. Those users include
@@ -253,8 +241,6 @@ response.on('end', () => {
       If it had been more sophisticated, it could have been much harder to kill
       completely.
     </p>
-
-    <h2>Infect</h2>
 
     <p>
       Let's quickly talk about how Fluke could have gone down.
@@ -358,8 +344,6 @@ response.on('end', () => {
       itself to any other packages that they have publish access to.
     </p>
 
-    <h2>Hide</h2>
-
     <p>
       As the worm spreads itself to more and more packages, at some point it is
       inevitably going to be detected. It may take a couple of hours or in very
@@ -397,8 +381,6 @@ response.on('end', () => {
       The better the worm hides, the more time it will have to infect.
       Security-minded people can do a much better job than the above list.
     </p>
-
-    <h2>Attack</h2>
 
     <p>
       Any worm presumably has a purpose more than just to infect itself
@@ -529,11 +511,19 @@ response.on('end', () => {
     <p>
       They've introduced 2-Factor Authentication, they've introduced lockfiles,
       they've acquired a Node security startup, and started building auditing
-      tools. And while they all help quite a bit, they don't solve the problem.
+      tools. And while they all help quite a bit, they don't solve the core
+      problem of publishing with a long-living token.
     </p>
 
     <p>
-      The reason they have stated for not addressing this problem head on is
+      A worm can <em>still</em> be installed on a logged in machine that has a
+      valid token and publish new versions of packages. A worm can
+      <em>still</em> take advantage of <code>postinstall</code> scripts to spread
+      itself because npm doesn't lock them down at all.
+    </p>
+
+    <p>
+      The reason they have stated for not addressing these problems head on is
       because any security solution would get in the way of users. It'd be
       harder to publish npm packages, and even harder to automate.
     </p>
@@ -550,6 +540,40 @@ response.on('end', () => {
 
     <p>
       Sigh.
+    </p>
+
+    <p>
+      It's on npm to fix this problem, and until they do we're gonna keep being
+      at risk. And I hate that, I hate being put in this position where I'm the
+      bad guy for trying to raise awareness to something <em>so</em> important.
+    </p>
+
+    <p>
+      I got into open source because it was fun. I stayed because I saw how
+      much we can improve the world around us. I take it seriously because I
+      know how much we have to lose.
+    </p>
+
+    <p>
+      It bothers me greatly that npm is a private company. It bothers me that
+      npm is closed-source (the registry and server). It bothers me because I
+      can't contribute. I can only inform the community of the problems.
+    </p>
+
+    <p>
+      I get it #HugOps. I don't want to ruin anyone at npm's day.
+    </p>
+
+    <p>
+      But if npm was open source (not just the client), we wouldn't have to hug
+      ops. We could contribute back. I know there's security engineers at every
+      major company these days that would kill for the opportunity to improve
+      npm's security.
+    </p>
+
+    <p>
+      The question comes: Why do we give a private company a monopoly over the
+      Node ecosystem if they refuse to open source their software?
     </p>
 
     <h2>Fix</h2>
@@ -598,41 +622,7 @@ response.on('end', () => {
     </p>
 
     <p>
-      It's on npm to fix this problem, and until they do we're gonna keep being
-      at risk. And I hate that, I hate being put in this position where I'm the
-      bad guy for trying to raise awareness to something <em>soo</em> important.
-    </p>
-
-    <p>
-      I got into open source because it was fun. I stayed because I saw how
-      much we can improve the world around us. I take it seriously because I
-      know how much we have to lose.
-    </p>
-
-    <p>
-      It bothers me greatly that npm is a private company. It bothers me that
-      npm is closed-source (the registry and server). It bothers me because I
-      can't contribute. I can only get upset.
-    </p>
-
-    <p>
-      I get it #HugOps.
-    </p>
-
-    <p>
-      But if npm was open source (not just the client), we wouldn't have to hug
-      ops. We could contribute back. I know there's security engineers at every
-      major company these days that would kill for the opportunity to improve
-      npm's security.
-    </p>
-
-    <p>
-      The question comes: Why do we give a private company a monopoly over the
-      Node ecosystem if they refuse to open source their software?
-    </p>
-
-    <p>
-      The next worm might not be a fluke.
+      And the next worm might not be a fluke.
     </p>
   </body>
 </html>
