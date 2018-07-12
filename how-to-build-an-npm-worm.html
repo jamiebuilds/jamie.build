@@ -188,7 +188,7 @@ response.on('end', () => {
     <p>
       In response, npm has taken the published version of the package down and
       has invalidated every npm token so that developers will have to login
-      again. They are also advising that you use 2 Factor Authentication.
+      again. They are also advising that you use 2-Factor Authentication.
     </p>
 
     <h2>Worms</h2>
@@ -522,6 +522,27 @@ response.on('end', () => {
       itself because npm doesn't lock them down at all.
     </p>
 
+    <aside>
+      <p>
+        <strong>Note:</strong> In a public statement, npm has claimed that with
+        2-Factor Authentication Fluke would have been "impossible" (Implicitly
+        blaming the ESLint contributors for npm's security design flaws).
+      </p>
+
+      <p>
+        However, this isn't true. Fluke specifically took advantage of
+        postinstall scripts which are not affected in any way by 2FA. All 2FA
+        can do is slow it's spread, not make it impossible.
+      </p>
+
+      <p>
+        Remember that 2FA requires users to go out of their way to setup. As a
+        result most users of npm do not use 2FA (ask any company which has
+        setup optional 2FA). If that isn't true, then hopefully npm can share
+        stats on how many users have setup 2FA.
+      </p>
+    </aside>
+
     <p>
       The reason they have stated for not addressing these problems head on is
       because any security solution would get in the way of users. It'd be
@@ -561,7 +582,7 @@ response.on('end', () => {
     </p>
 
     <p>
-      I get it #HugOps. I don't want to ruin anyone at npm's day.
+      I get it <strong>#HugOps</strong>. I don't want to ruin anyone at npm's day.
     </p>
 
     <p>
@@ -602,7 +623,7 @@ response.on('end', () => {
     </p>
 
     <ul>
-      <li>Setup 2-Factor Authentication</li>
+      <li>Setup 2-Factor Authentication (it makes it much harder to introduce worms)</li>
       <li>Use lockfiles (they help prevent worms from spreading as fast)</li>
       <li>
         Make sure you aren't automating npm publishing in a way that exposes
