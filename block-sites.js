@@ -20,7 +20,8 @@ if (matched) {
     document.body.innerHTML = (
       '<p>This page is unavailable when linked to from ' + matched + '.</p>' +
       '<p>Please find a less toxic place to spend your time.</p>' +
-      '<p><a href="https://www.youtube.com/watch?v=_clM6zNYQLQ">Here is a great song for your time</a></p>'
+      '<p>Here\'s a song for your time:</p>' +
+      '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Nrnq4SZ0luc?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
     );
     document.body.hidden = false;
   });
