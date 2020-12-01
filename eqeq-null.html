@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+
+      margin: 0;
+      padding: 2em 2em 4em;
+
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-size: 1.2em;
+      line-height: 1.8;
+
+      background: #FFFAFA;
+      color: #1E0A09;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    pre, :not(pre) > code {
+      padding: 0.15em 0.2em;
+
+
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+      background: hsl(250deg 50% 90%);
+      color: hsl(250deg 50% 40%);
+      border-radius: 3px;
+    }
+
+    :not(pre) > code {
+      font-size: 0.95em;
+    }
+
+    pre {
+      padding: 0.5em 1em;
+      font-size: 1.3em;
+      line-height: 1.4;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    pre strong {
+      text-decoration: underline;
+    }
+
+    .coercion svg {
+      width: 100%;
+      margin-top: 100px;
+    }
+
+    .however {
+      font-size: 10vw;
+    }
+
+    .bad {
+      background: hsl(340deg 50% 90%);
+      color:  hsl(340deg 50% 40%);
+    }
+
+    .good {
+      background: hsl(180deg 50% 90%);
+      color:  hsl(180deg 50% 40%);
+    }
+
+    .technically-correct {
+      background: hsl(180deg 50% 90%);
+      color:  hsl(180deg 50% 40%);
+
+    }
+
+    .technically-correct code {
+      font-family: cursive;
+    }
+
+    .im-a-pusher-cady {
+      font-size: 60px;
+      text-align: center;
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1><code>value == null</code> is good, actually.</h1>
+
+    <p>
+      There is no doubt. <code>==</code> and <code>!=</code> were bad additions to
+      JavaScript, and <code>===</code> and <code>!==</code> should have been the
+      default behavior. However, for better or well... mostly worse... JavaScript
+      has them.
+    </p>
+
+    <p>
+      In a similar sense, JavaScript also has the unusual inclusion of both
+      <code>undefined</code> and <code>null</code>. I'm not here today to debate
+      the merit of either, because again for better or <em>worse</em> JavaScript
+      has them, and you <em>will</em> encounted both.
+    </p>
+
+    <p>
+      No, today I want to talk about a ESLint rule, one that JavaScript linters
+      have always had in one shape or another:
+      <a href="https://eslint.org/docs/rules/eqeqeq"><code>eqeqeq</code></a>.
+    </p>
+
+    <p>
+      The zeigeist for most of my career has been: "Never use <code>==</code> or
+      <code>!=</code>, they are bad, if you even think about using
+      <code>==</code> or <code>!=</code> I will shit in your left shoe."
+    </p>
+
+    <p>
+      And like... that's fair.
+    </p>
+
+    <p>
+      But there is one case where I implore you to reconsider:
+    </p>
+
+    <pre class="good"><code>if (<strong>value == null</strong>) {
+  // ...
+}</code></pre>
+
+    <p>
+      The above check is functionally identical to this:
+    </p>
+
+    <pre class="technically-correct"><code>if (<strong>value === null || typeof value === "undefined"</strong>) {
+  // ...
+}</code></pre>
+
+    <p>
+      But because that is a mouthful, <em>most</em> of the time, what people
+      <em>actually</em> write is this:
+    </p>
+
+    <pre class="bad"><code>if (<strong>!value</strong>) {
+  // ...
+}</code></pre>
+
+    <p>
+      Which (ironically) runs into the exact problem of coercion that led us not
+      to use <code>==</code> or <code>!=</code> in the first place!
+    </p>
+
+    <p>Oh did I not explain coercion?</p>
+
+  </div>
+
+  <h2 class="coercion">
+    <svg viewBox="0 0 500 150">
+      <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" fill="transparent" />
+      <text x="25" style="font-size: 100px; font-family: cursive;">
+        <textPath xlink:href="#curve" fill="hotpink">
+          Coercion.
+        </textPath>
+      </text>
+    </svg>
+  </h2>
+
+  <div class="container">
+    <p>
+      So the <em>reason</em> why people say <code>==</code> and <code>!=</code>
+      are bad is because of this thing called coercion.
+    </p>
+
+    <p>
+      Sometimes JavaScript needs a number or a string or boolean or some other
+      <em>type</em>. But you, being the silly little goose you are, sometimes
+      give it something else. And JavaScript is all like "Ugh, fine." and turns
+      it into the type it needs.
+    </p>
+
+    <p>
+      And sometimes that is convenient. But lots of times that causes subtle
+      bugs and "wat" moments.
+    </p>
+
+    <p>
+      For example:
+    </p>
+
+    <pre class="bad"><code>let value = 42
+
+if (<strong>value</strong>) {
+  console.log("we have a value!")
+}</code></pre>
+
+    <p>
+      In order to figure out if the contents of this if-block should run,
+      JavaScript needs to figure out if <code>value</code> is "truthy". Which is
+      a less fancy way of saying it <em>coerces</em> the value into a boolean
+      <code>true</code> or <code>false</code>.
+    </p>
+
+    <p>
+      Following conventions that date back to the 70s or something (always a
+      good sign), when coercing a number to a boolean, JavaScript says
+      <code>0</code> is <code>false</code> and every other <em>number</em> is
+      <code>true</code>.
+    </p>
+
+    <p>
+      And <em>maybe</em> that's behavior we wanted to depend on, but often it's
+      the cause of subtle bugs in your code that is <em>trying</em> to check for
+      the presence of a number (not if it's a particular kind of number).
+    </p>
+
+    <p>
+      So the reason people say never to use <code>==</code> and <code>!=</code>
+      is because these operators have the same sort of built-in
+      <em>coercion</em> where <code>42</code> is <code>true</code>.
+    </p>
+
+    <p>
+      <code>===</code> and <code>!==</code> do not have this behavior.
+    </p>
+
+<pre><code>let value = 42
+
+if (<strong>value == true</strong>) {
+  console.log("value is truthy????")
+}
+
+if (<strong>value === true</strong>) {
+  console.log("value *is* `true`.")
+}</code></pre>
+
+    <h2 class="however">HOWEVER</h2>
+
+    <p>
+      However, the coercion in <code>value == null</code> is actually very
+      useful and you should feel okay using it in your code.
+    </p>
+
+    <p>
+      <code>value == null</code> will <strong><em>only</em></strong> evaluate to
+      <code>true</code> if <code>value</code> is <code>null</code> or
+      <code>undefined</code>.
+    </p>
+
+    <pre class="good"><code>if (<strong>value == null</strong>) {
+  console.log("value is exactly null or undefined")
+}</code></pre>
+
+    <p>
+      In effect, <code>value == null</code> is a "presence check" which is
+      something most JavaScript code desperately needs because again, the
+      alternative is this:
+    </p>
+
+    <pre class="technically-correct"><code>if (<strong>value === null || typeof value === "undefined"</strong>) {
+  console.log("value is exactly null or undefined")
+}</code></pre>
+
+    <p>
+      Which only a reply-guy would ever claim they write 100% of the time. Cause
+      let's be honest, this is a lot easier to write:
+    </p>
+
+    <pre class="bad"><code>if (<strong>!value</strong>) {
+  console.log("who can say really")
+}</code></pre>
+
+    <p>
+      But if you are <em>refusing</em> to use <code>==</code> on the grounds
+      that coercion is bad and causes bugs, then you also should not be relying on
+      <code class="bad">!value</code>.
+    </p>
+
+    <h2 class="im-a-pusher-cady">Now lets fix your linter.</h2>
+
+    <p>
+      Assuming you're using ESLint, you'll want to configure the
+      <a href="https://eslint.org/docs/rules/eqeqeq"><code>eqeqeq</code></a>
+      rule to allow <code>== null</code> to be used (make sure you read the
+      <a href="https://eslint.org/docs/rules/eqeqeq">docs</a>).
+    </p>
+
+    <pre><code>{
+  "rules": {
+    <strong>"eqeqeq"</strong>: ["error", "always", {
+      <strong>"null": "never"</strong> // or "ignore"
+    }]
+  }
+}</code></pre>
+
+    <p>
+      If you are a TypeScript user and you're using
+      <a href="https://github.com/typescript-eslint/typescript-eslint"><code>@typescript-eslint</code></a>
+      you should also consider the
+      <a href="https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md">strict-boolean-expressions</a>
+      rule.
+    </p>
+  </div>
+</body>
+</html>
