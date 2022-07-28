@@ -1233,15 +1233,6 @@
     "url": "https://github.com/babel-utils/babel-flow-scope"
   },
   {
-    "owner": "boltpkg",
-    "name": "grouped-topo-sort",
-    "stars": 6,
-    "forks": 0,
-    "language": "JavaScript",
-    "description": null,
-    "url": "https://github.com/boltpkg/grouped-topo-sort"
-  },
-  {
     "owner": "babel-utils",
     "name": "babylon-options",
     "stars": 6,
@@ -1252,12 +1243,21 @@
   },
   {
     "owner": "boltpkg",
-    "name": "bolt-query",
+    "name": "grouped-topo-sort",
+    "stars": 6,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/boltpkg/grouped-topo-sort"
+  },
+  {
+    "owner": "Thinkmill",
+    "name": "parse-toml-stream",
     "stars": 5,
     "forks": 2,
     "language": "JavaScript",
-    "description": "Query info and files from your pyarn project",
-    "url": "https://github.com/boltpkg/bolt-query"
+    "description": "Parse TOML files in streams chunked by [sections]",
+    "url": "https://github.com/Thinkmill/parse-toml-stream"
   },
   {
     "owner": "babel-utils",
@@ -1278,22 +1278,13 @@
     "url": "https://github.com/babel-utils/babel-log"
   },
   {
-    "owner": "Thinkmill",
-    "name": "parse-toml-stream",
+    "owner": "boltpkg",
+    "name": "bolt-query",
     "stars": 5,
     "forks": 2,
     "language": "JavaScript",
-    "description": "Parse TOML files in streams chunked by [sections]",
-    "url": "https://github.com/Thinkmill/parse-toml-stream"
-  },
-  {
-    "owner": "boltpkg",
-    "name": "website",
-    "stars": 3,
-    "forks": 2,
-    "language": "HTML",
-    "description": null,
-    "url": "https://github.com/boltpkg/website"
+    "description": "Query info and files from your pyarn project",
+    "url": "https://github.com/boltpkg/bolt-query"
   },
   {
     "owner": "babel-utils",
@@ -1315,12 +1306,12 @@
   },
   {
     "owner": "boltpkg",
-    "name": "bolt-webpack-stats",
-    "stars": 2,
-    "forks": 0,
-    "language": "JavaScript",
-    "description": "Get Webpack stats for all your Bolt workspaces",
-    "url": "https://github.com/boltpkg/bolt-webpack-stats"
+    "name": "website",
+    "stars": 3,
+    "forks": 2,
+    "language": "HTML",
+    "description": null,
+    "url": "https://github.com/boltpkg/website"
   },
   {
     "owner": "projectorjs",
@@ -1360,6 +1351,33 @@
   },
   {
     "owner": "boltpkg",
+    "name": "bolt-webpack-stats",
+    "stars": 2,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Get Webpack stats for all your Bolt workspaces",
+    "url": "https://github.com/boltpkg/bolt-webpack-stats"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "pretty-format-ast",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Pretty format plugin to print ASTs prettier",
+    "url": "https://github.com/babel-utils/pretty-format-ast"
+  },
+  {
+    "owner": "projectorjs",
+    "name": "projector-jest",
+    "stars": 1,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": "Run Jest with ease",
+    "url": "https://github.com/projectorjs/projector-jest"
+  },
+  {
+    "owner": "boltpkg",
     "name": "bolt-dashboard-cli",
     "stars": 1,
     "forks": 0,
@@ -1375,23 +1393,5 @@
     "language": "JavaScript",
     "description": null,
     "url": "https://github.com/boltpkg/bolt-releases"
-  },
-  {
-    "owner": "projectorjs",
-    "name": "projector-jest",
-    "stars": 1,
-    "forks": 1,
-    "language": "JavaScript",
-    "description": "Run Jest with ease",
-    "url": "https://github.com/projectorjs/projector-jest"
-  },
-  {
-    "owner": "babel-utils",
-    "name": "pretty-format-ast",
-    "stars": 1,
-    "forks": 0,
-    "language": "JavaScript",
-    "description": "Pretty format plugin to print ASTs prettier",
-    "url": "https://github.com/babel-utils/pretty-format-ast"
   }
 ]
