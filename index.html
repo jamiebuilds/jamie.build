@@ -357,6 +357,8 @@
       console.log('Total stars: ' + totalStars);
       console.log('Total forks: ' + totalForks);
 
+      let fmt = new Intl.NumberFormat()
+
       let res = ""
 
       res += "<ol>"
@@ -368,8 +370,8 @@
         if (repo.language != null) {
           res += `${repo.language}, `
         }
-        res += `stars: ${repo.stars}, `
-        res += `forks: ${repo.forks}`
+        res += `${fmt.format(repo.stars)} stars, `
+        res += `${fmt.format(repo.forks)} forks`
         res += `)`
         res += "</a>"
         res += "</li>"
