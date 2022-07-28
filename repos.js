@@ -3,6 +3,7 @@ let repostoryStatsDataFragment = /* GraphQL */`
     owner {
       login
     }
+    nameWithOwner
     name
     forkCount
     stargazerCount
@@ -114,7 +115,7 @@ await Promise.all(promises)
 repos = repos.filter(repo => {
   return repo.stargazerCount !== 0 && !repo.name.includes("__")
 }).sort((a, b) => {
-  return b.stargazerCount - a.stargazerCount
+  return a.nameWithOwner.localeCompare(b.nameWithOwner)
 }).map(repo => {
   return {
     owner: repo.owner.login,
