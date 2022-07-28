@@ -1,0 +1,1397 @@
+[
+  {
+    "owner": "babel",
+    "name": "babel",
+    "stars": 41163,
+    "forks": 5415,
+    "language": "TypeScript",
+    "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
+    "url": "https://github.com/babel/babel"
+  },
+  {
+    "owner": "parcel-bundler",
+    "name": "parcel",
+    "stars": 41073,
+    "forks": 2166,
+    "language": "JavaScript",
+    "description": "The zero configuration build tool for the web. 📦🚀",
+    "url": "https://github.com/parcel-bundler/parcel"
+  },
+  {
+    "owner": "yarnpkg",
+    "name": "yarn",
+    "stars": 40768,
+    "forks": 2858,
+    "language": "JavaScript",
+    "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
+    "url": "https://github.com/yarnpkg/yarn"
+  },
+  {
+    "owner": "facebook",
+    "name": "jest",
+    "stars": 39666,
+    "forks": 5943,
+    "language": "TypeScript",
+    "description": "Delightful JavaScript Testing.",
+    "url": "https://github.com/facebook/jest"
+  },
+  {
+    "owner": "lerna",
+    "name": "lerna",
+    "stars": 33208,
+    "forks": 2203,
+    "language": "JavaScript",
+    "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
+    "url": "https://github.com/lerna/lerna"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "the-super-tiny-compiler",
+    "stars": 23069,
+    "forks": 2545,
+    "language": "JavaScript",
+    "description": ":snowman: Possibly the smallest compiler ever",
+    "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
+  },
+  {
+    "owner": "facebook",
+    "name": "flow",
+    "stars": 21789,
+    "forks": 1850,
+    "language": "OCaml",
+    "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
+    "url": "https://github.com/facebook/flow"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-loadable",
+    "stars": 16382,
+    "forks": 850,
+    "language": "JavaScript",
+    "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
+    "url": "https://github.com/jamiebuilds/react-loadable"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "babel-handbook",
+    "stars": 11080,
+    "forks": 1669,
+    "language": null,
+    "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
+    "url": "https://github.com/jamiebuilds/babel-handbook"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "itsy-bitsy-data-structures",
+    "stars": 8372,
+    "forks": 666,
+    "language": "JavaScript",
+    "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
+    "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "unstated",
+    "stars": 7805,
+    "forks": 313,
+    "language": "JavaScript",
+    "description": "State so simple, it goes without saying",
+    "url": "https://github.com/jamiebuilds/unstated"
+  },
+  {
+    "owner": "marionettejs",
+    "name": "backbone.marionette",
+    "stars": 7105,
+    "forks": 1308,
+    "language": "JavaScript",
+    "description": "The Backbone Framework",
+    "url": "https://github.com/marionettejs/backbone.marionette"
+  },
+  {
+    "owner": "babel",
+    "name": "minify",
+    "stars": 4338,
+    "forks": 244,
+    "language": "JavaScript",
+    "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
+    "url": "https://github.com/babel/minify"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "spectacle-code-slide",
+    "stars": 4146,
+    "forks": 202,
+    "language": "JavaScript",
+    "description": ":metal: Present code with style",
+    "url": "https://github.com/jamiebuilds/spectacle-code-slide"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "unstated-next",
+    "stars": 3982,
+    "forks": 137,
+    "language": "TypeScript",
+    "description": "200 bytes to never think about React state management libraries ever again",
+    "url": "https://github.com/jamiebuilds/unstated-next"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "tinykeys",
+    "stars": 3025,
+    "forks": 59,
+    "language": "TypeScript",
+    "description": "A tiny (~400 B) & modern library for keybindings.",
+    "url": "https://github.com/jamiebuilds/tinykeys"
+  },
+  {
+    "owner": "boltpkg",
+    "name": "bolt",
+    "stars": 2206,
+    "forks": 97,
+    "language": "JavaScript",
+    "description": "⚡️ Super-powered JavaScript project management",
+    "url": "https://github.com/boltpkg/bolt"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "babel-react-optimize",
+    "stars": 1685,
+    "forks": 48,
+    "language": "JavaScript",
+    "description": ":rocket: A Babel preset and plugins for optimizing React code.",
+    "url": "https://github.com/jamiebuilds/babel-react-optimize"
+  },
+  {
+    "owner": "cloudflare",
+    "name": "cf-ui",
+    "stars": 1296,
+    "forks": 99,
+    "language": "JavaScript",
+    "description": ":gem: Cloudflare UI Framework",
+    "url": "https://github.com/cloudflare/cf-ui"
+  },
+  {
+    "owner": "styled-components",
+    "name": "styled-theming",
+    "stars": 1145,
+    "forks": 39,
+    "language": "JavaScript",
+    "description": "Create themes for your app using styled-components",
+    "url": "https://github.com/styled-components/styled-theming"
+  },
+  {
+    "owner": "atlassian",
+    "name": "jest-in-case",
+    "stars": 1000,
+    "forks": 30,
+    "language": "JavaScript",
+    "description": "Jest utility for creating variations of the same test",
+    "url": "https://github.com/atlassian/jest-in-case"
+  },
+  {
+    "owner": "Thinkmill",
+    "name": "react-markings",
+    "stars": 888,
+    "forks": 38,
+    "language": "JavaScript",
+    "description": "**Markdown** in <Components/>, <Components/> in **Markdown**",
+    "url": "https://github.com/Thinkmill/react-markings"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "glow",
+    "stars": 703,
+    "forks": 25,
+    "language": "JavaScript",
+    "description": "Make your Flow errors GLOW",
+    "url": "https://github.com/jamiebuilds/glow"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "create-react-context",
+    "stars": 694,
+    "forks": 81,
+    "language": "JavaScript",
+    "description": "Polyfill for the proposed React context API",
+    "url": "https://github.com/jamiebuilds/create-react-context"
+  },
+  {
+    "owner": "babel",
+    "name": "website",
+    "stars": 693,
+    "forks": 1237,
+    "language": "JavaScript",
+    "description": ":globe_with_meridians: The Babel documentation website",
+    "url": "https://github.com/babel/website"
+  },
+  {
+    "owner": "cloudflare",
+    "name": "react-gateway",
+    "stars": 564,
+    "forks": 88,
+    "language": "JavaScript",
+    "description": "Render React DOM into a new context (aka \"Portal\")",
+    "url": "https://github.com/cloudflare/react-gateway"
+  },
+  {
+    "owner": "marionettejs",
+    "name": "backbone.radio",
+    "stars": 497,
+    "forks": 54,
+    "language": "JavaScript",
+    "description": "Messaging patterns for Backbone applications.",
+    "url": "https://github.com/marionettejs/backbone.radio"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "tailwindcss-animate",
+    "stars": 473,
+    "forks": 13,
+    "language": "JavaScript",
+    "description": "A Tailwind CSS plugin for creating beautiful animations",
+    "url": "https://github.com/jamiebuilds/tailwindcss-animate"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-gridlist",
+    "stars": 415,
+    "forks": 8,
+    "language": "TypeScript",
+    "description": "A virtual-scrolling GridList component based on CSS Grids",
+    "url": "https://github.com/jamiebuilds/react-gridlist"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "json-parser-in-typescript-very-bad-idea-please-dont-use",
+    "stars": 393,
+    "forks": 4,
+    "language": "TypeScript",
+    "description": "JSON Parser written entirely in TypeScript's type system",
+    "url": "https://github.com/jamiebuilds/json-parser-in-typescript-very-bad-idea-please-dont-use"
+  },
+  {
+    "owner": "yarnpkg",
+    "name": "website",
+    "stars": 391,
+    "forks": 973,
+    "language": "JavaScript",
+    "description": "Yarn package manager website",
+    "url": "https://github.com/yarnpkg/website"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "favorite-software",
+    "stars": 356,
+    "forks": 21,
+    "language": null,
+    "description": ":star2: Best software for developers and power users.",
+    "url": "https://github.com/jamiebuilds/favorite-software"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "marionette-wires",
+    "stars": 326,
+    "forks": 82,
+    "language": "JavaScript",
+    "description": ":shipit: An opinionated example application built with Marionette.js.",
+    "url": "https://github.com/jamiebuilds/marionette-wires"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "pretty-format",
+    "stars": 306,
+    "forks": 30,
+    "language": null,
+    "description": ":sparkles: Stringify any JavaScript value",
+    "url": "https://github.com/jamiebuilds/pretty-format"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "ghost-lang",
+    "stars": 298,
+    "forks": 9,
+    "language": null,
+    "description": ":ghost: A friendly little language for you and me.",
+    "url": "https://github.com/jamiebuilds/ghost-lang"
+  },
+  {
+    "owner": "cloudflare",
+    "name": "react-modal2",
+    "stars": 282,
+    "forks": 24,
+    "language": "JavaScript",
+    "description": ":thought_balloon: Simple modal component for React.",
+    "url": "https://github.com/cloudflare/react-modal2"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "roast-my-deps",
+    "stars": 266,
+    "forks": 13,
+    "language": "JavaScript",
+    "description": "Your dependencies are bad and you should feel bad",
+    "url": "https://github.com/jamiebuilds/roast-my-deps"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "bey",
+    "stars": 259,
+    "forks": 8,
+    "language": "JavaScript",
+    "description": "Simple immutable state for React using Immer",
+    "url": "https://github.com/jamiebuilds/bey"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-plugin-tester",
+    "stars": 256,
+    "forks": 39,
+    "language": "JavaScript",
+    "description": "Utilities for testing babel plugins",
+    "url": "https://github.com/babel-utils/babel-plugin-tester"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "documentation-handbook",
+    "stars": 239,
+    "forks": 27,
+    "language": null,
+    "description": "How to write high-quality friendly documentation that people want to read.",
+    "url": "https://github.com/jamiebuilds/documentation-handbook"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "tickedoff",
+    "stars": 218,
+    "forks": 15,
+    "language": "JavaScript",
+    "description": "Tiny library (<200B gzip) for deferring something by a \"tick\"",
+    "url": "https://github.com/jamiebuilds/tickedoff"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-jeff",
+    "stars": 217,
+    "forks": 4,
+    "language": "TypeScript",
+    "description": "A Good Form Library",
+    "url": "https://github.com/jamiebuilds/react-jeff"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-performance-observer",
+    "stars": 211,
+    "forks": 9,
+    "language": "JavaScript",
+    "description": "Get performance measurements from React Fiber",
+    "url": "https://github.com/jamiebuilds/react-performance-observer"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "gender-regex",
+    "stars": 195,
+    "forks": 10,
+    "language": "JavaScript",
+    "description": "Regex to test for valid genders",
+    "url": "https://github.com/jamiebuilds/gender-regex"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "anti-fascist-mit-license",
+    "stars": 185,
+    "forks": 24,
+    "language": null,
+    "description": "MIT license with additional text to prohibit use by fascists",
+    "url": "https://github.com/jamiebuilds/anti-fascist-mit-license"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "purposefile",
+    "stars": 169,
+    "forks": 5,
+    "language": "TypeScript",
+    "description": "Make sure every file in your repo is exactly where it should be",
+    "url": "https://github.com/jamiebuilds/purposefile"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-loadable-example",
+    "stars": 148,
+    "forks": 28,
+    "language": "JavaScript",
+    "description": "Example project for React Loadable",
+    "url": "https://github.com/jamiebuilds/react-loadable-example"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "bootcamp",
+    "stars": 143,
+    "forks": 17,
+    "language": "CSS",
+    "description": ":boot: Jasmine-style BDD testing written in Sass for Sass.",
+    "url": "https://github.com/jamiebuilds/bootcamp"
+  },
+  {
+    "owner": "styled-components",
+    "name": "babel-plugin-polished",
+    "stars": 136,
+    "forks": 13,
+    "language": "JavaScript",
+    "description": "Compile polished helper functions at build time",
+    "url": "https://github.com/styled-components/babel-plugin-polished"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "ast-pretty-print",
+    "stars": 126,
+    "forks": 10,
+    "language": "JavaScript",
+    "description": "A pretty printer for AST-like structures",
+    "url": "https://github.com/babel-utils/ast-pretty-print"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "write-files-atomic",
+    "stars": 123,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Write many files atomically",
+    "url": "https://github.com/jamiebuilds/write-files-atomic"
+  },
+  {
+    "owner": "babel",
+    "name": "generator-babel-plugin",
+    "stars": 106,
+    "forks": 24,
+    "language": "JavaScript",
+    "description": "Babel Plugin generator for Yeoman",
+    "url": "https://github.com/babel/generator-babel-plugin"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "sarcastic",
+    "stars": 98,
+    "forks": 3,
+    "language": "JavaScript",
+    "description": "Cast unknown values to typed values",
+    "url": "https://github.com/jamiebuilds/sarcastic"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "ninos",
+    "stars": 98,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Simple stubbing/spying for AVA",
+    "url": "https://github.com/jamiebuilds/ninos"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "repo-growth",
+    "stars": 89,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Measure how fast your repo is growing using cloc",
+    "url": "https://github.com/jamiebuilds/repo-growth"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "workspaces-run",
+    "stars": 88,
+    "forks": 3,
+    "language": "TypeScript",
+    "description": "Run tasks/scripts across Yarn/Lerna/Bolt/etc workspaces.",
+    "url": "https://github.com/jamiebuilds/workspaces-run"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "scritch",
+    "stars": 83,
+    "forks": 7,
+    "language": "JavaScript",
+    "description": "A small CLI to help you write sharable scripts for your team",
+    "url": "https://github.com/jamiebuilds/scritch"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "license",
+    "stars": 83,
+    "forks": 4,
+    "language": null,
+    "description": "The MIT license (with personal exceptions)",
+    "url": "https://github.com/jamiebuilds/license"
+  },
+  {
+    "owner": "atlassian",
+    "name": "landkid",
+    "stars": 80,
+    "forks": 13,
+    "language": "TypeScript",
+    "description": "Your friendly neighborhood async merging robot goat.",
+    "url": "https://github.com/atlassian/landkid"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-markers",
+    "stars": 80,
+    "forks": 6,
+    "language": "JavaScript",
+    "description": "Add markers to your React components for easy testing with actual DOM elements",
+    "url": "https://github.com/jamiebuilds/react-markers"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "assert-equal-jsx",
+    "stars": 80,
+    "forks": 7,
+    "language": "JavaScript",
+    "description": "assertEqualJSX",
+    "url": "https://github.com/jamiebuilds/assert-equal-jsx"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "globby-cli",
+    "stars": 76,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": "User-friendly glob matching CLI",
+    "url": "https://github.com/jamiebuilds/globby-cli"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "spawndamnit",
+    "stars": 76,
+    "forks": 9,
+    "language": "JavaScript",
+    "description": "Take care of your spawn()",
+    "url": "https://github.com/jamiebuilds/spawndamnit"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "proposal-promise-prototype-inspect",
+    "stars": 75,
+    "forks": 7,
+    "language": "JavaScript",
+    "description": "Proposal for Promise.prototype.inspect",
+    "url": "https://github.com/jamiebuilds/proposal-promise-prototype-inspect"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "grob",
+    "stars": 72,
+    "forks": 3,
+    "language": "JavaScript",
+    "description": "grep, but in JavaScript... I've truly outdone myself.",
+    "url": "https://github.com/jamiebuilds/grob"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-required-if",
+    "stars": 72,
+    "forks": 7,
+    "language": "JavaScript",
+    "description": "React PropType to conditionally add `.isRequired` based on other props",
+    "url": "https://github.com/jamiebuilds/react-required-if"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "havetheybeenpwned",
+    "stars": 69,
+    "forks": 6,
+    "language": "JavaScript",
+    "description": "Test if your user's password has been pwned using the haveibeenpwned.com API",
+    "url": "https://github.com/jamiebuilds/havetheybeenpwned"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-prop-matrix",
+    "stars": 69,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Render something using every possible combination of props",
+    "url": "https://github.com/jamiebuilds/react-prop-matrix"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "reduxxx",
+    "stars": 65,
+    "forks": 1,
+    "language": "TypeScript",
+    "description": "Redux, explicit.",
+    "url": "https://github.com/jamiebuilds/reduxxx"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "renderator",
+    "stars": 65,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/jamiebuilds/renderator"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "dark-mode-github-readme-logos",
+    "stars": 62,
+    "forks": 80,
+    "language": null,
+    "description": "How to make logos in your README that support GitHub's new dark mode",
+    "url": "https://github.com/jamiebuilds/dark-mode-github-readme-logos"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "babel-plugin-react-pure-components",
+    "stars": 61,
+    "forks": 8,
+    "language": "JavaScript",
+    "description": "Optimize React code by making pure classes into functions",
+    "url": "https://github.com/jamiebuilds/babel-plugin-react-pure-components"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-test-renderer",
+    "stars": 58,
+    "forks": 9,
+    "language": "JavaScript",
+    "description": "[DEPRECATED] A lightweight solution to testing fully-rendered React Components",
+    "url": "https://github.com/jamiebuilds/react-test-renderer"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "fixturez",
+    "stars": 57,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": "Easily create and maintain test fixtures in the file system",
+    "url": "https://github.com/jamiebuilds/fixturez"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "ballistic",
+    "stars": 57,
+    "forks": 2,
+    "language": "CSS",
+    "description": ":hammer: Utility-Belt Library for Sass",
+    "url": "https://github.com/jamiebuilds/ballistic"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "enable-npm-2fa",
+    "stars": 54,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": "A script for enabling 2FA on all of your npm packages",
+    "url": "https://github.com/jamiebuilds/enable-npm-2fa"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "VisibilityObserver",
+    "stars": 51,
+    "forks": 0,
+    "language": "TypeScript",
+    "description": "Experimental API for observing the visible box of an element",
+    "url": "https://github.com/jamiebuilds/VisibilityObserver"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "dependency-free",
+    "stars": 50,
+    "forks": 4,
+    "language": "TypeScript",
+    "description": "An experiment to unify/speed up CI/local development via small Docker containers",
+    "url": "https://github.com/jamiebuilds/dependency-free"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "naw",
+    "stars": 48,
+    "forks": 0,
+    "language": "TypeScript",
+    "description": "Your very own containerized build system!",
+    "url": "https://github.com/jamiebuilds/naw"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-stylish",
+    "stars": 47,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": ":ribbon: Make your React component style-able by all",
+    "url": "https://github.com/jamiebuilds/react-stylish"
+  },
+  {
+    "owner": "facebookarchive",
+    "name": "flow-inspect",
+    "stars": 46,
+    "forks": 3,
+    "language": "JavaScript",
+    "description": "Inspect the internal types of Flow in an easy to read format",
+    "url": "https://github.com/facebookarchive/flow-inspect"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "codeowners-enforcer",
+    "stars": 42,
+    "forks": 5,
+    "language": "Rust",
+    "description": "Enforce CODEOWNERS files on your repo",
+    "url": "https://github.com/jamiebuilds/codeowners-enforcer"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "tested-components",
+    "stars": 41,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": "Browser integration testing utils for styled-components",
+    "url": "https://github.com/jamiebuilds/tested-components"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "std-pkg",
+    "stars": 39,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "The Official package.json Standard™ for Npm® endorsed fields",
+    "url": "https://github.com/jamiebuilds/std-pkg"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "babel-plugin-private-underscores",
+    "stars": 39,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": "Make _classMembers 'private' using symbols",
+    "url": "https://github.com/jamiebuilds/babel-plugin-private-underscores"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "babel-plugin-import-inspector",
+    "stars": 38,
+    "forks": 8,
+    "language": "JavaScript",
+    "description": "Babel plugin to report dynamic imports with import-inspector with metadata about the import",
+    "url": "https://github.com/jamiebuilds/babel-plugin-import-inspector"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "pride",
+    "stars": 38,
+    "forks": 3,
+    "language": null,
+    "description": ":two_men_holding_hands: PrideJS logo",
+    "url": "https://github.com/jamiebuilds/pride"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "jamie.build",
+    "stars": 38,
+    "forks": 14,
+    "language": "HTML",
+    "description": "the website",
+    "url": "https://github.com/jamiebuilds/jamie.build"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "ci-parallel-vars",
+    "stars": 37,
+    "forks": 5,
+    "language": "JavaScript",
+    "description": "Get CI environment variables for parallelizing builds",
+    "url": "https://github.com/jamiebuilds/ci-parallel-vars"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "revalid",
+    "stars": 37,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": "Composable validators",
+    "url": "https://github.com/jamiebuilds/revalid"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "guarded-string",
+    "stars": 36,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Prevent accidentally introducing XSS holes with the strings in your app",
+    "url": "https://github.com/jamiebuilds/guarded-string"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "crowdin-sync",
+    "stars": 36,
+    "forks": 11,
+    "language": "Ruby",
+    "description": ":earth_asia: How to setup Crowdin to sync with GitHub",
+    "url": "https://github.com/jamiebuilds/crowdin-sync"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "babel-plugin-hash-strings",
+    "stars": 35,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": "Replace all instances of \"@@strings like this\" with hashes.",
+    "url": "https://github.com/jamiebuilds/babel-plugin-hash-strings"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "incremental-dom-react-helper",
+    "stars": 35,
+    "forks": 3,
+    "language": "JavaScript",
+    "description": "Helper to make Google's incremental-dom library work with React's compile target today.",
+    "url": "https://github.com/jamiebuilds/incremental-dom-react-helper"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-collect-imports",
+    "stars": 34,
+    "forks": 6,
+    "language": "JavaScript",
+    "description": "Recursively collect all the internal and external dependencies from an entry point",
+    "url": "https://github.com/babel-utils/babel-collect-imports"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-explode-module",
+    "stars": 34,
+    "forks": 6,
+    "language": "JavaScript",
+    "description": "Serialize a module into an easier format to work with",
+    "url": "https://github.com/babel-utils/babel-explode-module"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-module-experiment",
+    "stars": 34,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/jamiebuilds/react-module-experiment"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "git-workflow",
+    "stars": 34,
+    "forks": 15,
+    "language": null,
+    "description": "Git workflow for teams",
+    "url": "https://github.com/jamiebuilds/git-workflow"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "babel-plugin-ken-wheeler",
+    "stars": 33,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Code like you dope",
+    "url": "https://github.com/jamiebuilds/babel-plugin-ken-wheeler"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "how-to-build-a-compiler",
+    "stars": 33,
+    "forks": 4,
+    "language": "HTML",
+    "description": "How to build a compiler – THE TALK",
+    "url": "https://github.com/jamiebuilds/how-to-build-a-compiler"
+  },
+  {
+    "owner": "cloudflare",
+    "name": "a11y-focus-scope",
+    "stars": 32,
+    "forks": 7,
+    "language": "JavaScript",
+    "description": "Accessibility util for scoping focus to an element.",
+    "url": "https://github.com/cloudflare/a11y-focus-scope"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "json-peek",
+    "stars": 32,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Stringify JSON *just enough* to see what it is",
+    "url": "https://github.com/jamiebuilds/json-peek"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "js-memory-heap-profiling",
+    "stars": 32,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/jamiebuilds/js-memory-heap-profiling"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "task-graph-runner",
+    "stars": 31,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Run async tasks with dependencies",
+    "url": "https://github.com/jamiebuilds/task-graph-runner"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "backbone.service",
+    "stars": 31,
+    "forks": 11,
+    "language": "JavaScript",
+    "description": "A simple service class for Backbone.",
+    "url": "https://github.com/jamiebuilds/backbone.service"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "dep-size-inspect",
+    "stars": 29,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/jamiebuilds/dep-size-inspect"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "pffffff",
+    "stars": 29,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "pfffffffffffffffffffff whatever",
+    "url": "https://github.com/jamiebuilds/pffffff"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "better-directory-sort",
+    "stars": 27,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": "Improved sorting order for directory entities",
+    "url": "https://github.com/jamiebuilds/better-directory-sort"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "shimiteer",
+    "stars": 27,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": "Puppeteer API shim for other browsers using WebdriverIO",
+    "url": "https://github.com/jamiebuilds/shimiteer"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "isolated-core-demo",
+    "stars": 27,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/jamiebuilds/isolated-core-demo"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "graph-sequencer",
+    "stars": 26,
+    "forks": 6,
+    "language": "JavaScript",
+    "description": "Sort items in a graph using a topological sort while resolving cycles with priority groups",
+    "url": "https://github.com/jamiebuilds/graph-sequencer"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "import-inspector",
+    "stars": 26,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": "Wrap dynamic imports with metadata about the import",
+    "url": "https://github.com/jamiebuilds/import-inspector"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "backbone-routing",
+    "stars": 26,
+    "forks": 9,
+    "language": "JavaScript",
+    "description": "Simple router and route classes for Backbone.",
+    "url": "https://github.com/jamiebuilds/backbone-routing"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "flow-shut-up",
+    "stars": 24,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": "Add inline Flow comments to make Flow shut up about errors",
+    "url": "https://github.com/jamiebuilds/flow-shut-up"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "backbone.storage",
+    "stars": 23,
+    "forks": 9,
+    "language": "JavaScript",
+    "description": "A simple storage class for Backbone Models and Collections.",
+    "url": "https://github.com/jamiebuilds/backbone.storage"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "tumblr-downloader",
+    "stars": 22,
+    "forks": 3,
+    "language": "JavaScript",
+    "description": "Download all your female-presenting nipples from Tumblr",
+    "url": "https://github.com/jamiebuilds/tumblr-downloader"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "temperment",
+    "stars": 22,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Get a random temporary file or directory path that will delete itself",
+    "url": "https://github.com/jamiebuilds/temperment"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "parcel-rust-example",
+    "stars": 22,
+    "forks": 0,
+    "language": "HTML",
+    "description": "Example of using Rust code in Parcel",
+    "url": "https://github.com/jamiebuilds/parcel-rust-example"
+  },
+  {
+    "owner": "cloudflare",
+    "name": "a11y-focus-store",
+    "stars": 21,
+    "forks": 7,
+    "language": "JavaScript",
+    "description": "Accessibility util for storing/restoring focus.",
+    "url": "https://github.com/cloudflare/a11y-focus-store"
+  },
+  {
+    "owner": "projectorjs",
+    "name": "projector",
+    "stars": 21,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": "Create complex build systems with ease.",
+    "url": "https://github.com/projectorjs/projector"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "is-mergeable",
+    "stars": 21,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Check if a GitHub Pull Request is in a (most likely) mergeable state",
+    "url": "https://github.com/jamiebuilds/is-mergeable"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "proposal-promise-settle",
+    "stars": 21,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "This repository is a work in progress and not seeking feedback yet.",
+    "url": "https://github.com/jamiebuilds/proposal-promise-settle"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "gud",
+    "stars": 21,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Create a 'gud nuff' (not cryptographically secure) globally unique id",
+    "url": "https://github.com/jamiebuilds/gud"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "userscript-github-disable-turbolinks",
+    "stars": 20,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "A userscript to disable GitHub turbolinks to force full page navigations",
+    "url": "https://github.com/jamiebuilds/userscript-github-disable-turbolinks"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "codeowners-utils",
+    "stars": 20,
+    "forks": 3,
+    "language": "TypeScript",
+    "description": "Utilities for working with CODEOWNERS files",
+    "url": "https://github.com/jamiebuilds/codeowners-utils"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "parcel2",
+    "stars": 20,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/jamiebuilds/parcel2"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "min-indent",
+    "stars": 20,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Get the shortest leading whitespace from lines in a string",
+    "url": "https://github.com/jamiebuilds/min-indent"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "babel-setup-react-transform",
+    "stars": 20,
+    "forks": 3,
+    "language": "JavaScript",
+    "description": "Example Babel project using babel-plugin-react-transform",
+    "url": "https://github.com/jamiebuilds/babel-setup-react-transform"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "LibManUal",
+    "stars": 18,
+    "forks": 0,
+    "language": "Shell",
+    "description": null,
+    "url": "https://github.com/jamiebuilds/LibManUal"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-flow-types",
+    "stars": 17,
+    "forks": 3,
+    "language": "JavaScript",
+    "description": "Flow types for all things Babel",
+    "url": "https://github.com/babel-utils/babel-flow-types"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-errors",
+    "stars": 15,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Nicer error messages for Babel",
+    "url": "https://github.com/babel-utils/babel-errors"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-type-scopes",
+    "stars": 12,
+    "forks": 6,
+    "language": "JavaScript",
+    "description": "Utils for looking up and working with Flow & TypeScript scopes in Babel",
+    "url": "https://github.com/babel-utils/babel-type-scopes"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-file",
+    "stars": 11,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": "Easily create a Babel File object",
+    "url": "https://github.com/babel-utils/babel-file"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-file-loader",
+    "stars": 10,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Load files into memory to be parsed & traversed using Babylon/Babel",
+    "url": "https://github.com/babel-utils/babel-file-loader"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-react-components",
+    "stars": 10,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Utils for working with React components in Babel",
+    "url": "https://github.com/babel-utils/babel-react-components"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-normalize-comments",
+    "stars": 9,
+    "forks": 4,
+    "language": "JavaScript",
+    "description": "Merge comments together into a normalized string",
+    "url": "https://github.com/babel-utils/babel-normalize-comments"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-flow-scope",
+    "stars": 7,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "[Deprecated] Use babel-utils/babel-type-scopes for both Flow & TypeScript support",
+    "url": "https://github.com/babel-utils/babel-flow-scope"
+  },
+  {
+    "owner": "boltpkg",
+    "name": "grouped-topo-sort",
+    "stars": 6,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/boltpkg/grouped-topo-sort"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babylon-options",
+    "stars": 6,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Simplified options for Babylon",
+    "url": "https://github.com/babel-utils/babylon-options"
+  },
+  {
+    "owner": "boltpkg",
+    "name": "bolt-query",
+    "stars": 5,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": "Query info and files from your pyarn project",
+    "url": "https://github.com/boltpkg/bolt-query"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-identifiers",
+    "stars": 5,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Classify Babel identifiers",
+    "url": "https://github.com/babel-utils/babel-identifiers"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-log",
+    "stars": 5,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Log Babel paths & nodes to console with nice formatting",
+    "url": "https://github.com/babel-utils/babel-log"
+  },
+  {
+    "owner": "Thinkmill",
+    "name": "parse-toml-stream",
+    "stars": 5,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": "Parse TOML files in streams chunked by [sections]",
+    "url": "https://github.com/Thinkmill/parse-toml-stream"
+  },
+  {
+    "owner": "boltpkg",
+    "name": "website",
+    "stars": 3,
+    "forks": 2,
+    "language": "HTML",
+    "description": null,
+    "url": "https://github.com/boltpkg/website"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-flow-identifiers",
+    "stars": 3,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Check if an identifier is a Flow identifier",
+    "url": "https://github.com/babel-utils/babel-flow-identifiers"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "babel-helper-simplify-module",
+    "stars": 3,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": "Transform module using babel-explode-module to have a simpler structure",
+    "url": "https://github.com/babel-utils/babel-helper-simplify-module"
+  },
+  {
+    "owner": "boltpkg",
+    "name": "bolt-webpack-stats",
+    "stars": 2,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Get Webpack stats for all your Bolt workspaces",
+    "url": "https://github.com/boltpkg/bolt-webpack-stats"
+  },
+  {
+    "owner": "projectorjs",
+    "name": "projector-example",
+    "stars": 2,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/projectorjs/projector-example"
+  },
+  {
+    "owner": "projectorjs",
+    "name": "projector-spawn",
+    "stars": 2,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Spawn processes with ease",
+    "url": "https://github.com/projectorjs/projector-spawn"
+  },
+  {
+    "owner": "projectorjs",
+    "name": "projector-babel",
+    "stars": 2,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": "Run Babel with ease",
+    "url": "https://github.com/projectorjs/projector-babel"
+  },
+  {
+    "owner": "projectorjs",
+    "name": "projector-cli",
+    "stars": 2,
+    "forks": 2,
+    "language": "JavaScript",
+    "description": "Command-line tool for running Projector scripts ",
+    "url": "https://github.com/projectorjs/projector-cli"
+  },
+  {
+    "owner": "boltpkg",
+    "name": "bolt-dashboard-cli",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/boltpkg/bolt-dashboard-cli"
+  },
+  {
+    "owner": "boltpkg",
+    "name": "bolt-releases",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": null,
+    "url": "https://github.com/boltpkg/bolt-releases"
+  },
+  {
+    "owner": "projectorjs",
+    "name": "projector-jest",
+    "stars": 1,
+    "forks": 1,
+    "language": "JavaScript",
+    "description": "Run Jest with ease",
+    "url": "https://github.com/projectorjs/projector-jest"
+  },
+  {
+    "owner": "babel-utils",
+    "name": "pretty-format-ast",
+    "stars": 1,
+    "forks": 0,
+    "language": "JavaScript",
+    "description": "Pretty format plugin to print ASTs prettier",
+    "url": "https://github.com/babel-utils/pretty-format-ast"
+  }
+]

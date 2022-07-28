@@ -1,0 +1,26 @@
+on:
+  schedule:
+    - cron: '0 12 * * *' # runs at 12:00 UTC everyday
+jobs:
+  repos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - run: |
+          GITHUB_TOKEN=${{secrets.GITHUB_TOKEN}} deno run \
+            --allow-net=api.github.com \
+            --allow-write=repos.json \
+            --allow-env=GITHUB_TOKEN \
+            repos.js
+      - run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "update repo data" -a
+      - uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          branch: main
