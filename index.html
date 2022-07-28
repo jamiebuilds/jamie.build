@@ -4,6 +4,7 @@
     <title>jamie: the website</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
+    <link rel="prefetch" href="repos.json">
     <style>
       @media screen {
         body {
@@ -326,9 +327,9 @@
         <a class="ref" href="#code">#</a>
         Open Source Projects...
       </h2>
-      <ol id="repos">
-        <div style="height: 4000px">(Loading...)</div>
-      </ol>
+      <div id="repos">
+        <div style="height: 6000px">(Loading...)</div>
+      </div>
     </section>
 
     <section id="edit" class="screen">
@@ -337,157 +338,45 @@
       </a>
     </section>
 
-    <script>
-      var orgs = [
-        'jamiebuilds',
-        'babel-utils',
-        'projectorjs',
-        'boltpkg',
-      ];
 
-      var externalRepos = [
-        'marionettejs/backbone.marionette',
-        'marionettejs/backbone.radio',
-        'babel/babel',
-        'lerna/lerna',
-        'cloudflare/cf-ui',
-        'cloudflare/react-modal2',
-        'cloudflare/react-gateway',
-        'cloudflare/a11y-focus-scope',
-        'cloudflare/a11y-focus-store',
-        'babel/babili',
-        'facebook/flow',
-        'yarnpkg/yarn',
-        'yarnpkg/website',
-        'babel/babel.github.io',
-        'facebook/jest',
-        'flowtype/flow-inspect',
-        'styled-components/babel-plugin-polished',
-        'babel/generator-babel-plugin',
-        'styled-components/styled-theming',
-        'thinkmill/react-markings',
-        'thinkmill/parse-toml-stream',
-        'thinkmill/jest-in-case',
-        'atlassian/landkid',
-        'parcel-bundler/parcel',
-      ].map(function(repo) {
-        return 'https://api.github.com/repos/' + repo;
-      });
+    <script type="module">
+      let response = await fetch("repos.json")
+      let repos = await response.json()
 
-      function request(url, callback) {
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-          callback(xhr);
-        };
-        xhr.open('GET', url, true);
-        xhr.send();
-      }
+      repos.sort((a, b) => {
+        return b.stars - a.stars
+      })
 
-      function fetchRepos() {
-        var orgIndex = 0;
-        var repos = [];
-        var page = 0;
+      let totalStars = repos.reduce((acc, repo) => {
+        return acc + repo.stars
+      }, 0)
+      let totalForks = repos.reduce((acc, repo) => {
+        return acc + repo.forks
+      }, 0)
 
-        function next(url) {
-          request(url, function(xhr) {
-            if (xhr.readyState !== 4) return;
-            var json = JSON.parse(xhr.responseText)
+      console.log('Total stars: ' + totalStars);
+      console.log('Total forks: ' + totalForks);
 
-            repos = repos.concat([].concat(json).map(function(repo) {
-              return {
-                name: repo.name,
-                url: repo.html_url,
-                isFork: !!repo.fork,
-                stars: repo.stargazers_count,
-                forks: repo.forks_count,
-                owner: repo.owner.login,
-              };
-            }));
+      let res = ""
 
-            var linkHeader = xhr.getResponseHeader('Link');
-
-            if (externalRepos.length) {
-              next(externalRepos.shift());
-              return;
-            }
-
-            let hasRemaining = page === 0 || (linkHeader && linkHeader.indexOf('rel="next"') > -1)
-
-            if (!hasRemaining && orgs[++orgIndex]) {
-              hasRemaining = true;
-              page = 0;
-            }
-
-            if (hasRemaining) {
-              page++;
-              next('https://api.github.com/users/' + orgs[orgIndex] + '/repos?page=' + page + '&per_page=100')
-            } else {
-              cacheRepos(repos);
-              renderRepos(repos);
-            }
-          });
+      res += "<ol>"
+      repos.forEach(repo => {
+        res += "<li>"
+        res += `<a href="${repo.url}">`
+        res += `${repo.owner}/${repo.name}`
+        res += ` (`
+        if (repo.language != null) {
+          res += `${repo.language}, `
         }
-
-        next(externalRepos.shift());
-      }
-
-      function cacheRepos(repos) {
-        localStorage.setItem('repos', JSON.stringify(repos));
-      }
-
-      function renderRepos(repos) {
-        var ol = document.getElementById('repos');
-        var totalStars = 0;
-        var totalForks = 0;
-
-        ol.removeChild(ol.firstElementChild); // remove spacing
-
-        repos
-          .filter(function(repo) {
-            return (
-              !repo.isFork &&
-              repo.stars > 0 &&
-              repo.name.indexOf('__') !== 0
-            );
-          })
-          .sort(function(a, b) {
-            return b.stars - a.stars;
-          })
-          .forEach(function(repo) {
-            var li = document.createElement('li');
-            var a = document.createElement('a');
-
-            a.href = repo.url;
-            a.innerText = (
-              (repo.owner === 'jamiebuilds' ? '' : repo.owner + '/') +
-              repo.name +
-              ' (' + repo.stars + ' stars, ' +
-              repo.forks + ' forks)'
-            );
-
-            if (repo.stars < 30) {
-              li.className = 'screen';
-            }
-
-            li.appendChild(a);
-            ol.appendChild(li);
-
-            totalStars += repo.stars;
-            totalForks += repo.forks;
-          });
-
-        console.log('Total stars: ' + totalStars);
-        console.log('Total forks: ' + totalForks);
-      }
-
-      var cached = localStorage.getItem('repos');
-      if (cached) {
-        renderRepos(JSON.parse(cached));
-      } else {
-        fetchRepos();
-      }
+        res += `stars: ${repo.stars}, `
+        res += `forks: ${repo.forks}`
+        res += `)`
+        res += "</a>"
+        res += "</li>"
+      })
+      res += "</ol>"
+      document.getElementById("repos").innerHTML = res
     </script>
-
 
     <script>
       var KEY_J = 74;
