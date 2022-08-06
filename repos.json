@@ -2,7 +2,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1002,
+    "stars": 1003,
     "forks": 30,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 41190,
-    "forks": 5417,
+    "forks": 5420,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21790,
+    "stars": 21794,
     "forks": 1849,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 39742,
-    "forks": 5955,
+    "stars": 39749,
+    "forks": 5958,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,7 +371,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11099,
+    "stars": 11100,
     "forks": 1676,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -578,7 +578,7 @@
   {
     "owner": "jamiebuilds",
     "name": "documentation-handbook",
-    "stars": 239,
+    "stars": 240,
     "forks": 27,
     "language": null,
     "description": "How to write high-quality friendly documentation that people want to read.",
@@ -1110,7 +1110,7 @@
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
     "stars": 4146,
-    "forks": 202,
+    "forks": 204,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
     "url": "https://github.com/jamiebuilds/spectacle-code-slide"
@@ -1163,8 +1163,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 23127,
-    "forks": 2549,
+    "stars": 23129,
+    "forks": 2550,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 33260,
-    "forks": 2206,
+    "stars": 33263,
+    "forks": 2207,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1263,7 +1263,7 @@
     "owner": "marionettejs",
     "name": "backbone.marionette",
     "stars": 7104,
-    "forks": 1307,
+    "forks": 1306,
     "language": "JavaScript",
     "description": "The Backbone Framework",
     "url": "https://github.com/marionettejs/backbone.marionette"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41120,
+    "stars": 41119,
     "forks": 2168,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 40780,
-    "forks": 2856,
+    "stars": 40778,
+    "forks": 2857,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
