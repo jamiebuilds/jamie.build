@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 41370,
-    "forks": 5444,
+    "forks": 5446,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -191,7 +191,7 @@
   {
     "owner": "babel",
     "name": "generator-babel-plugin",
-    "stars": 107,
+    "stars": 108,
     "forks": 25,
     "language": "JavaScript",
     "description": "Babel Plugin generator for Yeoman",
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 696,
-    "forks": 1241,
+    "forks": 1243,
     "language": "JavaScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2222,
+    "stars": 2221,
     "forks": 98,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,8 +326,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21831,
-    "forks": 1850,
+    "stars": 21830,
+    "forks": 1849,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40181,
-    "forks": 6034,
+    "stars": 40191,
+    "forks": 6035,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -579,7 +579,7 @@
     "owner": "jamiebuilds",
     "name": "documentation-handbook",
     "stars": 243,
-    "forks": 27,
+    "forks": 28,
     "language": null,
     "description": "How to write high-quality friendly documentation that people want to read.",
     "url": "https://github.com/jamiebuilds/documentation-handbook"
@@ -758,7 +758,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8392,
+    "stars": 8393,
     "forks": 669,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 511,
+    "stars": 513,
     "forks": 16,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1163,7 +1163,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 23531,
+    "stars": 23536,
     "forks": 2598,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3076,
+    "stars": 3078,
     "forks": 63,
     "language": "TypeScript",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4002,
+    "stars": 4001,
     "forks": 138,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 33562,
-    "forks": 2228,
+    "stars": 33563,
+    "forks": 2229,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1262,8 +1262,8 @@
   {
     "owner": "marionettejs",
     "name": "backbone.marionette",
-    "stars": 7096,
-    "forks": 1302,
+    "stars": 7095,
+    "forks": 1301,
     "language": "JavaScript",
     "description": "The Backbone Framework",
     "url": "https://github.com/marionettejs/backbone.marionette"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41307,
+    "stars": 41306,
     "forks": 2181,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1379,7 +1379,7 @@
   {
     "owner": "yarnpkg",
     "name": "website",
-    "stars": 394,
+    "stars": 395,
     "forks": 990,
     "language": "JavaScript",
     "description": "Yarn package manager website",
