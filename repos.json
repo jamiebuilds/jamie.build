@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41393,
-    "forks": 5449,
+    "stars": 41405,
+    "forks": 5452,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4339,
+    "stars": 4338,
     "forks": 244,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2222,
+    "stars": 2223,
     "forks": 98,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21836,
+    "stars": 21837,
     "forks": 1848,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40224,
-    "forks": 6050,
+    "stars": 40226,
+    "forks": 6051,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,8 +371,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11241,
-    "forks": 1703,
+    "stars": 11246,
+    "forks": 1702,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -759,7 +759,7 @@
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
     "stars": 8395,
-    "forks": 669,
+    "forks": 668,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -947,7 +947,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16428,
+    "stars": 16431,
     "forks": 853,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1163,8 +1163,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 23567,
-    "forks": 2601,
+    "stars": 23569,
+    "forks": 2602,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3081,
+    "stars": 3082,
     "forks": 63,
     "language": "TypeScript",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7805,
+    "stars": 7806,
     "forks": 311,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 33600,
-    "forks": 2236,
+    "stars": 33608,
+    "forks": 2239,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1262,7 +1262,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.marionette",
-    "stars": 7097,
+    "stars": 7096,
     "forks": 1302,
     "language": "JavaScript",
     "description": "The Backbone Framework",
@@ -1280,8 +1280,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41327,
-    "forks": 2181,
+    "stars": 41331,
+    "forks": 2182,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1380,7 +1380,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 396,
-    "forks": 993,
+    "forks": 995,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 40851,
-    "forks": 2866,
+    "stars": 40853,
+    "forks": 2867,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
