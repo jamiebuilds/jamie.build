@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41476,
-    "forks": 5467,
+    "stars": 41482,
+    "forks": 5468,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -309,7 +309,7 @@
     "owner": "cloudflare",
     "name": "react-gateway",
     "stars": 566,
-    "forks": 88,
+    "forks": 89,
     "language": "JavaScript",
     "description": "Render React DOM into a new context (aka \"Portal\")",
     "url": "https://github.com/cloudflare/react-gateway"
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21843,
+    "stars": 21844,
     "forks": 1850,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40421,
-    "forks": 6079,
+    "stars": 40428,
+    "forks": 6082,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,7 +371,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11268,
+    "stars": 11270,
     "forks": 1707,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -578,7 +578,7 @@
   {
     "owner": "jamiebuilds",
     "name": "documentation-handbook",
-    "stars": 245,
+    "stars": 246,
     "forks": 29,
     "language": null,
     "description": "How to write high-quality friendly documentation that people want to read.",
@@ -668,7 +668,7 @@
   {
     "owner": "jamiebuilds",
     "name": "graph-sequencer",
-    "stars": 26,
+    "stars": 27,
     "forks": 6,
     "language": "JavaScript",
     "description": "Sort items in a graph using a topological sort while resolving cycles with priority groups",
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 528,
+    "stars": 529,
     "forks": 16,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1163,7 +1163,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 23677,
+    "stars": 23681,
     "forks": 2607,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3093,
+    "stars": 3094,
     "forks": 65,
     "language": "TypeScript",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 33675,
-    "forks": 2245,
+    "stars": 33679,
+    "forks": 2246,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41393,
+    "stars": 41395,
     "forks": 2194,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 40863,
+    "stars": 40865,
     "forks": 2866,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
