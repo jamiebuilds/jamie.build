@@ -137,7 +137,7 @@
   {
     "owner": "babel-utils",
     "name": "babel-plugin-tester",
-    "stars": 262,
+    "stars": 263,
     "forks": 40,
     "language": "JavaScript",
     "description": "Utilities for testing babel plugins",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41485,
-    "forks": 5470,
+    "stars": 41483,
+    "forks": 5471,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2225,
+    "stars": 2226,
     "forks": 98,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21843,
+    "stars": 21845,
     "forks": 1850,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40437,
-    "forks": 6084,
+    "stars": 40447,
+    "forks": 6086,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,7 +371,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11274,
+    "stars": 11277,
     "forks": 1707,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -551,8 +551,8 @@
   {
     "owner": "jamiebuilds",
     "name": "dark-mode-github-readme-logos",
-    "stars": 62,
-    "forks": 80,
+    "stars": 63,
+    "forks": 81,
     "language": null,
     "description": "How to make logos in your README that support GitHub's new dark mode",
     "url": "https://github.com/jamiebuilds/dark-mode-github-readme-logos"
@@ -947,7 +947,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16432,
+    "stars": 16435,
     "forks": 853,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 530,
+    "stars": 531,
     "forks": 16,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1163,8 +1163,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 23686,
-    "forks": 2606,
+    "stars": 23691,
+    "forks": 2607,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3094,
+    "stars": 3095,
     "forks": 65,
     "language": "TypeScript",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7814,
+    "stars": 7813,
     "forks": 310,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4009,
+    "stars": 4011,
     "forks": 138,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 33683,
+    "stars": 33692,
     "forks": 2245,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1271,7 +1271,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.radio",
-    "stars": 495,
+    "stars": 494,
     "forks": 54,
     "language": "JavaScript",
     "description": "Messaging patterns for Backbone applications.",
@@ -1280,8 +1280,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41397,
-    "forks": 2194,
+    "stars": 41403,
+    "forks": 2195,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 40871,
+    "stars": 40868,
     "forks": 2865,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
