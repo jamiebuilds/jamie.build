@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41542,
+    "stars": 41544,
     "forks": 5484,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21859,
+    "stars": 21857,
     "forks": 1851,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -335,7 +335,7 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40585,
+    "stars": 40590,
     "forks": 6118,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -371,7 +371,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11311,
+    "stars": 11313,
     "forks": 1710,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -552,7 +552,7 @@
     "owner": "jamiebuilds",
     "name": "dark-mode-github-readme-logos",
     "stars": 63,
-    "forks": 83,
+    "forks": 82,
     "language": null,
     "description": "How to make logos in your README that support GitHub's new dark mode",
     "url": "https://github.com/jamiebuilds/dark-mode-github-readme-logos"
@@ -758,7 +758,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8420,
+    "stars": 8421,
     "forks": 672,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -831,7 +831,7 @@
     "owner": "jamiebuilds",
     "name": "min-indent",
     "stars": 20,
-    "forks": 5,
+    "forks": 4,
     "language": "JavaScript",
     "description": "Get the shortest leading whitespace from lines in a string",
     "url": "https://github.com/jamiebuilds/min-indent"
@@ -947,7 +947,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16440,
+    "stars": 16439,
     "forks": 853,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1163,8 +1163,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 23789,
-    "forks": 2623,
+    "stars": 23793,
+    "forks": 2624,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7818,
+    "stars": 7819,
     "forks": 312,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4018,
+    "stars": 4017,
     "forks": 138,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 33804,
-    "forks": 2249,
+    "stars": 33807,
+    "forks": 2250,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41485,
+    "stars": 41489,
     "forks": 2198,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1343,7 +1343,7 @@
   {
     "owner": "styled-components",
     "name": "babel-plugin-polished",
-    "stars": 136,
+    "stars": 137,
     "forks": 13,
     "language": "JavaScript",
     "description": "Compile polished helper functions at build time",
@@ -1352,7 +1352,7 @@
   {
     "owner": "styled-components",
     "name": "styled-theming",
-    "stars": 1154,
+    "stars": 1153,
     "forks": 39,
     "language": "JavaScript",
     "description": "Create themes for your app using styled-components",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 40896,
+    "stars": 40898,
     "forks": 2871,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
