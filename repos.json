@@ -2,7 +2,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1017,
+    "stars": 1018,
     "forks": 31,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -137,7 +137,7 @@
   {
     "owner": "babel-utils",
     "name": "babel-plugin-tester",
-    "stars": 263,
+    "stars": 262,
     "forks": 41,
     "language": "JavaScript",
     "description": "Utilities for testing babel plugins",
@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41585,
+    "stars": 41588,
     "forks": 5489,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2239,
+    "stars": 2238,
     "forks": 100,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40693,
-    "forks": 6139,
+    "stars": 40704,
+    "forks": 6141,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,8 +371,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11342,
-    "forks": 1717,
+    "stars": 11343,
+    "forks": 1718,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -758,7 +758,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8424,
+    "stars": 8425,
     "forks": 671,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -785,7 +785,7 @@
   {
     "owner": "jamiebuilds",
     "name": "json-parser-in-typescript-very-bad-idea-please-dont-use",
-    "stars": 409,
+    "stars": 410,
     "forks": 5,
     "language": "TypeScript",
     "description": "JSON Parser written entirely in TypeScript's type system",
@@ -920,7 +920,7 @@
   {
     "owner": "jamiebuilds",
     "name": "purposefile",
-    "stars": 169,
+    "stars": 168,
     "forks": 5,
     "language": "TypeScript",
     "description": "Make sure every file in your repo is exactly where it should be",
@@ -938,7 +938,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-jeff",
-    "stars": 216,
+    "stars": 215,
     "forks": 4,
     "language": "TypeScript",
     "description": "A Good Form Library",
@@ -947,7 +947,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16445,
+    "stars": 16447,
     "forks": 853,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1109,7 +1109,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4167,
+    "stars": 4168,
     "forks": 204,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 561,
+    "stars": 565,
     "forks": 17,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1163,7 +1163,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 23824,
+    "stars": 23829,
     "forks": 2625,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3112,
+    "stars": 3113,
     "forks": 66,
     "language": "TypeScript",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1235,7 +1235,7 @@
   {
     "owner": "jamiebuilds",
     "name": "workspaces-run",
-    "stars": 88,
+    "stars": 87,
     "forks": 3,
     "language": "TypeScript",
     "description": "Run tasks/scripts across Yarn/Lerna/Bolt/etc workspaces.",
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 33864,
-    "forks": 2255,
+    "stars": 33866,
+    "forks": 2257,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,8 +1280,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41557,
-    "forks": 2206,
+    "stars": 41559,
+    "forks": 2208,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 40924,
-    "forks": 2871,
+    "stars": 40926,
+    "forks": 2872,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
