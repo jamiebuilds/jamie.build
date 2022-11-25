@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41642,
-    "forks": 5496,
+    "stars": 41644,
+    "forks": 5499,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4348,
+    "stars": 4346,
     "forks": 247,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2243,
+    "stars": 2244,
     "forks": 99,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21886,
+    "stars": 21885,
     "forks": 1857,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40781,
-    "forks": 6157,
+    "stars": 40786,
+    "forks": 6156,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,7 +371,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11371,
+    "stars": 11375,
     "forks": 1726,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -552,7 +552,7 @@
     "owner": "jamiebuilds",
     "name": "dark-mode-github-readme-logos",
     "stars": 63,
-    "forks": 82,
+    "forks": 83,
     "language": null,
     "description": "How to make logos in your README that support GitHub's new dark mode",
     "url": "https://github.com/jamiebuilds/dark-mode-github-readme-logos"
@@ -578,7 +578,7 @@
   {
     "owner": "jamiebuilds",
     "name": "documentation-handbook",
-    "stars": 247,
+    "stars": 248,
     "forks": 28,
     "language": null,
     "description": "How to write high-quality friendly documentation that people want to read.",
@@ -1127,8 +1127,8 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 578,
-    "forks": 17,
+    "stars": 579,
+    "forks": 18,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
     "url": "https://github.com/jamiebuilds/tailwindcss-animate"
@@ -1163,7 +1163,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 23877,
+    "stars": 23881,
     "forks": 2627,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1181,8 +1181,8 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3118,
-    "forks": 67,
+    "stars": 3119,
+    "forks": 66,
     "language": "TypeScript",
     "description": "A tiny (~400 B) & modern library for keybindings.",
     "url": "https://github.com/jamiebuilds/tinykeys"
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 33936,
-    "forks": 2263,
+    "stars": 33944,
+    "forks": 2264,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41639,
+    "stars": 41640,
     "forks": 2216,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 40945,
-    "forks": 2875,
+    "stars": 40947,
+    "forks": 2876,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
