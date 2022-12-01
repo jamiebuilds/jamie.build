@@ -20,7 +20,7 @@
   {
     "owner": "babel-utils",
     "name": "ast-pretty-print",
-    "stars": 127,
+    "stars": 128,
     "forks": 10,
     "language": "JavaScript",
     "description": "A pretty printer for AST-like structures",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41671,
-    "forks": 5502,
+    "stars": 41672,
+    "forks": 5503,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 702,
-    "forks": 1251,
+    "forks": 1252,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40818,
-    "forks": 6162,
+    "stars": 40820,
+    "forks": 6166,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,7 +371,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11380,
+    "stars": 11379,
     "forks": 1729,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -488,7 +488,7 @@
   {
     "owner": "jamiebuilds",
     "name": "bey",
-    "stars": 259,
+    "stars": 258,
     "forks": 8,
     "language": "JavaScript",
     "description": "Simple immutable state for React using Immer",
@@ -758,8 +758,8 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8437,
-    "forks": 671,
+    "stars": 8438,
+    "forks": 670,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -767,7 +767,7 @@
   {
     "owner": "jamiebuilds",
     "name": "jamie.build",
-    "stars": 40,
+    "stars": 41,
     "forks": 14,
     "language": "HTML",
     "description": "the website",
@@ -947,7 +947,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16457,
+    "stars": 16456,
     "forks": 853,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1163,8 +1163,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 24122,
-    "forks": 2643,
+    "stars": 24153,
+    "forks": 2645,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 33956,
+    "stars": 33960,
     "forks": 2267,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41671,
+    "stars": 41680,
     "forks": 2219,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1379,7 +1379,7 @@
   {
     "owner": "yarnpkg",
     "name": "website",
-    "stars": 400,
+    "stars": 401,
     "forks": 1011,
     "language": "JavaScript",
     "description": "Yarn package manager website",
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 40956,
-    "forks": 2878,
+    "stars": 40962,
+    "forks": 2879,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
