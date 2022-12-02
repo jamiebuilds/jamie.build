@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41672,
-    "forks": 5503,
+    "stars": 41675,
+    "forks": 5504,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -326,8 +326,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21898,
-    "forks": 1857,
+    "stars": 21897,
+    "forks": 1856,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40820,
-    "forks": 6166,
+    "stars": 40823,
+    "forks": 6170,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,7 +371,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11379,
+    "stars": 11380,
     "forks": 1729,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -758,8 +758,8 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8438,
-    "forks": 670,
+    "stars": 8439,
+    "forks": 669,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -812,7 +812,7 @@
   {
     "owner": "jamiebuilds",
     "name": "license",
-    "stars": 83,
+    "stars": 84,
     "forks": 4,
     "language": null,
     "description": "The MIT license (with personal exceptions)",
@@ -947,7 +947,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16456,
+    "stars": 16457,
     "forks": 853,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 587,
+    "stars": 589,
     "forks": 17,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1163,8 +1163,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 24153,
-    "forks": 2645,
+    "stars": 24171,
+    "forks": 2648,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4026,
+    "stars": 4027,
     "forks": 139,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 33960,
+    "stars": 33967,
     "forks": 2267,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41680,
+    "stars": 41689,
     "forks": 2219,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1380,7 +1380,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 401,
-    "forks": 1011,
+    "forks": 1010,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 40962,
-    "forks": 2879,
+    "stars": 40964,
+    "forks": 2878,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
