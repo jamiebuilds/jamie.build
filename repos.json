@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41726,
-    "forks": 5510,
+    "stars": 41728,
+    "forks": 5513,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 703,
-    "forks": 1250,
+    "forks": 1249,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -218,8 +218,8 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2244,
-    "forks": 100,
+    "stars": 2245,
+    "forks": 101,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
     "url": "https://github.com/boltpkg/bolt"
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21906,
+    "stars": 21905,
     "forks": 1858,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -335,7 +335,7 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40910,
+    "stars": 40919,
     "forks": 6185,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -371,7 +371,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11403,
+    "stars": 11405,
     "forks": 1731,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -758,7 +758,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8448,
+    "stars": 8450,
     "forks": 671,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -1163,7 +1163,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 24295,
+    "stars": 24309,
     "forks": 2659,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3128,
+    "stars": 3130,
     "forks": 67,
     "language": "TypeScript",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7817,
+    "stars": 7818,
     "forks": 314,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4030,
+    "stars": 4031,
     "forks": 140,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34028,
+    "stars": 34036,
     "forks": 2277,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41724,
+    "stars": 41729,
     "forks": 2224,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
