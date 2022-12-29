@@ -137,7 +137,7 @@
   {
     "owner": "babel-utils",
     "name": "babel-plugin-tester",
-    "stars": 263,
+    "stars": 264,
     "forks": 40,
     "language": "TypeScript",
     "description": "Utilities for testing babel plugins",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41758,
-    "forks": 5516,
+    "stars": 41768,
+    "forks": 5518,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -191,7 +191,7 @@
   {
     "owner": "babel",
     "name": "generator-babel-plugin",
-    "stars": 110,
+    "stars": 111,
     "forks": 25,
     "language": "JavaScript",
     "description": "Babel Plugin generator for Yeoman",
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 702,
-    "forks": 1250,
+    "forks": 1252,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21922,
+    "stars": 21923,
     "forks": 1861,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 40986,
-    "forks": 6201,
+    "stars": 40995,
+    "forks": 6203,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,7 +371,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11448,
+    "stars": 11453,
     "forks": 1737,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 611,
+    "stars": 614,
     "forks": 17,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1163,8 +1163,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 24384,
-    "forks": 2661,
+    "stars": 24393,
+    "forks": 2662,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3141,
+    "stars": 3142,
     "forks": 67,
     "language": "TypeScript",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4038,
+    "stars": 4039,
     "forks": 141,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34077,
-    "forks": 2280,
+    "stars": 34079,
+    "forks": 2279,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1262,8 +1262,8 @@
   {
     "owner": "marionettejs",
     "name": "backbone.marionette",
-    "stars": 7095,
-    "forks": 1297,
+    "stars": 7096,
+    "forks": 1298,
     "language": "JavaScript",
     "description": "The Backbone Framework",
     "url": "https://github.com/marionettejs/backbone.marionette"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 41765,
+    "stars": 41767,
     "forks": 2227,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
