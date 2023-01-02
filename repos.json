@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 41773,
-    "forks": 5515,
+    "stars": 41778,
+    "forks": 5518,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -327,7 +327,7 @@
     "owner": "facebook",
     "name": "flow",
     "stars": 21925,
-    "forks": 1860,
+    "forks": 1861,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -335,7 +335,7 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 41011,
+    "stars": 41017,
     "forks": 6204,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -758,7 +758,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8458,
+    "stars": 8457,
     "forks": 671,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -1163,7 +1163,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 24404,
+    "stars": 24407,
     "forks": 2663,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34089,
+    "stars": 34088,
     "forks": 2279,
     "language": "JavaScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1281,7 +1281,7 @@
     "owner": "parcel-bundler",
     "name": "parcel",
     "stars": 41781,
-    "forks": 2229,
+    "forks": 2227,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41001,
+    "stars": 41003,
     "forks": 2881,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
