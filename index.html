@@ -12,8 +12,8 @@
           font-family: VT323, monaco, Consolas, "Lucida Console", monospace;
           font-size: 1em;
 
-          background: blue;
-          color: white;
+          background: #50f;
+          color: #2f2;
           -webkit-font-smoothing: antialiased;
           font-feature-settings: "liga" off;
         }
@@ -28,6 +28,10 @@
           padding-left: 0;
         }
 
+        ::marker {
+          color: #f08;
+        }
+
         li ul, li ol {
           padding-left: 3ch;
         }
@@ -36,30 +40,30 @@
         li li ol { list-style-type: lower-roman; }
 
         a {
-          color: white;
+          color: #2f2;
           text-decoration: none;
           cursor: pointer;
         }
 
         a:hover,
         a:focus {
-          background: white;
-          color: blue;
+          background: #2f2;
+          color: #50f;
           outline: none;
         }
 
         header  {
           margin: 5% 1em;
           text-transform: lowercase;
-          color: yellow;
+          color: #2f2;
           text-shadow:
-            0.05em 0.05em blue, -0.05em -0.05em red,
-            0.10em 0.10em blue, -0.10em -0.10em red,
-            0.15em 0.15em blue, -0.15em -0.15em red,
-            0.20em 0.20em blue, -0.20em -0.20em red;
+            0.10em 0.10em #2f2,
+            0.20em 0.20em #fff,
+            -0.10em -0.10em #fff;
         }
 
         header h1 {
+          color: #f08;
           margin: 0;
           font-size: 17.4vw;
         }
@@ -75,6 +79,10 @@
 
         section {
           margin: 1em;
+        }
+
+        section h2 {
+          color: #f08;
         }
 
         .print {
@@ -143,9 +151,6 @@
   <body>
     <header class="screen">
       <h1>Jamie Kyle</h1>
-      <p>Building Things.</p>
-      <p>Practicing Mindfulness.</p>
-      <p>Playing Board Games.</p>
     </header>
 
     <header class="print">
@@ -160,23 +165,10 @@
       </h2>
       <ol>
         <li><a href="https://github.com/jamiebuilds">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/jamiebuilds">LinkedIn</a></li>
-        <li><a rel="me" href="https://mastodon.lol/@jamiebuilds">Mastodon</a></li>
         <li><a href="https://twitter.com/buildsghost">Twitter</a></li>
+        <li><a rel="me" href="https://mastodon.lol/@jamiebuilds">Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/in/jamiebuilds">LinkedIn</a></li>
         <li class="print"><a href="https://jamie.build">My Website</a></li>
-      </ol>
-    </section>
-
-    <section id="location">
-      <h2>
-        <a class="ref" href="#location">#</a>
-        I have lived in...
-      </h2>
-      <ol>
-        <li>Oakland, CA, US (currently)</li>
-        <li>Sydney, NSW, AU</li>
-        <li>San Francisco, CA, US</li>
-        <li>Boston, MA, US</li>
       </ol>
     </section>
 
@@ -186,7 +178,8 @@
         I have worked at...
       </h2>
       <ol>
-        <li>IEP&Me - (February 2021 - NaN)</li>
+        <li>Signal - (September 2022 - NaN)</li>
+        <li>IEP&Me - (February 2021 - September 2022)</li>
         <li>Rome - (May 2021 - December 2021)</li>
         <li>Discord - (January 2020 - May 2021)</li>
         <li>Eventbrite - (January 2019 - January 2020)</li>
