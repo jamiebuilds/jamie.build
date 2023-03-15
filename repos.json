@@ -3,7 +3,7 @@
     "owner": "atlassian",
     "name": "jest-in-case",
     "stars": 1028,
-    "forks": 31,
+    "forks": 32,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
     "url": "https://github.com/atlassian/jest-in-case"
@@ -11,8 +11,8 @@
   {
     "owner": "atlassian",
     "name": "landkid",
-    "stars": 83,
-    "forks": 16,
+    "stars": 84,
+    "forks": 17,
     "language": "TypeScript",
     "description": "Your friendly neighborhood async merging robot goat.",
     "url": "https://github.com/atlassian/landkid"
@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42031,
+    "stars": 42036,
     "forks": 5582,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 714,
-    "forks": 1265,
+    "forks": 1264,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -326,8 +326,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21961,
-    "forks": 1871,
+    "stars": 21964,
+    "forks": 1872,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 41621,
-    "forks": 6292,
+    "stars": 41632,
+    "forks": 6294,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,7 +371,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11579,
+    "stars": 11583,
     "forks": 1752,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -759,7 +759,7 @@
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
     "stars": 8486,
-    "forks": 670,
+    "forks": 671,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -947,8 +947,8 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16506,
-    "forks": 854,
+    "stars": 16507,
+    "forks": 855,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1163,8 +1163,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25137,
-    "forks": 2713,
+    "stars": 25143,
+    "forks": 2714,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1200,7 +1200,7 @@
     "owner": "jamiebuilds",
     "name": "unstated",
     "stars": 7824,
-    "forks": 316,
+    "forks": 317,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
     "url": "https://github.com/jamiebuilds/unstated"
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4069,
+    "stars": 4068,
     "forks": 143,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34356,
+    "stars": 34358,
     "forks": 2296,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1263,7 +1263,7 @@
     "owner": "marionettejs",
     "name": "backbone.marionette",
     "stars": 7095,
-    "forks": 1295,
+    "forks": 1294,
     "language": "JavaScript",
     "description": "The Backbone Framework",
     "url": "https://github.com/marionettejs/backbone.marionette"
@@ -1280,8 +1280,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42115,
-    "forks": 2244,
+    "stars": 42120,
+    "forks": 2245,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1352,7 +1352,7 @@
   {
     "owner": "styled-components",
     "name": "styled-theming",
-    "stars": 1160,
+    "stars": 1161,
     "forks": 40,
     "language": "JavaScript",
     "description": "Create themes for your app using styled-components",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41111,
+    "stars": 41114,
     "forks": 2883,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
