@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42036,
+    "stars": 42041,
     "forks": 5582,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 714,
-    "forks": 1264,
+    "forks": 1262,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21964,
+    "stars": 21963,
     "forks": 1872,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 41632,
-    "forks": 6294,
+    "stars": 41636,
+    "forks": 6295,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -372,7 +372,7 @@
     "owner": "jamiebuilds",
     "name": "babel-handbook",
     "stars": 11583,
-    "forks": 1752,
+    "forks": 1751,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -515,7 +515,7 @@
   {
     "owner": "jamiebuilds",
     "name": "codeowners-enforcer",
-    "stars": 42,
+    "stars": 41,
     "forks": 5,
     "language": "Rust",
     "description": "Enforce CODEOWNERS files on your repo",
@@ -947,8 +947,8 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16507,
-    "forks": 855,
+    "stars": 16506,
+    "forks": 854,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1109,7 +1109,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4179,
+    "stars": 4178,
     "forks": 204,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 863,
+    "stars": 866,
     "forks": 21,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1163,8 +1163,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25143,
-    "forks": 2714,
+    "stars": 25149,
+    "forks": 2715,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3205,
+    "stars": 3207,
     "forks": 67,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4068,
+    "stars": 4069,
     "forks": 143,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34358,
-    "forks": 2296,
+    "stars": 34360,
+    "forks": 2297,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42120,
+    "stars": 42121,
     "forks": 2245,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41114,
+    "stars": 41117,
     "forks": 2883,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
