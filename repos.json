@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42054,
+    "stars": 42056,
     "forks": 5587,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -282,7 +282,7 @@
     "owner": "cloudflare",
     "name": "a11y-focus-scope",
     "stars": 33,
-    "forks": 7,
+    "forks": 8,
     "language": "JavaScript",
     "description": "Accessibility util for scoping focus to an element.",
     "url": "https://github.com/cloudflare/a11y-focus-scope"
@@ -291,7 +291,7 @@
     "owner": "cloudflare",
     "name": "a11y-focus-store",
     "stars": 23,
-    "forks": 7,
+    "forks": 8,
     "language": "JavaScript",
     "description": "Accessibility util for storing/restoring focus.",
     "url": "https://github.com/cloudflare/a11y-focus-store"
@@ -309,7 +309,7 @@
     "owner": "cloudflare",
     "name": "react-gateway",
     "stars": 564,
-    "forks": 92,
+    "forks": 93,
     "language": "JavaScript",
     "description": "Render React DOM into a new context (aka \"Portal\")",
     "url": "https://github.com/cloudflare/react-gateway"
@@ -318,7 +318,7 @@
     "owner": "cloudflare",
     "name": "react-modal2",
     "stars": 277,
-    "forks": 24,
+    "forks": 25,
     "language": "JavaScript",
     "description": ":thought_balloon: Simple modal component for React.",
     "url": "https://github.com/cloudflare/react-modal2"
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21970,
+    "stars": 21972,
     "forks": 1873,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -335,8 +335,8 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 41669,
-    "forks": 6303,
+    "stars": 41670,
+    "forks": 6306,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/facebook/jest"
@@ -371,8 +371,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11591,
-    "forks": 1753,
+    "stars": 11594,
+    "forks": 1752,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -515,8 +515,8 @@
   {
     "owner": "jamiebuilds",
     "name": "cirbuf",
-    "stars": 24,
-    "forks": 0,
+    "stars": 35,
+    "forks": 1,
     "language": "TypeScript",
     "description": "A tiny and fast circular buffer",
     "url": "https://github.com/jamiebuilds/cirbuf"
@@ -588,7 +588,7 @@
     "owner": "jamiebuilds",
     "name": "documentation-handbook",
     "stars": 255,
-    "forks": 30,
+    "forks": 31,
     "language": null,
     "description": "How to write high-quality friendly documentation that people want to read.",
     "url": "https://github.com/jamiebuilds/documentation-handbook"
@@ -767,8 +767,8 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8491,
-    "forks": 671,
+    "stars": 8494,
+    "forks": 672,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -947,7 +947,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16508,
+    "stars": 16512,
     "forks": 855,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1163,7 +1163,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25170,
+    "stars": 25176,
     "forks": 2717,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7825,
+    "stars": 7826,
     "forks": 317,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1217,7 +1217,7 @@
   {
     "owner": "jamiebuilds",
     "name": "userscript-github-disable-turbolinks",
-    "stars": 38,
+    "stars": 37,
     "forks": 0,
     "language": "JavaScript",
     "description": "A userscript to disable GitHub turbolinks to force full page navigations",
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34386,
-    "forks": 2299,
+    "stars": 34392,
+    "forks": 2300,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1262,7 +1262,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.marionette",
-    "stars": 7094,
+    "stars": 7093,
     "forks": 1294,
     "language": "JavaScript",
     "description": "The Backbone Framework",
@@ -1280,8 +1280,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42142,
-    "forks": 2244,
+    "stars": 42147,
+    "forks": 2245,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41121,
+    "stars": 41122,
     "forks": 2882,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
