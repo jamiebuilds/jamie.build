@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42142,
-    "forks": 5608,
+    "stars": 42144,
+    "forks": 5607,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -192,7 +192,7 @@
     "owner": "babel",
     "name": "generator-babel-plugin",
     "stars": 113,
-    "forks": 26,
+    "forks": 25,
     "language": "JavaScript",
     "description": "Babel Plugin generator for Yeoman",
     "url": "https://github.com/babel/generator-babel-plugin"
@@ -201,7 +201,7 @@
     "owner": "babel",
     "name": "minify",
     "stars": 4362,
-    "forks": 251,
+    "forks": 250,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
     "url": "https://github.com/babel/minify"
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 715,
-    "forks": 1265,
+    "forks": 1263,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -282,7 +282,7 @@
     "owner": "cloudflare",
     "name": "a11y-focus-scope",
     "stars": 34,
-    "forks": 8,
+    "forks": 7,
     "language": "JavaScript",
     "description": "Accessibility util for scoping focus to an element.",
     "url": "https://github.com/cloudflare/a11y-focus-scope"
@@ -291,7 +291,7 @@
     "owner": "cloudflare",
     "name": "a11y-focus-store",
     "stars": 24,
-    "forks": 8,
+    "forks": 7,
     "language": "JavaScript",
     "description": "Accessibility util for storing/restoring focus.",
     "url": "https://github.com/cloudflare/a11y-focus-store"
@@ -300,7 +300,7 @@
     "owner": "cloudflare",
     "name": "cf-ui",
     "stars": 1297,
-    "forks": 101,
+    "forks": 100,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
     "url": "https://github.com/cloudflare/cf-ui"
@@ -309,7 +309,7 @@
     "owner": "cloudflare",
     "name": "react-gateway",
     "stars": 565,
-    "forks": 93,
+    "forks": 92,
     "language": "JavaScript",
     "description": "Render React DOM into a new context (aka \"Portal\")",
     "url": "https://github.com/cloudflare/react-gateway"
@@ -318,7 +318,7 @@
     "owner": "cloudflare",
     "name": "react-modal2",
     "stars": 278,
-    "forks": 25,
+    "forks": 24,
     "language": "JavaScript",
     "description": ":thought_balloon: Simple modal component for React.",
     "url": "https://github.com/cloudflare/react-modal2"
@@ -326,8 +326,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21978,
-    "forks": 1871,
+    "stars": 21977,
+    "forks": 1870,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -335,7 +335,7 @@
   {
     "owner": "facebook",
     "name": "jest",
-    "stars": 41779,
+    "stars": 41786,
     "forks": 6324,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -363,7 +363,7 @@
     "owner": "jamiebuilds",
     "name": "assert-equal-jsx",
     "stars": 79,
-    "forks": 7,
+    "forks": 6,
     "language": "JavaScript",
     "description": "assertEqualJSX",
     "url": "https://github.com/jamiebuilds/assert-equal-jsx"
@@ -371,8 +371,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11620,
-    "forks": 1761,
+    "stars": 11622,
+    "forks": 1760,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -399,7 +399,7 @@
     "owner": "jamiebuilds",
     "name": "babel-plugin-ken-wheeler",
     "stars": 33,
-    "forks": 4,
+    "forks": 3,
     "language": "JavaScript",
     "description": "Code like you dope",
     "url": "https://github.com/jamiebuilds/babel-plugin-ken-wheeler"
@@ -417,7 +417,7 @@
     "owner": "jamiebuilds",
     "name": "babel-plugin-react-pure-components",
     "stars": 61,
-    "forks": 8,
+    "forks": 7,
     "language": "JavaScript",
     "description": "Optimize React code by making pure classes into functions",
     "url": "https://github.com/jamiebuilds/babel-plugin-react-pure-components"
@@ -426,7 +426,7 @@
     "owner": "jamiebuilds",
     "name": "babel-react-optimize",
     "stars": 1682,
-    "forks": 48,
+    "forks": 47,
     "language": "JavaScript",
     "description": ":rocket: A Babel preset and plugins for optimizing React code.",
     "url": "https://github.com/jamiebuilds/babel-react-optimize"
@@ -435,7 +435,7 @@
     "owner": "jamiebuilds",
     "name": "babel-setup-react-transform",
     "stars": 20,
-    "forks": 3,
+    "forks": 2,
     "language": "JavaScript",
     "description": "Example Babel project using babel-plugin-react-transform",
     "url": "https://github.com/jamiebuilds/babel-setup-react-transform"
@@ -444,7 +444,7 @@
     "owner": "jamiebuilds",
     "name": "backbone-routing",
     "stars": 26,
-    "forks": 9,
+    "forks": 8,
     "language": "JavaScript",
     "description": "Simple router and route classes for Backbone.",
     "url": "https://github.com/jamiebuilds/backbone-routing"
@@ -453,7 +453,7 @@
     "owner": "jamiebuilds",
     "name": "backbone.service",
     "stars": 31,
-    "forks": 11,
+    "forks": 10,
     "language": "JavaScript",
     "description": "A simple service class for Backbone.",
     "url": "https://github.com/jamiebuilds/backbone.service"
@@ -462,7 +462,7 @@
     "owner": "jamiebuilds",
     "name": "backbone.storage",
     "stars": 22,
-    "forks": 9,
+    "forks": 8,
     "language": "JavaScript",
     "description": "A simple storage class for Backbone Models and Collections.",
     "url": "https://github.com/jamiebuilds/backbone.storage"
@@ -552,7 +552,7 @@
     "owner": "jamiebuilds",
     "name": "crowdin-sync",
     "stars": 36,
-    "forks": 11,
+    "forks": 10,
     "language": "Ruby",
     "description": ":earth_asia: How to setup Crowdin to sync with GitHub",
     "url": "https://github.com/jamiebuilds/crowdin-sync"
@@ -741,7 +741,7 @@
     "owner": "jamiebuilds",
     "name": "incremental-dom-react-helper",
     "stars": 35,
-    "forks": 3,
+    "forks": 2,
     "language": "JavaScript",
     "description": "Helper to make Google's incremental-dom library work with React's compile target today.",
     "url": "https://github.com/jamiebuilds/incremental-dom-react-helper"
@@ -767,8 +767,8 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8506,
-    "forks": 672,
+    "stars": 8508,
+    "forks": 671,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -885,7 +885,7 @@
     "owner": "jamiebuilds",
     "name": "pretty-format",
     "stars": 304,
-    "forks": 30,
+    "forks": 29,
     "language": null,
     "description": ":sparkles: Stringify any JavaScript value",
     "url": "https://github.com/jamiebuilds/pretty-format"
@@ -894,7 +894,7 @@
     "owner": "jamiebuilds",
     "name": "pride",
     "stars": 38,
-    "forks": 3,
+    "forks": 2,
     "language": null,
     "description": ":two_men_holding_hands: PrideJS logo",
     "url": "https://github.com/jamiebuilds/pride"
@@ -938,7 +938,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-jeff",
-    "stars": 215,
+    "stars": 214,
     "forks": 4,
     "language": "TypeScript",
     "description": "A Good Form Library",
@@ -947,7 +947,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16525,
+    "stars": 16526,
     "forks": 855,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1002,7 +1002,7 @@
     "owner": "jamiebuilds",
     "name": "react-required-if",
     "stars": 71,
-    "forks": 7,
+    "forks": 6,
     "language": "JavaScript",
     "description": "React PropType to conditionally add `.isRequired` based on other props",
     "url": "https://github.com/jamiebuilds/react-required-if"
@@ -1011,7 +1011,7 @@
     "owner": "jamiebuilds",
     "name": "react-stylish",
     "stars": 47,
-    "forks": 4,
+    "forks": 3,
     "language": "JavaScript",
     "description": ":ribbon: Make your React component style-able by all",
     "url": "https://github.com/jamiebuilds/react-stylish"
@@ -1020,7 +1020,7 @@
     "owner": "jamiebuilds",
     "name": "react-test-renderer",
     "stars": 58,
-    "forks": 8,
+    "forks": 7,
     "language": "JavaScript",
     "description": "[DEPRECATED] A lightweight solution to testing fully-rendered React Components",
     "url": "https://github.com/jamiebuilds/react-test-renderer"
@@ -1110,7 +1110,7 @@
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
     "stars": 4178,
-    "forks": 203,
+    "forks": 202,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
     "url": "https://github.com/jamiebuilds/spectacle-code-slide"
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 951,
+    "stars": 964,
     "forks": 23,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1163,8 +1163,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25257,
-    "forks": 2727,
+    "stars": 25261,
+    "forks": 2725,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3220,
+    "stars": 3221,
     "forks": 68,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7822,
+    "stars": 7823,
     "forks": 318,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4081,
+    "stars": 4083,
     "forks": 144,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34449,
-    "forks": 2315,
+    "stars": 34453,
+    "forks": 2314,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1263,7 +1263,7 @@
     "owner": "marionettejs",
     "name": "backbone.marionette",
     "stars": 7092,
-    "forks": 1294,
+    "forks": 1293,
     "language": "JavaScript",
     "description": "The Backbone Framework",
     "url": "https://github.com/marionettejs/backbone.marionette"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42217,
+    "stars": 42223,
     "forks": 2250,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41134,
+    "stars": 41136,
     "forks": 2883,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
