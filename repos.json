@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42197,
-    "forks": 5621,
+    "stars": 42199,
+    "forks": 5622,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 716,
-    "forks": 1272,
+    "forks": 1273,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11651,
+    "stars": 11652,
     "forks": 1772,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -659,7 +659,7 @@
   {
     "owner": "jamiebuilds",
     "name": "glow",
-    "stars": 699,
+    "stars": 700,
     "forks": 25,
     "language": "JavaScript",
     "description": "Make your Flow errors GLOW",
@@ -758,7 +758,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8516,
+    "stars": 8517,
     "forks": 674,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -785,7 +785,7 @@
   {
     "owner": "jamiebuilds",
     "name": "json-parser-in-typescript-very-bad-idea-please-dont-use",
-    "stars": 422,
+    "stars": 423,
     "forks": 4,
     "language": "TypeScript",
     "description": "JSON Parser written entirely in TypeScript's type system",
@@ -920,7 +920,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-gridlist",
-    "stars": 420,
+    "stars": 421,
     "forks": 7,
     "language": "TypeScript",
     "description": "A virtual-scrolling GridList component based on CSS Grids",
@@ -938,7 +938,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16538,
+    "stars": 16540,
     "forks": 854,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1073,7 +1073,7 @@
   {
     "owner": "jamiebuilds",
     "name": "scritch",
-    "stars": 83,
+    "stars": 84,
     "forks": 7,
     "language": "JavaScript",
     "description": "A small CLI to help you write sharable scripts for your team",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1037,
+    "stars": 1039,
     "forks": 25,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25366,
+    "stars": 25372,
     "forks": 2746,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3251,
+    "stars": 3256,
     "forks": 67,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 41901,
-    "forks": 6350,
+    "stars": 41914,
+    "forks": 6349,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34523,
-    "forks": 2319,
+    "stars": 34527,
+    "forks": 2318,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1271,7 +1271,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.radio",
-    "stars": 494,
+    "stars": 493,
     "forks": 53,
     "language": "JavaScript",
     "description": "Messaging patterns for Backbone applications.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42307,
+    "stars": 42310,
     "forks": 2259,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1380,7 +1380,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 407,
-    "forks": 1046,
+    "forks": 1047,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1389,7 +1389,7 @@
     "owner": "yarnpkg",
     "name": "yarn",
     "stars": 41153,
-    "forks": 2887,
+    "forks": 2886,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
