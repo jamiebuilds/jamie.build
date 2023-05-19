@@ -12,7 +12,7 @@
     "owner": "atlassian",
     "name": "landkid",
     "stars": 83,
-    "forks": 18,
+    "forks": 19,
     "language": "TypeScript",
     "description": "Your friendly neighborhood async merging robot goat.",
     "url": "https://github.com/atlassian/landkid"
@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42231,
+    "stars": 42230,
     "forks": 5624,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4370,
+    "stars": 4369,
     "forks": 253,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 716,
-    "forks": 1276,
+    "forks": 1277,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2283,
+    "stars": 2282,
     "forks": 103,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21977,
+    "stars": 21978,
     "forks": 1872,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11673,
+    "stars": 11674,
     "forks": 1773,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -624,7 +624,7 @@
     "owner": "jamiebuilds",
     "name": "gender-regex",
     "stars": 193,
-    "forks": 10,
+    "forks": 11,
     "language": "JavaScript",
     "description": "Regex to test for valid genders",
     "url": "https://github.com/jamiebuilds/gender-regex"
@@ -938,7 +938,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16543,
+    "stars": 16542,
     "forks": 855,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -948,7 +948,7 @@
     "owner": "jamiebuilds",
     "name": "react-loadable-example",
     "stars": 149,
-    "forks": 28,
+    "forks": 29,
     "language": "JavaScript",
     "description": "Example project for React Loadable",
     "url": "https://github.com/jamiebuilds/react-loadable-example"
@@ -1065,7 +1065,7 @@
     "owner": "jamiebuilds",
     "name": "sarcastic",
     "stars": 98,
-    "forks": 2,
+    "forks": 3,
     "language": "JavaScript",
     "description": "Cast unknown values to typed values",
     "url": "https://github.com/jamiebuilds/sarcastic"
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1076,
+    "stars": 1077,
     "forks": 24,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25420,
+    "stars": 25426,
     "forks": 2753,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3360,
+    "stars": 3361,
     "forks": 68,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 41983,
-    "forks": 6356,
+    "stars": 41990,
+    "forks": 6355,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34566,
+    "stars": 34573,
     "forks": 2318,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1263,7 +1263,7 @@
     "owner": "marionettejs",
     "name": "backbone.marionette",
     "stars": 7090,
-    "forks": 1291,
+    "forks": 1292,
     "language": "JavaScript",
     "description": "The Backbone Framework",
     "url": "https://github.com/marionettejs/backbone.marionette"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42358,
+    "stars": 42359,
     "forks": 2261,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41171,
-    "forks": 2887,
+    "stars": 41170,
+    "forks": 2888,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
