@@ -11,7 +11,7 @@
   {
     "owner": "atlassian",
     "name": "landkid",
-    "stars": 84,
+    "stars": 85,
     "forks": 19,
     "language": "TypeScript",
     "description": "Your friendly neighborhood async merging robot goat.",
@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42241,
+    "stars": 42242,
     "forks": 5634,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 717,
+    "stars": 718,
     "forks": 1282,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2284,
+    "stars": 2285,
     "forks": 103,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -317,7 +317,7 @@
   {
     "owner": "cloudflare",
     "name": "react-modal2",
-    "stars": 280,
+    "stars": 279,
     "forks": 24,
     "language": "JavaScript",
     "description": ":thought_balloon: Simple modal component for React.",
@@ -326,8 +326,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21986,
-    "forks": 1872,
+    "stars": 21988,
+    "forks": 1873,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -632,7 +632,7 @@
   {
     "owner": "jamiebuilds",
     "name": "ghost-lang",
-    "stars": 300,
+    "stars": 301,
     "forks": 9,
     "language": null,
     "description": ":ghost: A friendly little language for you and me.",
@@ -920,7 +920,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-gridlist",
-    "stars": 421,
+    "stars": 420,
     "forks": 7,
     "language": "TypeScript",
     "description": "A virtual-scrolling GridList component based on CSS Grids",
@@ -938,7 +938,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16546,
+    "stars": 16545,
     "forks": 855,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1100,
+    "stars": 1109,
     "forks": 24,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25469,
-    "forks": 2760,
+    "stars": 25472,
+    "forks": 2759,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1173,7 +1173,7 @@
     "owner": "jamiebuilds",
     "name": "tinykeys",
     "stars": 3369,
-    "forks": 68,
+    "forks": 69,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
     "url": "https://github.com/jamiebuilds/tinykeys"
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "unstated",
     "stars": 7825,
-    "forks": 318,
+    "forks": 319,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
     "url": "https://github.com/jamiebuilds/unstated"
@@ -1244,7 +1244,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 42033,
+    "stars": 42036,
     "forks": 6355,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34613,
-    "forks": 2315,
+    "stars": 34614,
+    "forks": 2317,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41186,
+    "stars": 41188,
     "forks": 2889,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
