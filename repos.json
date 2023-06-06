@@ -2,7 +2,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1038,
+    "stars": 1039,
     "forks": 35,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42253,
-    "forks": 5632,
+    "stars": 42256,
+    "forks": 5633,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -200,8 +200,8 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4372,
-    "forks": 255,
+    "stars": 4373,
+    "forks": 254,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
     "url": "https://github.com/babel/minify"
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 717,
+    "stars": 718,
     "forks": 1283,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11686,
+    "stars": 11687,
     "forks": 1770,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -525,7 +525,7 @@
     "owner": "jamiebuilds",
     "name": "codeowners-utils",
     "stars": 19,
-    "forks": 3,
+    "forks": 4,
     "language": "TypeScript",
     "description": "Utilities for working with CODEOWNERS files",
     "url": "https://github.com/jamiebuilds/codeowners-utils"
@@ -938,7 +938,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16542,
+    "stars": 16543,
     "forks": 855,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1132,
+    "stars": 1136,
     "forks": 24,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25483,
+    "stars": 25487,
     "forks": 2760,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7825,
+    "stars": 7826,
     "forks": 318,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4101,
+    "stars": 4103,
     "forks": 144,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1244,7 +1244,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 42064,
+    "stars": 42072,
     "forks": 6356,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1380,7 +1380,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 407,
-    "forks": 1053,
+    "forks": 1054,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41189,
-    "forks": 2889,
+    "stars": 41188,
+    "forks": 2888,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
