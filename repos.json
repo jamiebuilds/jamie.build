@@ -137,7 +137,7 @@
   {
     "owner": "babel-utils",
     "name": "babel-plugin-tester",
-    "stars": 263,
+    "stars": 264,
     "forks": 40,
     "language": "TypeScript",
     "description": "Utilities for testing babel plugins",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42295,
-    "forks": 5643,
+    "stars": 42299,
+    "forks": 5644,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -299,7 +299,7 @@
   {
     "owner": "cloudflare",
     "name": "cf-ui",
-    "stars": 1297,
+    "stars": 1296,
     "forks": 101,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
@@ -362,8 +362,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11698,
-    "forks": 1771,
+    "stars": 11699,
+    "forks": 1772,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -758,8 +758,8 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8520,
-    "forks": 673,
+    "stars": 8521,
+    "forks": 674,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1161,
+    "stars": 1164,
     "forks": 25,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25511,
-    "forks": 2764,
+    "stars": 25516,
+    "forks": 2766,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 42106,
-    "forks": 6364,
+    "stars": 42114,
+    "forks": 6365,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34649,
-    "forks": 2316,
+    "stars": 34656,
+    "forks": 2317,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42418,
+    "stars": 42426,
     "forks": 2267,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1379,7 +1379,7 @@
   {
     "owner": "yarnpkg",
     "name": "website",
-    "stars": 406,
+    "stars": 405,
     "forks": 1054,
     "language": "JavaScript",
     "description": "Yarn package manager website",
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41201,
-    "forks": 2888,
+    "stars": 41203,
+    "forks": 2889,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
