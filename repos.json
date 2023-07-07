@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42354,
-    "forks": 5673,
+    "stars": 42353,
+    "forks": 5675,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 721,
+    "stars": 722,
     "forks": 1286,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2291,
+    "stars": 2292,
     "forks": 103,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,8 +326,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 21990,
-    "forks": 1882,
+    "stars": 21992,
+    "forks": 1881,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -363,7 +363,7 @@
     "owner": "jamiebuilds",
     "name": "babel-handbook",
     "stars": 11725,
-    "forks": 1777,
+    "forks": 1778,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -758,7 +758,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8523,
+    "stars": 8525,
     "forks": 676,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -993,7 +993,7 @@
     "owner": "jamiebuilds",
     "name": "react-required-if",
     "stars": 71,
-    "forks": 6,
+    "forks": 5,
     "language": "JavaScript",
     "description": "React PropType to conditionally add `.isRequired` based on other props",
     "url": "https://github.com/jamiebuilds/react-required-if"
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1269,
+    "stars": 1276,
     "forks": 26,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25582,
-    "forks": 2775,
+    "stars": 25586,
+    "forks": 2776,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3403,
+    "stars": 3404,
     "forks": 69,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 42218,
-    "forks": 6382,
+    "stars": 42224,
+    "forks": 6383,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34708,
+    "stars": 34707,
     "forks": 2320,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42477,
+    "stars": 42479,
     "forks": 2277,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41225,
+    "stars": 41228,
     "forks": 2896,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
