@@ -2,7 +2,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1043,
+    "stars": 1044,
     "forks": 35,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 42441,
-    "forks": 5698,
+    "forks": 5700,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4375,
+    "stars": 4374,
     "forks": 254,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -326,8 +326,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22006,
-    "forks": 1894,
+    "stars": 22005,
+    "forks": 1895,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11757,
+    "stars": 11760,
     "forks": 1777,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -534,7 +534,7 @@
     "owner": "jamiebuilds",
     "name": "create-react-context",
     "stars": 695,
-    "forks": 85,
+    "forks": 84,
     "language": "JavaScript",
     "description": "Polyfill for the proposed React context API",
     "url": "https://github.com/jamiebuilds/create-react-context"
@@ -596,7 +596,7 @@
   {
     "owner": "jamiebuilds",
     "name": "favorite-software",
-    "stars": 356,
+    "stars": 355,
     "forks": 22,
     "language": null,
     "description": ":star2: Best software for developers and power users.",
@@ -758,7 +758,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8532,
+    "stars": 8533,
     "forks": 678,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25701,
-    "forks": 2788,
+    "stars": 25699,
+    "forks": 2789,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "unstated",
     "stars": 7824,
-    "forks": 319,
+    "forks": 321,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
     "url": "https://github.com/jamiebuilds/unstated"
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4123,
+    "stars": 4124,
     "forks": 148,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 42451,
-    "forks": 6416,
+    "stars": 42456,
+    "forks": 6422,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34796,
-    "forks": 2326,
+    "stars": 34803,
+    "forks": 2327,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42557,
+    "stars": 42561,
     "forks": 2291,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1379,8 +1379,8 @@
   {
     "owner": "yarnpkg",
     "name": "website",
-    "stars": 405,
-    "forks": 1070,
+    "stars": 404,
+    "forks": 1071,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41240,
+    "stars": 41238,
     "forks": 2900,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
