@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42441,
-    "forks": 5700,
+    "stars": 42439,
+    "forks": 5702,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -344,7 +344,7 @@
   {
     "owner": "jamiebuilds",
     "name": "anti-fascist-mit-license",
-    "stars": 188,
+    "stars": 189,
     "forks": 27,
     "language": null,
     "description": "MIT license with additional text to prohibit use by fascists",
@@ -363,7 +363,7 @@
     "owner": "jamiebuilds",
     "name": "babel-handbook",
     "stars": 11760,
-    "forks": 1777,
+    "forks": 1778,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -534,7 +534,7 @@
     "owner": "jamiebuilds",
     "name": "create-react-context",
     "stars": 695,
-    "forks": 84,
+    "forks": 85,
     "language": "JavaScript",
     "description": "Polyfill for the proposed React context API",
     "url": "https://github.com/jamiebuilds/create-react-context"
@@ -938,8 +938,8 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16566,
-    "forks": 857,
+    "stars": 16569,
+    "forks": 858,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1362,
+    "stars": 1368,
     "forks": 30,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25699,
+    "stars": 25706,
     "forks": 2789,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4124,
+    "stars": 4125,
     "forks": 148,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 42456,
-    "forks": 6422,
+    "stars": 42464,
+    "forks": 6423,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34803,
-    "forks": 2327,
+    "stars": 34808,
+    "forks": 2328,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,8 +1280,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42561,
-    "forks": 2291,
+    "stars": 42564,
+    "forks": 2292,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41238,
+    "stars": 41241,
     "forks": 2900,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
