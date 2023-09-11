@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Big Image</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        -webkit-font-smoothing: antialiased;
+    }
+
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Generate Big Image</h1>
+
+  <form id="form">
+    <p>This may take a minute...</p>
+    <label for="bytes">Bytes*</label>
+    <input id="bytes" type="number" value="400000000">
+    <button type="submit">Generate</button>
+
+    <p>* This is an approximation, rounded to a square image, and optimized slightly by the browser</p>
+  </form>
+
+  <script>
+    let form = document.querySelector("#form")
+    let bytesInput = document.querySelector("#bytes")
+
+    form.addEventListener("submit", event => {
+      event.preventDefault()
+
+      let totalBytes = bytesInput.valueAsNumber
+      let width = Math.floor(Math.sqrt(totalBytes / 4))
+      let height = Math.floor(totalBytes / (width * 4))
+
+      let pageSize = Math.sqrt(65536 / 4)
+
+      let canvas = new OffscreenCanvas(width, height)
+      let context = canvas.getContext("2d")
+
+      let xPages = Math.ceil(canvas.width / pageSize)
+      let yPages = Math.ceil(canvas.height / pageSize)
+
+      console.log("Generating image data...")
+
+      for (let yPage = 0; yPage < yPages; yPage++) {
+        let y = yPage * pageSize;
+        let pageHeight = Math.min(pageSize, height - y)
+
+        for (let xPage = 0; xPage < xPages; xPage++) {
+          let x = xPage * pageSize;
+          let pageWidth = Math.min(pageSize, width - x)
+          let data = new Uint8ClampedArray(pageWidth * pageHeight * 4)
+          crypto.getRandomValues(data)
+          let imageData = new ImageData(data, pageWidth, pageHeight)
+          context.putImageData(imageData, x, y)
+        }
+      }
+
+      console.log("Converting to png...")
+
+      canvas.convertToBlob({
+        type: "image/png",
+        quality: 1
+      }).then(blob => {
+        let url = URL.createObjectURL(blob)
+        let a = document.createElement("a")
+        a.hidden = true
+        a.href = url
+        a.download = "generated.png"
+        document.body.appendChild(a)
+        a.click()
+        URL.revokeObjectURL(url)
+        a.remove()
+      })
+    })
+  </script>
+</body>
+</html>
