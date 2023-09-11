@@ -40,6 +40,7 @@
       let width = Math.floor(Math.sqrt(totalBytes / 4))
       let height = Math.floor(totalBytes / (width * 4))
 
+      // 65,536 (256 * 256) is the max size for crypto.getRandomValues
       let pageSize = Math.sqrt(65536 / 4)
 
       let canvas = new OffscreenCanvas(width, height)
@@ -53,7 +54,6 @@
       for (let yPage = 0; yPage < yPages; yPage++) {
         let y = yPage * pageSize;
         let pageHeight = Math.min(pageSize, height - y)
-
         for (let xPage = 0; xPage < xPages; xPage++) {
           let x = xPage * pageSize;
           let pageWidth = Math.min(pageSize, width - x)
@@ -74,7 +74,7 @@
         let a = document.createElement("a")
         a.hidden = true
         a.href = url
-        a.download = "generated.png"
+        a.download = `generated-${blob.size}.png`
         document.body.appendChild(a)
         a.click()
         URL.revokeObjectURL(url)
