@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42533,
-    "forks": 5756,
+    "stars": 42535,
+    "forks": 5757,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4373,
+    "stars": 4372,
     "forks": 255,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2299,
+    "stars": 2301,
     "forks": 104,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11776,
+    "stars": 11778,
     "forks": 1780,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -740,7 +740,7 @@
   {
     "owner": "jamiebuilds",
     "name": "is-mergeable",
-    "stars": 21,
+    "stars": 22,
     "forks": 5,
     "language": "JavaScript",
     "description": "Check if a GitHub Pull Request is in a (most likely) mergeable state",
@@ -939,7 +939,7 @@
     "owner": "jamiebuilds",
     "name": "react-loadable",
     "stars": 16569,
-    "forks": 858,
+    "forks": 857,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1100,7 +1100,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4171,
+    "stars": 4172,
     "forks": 202,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1484,
+    "stars": 1487,
     "forks": 32,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25883,
+    "stars": 25888,
     "forks": 2800,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1245,7 +1245,7 @@
     "owner": "jestjs",
     "name": "jest",
     "stars": 42740,
-    "forks": 6480,
+    "forks": 6483,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1280,8 +1280,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42700,
-    "forks": 2301,
+    "stars": 42701,
+    "forks": 2303,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1380,7 +1380,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 405,
-    "forks": 1085,
+    "forks": 1087,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41266,
+    "stars": 41268,
     "forks": 2912,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
