@@ -11,7 +11,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1041,
+    "stars": 1042,
     "forks": 35,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42535,
+    "stars": 42533,
     "forks": 5757,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2301,
+    "stars": 2300,
     "forks": 104,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22014,
+    "stars": 22016,
     "forks": 1901,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -362,8 +362,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11779,
-    "forks": 1780,
+    "stars": 11780,
+    "forks": 1781,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -416,7 +416,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-react-optimize",
-    "stars": 1687,
+    "stars": 1686,
     "forks": 49,
     "language": "JavaScript",
     "description": ":rocket: A Babel preset and plugins for optimizing React code.",
@@ -758,7 +758,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8544,
+    "stars": 8545,
     "forks": 679,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -1100,7 +1100,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4172,
+    "stars": 4173,
     "forks": 202,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1491,
+    "stars": 1493,
     "forks": 33,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1155,7 +1155,7 @@
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
     "stars": 25894,
-    "forks": 2801,
+    "forks": 2802,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "unstated",
     "stars": 7823,
-    "forks": 345,
+    "forks": 346,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
     "url": "https://github.com/jamiebuilds/unstated"
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 42749,
-    "forks": 6487,
+    "stars": 42754,
+    "forks": 6488,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34935,
+    "stars": 34937,
     "forks": 2329,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42705,
+    "stars": 42708,
     "forks": 2304,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1389,7 +1389,7 @@
     "owner": "yarnpkg",
     "name": "yarn",
     "stars": 41267,
-    "forks": 2913,
+    "forks": 2912,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
