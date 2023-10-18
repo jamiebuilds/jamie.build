@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42553,
+    "stars": 42556,
     "forks": 5793,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22015,
+    "stars": 22010,
     "forks": 1908,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -363,7 +363,7 @@
     "owner": "jamiebuilds",
     "name": "babel-handbook",
     "stars": 11795,
-    "forks": 1781,
+    "forks": 1780,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -758,7 +758,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8546,
+    "stars": 8547,
     "forks": 679,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1542,
+    "stars": 1550,
     "forks": 33,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 25953,
+    "stars": 25957,
     "forks": 2810,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3457,
+    "stars": 3459,
     "forks": 73,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "unstated",
     "stars": 7821,
-    "forks": 352,
+    "forks": 353,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
     "url": "https://github.com/jamiebuilds/unstated"
@@ -1200,7 +1200,7 @@
     "owner": "jamiebuilds",
     "name": "unstated-next",
     "stars": 4150,
-    "forks": 148,
+    "forks": 149,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
     "url": "https://github.com/jamiebuilds/unstated-next"
@@ -1226,7 +1226,7 @@
   {
     "owner": "jamiebuilds",
     "name": "workspaces-run",
-    "stars": 87,
+    "stars": 88,
     "forks": 2,
     "language": "TypeScript",
     "description": "Run tasks/scripts across Yarn/Lerna/Bolt/etc workspaces.",
@@ -1244,7 +1244,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 42830,
+    "stars": 42835,
     "forks": 6509,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 34992,
+    "stars": 34993,
     "forks": 2333,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42741,
+    "stars": 42742,
     "forks": 2310,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1380,7 +1380,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 407,
-    "forks": 1096,
+    "forks": 1097,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41277,
+    "stars": 41279,
     "forks": 2916,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
