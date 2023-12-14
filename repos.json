@@ -137,7 +137,7 @@
   {
     "owner": "babel-utils",
     "name": "babel-plugin-tester",
-    "stars": 267,
+    "stars": 268,
     "forks": 40,
     "language": "TypeScript",
     "description": "Utilities for testing babel plugins",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42693,
-    "forks": 5839,
+    "stars": 42695,
+    "forks": 5837,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 728,
-    "forks": 1323,
+    "forks": 1324,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -362,8 +362,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11841,
-    "forks": 1788,
+    "stars": 11842,
+    "forks": 1789,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -417,7 +417,7 @@
     "owner": "jamiebuilds",
     "name": "babel-react-optimize",
     "stars": 1685,
-    "forks": 50,
+    "forks": 49,
     "language": "JavaScript",
     "description": ":rocket: A Babel preset and plugins for optimizing React code.",
     "url": "https://github.com/jamiebuilds/babel-react-optimize"
@@ -750,7 +750,7 @@
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
     "stars": 8555,
-    "forks": 679,
+    "forks": 678,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -763,6 +763,15 @@
     "language": "HTML",
     "description": "the website",
     "url": "https://github.com/jamiebuilds/jamie.build"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "jest-enhanced-resolve",
+    "stars": 18,
+    "forks": 1,
+    "language": "TypeScript",
+    "description": "Use Webpack's enhanced-resolve inside Jest",
+    "url": "https://github.com/jamiebuilds/jest-enhanced-resolve"
   },
   {
     "owner": "jamiebuilds",
@@ -817,15 +826,6 @@
     "language": "JavaScript",
     "description": "Get the shortest leading whitespace from lines in a string",
     "url": "https://github.com/jamiebuilds/min-indent"
-  },
-  {
-    "owner": "jamiebuilds",
-    "name": "my-react",
-    "stars": 18,
-    "forks": 2,
-    "language": "JavaScript",
-    "description": "Ideas for React APIs",
-    "url": "https://github.com/jamiebuilds/my-react"
   },
   {
     "owner": "jamiebuilds",
@@ -939,7 +939,7 @@
     "owner": "jamiebuilds",
     "name": "react-loadable",
     "stars": 16585,
-    "forks": 857,
+    "forks": 856,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1101,7 +1101,7 @@
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
     "stars": 4174,
-    "forks": 201,
+    "forks": 200,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
     "url": "https://github.com/jamiebuilds/spectacle-code-slide"
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1751,
+    "stars": 1755,
     "forks": 36,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "task-graph-runner",
-    "stars": 35,
+    "stars": 36,
     "forks": 4,
     "language": "JavaScript",
     "description": "Run async tasks with dependencies",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 26123,
-    "forks": 2833,
+    "stars": 26130,
+    "forks": 2832,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3492,
+    "stars": 3495,
     "forks": 73,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43065,
-    "forks": 6561,
+    "stars": 43067,
+    "forks": 6562,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35101,
+    "stars": 35105,
     "forks": 2342,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42837,
+    "stars": 42841,
     "forks": 2327,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41269,
-    "forks": 2918,
+    "stars": 41271,
+    "forks": 2919,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
