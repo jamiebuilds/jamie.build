@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42746,
+    "stars": 42748,
     "forks": 5864,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22028,
+    "stars": 22026,
     "forks": 1926,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11861,
+    "stars": 11862,
     "forks": 1786,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -749,8 +749,8 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8560,
-    "forks": 677,
+    "stars": 8561,
+    "forks": 678,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -763,15 +763,6 @@
     "language": "HTML",
     "description": "the website",
     "url": "https://github.com/jamiebuilds/jamie.build"
-  },
-  {
-    "owner": "jamiebuilds",
-    "name": "jest-enhanced-resolve",
-    "stars": 18,
-    "forks": 1,
-    "language": "TypeScript",
-    "description": "Use Webpack's enhanced-resolve inside Jest",
-    "url": "https://github.com/jamiebuilds/jest-enhanced-resolve"
   },
   {
     "owner": "jamiebuilds",
@@ -916,6 +907,15 @@
     "language": "TypeScript",
     "description": "Make sure every file in your repo is exactly where it should be",
     "url": "https://github.com/jamiebuilds/purposefile"
+  },
+  {
+    "owner": "jamiebuilds",
+    "name": "react-field-sizing-content",
+    "stars": 18,
+    "forks": 0,
+    "language": "TypeScript",
+    "description": "A React-based ponyfill for `field-sizing: content`",
+    "url": "https://github.com/jamiebuilds/react-field-sizing-content"
   },
   {
     "owner": "jamiebuilds",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1871,
+    "stars": 1874,
     "forks": 37,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 26229,
-    "forks": 2843,
+    "stars": 26230,
+    "forks": 2845,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3510,
+    "stars": 3511,
     "forks": 75,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "unstated",
     "stars": 7823,
-    "forks": 369,
+    "forks": 368,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
     "url": "https://github.com/jamiebuilds/unstated"
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43221,
-    "forks": 6583,
+    "stars": 43227,
+    "forks": 6582,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35173,
-    "forks": 2347,
+    "stars": 35172,
+    "forks": 2346,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42913,
+    "stars": 42915,
     "forks": 2343,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41303,
+    "stars": 41302,
     "forks": 2930,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
