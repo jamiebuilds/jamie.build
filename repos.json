@@ -11,7 +11,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1044,
+    "stars": 1043,
     "forks": 36,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42749,
-    "forks": 5865,
+    "stars": 42751,
+    "forks": 5866,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -201,7 +201,7 @@
     "owner": "babel",
     "name": "minify",
     "stars": 4375,
-    "forks": 255,
+    "forks": 254,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
     "url": "https://github.com/babel/minify"
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 733,
+    "stars": 734,
     "forks": 1329,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -299,7 +299,7 @@
   {
     "owner": "cloudflare",
     "name": "cf-ui",
-    "stars": 1292,
+    "stars": 1291,
     "forks": 101,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22030,
+    "stars": 22031,
     "forks": 1925,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11865,
+    "stars": 11867,
     "forks": 1787,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -416,7 +416,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-react-optimize",
-    "stars": 1685,
+    "stars": 1686,
     "forks": 49,
     "language": "JavaScript",
     "description": ":rocket: A Babel preset and plugins for optimizing React code.",
@@ -938,7 +938,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16596,
+    "stars": 16597,
     "forks": 853,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1880,
+    "stars": 1882,
     "forks": 37,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 26236,
+    "stars": 26240,
     "forks": 2843,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7824,
+    "stars": 7825,
     "forks": 368,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1244,7 +1244,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43238,
+    "stars": 43240,
     "forks": 6582,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1254,7 +1254,7 @@
     "owner": "lerna",
     "name": "lerna",
     "stars": 35177,
-    "forks": 2347,
+    "forks": 2348,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,8 +1280,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42917,
-    "forks": 2344,
+    "stars": 42923,
+    "forks": 2343,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1352,7 +1352,7 @@
   {
     "owner": "styled-components",
     "name": "styled-theming",
-    "stars": 1170,
+    "stars": 1169,
     "forks": 39,
     "language": "JavaScript",
     "description": "Create themes for your app using styled-components",
@@ -1379,8 +1379,8 @@
   {
     "owner": "yarnpkg",
     "name": "website",
-    "stars": 411,
-    "forks": 1110,
+    "stars": 412,
+    "forks": 1111,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
