@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42786,
+    "stars": 42791,
     "forks": 5540,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2308,
+    "stars": 2307,
     "forks": 106,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22036,
+    "stars": 22032,
     "forks": 1931,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -362,8 +362,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11885,
-    "forks": 1773,
+    "stars": 11884,
+    "forks": 1774,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -551,8 +551,8 @@
   {
     "owner": "jamiebuilds",
     "name": "dark-mode-github-readme-logos",
-    "stars": 66,
-    "forks": 80,
+    "stars": 67,
+    "forks": 79,
     "language": null,
     "description": "How to make logos in your README that support GitHub's new dark mode",
     "url": "https://github.com/jamiebuilds/dark-mode-github-readme-logos"
@@ -911,7 +911,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-field-sizing-content",
-    "stars": 20,
+    "stars": 21,
     "forks": 0,
     "language": "TypeScript",
     "description": "A React-based ponyfill for `field-sizing: content`",
@@ -938,8 +938,8 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16602,
-    "forks": 783,
+    "stars": 16604,
+    "forks": 782,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1101,7 +1101,7 @@
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
     "stars": 4170,
-    "forks": 199,
+    "forks": 169,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
     "url": "https://github.com/jamiebuilds/spectacle-code-slide"
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 1950,
+    "stars": 1952,
     "forks": 37,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 26312,
-    "forks": 2862,
+    "stars": 26316,
+    "forks": 2771,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43318,
-    "forks": 6316,
+    "stars": 43323,
+    "forks": 6319,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35216,
+    "stars": 35220,
     "forks": 2356,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 42992,
+    "stars": 42993,
     "forks": 2243,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1380,7 +1380,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 414,
-    "forks": 1117,
+    "forks": 943,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
