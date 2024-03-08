@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42810,
-    "forks": 5550,
+    "stars": 42812,
+    "forks": 5551,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -299,8 +299,8 @@
   {
     "owner": "cloudflare",
     "name": "cf-ui",
-    "stars": 1290,
-    "forks": 101,
+    "stars": 1291,
+    "forks": 79,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
     "url": "https://github.com/cloudflare/cf-ui"
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22040,
+    "stars": 22043,
     "forks": 1845,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11885,
+    "stars": 11886,
     "forks": 1776,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -533,7 +533,7 @@
   {
     "owner": "jamiebuilds",
     "name": "create-react-context",
-    "stars": 693,
+    "stars": 694,
     "forks": 74,
     "language": "JavaScript",
     "description": "Polyfill for the proposed React context API",
@@ -749,7 +749,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8567,
+    "stars": 8566,
     "forks": 616,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -1091,7 +1091,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spawndamnit",
-    "stars": 78,
+    "stars": 79,
     "forks": 9,
     "language": "JavaScript",
     "description": "Take care of your spawn()",
@@ -1100,7 +1100,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4169,
+    "stars": 4170,
     "forks": 169,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 26358,
-    "forks": 2778,
+    "stars": 26357,
+    "forks": 2776,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3519,
+    "stars": 3521,
     "forks": 75,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7819,
+    "stars": 7817,
     "forks": 368,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43381,
-    "forks": 6323,
+    "stars": 43384,
+    "forks": 6324,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35257,
-    "forks": 2235,
+    "stars": 35261,
+    "forks": 2234,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,8 +1280,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43023,
-    "forks": 2250,
+    "stars": 43026,
+    "forks": 2252,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
