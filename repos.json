@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42844,
-    "forks": 5572,
+    "stars": 42842,
+    "forks": 5573,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22047,
+    "stars": 22049,
     "forks": 1848,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -749,7 +749,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8575,
+    "stars": 8576,
     "forks": 616,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -938,7 +938,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16597,
+    "stars": 16595,
     "forks": 782,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2016,
+    "stars": 2019,
     "forks": 39,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 26386,
+    "stars": 26389,
     "forks": 2779,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7818,
+    "stars": 7817,
     "forks": 271,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1244,7 +1244,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43429,
+    "stars": 43434,
     "forks": 6332,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35287,
+    "stars": 35290,
     "forks": 2236,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,8 +1280,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43060,
-    "forks": 2256,
+    "stars": 43057,
+    "forks": 2258,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41296,
+    "stars": 41291,
     "forks": 2709,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
