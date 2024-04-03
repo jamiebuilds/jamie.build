@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42863,
+    "stars": 42868,
     "forks": 5572,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4378,
+    "stars": 4377,
     "forks": 224,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 740,
-    "forks": 1286,
+    "forks": 1285,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22052,
+    "stars": 22053,
     "forks": 1846,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11909,
+    "stars": 11911,
     "forks": 1778,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -749,7 +749,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8579,
+    "stars": 8580,
     "forks": 619,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2033,
+    "stars": 2037,
     "forks": 40,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 26820,
-    "forks": 2795,
+    "stars": 27149,
+    "forks": 2810,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3529,
+    "stars": 3530,
     "forks": 75,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4169,
+    "stars": 4170,
     "forks": 144,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1226,7 +1226,7 @@
   {
     "owner": "jamiebuilds",
     "name": "workspaces-run",
-    "stars": 90,
+    "stars": 92,
     "forks": 2,
     "language": "TypeScript",
     "description": "Run tasks/scripts across Yarn/Lerna/Bolt/etc workspaces.",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43488,
-    "forks": 6334,
+    "stars": 43491,
+    "forks": 6333,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35307,
+    "stars": 35311,
     "forks": 2235,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43069,
+    "stars": 43072,
     "forks": 2257,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41300,
+    "stars": 41306,
     "forks": 2712,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
