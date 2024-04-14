@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42886,
+    "stars": 42890,
     "forks": 5572,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -299,7 +299,7 @@
   {
     "owner": "cloudflare",
     "name": "cf-ui",
-    "stars": 1291,
+    "stars": 1292,
     "forks": 79,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
@@ -308,8 +308,8 @@
   {
     "owner": "cloudflare",
     "name": "react-gateway",
-    "stars": 571,
-    "forks": 73,
+    "stars": 572,
+    "forks": 74,
     "language": "JavaScript",
     "description": "Render React DOM into a new context (aka \"Portal\")",
     "url": "https://github.com/cloudflare/react-gateway"
@@ -749,7 +749,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8584,
+    "stars": 8585,
     "forks": 618,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2066,
+    "stars": 2071,
     "forks": 40,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27345,
+    "stars": 27346,
     "forks": 2815,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1245,7 +1245,7 @@
     "owner": "jestjs",
     "name": "jest",
     "stars": 43534,
-    "forks": 6336,
+    "forks": 6335,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35325,
+    "stars": 35329,
     "forks": 2237,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1272,7 +1272,7 @@
     "owner": "marionettejs",
     "name": "backbone.radio",
     "stars": 493,
-    "forks": 52,
+    "forks": 50,
     "language": "JavaScript",
     "description": "Messaging patterns for Backbone applications.",
     "url": "https://github.com/marionettejs/backbone.radio"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43091,
+    "stars": 43094,
     "forks": 2257,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1380,7 +1380,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 419,
-    "forks": 962,
+    "forks": 963,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41324,
+    "stars": 41326,
     "forks": 2717,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
