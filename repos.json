@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42915,
-    "forks": 5572,
+    "stars": 42918,
+    "forks": 5575,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22077,
+    "stars": 22074,
     "forks": 1844,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -362,8 +362,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11933,
-    "forks": 1779,
+    "stars": 11934,
+    "forks": 1780,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2106,
+    "stars": 2110,
     "forks": 40,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27408,
+    "stars": 27409,
     "forks": 2814,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3538,
+    "stars": 3539,
     "forks": 75,
     "language": "HTML",
     "description": "A tiny (~400 B) & modern library for keybindings.",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43610,
-    "forks": 6345,
+    "stars": 43617,
+    "forks": 6346,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35376,
+    "stars": 35379,
     "forks": 2237,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43121,
+    "stars": 43122,
     "forks": 2252,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41333,
+    "stars": 41332,
     "forks": 2720,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
