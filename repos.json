@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 42999,
+    "stars": 43000,
     "forks": 5591,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 744,
+    "stars": 745,
     "forks": 1297,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2227,
+    "stars": 2228,
     "forks": 43,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27579,
+    "stars": 27583,
     "forks": 2829,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43785,
-    "forks": 6380,
+    "stars": 43795,
+    "forks": 6381,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43245,
+    "stars": 43246,
     "forks": 2258,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41366,
-    "forks": 2721,
+    "stars": 41367,
+    "forks": 2722,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
