@@ -11,7 +11,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1056,
+    "stars": 1057,
     "forks": 19,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43099,
-    "forks": 5622,
+    "stars": 43101,
+    "forks": 5623,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -326,8 +326,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22062,
-    "forks": 1853,
+    "stars": 22065,
+    "forks": 1851,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -362,8 +362,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 11995,
-    "forks": 1782,
+    "stars": 11996,
+    "forks": 1783,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -533,7 +533,7 @@
   {
     "owner": "jamiebuilds",
     "name": "create-react-context",
-    "stars": 692,
+    "stars": 691,
     "forks": 75,
     "language": "JavaScript",
     "description": "Polyfill for the proposed React context API",
@@ -1100,7 +1100,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4165,
+    "stars": 4164,
     "forks": 168,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2348,
+    "stars": 2347,
     "forks": 45,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27724,
-    "forks": 2841,
+    "stars": 27728,
+    "forks": 2844,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1173,7 +1173,7 @@
     "owner": "jamiebuilds",
     "name": "tinykeys",
     "stars": 3574,
-    "forks": 78,
+    "forks": 79,
     "language": "TypeScript",
     "description": "A tiny (~400 B) & modern library for keybindings.",
     "url": "https://github.com/jamiebuilds/tinykeys"
@@ -1200,7 +1200,7 @@
     "owner": "jamiebuilds",
     "name": "unstated-next",
     "stars": 4180,
-    "forks": 144,
+    "forks": 143,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
     "url": "https://github.com/jamiebuilds/unstated-next"
@@ -1244,7 +1244,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43957,
+    "stars": 43964,
     "forks": 6415,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35578,
+    "stars": 35582,
     "forks": 2244,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1281,7 +1281,7 @@
     "owner": "parcel-bundler",
     "name": "parcel",
     "stars": 43326,
-    "forks": 2252,
+    "forks": 2251,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1352,7 +1352,7 @@
   {
     "owner": "styled-components",
     "name": "styled-theming",
-    "stars": 1171,
+    "stars": 1169,
     "forks": 39,
     "language": "JavaScript",
     "description": "Create themes for your app using styled-components",
@@ -1380,7 +1380,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 430,
-    "forks": 974,
+    "forks": 975,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
