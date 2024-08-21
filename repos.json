@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43131,
+    "stars": 43130,
     "forks": 5630,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22066,
+    "stars": 22069,
     "forks": 1852,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -641,7 +641,7 @@
   {
     "owner": "jamiebuilds",
     "name": "git-workflow",
-    "stars": 42,
+    "stars": 41,
     "forks": 15,
     "language": null,
     "description": "Git workflow for teams",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2378,
+    "stars": 2380,
     "forks": 45,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27764,
+    "stars": 27766,
     "forks": 2849,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1172,10 +1172,10 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3579,
+    "stars": 3581,
     "forks": 79,
     "language": "TypeScript",
-    "description": "A tiny (~400 B) & modern library for keybindings.",
+    "description": "A tiny (~650 B) & modern library for keybindings.",
     "url": "https://github.com/jamiebuilds/tinykeys"
   },
   {
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4180,
+    "stars": 4179,
     "forks": 143,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1217,7 +1217,7 @@
   {
     "owner": "jamiebuilds",
     "name": "VisibilityObserver",
-    "stars": 51,
+    "stars": 52,
     "forks": 0,
     "language": "TypeScript",
     "description": "Experimental API for observing the visible box of an element",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43990,
-    "forks": 6420,
+    "stars": 43992,
+    "forks": 6421,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35596,
-    "forks": 2248,
+    "stars": 35597,
+    "forks": 2249,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43342,
+    "stars": 43347,
     "forks": 2255,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41396,
-    "forks": 2724,
+    "stars": 41397,
+    "forks": 2723,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
