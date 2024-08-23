@@ -30,7 +30,7 @@
     "owner": "babel-utils",
     "name": "babel-collect-imports",
     "stars": 34,
-    "forks": 7,
+    "forks": 3,
     "language": "JavaScript",
     "description": "Recursively collect all the internal and external dependencies from an entry point",
     "url": "https://github.com/babel-utils/babel-collect-imports"
@@ -140,7 +140,7 @@
     "stars": 270,
     "forks": 40,
     "language": "TypeScript",
-    "description": "Utilities for testing babel plugins",
+    "description": "🔌 Utilities for easy feature-complete testing of babel plugins and presets",
     "url": "https://github.com/babel-utils/babel-plugin-tester"
   },
   {
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43128,
-    "forks": 5630,
+    "stars": 43130,
+    "forks": 5631,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2333,
+    "stars": 2335,
     "forks": 84,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22073,
+    "stars": 22074,
     "forks": 1852,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -695,8 +695,8 @@
   {
     "owner": "jamiebuilds",
     "name": "havetheybeenpwned",
-    "stars": 68,
-    "forks": 6,
+    "stars": 69,
+    "forks": 7,
     "language": "JavaScript",
     "description": "Test if your user's password has been pwned using the haveibeenpwned.com API",
     "url": "https://github.com/jamiebuilds/havetheybeenpwned"
@@ -749,7 +749,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8595,
+    "stars": 8597,
     "forks": 618,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -776,7 +776,7 @@
   {
     "owner": "jamiebuilds",
     "name": "json-parser-in-typescript-very-bad-idea-please-dont-use",
-    "stars": 432,
+    "stars": 433,
     "forks": 5,
     "language": "TypeScript",
     "description": "JSON Parser written entirely in TypeScript's type system",
@@ -938,8 +938,8 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16593,
-    "forks": 779,
+    "stars": 16594,
+    "forks": 780,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1118,8 +1118,8 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2379,
-    "forks": 45,
+    "stars": 2382,
+    "forks": 46,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
     "url": "https://github.com/jamiebuilds/tailwindcss-animate"
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "task-graph-runner",
-    "stars": 36,
+    "stars": 37,
     "forks": 4,
     "language": "JavaScript",
     "description": "Run async tasks with dependencies",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27770,
+    "stars": 27775,
     "forks": 2849,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3583,
+    "stars": 3625,
     "forks": 79,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7810,
-    "forks": 268,
+    "stars": 7811,
+    "forks": 269,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
     "url": "https://github.com/jamiebuilds/unstated"
@@ -1199,8 +1199,8 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4179,
-    "forks": 143,
+    "stars": 4178,
+    "forks": 144,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
     "url": "https://github.com/jamiebuilds/unstated-next"
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 43997,
-    "forks": 6421,
+    "stars": 43999,
+    "forks": 6422,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35600,
+    "stars": 35603,
     "forks": 2249,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1262,7 +1262,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.marionette",
-    "stars": 7069,
+    "stars": 7068,
     "forks": 1264,
     "language": "JavaScript",
     "description": "The Backbone Framework",
@@ -1271,7 +1271,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.radio",
-    "stars": 492,
+    "stars": 491,
     "forks": 50,
     "language": "JavaScript",
     "description": "Messaging patterns for Backbone applications.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43352,
+    "stars": 43349,
     "forks": 2255,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41398,
+    "stars": 41401,
     "forks": 2723,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
