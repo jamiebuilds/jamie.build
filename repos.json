@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43140,
-    "forks": 5629,
+    "stars": 43135,
+    "forks": 5631,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -326,8 +326,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22068,
-    "forks": 1852,
+    "stars": 22066,
+    "forks": 1851,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2402,
+    "stars": 2404,
     "forks": 47,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27788,
+    "stars": 27792,
     "forks": 2847,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1172,7 +1172,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3711,
+    "stars": 3714,
     "forks": 79,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44015,
-    "forks": 6421,
+    "stars": 44014,
+    "forks": 6423,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1281,7 +1281,7 @@
     "owner": "parcel-bundler",
     "name": "parcel",
     "stars": 43361,
-    "forks": 2259,
+    "forks": 2260,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41398,
+    "stars": 41396,
     "forks": 2724,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
