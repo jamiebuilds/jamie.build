@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43155,
-    "forks": 5634,
+    "stars": 43156,
+    "forks": 5633,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 749,
+    "stars": 750,
     "forks": 1308,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2339,
+    "stars": 2340,
     "forks": 84,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12013,
+    "stars": 12015,
     "forks": 1783,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2430,
+    "stars": 2431,
     "forks": 49,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27827,
+    "stars": 27825,
     "forks": 2853,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1245,7 +1245,7 @@
     "owner": "jestjs",
     "name": "jest",
     "stars": 44053,
-    "forks": 6439,
+    "forks": 6437,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35643,
+    "stars": 35640,
     "forks": 2250,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43377,
+    "stars": 43373,
     "forks": 2266,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41394,
-    "forks": 2724,
+    "stars": 41392,
+    "forks": 2721,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
