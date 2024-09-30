@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43190,
-    "forks": 5639,
+    "stars": 43189,
+    "forks": 5637,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -281,7 +281,7 @@
   {
     "owner": "cloudflare",
     "name": "a11y-focus-scope",
-    "stars": 34,
+    "stars": 35,
     "forks": 7,
     "language": "JavaScript",
     "description": "Accessibility util for scoping focus to an element.",
@@ -290,7 +290,7 @@
   {
     "owner": "cloudflare",
     "name": "a11y-focus-store",
-    "stars": 24,
+    "stars": 25,
     "forks": 7,
     "language": "JavaScript",
     "description": "Accessibility util for storing/restoring focus.",
@@ -308,7 +308,7 @@
   {
     "owner": "cloudflare",
     "name": "react-gateway",
-    "stars": 570,
+    "stars": 571,
     "forks": 72,
     "language": "JavaScript",
     "description": "Render React DOM into a new context (aka \"Portal\")",
@@ -317,7 +317,7 @@
   {
     "owner": "cloudflare",
     "name": "react-modal2",
-    "stars": 278,
+    "stars": 279,
     "forks": 16,
     "language": "JavaScript",
     "description": ":thought_balloon: Simple modal component for React.",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22074,
+    "stars": 22071,
     "forks": 1853,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -362,8 +362,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12026,
-    "forks": 1782,
+    "stars": 12025,
+    "forks": 1781,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2469,
+    "stars": 2471,
     "forks": 50,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1245,7 +1245,7 @@
     "owner": "jestjs",
     "name": "jest",
     "stars": 44120,
-    "forks": 6444,
+    "forks": 6442,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35664,
+    "stars": 35668,
     "forks": 2249,
     "language": "TypeScript",
     "description": ":dragon: Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43396,
+    "stars": 43401,
     "forks": 2263,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41403,
+    "stars": 41402,
     "forks": 2725,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
