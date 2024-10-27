@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43216,
-    "forks": 5639,
+    "stars": 43217,
+    "forks": 5638,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2346,
+    "stars": 2347,
     "forks": 82,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22078,
+    "stars": 22079,
     "forks": 1858,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -362,7 +362,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12027,
+    "stars": 12029,
     "forks": 1782,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27905,
-    "forks": 2858,
+    "stars": 27907,
+    "forks": 2859,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1244,7 +1244,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44209,
+    "stars": 44210,
     "forks": 6462,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43466,
+    "stars": 43467,
     "forks": 2267,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41441,
+    "stars": 41440,
     "forks": 2724,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
