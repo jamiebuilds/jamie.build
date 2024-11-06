@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43232,
+    "stars": 43230,
     "forks": 5643,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2348,
+    "stars": 2349,
     "forks": 82,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -938,7 +938,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16600,
+    "stars": 16599,
     "forks": 781,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2546,
+    "stars": 2547,
     "forks": 52,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27929,
+    "stars": 27930,
     "forks": 2861,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1244,8 +1244,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44234,
-    "forks": 6462,
+    "stars": 44231,
+    "forks": 6461,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1253,8 +1253,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35718,
-    "forks": 2251,
+    "stars": 35719,
+    "forks": 2252,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1280,7 +1280,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43483,
+    "stars": 43486,
     "forks": 2266,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1379,7 +1379,7 @@
   {
     "owner": "yarnpkg",
     "name": "website",
-    "stars": 432,
+    "stars": 433,
     "forks": 980,
     "language": "JavaScript",
     "description": "Yarn package manager website",
@@ -1388,7 +1388,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41441,
+    "stars": 41438,
     "forks": 2727,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
