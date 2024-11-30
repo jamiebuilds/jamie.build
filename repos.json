@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 43257,
-    "forks": 5646,
+    "forks": 5648,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -218,7 +218,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2352,
+    "stars": 2353,
     "forks": 82,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -326,7 +326,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22097,
+    "stars": 22096,
     "forks": 1860,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -363,7 +363,7 @@
     "owner": "jamiebuilds",
     "name": "babel-handbook",
     "stars": 12048,
-    "forks": 1781,
+    "forks": 1782,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -533,7 +533,7 @@
   {
     "owner": "jamiebuilds",
     "name": "create-react-context",
-    "stars": 690,
+    "stars": 689,
     "forks": 75,
     "language": "JavaScript",
     "description": "Polyfill for the proposed React context API",
@@ -749,8 +749,8 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8599,
-    "forks": 616,
+    "stars": 8601,
+    "forks": 615,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -938,7 +938,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16602,
+    "stars": 16601,
     "forks": 782,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1109,7 +1109,7 @@
   {
     "owner": "jamiebuilds",
     "name": "std-pkg",
-    "stars": 43,
+    "stars": 44,
     "forks": 0,
     "language": "JavaScript",
     "description": "The Official package.json Standard™ for Npm® endorsed fields",
@@ -1118,7 +1118,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2603,
+    "stars": 2606,
     "forks": 54,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 27971,
+    "stars": 27970,
     "forks": 2865,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1244,7 +1244,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44311,
+    "stars": 44316,
     "forks": 6470,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1253,7 +1253,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35752,
+    "stars": 35754,
     "forks": 2261,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1262,7 +1262,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.marionette",
-    "stars": 7059,
+    "stars": 7060,
     "forks": 1260,
     "language": "JavaScript",
     "description": "The Backbone Framework",
@@ -1379,7 +1379,7 @@
   {
     "owner": "yarnpkg",
     "name": "website",
-    "stars": 435,
+    "stars": 436,
     "forks": 989,
     "language": "JavaScript",
     "description": "Yarn package manager website",
@@ -1388,8 +1388,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41448,
-    "forks": 2731,
+    "stars": 41446,
+    "forks": 2732,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
