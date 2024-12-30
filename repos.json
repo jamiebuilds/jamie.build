@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43345,
-    "forks": 5654,
+    "stars": 43344,
+    "forks": 5655,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22118,
+    "stars": 22120,
     "forks": 1863,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2682,
+    "stars": 2684,
     "forks": 59,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
     "stars": 28028,
-    "forks": 2864,
+    "forks": 2863,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3812,
+    "stars": 3814,
     "forks": 81,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1226,7 +1226,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7794,
+    "stars": 7792,
     "forks": 270,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44371,
-    "forks": 6475,
+    "stars": 44376,
+    "forks": 6476,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35786,
+    "stars": 35787,
     "forks": 2266,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43564,
-    "forks": 2266,
+    "stars": 43571,
+    "forks": 2265,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
