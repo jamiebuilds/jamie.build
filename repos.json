@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43440,
-    "forks": 5681,
+    "stars": 43446,
+    "forks": 5684,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 766,
-    "forks": 1331,
+    "forks": 1332,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -380,7 +380,7 @@
   {
     "owner": "jamiebuilds",
     "name": "anti-fascist-mit-license",
-    "stars": 201,
+    "stars": 202,
     "forks": 24,
     "language": null,
     "description": "MIT license with additional text to prohibit use by fascists",
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16604,
+    "stars": 16605,
     "forks": 781,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2828,
+    "stars": 2830,
     "forks": 63,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28149,
+    "stars": 28153,
     "forks": 2871,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44609,
-    "forks": 6526,
+    "stars": 44614,
+    "forks": 6527,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35863,
+    "stars": 35865,
     "forks": 2274,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
