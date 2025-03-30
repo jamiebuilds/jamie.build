@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43477,
-    "forks": 5690,
+    "stars": 43476,
+    "forks": 5692,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 767,
+    "stars": 766,
     "forks": 1333,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -785,8 +785,8 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8609,
-    "forks": 615,
+    "stars": 8610,
+    "forks": 616,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -830,8 +830,8 @@
   {
     "owner": "jamiebuilds",
     "name": "license",
-    "stars": 102,
-    "forks": 4,
+    "stars": 103,
+    "forks": 5,
     "language": null,
     "description": "The MIT license (with personal exceptions)",
     "url": "https://github.com/jamiebuilds/license"
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16602,
+    "stars": 16603,
     "forks": 781,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1136,7 +1136,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4160,
+    "stars": 4159,
     "forks": 167,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2857,
-    "forks": 64,
+    "stars": 2858,
+    "forks": 65,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
     "url": "https://github.com/jamiebuilds/tailwindcss-animate"
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
     "stars": 28168,
-    "forks": 2873,
+    "forks": 2874,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44661,
-    "forks": 6526,
+    "stars": 44663,
+    "forks": 6525,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35876,
+    "stars": 35878,
     "forks": 2278,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43734,
+    "stars": 43739,
     "forks": 2263,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41511,
+    "stars": 41510,
     "forks": 2732,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
