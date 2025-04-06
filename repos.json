@@ -11,7 +11,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1061,
+    "stars": 1060,
     "forks": 19,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43484,
-    "forks": 5693,
+    "stars": 43488,
+    "forks": 5694,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -362,8 +362,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22143,
-    "forks": 1872,
+    "stars": 22144,
+    "forks": 1874,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44672,
+    "stars": 44671,
     "forks": 6523,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35882,
+    "stars": 35884,
     "forks": 2279,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43743,
-    "forks": 2264,
+    "stars": 43746,
+    "forks": 2263,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1388,7 +1388,7 @@
   {
     "owner": "styled-components",
     "name": "styled-theming",
-    "stars": 1171,
+    "stars": 1172,
     "forks": 39,
     "language": "JavaScript",
     "description": "Create themes for your app using styled-components",
