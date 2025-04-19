@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43508,
-    "forks": 5703,
+    "stars": 43510,
+    "forks": 5705,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 766,
-    "forks": 1336,
+    "forks": 1337,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -362,8 +362,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22152,
-    "forks": 1873,
+    "stars": 22151,
+    "forks": 1872,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12084,
+    "stars": 12086,
     "forks": 1778,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -795,7 +795,7 @@
     "owner": "jamiebuilds",
     "name": "jamie.build",
     "stars": 50,
-    "forks": 17,
+    "forks": 13,
     "language": "HTML",
     "description": "the website",
     "url": "https://github.com/jamiebuilds/jamie.build"
@@ -1155,7 +1155,7 @@
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
     "stars": 2881,
-    "forks": 65,
+    "forks": 64,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
     "url": "https://github.com/jamiebuilds/tailwindcss-animate"
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28197,
+    "stars": 28201,
     "forks": 2880,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44708,
+    "stars": 44706,
     "forks": 6533,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35911,
+    "stars": 35913,
     "forks": 2280,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43770,
-    "forks": 2268,
+    "stars": 43771,
+    "forks": 2267,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1406,7 +1406,7 @@
   {
     "owner": "Thinkmill",
     "name": "react-markings",
-    "stars": 884,
+    "stars": 883,
     "forks": 39,
     "language": "JavaScript",
     "description": "**Markdown** in <Components/>, <Components/> in **Markdown**",
