@@ -335,7 +335,7 @@
   {
     "owner": "cloudflare",
     "name": "cf-ui",
-    "stars": 1288,
+    "stars": 1289,
     "forks": 81,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
@@ -345,7 +345,7 @@
     "owner": "cloudflare",
     "name": "react-gateway",
     "stars": 574,
-    "forks": 71,
+    "forks": 72,
     "language": "JavaScript",
     "description": "Render React DOM into a new context (aka \"Portal\")",
     "url": "https://github.com/cloudflare/react-gateway"
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22152,
+    "stars": 22153,
     "forks": 1873,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12087,
+    "stars": 12088,
     "forks": 1778,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -615,7 +615,7 @@
     "owner": "jamiebuilds",
     "name": "documentation-handbook",
     "stars": 297,
-    "forks": 31,
+    "forks": 30,
     "language": null,
     "description": "How to write high-quality friendly documentation that people want to read.",
     "url": "https://github.com/jamiebuilds/documentation-handbook"
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16605,
+    "stars": 16604,
     "forks": 780,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28202,
+    "stars": 28204,
     "forks": 2880,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3855,
+    "stars": 3857,
     "forks": 81,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44708,
-    "forks": 6533,
+    "stars": 44709,
+    "forks": 6534,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43773,
+    "stars": 43776,
     "forks": 2267,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1416,7 +1416,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 448,
-    "forks": 1005,
+    "forks": 1006,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41533,
+    "stars": 41537,
     "forks": 2731,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
