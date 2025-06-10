@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43608,
-    "forks": 5716,
+    "stars": 43609,
+    "forks": 5718,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22165,
+    "stars": 22167,
     "forks": 1877,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12099,
+    "stars": 12100,
     "forks": 1777,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -785,7 +785,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8610,
+    "stars": 8609,
     "forks": 615,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -975,7 +975,7 @@
     "owner": "jamiebuilds",
     "name": "react-loadable",
     "stars": 16597,
-    "forks": 777,
+    "forks": 776,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1235,7 +1235,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4188,
+    "stars": 4189,
     "forks": 143,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44801,
+    "stars": 44803,
     "forks": 6552,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35947,
+    "stars": 35946,
     "forks": 2276,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43856,
+    "stars": 43853,
     "forks": 2264,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
