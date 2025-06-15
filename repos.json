@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43616,
+    "stars": 43619,
     "forks": 5720,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 766,
-    "forks": 1341,
+    "forks": 1342,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28252,
+    "stars": 28253,
     "forks": 2878,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44826,
+    "stars": 44825,
     "forks": 6553,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43865,
-    "forks": 2263,
+    "stars": 43866,
+    "forks": 2262,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1416,7 +1416,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 448,
-    "forks": 1012,
+    "forks": 1013,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
