@@ -137,7 +137,7 @@
   {
     "owner": "babel-utils",
     "name": "babel-plugin-tester",
-    "stars": 271,
+    "stars": 270,
     "forks": 40,
     "language": "TypeScript",
     "description": "🔌 Utilities for easy feature-complete testing of babel plugins and presets",
@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43627,
+    "stars": 43628,
     "forks": 5719,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2380,
+    "stars": 2381,
     "forks": 85,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22171,
+    "stars": 22170,
     "forks": 1879,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -668,7 +668,7 @@
   {
     "owner": "jamiebuilds",
     "name": "ghost-lang",
-    "stars": 304,
+    "stars": 303,
     "forks": 10,
     "language": null,
     "description": ":ghost: A friendly little language for you and me.",
@@ -731,7 +731,7 @@
   {
     "owner": "jamiebuilds",
     "name": "havetheybeenpwned",
-    "stars": 69,
+    "stars": 68,
     "forks": 7,
     "language": "JavaScript",
     "description": "Test if your user's password has been pwned using the haveibeenpwned.com API",
@@ -1091,7 +1091,7 @@
   {
     "owner": "jamiebuilds",
     "name": "roast-my-deps",
-    "stars": 263,
+    "stars": 262,
     "forks": 13,
     "language": "JavaScript",
     "description": "Your dependencies are bad and you should feel bad",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2931,
+    "stars": 2932,
     "forks": 67,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44849,
-    "forks": 6555,
+    "stars": 44853,
+    "forks": 6558,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35959,
+    "stars": 35960,
     "forks": 2277,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43885,
+    "stars": 43886,
     "forks": 2260,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1415,8 +1415,8 @@
   {
     "owner": "yarnpkg",
     "name": "website",
-    "stars": 448,
-    "forks": 1015,
+    "stars": 449,
+    "forks": 1016,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41542,
+    "stars": 41546,
     "forks": 2730,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
