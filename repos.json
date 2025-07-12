@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43640,
+    "stars": 43654,
     "forks": 5722,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22177,
+    "stars": 22176,
     "forks": 1880,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16586,
+    "stars": 16588,
     "forks": 777,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1154,8 +1154,8 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2940,
-    "forks": 67,
+    "stars": 2941,
+    "forks": 66,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
     "url": "https://github.com/jamiebuilds/tailwindcss-animate"
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28283,
-    "forks": 2881,
+    "stars": 28284,
+    "forks": 2882,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44882,
-    "forks": 6570,
+    "stars": 44886,
+    "forks": 6571,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,8 +1289,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35972,
-    "forks": 2277,
+    "stars": 35971,
+    "forks": 2276,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1299,7 +1299,7 @@
     "owner": "marionettejs",
     "name": "backbone.marionette",
     "stars": 7047,
-    "forks": 1250,
+    "forks": 1249,
     "language": "JavaScript",
     "description": "The Backbone Framework",
     "url": "https://github.com/marionettejs/backbone.marionette"
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43894,
-    "forks": 2262,
+    "stars": 43895,
+    "forks": 2261,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
