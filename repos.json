@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2383,
+    "stars": 2384,
     "forks": 85,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28284,
+    "stars": 28286,
     "forks": 2882,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1235,7 +1235,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4191,
+    "stars": 4190,
     "forks": 143,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44886,
-    "forks": 6571,
+    "stars": 44885,
+    "forks": 6572,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,8 +1289,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35971,
-    "forks": 2276,
+    "stars": 35972,
+    "forks": 2275,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
