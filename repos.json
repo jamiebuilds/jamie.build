@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43654,
+    "stars": 43658,
     "forks": 5722,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -335,7 +335,7 @@
   {
     "owner": "cloudflare",
     "name": "cf-ui",
-    "stars": 1290,
+    "stars": 1291,
     "forks": 81,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22176,
+    "stars": 22177,
     "forks": 1880,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12115,
+    "stars": 12116,
     "forks": 1777,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2941,
+    "stars": 2942,
     "forks": 66,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28286,
+    "stars": 28287,
     "forks": 2882,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3885,
+    "stars": 3886,
     "forks": 83,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35972,
+    "stars": 35973,
     "forks": 2275,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41543,
+    "stars": 41541,
     "forks": 2733,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
