@@ -11,7 +11,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1059,
+    "stars": 1058,
     "forks": 20,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -137,7 +137,7 @@
   {
     "owner": "babel-utils",
     "name": "babel-plugin-tester",
-    "stars": 270,
+    "stars": 269,
     "forks": 40,
     "language": "TypeScript",
     "description": "🔌 Utilities for easy feature-complete testing of babel plugins and presets",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43665,
-    "forks": 5723,
+    "stars": 43658,
+    "forks": 5721,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2384,
+    "stars": 2382,
     "forks": 85,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12118,
+    "stars": 12113,
     "forks": 1777,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -452,7 +452,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-react-optimize",
-    "stars": 1672,
+    "stars": 1670,
     "forks": 28,
     "language": "JavaScript",
     "description": ":rocket: A Babel preset and plugins for optimizing React code.",
@@ -515,7 +515,7 @@
   {
     "owner": "jamiebuilds",
     "name": "bey",
-    "stars": 259,
+    "stars": 257,
     "forks": 9,
     "language": "JavaScript",
     "description": "Simple immutable state for React using Immer",
@@ -785,7 +785,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8612,
+    "stars": 8613,
     "forks": 613,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -975,7 +975,7 @@
     "owner": "jamiebuilds",
     "name": "react-loadable",
     "stars": 16588,
-    "forks": 777,
+    "forks": 778,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1010,7 +1010,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-performance-observer",
-    "stars": 208,
+    "stars": 207,
     "forks": 10,
     "language": "JavaScript",
     "description": "Get performance measurements from React Fiber",
@@ -1019,7 +1019,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-prop-matrix",
-    "stars": 66,
+    "stars": 65,
     "forks": 0,
     "language": "JavaScript",
     "description": "Render something using every possible combination of props",
@@ -1064,7 +1064,7 @@
   {
     "owner": "jamiebuilds",
     "name": "renderator",
-    "stars": 65,
+    "stars": 64,
     "forks": 1,
     "language": "JavaScript",
     "description": null,
@@ -1091,7 +1091,7 @@
   {
     "owner": "jamiebuilds",
     "name": "roast-my-deps",
-    "stars": 262,
+    "stars": 261,
     "forks": 13,
     "language": "JavaScript",
     "description": "Your dependencies are bad and you should feel bad",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2946,
+    "stars": 2947,
     "forks": 66,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tested-components",
-    "stars": 40,
+    "stars": 39,
     "forks": 2,
     "language": "JavaScript",
     "description": "Browser integration testing utils for styled-components",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tickedoff",
-    "stars": 218,
+    "stars": 217,
     "forks": 8,
     "language": "JavaScript",
     "description": "Tiny library (<200B gzip) for deferring something by a \"tick\"",
@@ -1235,7 +1235,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4191,
+    "stars": 4190,
     "forks": 143,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44902,
+    "stars": 44901,
     "forks": 6574,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1289,8 +1289,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 35977,
-    "forks": 2275,
+    "stars": 35971,
+    "forks": 2273,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1299,7 +1299,7 @@
     "owner": "marionettejs",
     "name": "backbone.marionette",
     "stars": 7047,
-    "forks": 1249,
+    "forks": 1248,
     "language": "JavaScript",
     "description": "The Backbone Framework",
     "url": "https://github.com/marionettejs/backbone.marionette"
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43901,
+    "stars": 43898,
     "forks": 2262,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "styled-components",
     "name": "styled-theming",
-    "stars": 1172,
+    "stars": 1170,
     "forks": 39,
     "language": "JavaScript",
     "description": "Create themes for your app using styled-components",
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41545,
+    "stars": 41544,
     "forks": 2733,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
