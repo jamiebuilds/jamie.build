@@ -11,8 +11,8 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1058,
-    "forks": 20,
+    "stars": 1057,
+    "forks": 19,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
     "url": "https://github.com/atlassian/jest-in-case"
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43703,
-    "forks": 5743,
+    "stars": 43704,
+    "forks": 5744,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 768,
+    "stars": 767,
     "forks": 1353,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2391,
+    "stars": 2392,
     "forks": 84,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12119,
+    "stars": 12120,
     "forks": 1778,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16583,
+    "stars": 16584,
     "forks": 777,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1235,7 +1235,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4192,
+    "stars": 4193,
     "forks": 143,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 44993,
-    "forks": 6595,
+    "stars": 45002,
+    "forks": 6596,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36010,
+    "stars": 36011,
     "forks": 2274,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43936,
-    "forks": 2263,
+    "stars": 43933,
+    "forks": 2264,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1415,8 +1415,8 @@
   {
     "owner": "yarnpkg",
     "name": "website",
-    "stars": 451,
-    "forks": 1030,
+    "stars": 450,
+    "forks": 1031,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41559,
+    "stars": 41558,
     "forks": 2734,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
