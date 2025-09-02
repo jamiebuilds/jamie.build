@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43718,
+    "stars": 43717,
     "forks": 5743,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 768,
-    "forks": 1355,
+    "forks": 1354,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -480,7 +480,7 @@
     "owner": "jamiebuilds",
     "name": "backbone.service",
     "stars": 31,
-    "forks": 10,
+    "forks": 8,
     "language": "JavaScript",
     "description": "A simple service class for Backbone.",
     "url": "https://github.com/jamiebuilds/backbone.service"
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16583,
+    "stars": 16584,
     "forks": 776,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28341,
-    "forks": 2883,
+    "stars": 28342,
+    "forks": 2882,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45015,
-    "forks": 6595,
+    "stars": 45016,
+    "forks": 6594,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43936,
+    "stars": 43941,
     "forks": 2263,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1424,8 +1424,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41559,
-    "forks": 2734,
+    "stars": 41560,
+    "forks": 2733,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
