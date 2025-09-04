@@ -812,7 +812,7 @@
   {
     "owner": "jamiebuilds",
     "name": "json-parser-in-typescript-very-bad-idea-please-dont-use",
-    "stars": 432,
+    "stars": 433,
     "forks": 4,
     "language": "TypeScript",
     "description": "JSON Parser written entirely in TypeScript's type system",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 2969,
+    "stars": 2970,
     "forks": 65,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
     "stars": 28345,
-    "forks": 2882,
+    "forks": 2881,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1209,7 +1209,7 @@
     "owner": "jamiebuilds",
     "name": "tinykeys",
     "stars": 3893,
-    "forks": 84,
+    "forks": 83,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
     "url": "https://github.com/jamiebuilds/tinykeys"
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45020,
+    "stars": 45027,
     "forks": 6595,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43943,
-    "forks": 2263,
+    "stars": 43948,
+    "forks": 2264,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41559,
+    "stars": 41561,
     "forks": 2733,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
