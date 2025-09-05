@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 768,
-    "forks": 1354,
+    "forks": 1355,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -363,7 +363,7 @@
     "owner": "facebook",
     "name": "flow",
     "stars": 22183,
-    "forks": 1880,
+    "forks": 1879,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16584,
+    "stars": 16583,
     "forks": 776,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28345,
-    "forks": 2881,
+    "stars": 28347,
+    "forks": 2883,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45027,
-    "forks": 6595,
+    "stars": 45019,
+    "forks": 6594,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1298,8 +1298,8 @@
   {
     "owner": "marionettejs",
     "name": "backbone.marionette",
-    "stars": 7048,
-    "forks": 1248,
+    "stars": 7049,
+    "forks": 1249,
     "language": "JavaScript",
     "description": "The Backbone Framework",
     "url": "https://github.com/marionettejs/backbone.marionette"
@@ -1307,8 +1307,8 @@
   {
     "owner": "marionettejs",
     "name": "backbone.radio",
-    "stars": 491,
-    "forks": 50,
+    "stars": 492,
+    "forks": 51,
     "language": "JavaScript",
     "description": "Messaging patterns for Backbone applications.",
     "url": "https://github.com/marionettejs/backbone.radio"
@@ -1416,7 +1416,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 451,
-    "forks": 1031,
+    "forks": 1030,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41561,
+    "stars": 41559,
     "forks": 2733,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
