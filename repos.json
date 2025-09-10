@@ -11,7 +11,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1057,
+    "stars": 1058,
     "forks": 19,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43720,
-    "forks": 5745,
+    "stars": 43721,
+    "forks": 5746,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 768,
+    "stars": 769,
     "forks": 1355,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -228,7 +228,7 @@
     "owner": "boltpkg",
     "name": "bolt",
     "stars": 2393,
-    "forks": 85,
+    "forks": 86,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
     "url": "https://github.com/boltpkg/bolt"
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22186,
+    "stars": 22184,
     "forks": 1880,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12124,
+    "stars": 12125,
     "forks": 1779,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -452,7 +452,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-react-optimize",
-    "stars": 1670,
+    "stars": 1671,
     "forks": 28,
     "language": "JavaScript",
     "description": ":rocket: A Babel preset and plugins for optimizing React code.",
@@ -515,7 +515,7 @@
   {
     "owner": "jamiebuilds",
     "name": "bey",
-    "stars": 257,
+    "stars": 258,
     "forks": 9,
     "language": "JavaScript",
     "description": "Simple immutable state for React using Immer",
@@ -1010,7 +1010,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-performance-observer",
-    "stars": 208,
+    "stars": 209,
     "forks": 10,
     "language": "JavaScript",
     "description": "Get performance measurements from React Fiber",
@@ -1019,7 +1019,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-prop-matrix",
-    "stars": 65,
+    "stars": 66,
     "forks": 0,
     "language": "JavaScript",
     "description": "Render something using every possible combination of props",
@@ -1064,7 +1064,7 @@
   {
     "owner": "jamiebuilds",
     "name": "renderator",
-    "stars": 64,
+    "stars": 65,
     "forks": 1,
     "language": "JavaScript",
     "description": null,
@@ -1091,7 +1091,7 @@
   {
     "owner": "jamiebuilds",
     "name": "roast-my-deps",
-    "stars": 261,
+    "stars": 262,
     "forks": 13,
     "language": "JavaScript",
     "description": "Your dependencies are bad and you should feel bad",
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tested-components",
-    "stars": 39,
+    "stars": 40,
     "forks": 2,
     "language": "JavaScript",
     "description": "Browser integration testing utils for styled-components",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28347,
+    "stars": 28350,
     "forks": 2884,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tickedoff",
-    "stars": 217,
+    "stars": 218,
     "forks": 8,
     "language": "JavaScript",
     "description": "Tiny library (<200B gzip) for deferring something by a \"tick\"",
@@ -1235,7 +1235,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4193,
+    "stars": 4194,
     "forks": 142,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1281,7 +1281,7 @@
     "owner": "jestjs",
     "name": "jest",
     "stars": 45025,
-    "forks": 6591,
+    "forks": 6590,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36020,
+    "stars": 36023,
     "forks": 2273,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43953,
+    "stars": 43954,
     "forks": 2266,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1388,7 +1388,7 @@
   {
     "owner": "styled-components",
     "name": "styled-theming",
-    "stars": 1171,
+    "stars": 1172,
     "forks": 39,
     "language": "JavaScript",
     "description": "Create themes for your app using styled-components",
@@ -1416,7 +1416,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 451,
-    "forks": 1033,
+    "forks": 1034,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
