@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 770,
-    "forks": 1360,
+    "forks": 1361,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28373,
+    "stars": 28374,
     "forks": 2884,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45070,
-    "forks": 6604,
+    "stars": 45069,
+    "forks": 6603,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,8 +1289,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36023,
-    "forks": 2273,
+    "stars": 36024,
+    "forks": 2275,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1416,7 +1416,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 451,
-    "forks": 1038,
+    "forks": 1037,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41556,
+    "stars": 41555,
     "forks": 2730,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
