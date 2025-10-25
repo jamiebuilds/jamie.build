@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 43756,
-    "forks": 5764,
+    "forks": 5765,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2397,
+    "stars": 2398,
     "forks": 86,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22188,
+    "stars": 22190,
     "forks": 1883,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -398,8 +398,8 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12129,
-    "forks": 1778,
+    "stars": 12130,
+    "forks": 1777,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -974,8 +974,8 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16579,
-    "forks": 775,
+    "stars": 16580,
+    "forks": 774,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
     "stars": 28385,
-    "forks": 2884,
+    "forks": 2883,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45114,
-    "forks": 6613,
+    "stars": 45115,
+    "forks": 6612,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1298,7 +1298,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.marionette",
-    "stars": 7053,
+    "stars": 7054,
     "forks": 1248,
     "language": "JavaScript",
     "description": "The Backbone Framework",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 43995,
+    "stars": 43996,
     "forks": 2269,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1425,7 +1425,7 @@
     "owner": "yarnpkg",
     "name": "yarn",
     "stars": 41547,
-    "forks": 2732,
+    "forks": 2733,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
