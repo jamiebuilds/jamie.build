@@ -12,7 +12,7 @@
     "owner": "atlassian",
     "name": "jest-in-case",
     "stars": 1058,
-    "forks": 18,
+    "forks": 19,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
     "url": "https://github.com/atlassian/jest-in-case"
@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 43818,
-    "forks": 5785,
+    "forks": 5786,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2404,
+    "stars": 2405,
     "forks": 85,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28427,
+    "stars": 28429,
     "forks": 2884,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1208,8 +1208,8 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3944,
-    "forks": 84,
+    "stars": 3945,
+    "forks": 85,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
     "url": "https://github.com/jamiebuilds/tinykeys"
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45194,
+    "stars": 45197,
     "forks": 6618,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36052,
+    "stars": 36055,
     "forks": 2279,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1425,7 +1425,7 @@
     "owner": "yarnpkg",
     "name": "yarn",
     "stars": 41543,
-    "forks": 2737,
+    "forks": 2736,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
