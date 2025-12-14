@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 43814,
-    "forks": 5790,
+    "forks": 5791,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4389,
+    "stars": 4388,
     "forks": 220,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12133,
+    "stars": 12132,
     "forks": 1779,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28431,
+    "stars": 28432,
     "forks": 2885,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3946,
+    "stars": 3947,
     "forks": 84,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45216,
+    "stars": 45215,
     "forks": 6620,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44024,
+    "stars": 44025,
     "forks": 2273,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
