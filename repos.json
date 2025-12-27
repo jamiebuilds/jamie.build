@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43821,
+    "stars": 43824,
     "forks": 5790,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -192,7 +192,7 @@
     "owner": "babel",
     "name": "generator-babel-plugin",
     "stars": 121,
-    "forks": 21,
+    "forks": 22,
     "language": "JavaScript",
     "description": "Babel Plugin generator for Yeoman",
     "url": "https://github.com/babel/generator-babel-plugin"
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 772,
-    "forks": 1375,
+    "forks": 1376,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45221,
+    "stars": 45224,
     "forks": 6622,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44024,
+    "stars": 44023,
     "forks": 2276,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
