@@ -11,7 +11,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1058,
+    "stars": 1059,
     "forks": 19,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43824,
+    "stars": 43826,
     "forks": 5790,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4388,
+    "stars": 4389,
     "forks": 220,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 772,
+    "stars": 773,
     "forks": 1376,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -335,7 +335,7 @@
   {
     "owner": "cloudflare",
     "name": "cf-ui",
-    "stars": 1293,
+    "stars": 1292,
     "forks": 81,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22208,
+    "stars": 22206,
     "forks": 1886,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -399,7 +399,7 @@
     "owner": "jamiebuilds",
     "name": "babel-handbook",
     "stars": 12132,
-    "forks": 1778,
+    "forks": 1779,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16573,
+    "stars": 16571,
     "forks": 770,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3947,
+    "stars": 3949,
     "forks": 82,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45224,
-    "forks": 6622,
+    "stars": 45225,
+    "forks": 6624,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44023,
+    "stars": 44024,
     "forks": 2276,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
