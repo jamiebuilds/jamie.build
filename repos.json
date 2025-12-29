@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43826,
+    "stars": 43828,
     "forks": 5790,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4389,
+    "stars": 4390,
     "forks": 220,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22206,
+    "stars": 22205,
     "forks": 1886,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12132,
+    "stars": 12131,
     "forks": 1779,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16571,
+    "stars": 16570,
     "forks": 770,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 3012,
+    "stars": 3013,
     "forks": 65,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
     "stars": 28443,
-    "forks": 2885,
+    "forks": 2884,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3949,
+    "stars": 3953,
     "forks": 82,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45225,
+    "stars": 45227,
     "forks": 6624,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44024,
+    "stars": 44026,
     "forks": 2276,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1416,7 +1416,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 452,
-    "forks": 1054,
+    "forks": 1055,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
