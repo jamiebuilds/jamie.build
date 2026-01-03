@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 775,
-    "forks": 1377,
+    "forks": 1378,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -335,7 +335,7 @@
   {
     "owner": "cloudflare",
     "name": "cf-ui",
-    "stars": 1292,
+    "stars": 1291,
     "forks": 81,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
@@ -786,7 +786,7 @@
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
     "stars": 8597,
-    "forks": 609,
+    "forks": 608,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16569,
+    "stars": 16570,
     "forks": 770,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28443,
-    "forks": 2883,
+    "stars": 28445,
+    "forks": 2882,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 3958,
+    "stars": 3959,
     "forks": 82,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44029,
-    "forks": 2274,
+    "stars": 44030,
+    "forks": 2275,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
