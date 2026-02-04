@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22210,
+    "stars": 22212,
     "forks": 1888,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12129,
+    "stars": 12128,
     "forks": 1779,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -812,7 +812,7 @@
   {
     "owner": "jamiebuilds",
     "name": "json-parser-in-typescript-very-bad-idea-please-dont-use",
-    "stars": 434,
+    "stars": 432,
     "forks": 5,
     "language": "TypeScript",
     "description": "JSON Parser written entirely in TypeScript's type system",
@@ -839,7 +839,7 @@
   {
     "owner": "jamiebuilds",
     "name": "marionette-wires",
-    "stars": 323,
+    "stars": 322,
     "forks": 78,
     "language": "JavaScript",
     "description": ":shipit: An opinionated example application built with Marionette.js.",
@@ -939,7 +939,7 @@
     "owner": "jamiebuilds",
     "name": "purposefile",
     "stars": 168,
-    "forks": 5,
+    "forks": 4,
     "language": "TypeScript",
     "description": "Make sure every file in your repo is exactly where it should be",
     "url": "https://github.com/jamiebuilds/purposefile"
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28469,
+    "stars": 28470,
     "forks": 2883,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45279,
+    "stars": 45285,
     "forks": 6630,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36078,
+    "stars": 36079,
     "forks": 2277,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1298,7 +1298,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.marionette",
-    "stars": 7047,
+    "stars": 7046,
     "forks": 1247,
     "language": "JavaScript",
     "description": "The Backbone Framework",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44047,
+    "stars": 44044,
     "forks": 2276,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1424,8 +1424,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41556,
-    "forks": 2734,
+    "stars": 41557,
+    "forks": 2735,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
