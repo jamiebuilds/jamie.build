@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43897,
+    "stars": 43899,
     "forks": 5804,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -191,7 +191,7 @@
   {
     "owner": "babel",
     "name": "generator-babel-plugin",
-    "stars": 120,
+    "stars": 121,
     "forks": 22,
     "language": "JavaScript",
     "description": "Babel Plugin generator for Yeoman",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22213,
+    "stars": 22214,
     "forks": 1884,
     "language": "OCaml",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16563,
+    "stars": 16562,
     "forks": 767,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28480,
-    "forks": 2879,
+    "stars": 28482,
+    "forks": 2878,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1226,7 +1226,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7748,
+    "stars": 7747,
     "forks": 263,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45317,
-    "forks": 6638,
+    "stars": 45320,
+    "forks": 6640,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44049,
-    "forks": 2279,
+    "stars": 44048,
+    "forks": 2278,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1425,7 +1425,7 @@
     "owner": "yarnpkg",
     "name": "yarn",
     "stars": 41532,
-    "forks": 2731,
+    "forks": 2730,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
