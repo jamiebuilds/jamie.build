@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2415,
+    "stars": 2416,
     "forks": 92,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12120,
+    "stars": 12121,
     "forks": 1773,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -812,7 +812,7 @@
   {
     "owner": "jamiebuilds",
     "name": "json-parser-in-typescript-very-bad-idea-please-dont-use",
-    "stars": 433,
+    "stars": 434,
     "forks": 5,
     "language": "TypeScript",
     "description": "JSON Parser written entirely in TypeScript's type system",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28495,
+    "stars": 28493,
     "forks": 2875,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1281,7 +1281,7 @@
     "owner": "jestjs",
     "name": "jest",
     "stars": 45333,
-    "forks": 6643,
+    "forks": 6646,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36072,
+    "stars": 36070,
     "forks": 2276,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1424,8 +1424,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41514,
-    "forks": 2735,
+    "stars": 41516,
+    "forks": 2736,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
