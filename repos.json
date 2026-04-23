@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43891,
-    "forks": 5814,
+    "stars": 43892,
+    "forks": 5813,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2416,
+    "stars": 2417,
     "forks": 92,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22206,
+    "stars": 22205,
     "forks": 1885,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -623,7 +623,7 @@
   {
     "owner": "jamiebuilds",
     "name": "enable-npm-2fa",
-    "stars": 55,
+    "stars": 54,
     "forks": 2,
     "language": "JavaScript",
     "description": "A script for enabling 2FA on all of your npm packages",
@@ -650,7 +650,7 @@
   {
     "owner": "jamiebuilds",
     "name": "flow-shut-up",
-    "stars": 25,
+    "stars": 24,
     "forks": 1,
     "language": "JavaScript",
     "description": "Add inline Flow comments to make Flow shut up about errors",
@@ -668,7 +668,7 @@
   {
     "owner": "jamiebuilds",
     "name": "ghost-lang",
-    "stars": 304,
+    "stars": 303,
     "forks": 10,
     "language": null,
     "description": ":ghost: A friendly little language for you and me.",
@@ -686,7 +686,7 @@
   {
     "owner": "jamiebuilds",
     "name": "globby-cli",
-    "stars": 75,
+    "stars": 74,
     "forks": 2,
     "language": "JavaScript",
     "description": "User-friendly glob matching CLI",
@@ -866,7 +866,7 @@
   {
     "owner": "jamiebuilds",
     "name": "ninos",
-    "stars": 95,
+    "stars": 94,
     "forks": 4,
     "language": "JavaScript",
     "description": "Simple stubbing/spying for AVA",
@@ -929,7 +929,7 @@
   {
     "owner": "jamiebuilds",
     "name": "proposal-promise-settle",
-    "stars": 22,
+    "stars": 21,
     "forks": 0,
     "language": "JavaScript",
     "description": "This repository is a work in progress and not seeking feedback yet.",
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16543,
+    "stars": 16541,
     "forks": 762,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28493,
-    "forks": 2875,
+    "stars": 28495,
+    "forks": 2876,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4006,
+    "stars": 4007,
     "forks": 84,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1226,7 +1226,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7740,
+    "stars": 7739,
     "forks": 262,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1271,7 +1271,7 @@
   {
     "owner": "jamiebuilds",
     "name": "write-files-atomic",
-    "stars": 119,
+    "stars": 118,
     "forks": 4,
     "language": "JavaScript",
     "description": "Write many files atomically",
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45333,
+    "stars": 45334,
     "forks": 6646,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36070,
+    "stars": 36071,
     "forks": 2276,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44034,
-    "forks": 2277,
+    "stars": 44036,
+    "forks": 2278,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41516,
+    "stars": 41517,
     "forks": 2736,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
