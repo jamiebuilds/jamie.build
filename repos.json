@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43894,
+    "stars": 43898,
     "forks": 5814,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -317,7 +317,7 @@
   {
     "owner": "cloudflare",
     "name": "a11y-focus-scope",
-    "stars": 35,
+    "stars": 36,
     "forks": 3,
     "language": "JavaScript",
     "description": "Accessibility util for scoping focus to an element.",
@@ -1019,7 +1019,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-prop-matrix",
-    "stars": 66,
+    "stars": 65,
     "forks": 0,
     "language": "JavaScript",
     "description": "Render something using every possible combination of props",
@@ -1155,7 +1155,7 @@
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
     "stars": 3034,
-    "forks": 66,
+    "forks": 65,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
     "url": "https://github.com/jamiebuilds/tailwindcss-animate"
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28496,
+    "stars": 28495,
     "forks": 2877,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45337,
+    "stars": 45338,
     "forks": 6645,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36077,
+    "stars": 36074,
     "forks": 2272,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1416,7 +1416,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 455,
-    "forks": 1072,
+    "forks": 1071,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
