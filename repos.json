@@ -20,7 +20,7 @@
   {
     "owner": "babel-utils",
     "name": "ast-pretty-print",
-    "stars": 131,
+    "stars": 132,
     "forks": 3,
     "language": "JavaScript",
     "description": "A pretty printer for AST-like structures",
@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43911,
+    "stars": 43912,
     "forks": 5825,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2419,
+    "stars": 2420,
     "forks": 93,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16531,
+    "stars": 16529,
     "forks": 762,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1136,7 +1136,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4139,
+    "stars": 4138,
     "forks": 164,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45364,
-    "forks": 6659,
+    "stars": 45361,
+    "forks": 6660,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36073,
+    "stars": 36072,
     "forks": 2270,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44033,
+    "stars": 44026,
     "forks": 2277,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1424,8 +1424,8 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41516,
-    "forks": 2729,
+    "stars": 41512,
+    "forks": 2728,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
