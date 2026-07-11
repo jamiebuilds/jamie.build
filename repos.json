@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44087,
-    "forks": 5961,
+    "stars": 44093,
+    "forks": 5967,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -317,7 +317,7 @@
   {
     "owner": "cloudflare",
     "name": "a11y-focus-scope",
-    "stars": 36,
+    "stars": 37,
     "forks": 3,
     "language": "JavaScript",
     "description": "Accessibility util for scoping focus to an element.",
@@ -326,7 +326,7 @@
   {
     "owner": "cloudflare",
     "name": "a11y-focus-store",
-    "stars": 25,
+    "stars": 26,
     "forks": 3,
     "language": "JavaScript",
     "description": "Accessibility util for storing/restoring focus.",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22274,
+    "stars": 22273,
     "forks": 1895,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -785,7 +785,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8576,
+    "stars": 8575,
     "forks": 597,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45535,
-    "forks": 6797,
+    "stars": 45537,
+    "forks": 6804,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44024,
-    "forks": 2278,
+    "stars": 44025,
+    "forks": 2279,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41498,
+    "stars": 41499,
     "forks": 2722,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
