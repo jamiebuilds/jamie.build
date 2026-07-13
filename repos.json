@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44095,
-    "forks": 5969,
+    "stars": 44100,
+    "forks": 5967,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -227,8 +227,8 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2425,
-    "forks": 94,
+    "stars": 2426,
+    "forks": 95,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
     "url": "https://github.com/boltpkg/bolt"
@@ -318,7 +318,7 @@
     "owner": "cloudflare",
     "name": "a11y-focus-scope",
     "stars": 37,
-    "forks": 4,
+    "forks": 3,
     "language": "JavaScript",
     "description": "Accessibility util for scoping focus to an element.",
     "url": "https://github.com/cloudflare/a11y-focus-scope"
@@ -327,7 +327,7 @@
     "owner": "cloudflare",
     "name": "a11y-focus-store",
     "stars": 26,
-    "forks": 4,
+    "forks": 3,
     "language": "JavaScript",
     "description": "Accessibility util for storing/restoring focus.",
     "url": "https://github.com/cloudflare/a11y-focus-store"
@@ -336,7 +336,7 @@
     "owner": "cloudflare",
     "name": "cf-ui",
     "stars": 1292,
-    "forks": 81,
+    "forks": 80,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
     "url": "https://github.com/cloudflare/cf-ui"
@@ -362,8 +362,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22271,
-    "forks": 1895,
+    "stars": 22273,
+    "forks": 1896,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12109,
+    "stars": 12108,
     "forks": 1762,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 3029,
+    "stars": 3030,
     "forks": 66,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4087,
+    "stars": 4088,
     "forks": 89,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45542,
-    "forks": 6808,
+    "stars": 45543,
+    "forks": 6807,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36053,
+    "stars": 36052,
     "forks": 2273,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44025,
-    "forks": 2278,
+    "stars": 44026,
+    "forks": 2277,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1388,7 +1388,7 @@
   {
     "owner": "styled-components",
     "name": "styled-theming",
-    "stars": 1171,
+    "stars": 1170,
     "forks": 25,
     "language": "JavaScript",
     "description": "Create themes for your app using styled-components",
@@ -1425,7 +1425,7 @@
     "owner": "yarnpkg",
     "name": "yarn",
     "stars": 41498,
-    "forks": 2722,
+    "forks": 2721,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
