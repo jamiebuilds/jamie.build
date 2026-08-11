@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43977,
+    "stars": 43981,
     "forks": 5977,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 777,
-    "forks": 1390,
+    "forks": 1389,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22269,
+    "stars": 22270,
     "forks": 1892,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -786,7 +786,7 @@
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
     "stars": 8575,
-    "forks": 597,
+    "forks": 596,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
     "url": "https://github.com/jamiebuilds/itsy-bitsy-data-structures"
@@ -1191,7 +1191,7 @@
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
     "stars": 28559,
-    "forks": 2858,
+    "forks": 2857,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4097,
+    "stars": 4098,
     "forks": 89,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45471,
-    "forks": 6728,
+    "stars": 45472,
+    "forks": 6727,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,8 +1289,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36053,
-    "forks": 2267,
+    "stars": 36055,
+    "forks": 2268,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1317,7 +1317,7 @@
     "owner": "parcel-bundler",
     "name": "parcel",
     "stars": 44025,
-    "forks": 2287,
+    "forks": 2286,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
