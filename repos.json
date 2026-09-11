@@ -12,7 +12,7 @@
     "owner": "atlassian",
     "name": "jest-in-case",
     "stars": 1059,
-    "forks": 20,
+    "forks": 21,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
     "url": "https://github.com/atlassian/jest-in-case"
@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 43990,
-    "forks": 5989,
+    "forks": 5991,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2430,
+    "stars": 2429,
     "forks": 97,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22283,
+    "stars": 22284,
     "forks": 1890,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12091,
+    "stars": 12090,
     "forks": 1754,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -1137,7 +1137,7 @@
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
     "stars": 4132,
-    "forks": 164,
+    "forks": 163,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
     "url": "https://github.com/jamiebuilds/spectacle-code-slide"
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45462,
-    "forks": 6725,
+    "stars": 45461,
+    "forks": 6726,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36056,
+    "stars": 36055,
     "forks": 2263,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44021,
+    "stars": 44022,
     "forks": 2284,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
