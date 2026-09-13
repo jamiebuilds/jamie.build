@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 43990,
+    "stars": 43992,
     "forks": 5989,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -362,8 +362,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22284,
-    "forks": 1890,
+    "stars": 22286,
+    "forks": 1893,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 3017,
+    "stars": 3018,
     "forks": 66,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28560,
-    "forks": 2852,
+    "stars": 28562,
+    "forks": 2853,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45459,
-    "forks": 6726,
+    "stars": 45457,
+    "forks": 6727,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41479,
+    "stars": 41478,
     "forks": 2712,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
