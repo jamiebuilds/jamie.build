@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44000,
-    "forks": 5990,
+    "stars": 44002,
+    "forks": 5991,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 777,
+    "stars": 778,
     "forks": 1390,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22291,
+    "stars": 22292,
     "forks": 1894,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -398,7 +398,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12090,
+    "stars": 12091,
     "forks": 1754,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -542,7 +542,7 @@
   {
     "owner": "jamiebuilds",
     "name": "cirbuf",
-    "stars": 55,
+    "stars": 56,
     "forks": 1,
     "language": "TypeScript",
     "description": "A tiny and fast circular buffer",
@@ -956,7 +956,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-gridlist",
-    "stars": 423,
+    "stars": 424,
     "forks": 8,
     "language": "TypeScript",
     "description": "A virtual-scrolling GridList component based on CSS Grids",
@@ -974,8 +974,8 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16500,
-    "forks": 760,
+    "stars": 16501,
+    "forks": 759,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28563,
-    "forks": 2850,
+    "stars": 28562,
+    "forks": 2849,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4099,
+    "stars": 4100,
     "forks": 88,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1226,7 +1226,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7716,
+    "stars": 7715,
     "forks": 261,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1253,7 +1253,7 @@
   {
     "owner": "jamiebuilds",
     "name": "VisibilityObserver",
-    "stars": 52,
+    "stars": 53,
     "forks": 0,
     "language": "TypeScript",
     "description": "Experimental API for observing the visible box of an element",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45458,
-    "forks": 6726,
+    "stars": 45460,
+    "forks": 6725,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1290,7 +1290,7 @@
     "owner": "lerna",
     "name": "lerna",
     "stars": 36054,
-    "forks": 2264,
+    "forks": 2265,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44025,
+    "stars": 44026,
     "forks": 2284,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41476,
+    "stars": 41474,
     "forks": 2712,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
