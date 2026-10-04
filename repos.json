@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44047,
-    "forks": 5992,
+    "stars": 44071,
+    "forks": 5991,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -569,7 +569,7 @@
   {
     "owner": "jamiebuilds",
     "name": "create-react-context",
-    "stars": 686,
+    "stars": 685,
     "forks": 74,
     "language": "JavaScript",
     "description": "Polyfill for the proposed React context API",
@@ -1136,7 +1136,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4130,
+    "stars": 4129,
     "forks": 163,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28560,
+    "stars": 28561,
     "forks": 2845,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45459,
-    "forks": 6731,
+    "stars": 45484,
+    "forks": 6733,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36045,
+    "stars": 36044,
     "forks": 2263,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41471,
+    "stars": 41470,
     "forks": 2706,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
