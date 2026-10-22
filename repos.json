@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44045,
+    "stars": 44042,
     "forks": 5953,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4366,
+    "stars": 4365,
     "forks": 217,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -335,7 +335,7 @@
   {
     "owner": "cloudflare",
     "name": "cf-ui",
-    "stars": 1290,
+    "stars": 1289,
     "forks": 79,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
@@ -362,7 +362,7 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22303,
+    "stars": 22304,
     "forks": 1893,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -452,7 +452,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-react-optimize",
-    "stars": 1664,
+    "stars": 1663,
     "forks": 28,
     "language": "JavaScript",
     "description": ":rocket: A Babel preset and plugins for optimizing React code.",
@@ -587,7 +587,7 @@
   {
     "owner": "jamiebuilds",
     "name": "dark-mode-github-readme-logos",
-    "stars": 65,
+    "stars": 66,
     "forks": 74,
     "language": null,
     "description": "How to make logos in your README that support GitHub's new dark mode",
@@ -785,7 +785,7 @@
   {
     "owner": "jamiebuilds",
     "name": "itsy-bitsy-data-structures",
-    "stars": 8561,
+    "stars": 8560,
     "forks": 594,
     "language": "JavaScript",
     "description": ":european_castle: All the things you didn't know you wanted to know about data structures",
@@ -975,7 +975,7 @@
     "owner": "jamiebuilds",
     "name": "react-loadable",
     "stars": 16495,
-    "forks": 759,
+    "forks": 758,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
     "url": "https://github.com/jamiebuilds/react-loadable"
@@ -1136,7 +1136,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4129,
+    "stars": 4128,
     "forks": 163,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28548,
-    "forks": 2845,
+    "stars": 28547,
+    "forks": 2844,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4102,
+    "stars": 4101,
     "forks": 88,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45488,
-    "forks": 6713,
+    "stars": 45470,
+    "forks": 6714,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1307,7 +1307,7 @@
   {
     "owner": "marionettejs",
     "name": "marionette",
-    "stars": 7037,
+    "stars": 7038,
     "forks": 1238,
     "language": "JavaScript",
     "description": "A JavaScript library for structured interfaces, with explicit ownership and lifecycle. Built for agent-led development. Canonical Marionette repository; v4 history is preserved on the v4 branch.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44006,
-    "forks": 2320,
+    "stars": 44005,
+    "forks": 2298,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41468,
+    "stars": 41471,
     "forks": 2701,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
