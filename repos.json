@@ -11,7 +11,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1061,
+    "stars": 1062,
     "forks": 21,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44042,
-    "forks": 5953,
+    "stars": 44046,
+    "forks": 5955,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,8 +209,8 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 776,
-    "forks": 1391,
+    "stars": 777,
+    "forks": 1390,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -587,8 +587,8 @@
   {
     "owner": "jamiebuilds",
     "name": "dark-mode-github-readme-logos",
-    "stars": 66,
-    "forks": 74,
+    "stars": 67,
+    "forks": 73,
     "language": null,
     "description": "How to make logos in your README that support GitHub's new dark mode",
     "url": "https://github.com/jamiebuilds/dark-mode-github-readme-logos"
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16495,
+    "stars": 16496,
     "forks": 758,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1154,7 +1154,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 3014,
+    "stars": 3015,
     "forks": 66,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28547,
-    "forks": 2844,
+    "stars": 28549,
+    "forks": 2845,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1280,8 +1280,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45470,
-    "forks": 6714,
+    "stars": 45471,
+    "forks": 6716,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1308,7 +1308,7 @@
     "owner": "marionettejs",
     "name": "marionette",
     "stars": 7038,
-    "forks": 1238,
+    "forks": 1237,
     "language": "JavaScript",
     "description": "A JavaScript library for structured interfaces, with explicit ownership and lifecycle. Built for agent-led development. Canonical Marionette repository; v4 history is preserved on the v4 branch.",
     "url": "https://github.com/marionettejs/marionette"
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44005,
-    "forks": 2298,
+    "stars": 44004,
+    "forks": 2303,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41471,
+    "stars": 41470,
     "forks": 2701,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
