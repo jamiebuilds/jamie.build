@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44045,
-    "forks": 5955,
+    "stars": 44048,
+    "forks": 5956,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -362,8 +362,8 @@
   {
     "owner": "facebook",
     "name": "flow",
-    "stars": 22305,
-    "forks": 1893,
+    "stars": 22307,
+    "forks": 1892,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/facebook/flow"
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16496,
+    "stars": 16497,
     "forks": 758,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1190,8 +1190,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28550,
-    "forks": 2845,
+    "stars": 28551,
+    "forks": 2844,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1209,7 +1209,7 @@
     "owner": "jamiebuilds",
     "name": "tinykeys",
     "stars": 4101,
-    "forks": 88,
+    "forks": 89,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
     "url": "https://github.com/jamiebuilds/tinykeys"
@@ -1226,7 +1226,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7710,
+    "stars": 7711,
     "forks": 259,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1280,7 +1280,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45468,
+    "stars": 45471,
     "forks": 6716,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1289,7 +1289,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36037,
+    "stars": 36038,
     "forks": 2264,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1307,7 +1307,7 @@
   {
     "owner": "marionettejs",
     "name": "marionette",
-    "stars": 7038,
+    "stars": 7039,
     "forks": 1237,
     "language": "JavaScript",
     "description": "A JavaScript library for structured interfaces, with explicit ownership and lifecycle. Built for agent-led development. Canonical Marionette repository; v4 history is preserved on the v4 branch.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44007,
-    "forks": 2303,
+    "stars": 44006,
+    "forks": 2311,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41471,
+    "stars": 41472,
     "forks": 2701,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
