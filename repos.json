@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 44050,
-    "forks": 5959,
+    "forks": 5960,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,8 +209,8 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 777,
-    "forks": 1391,
+    "stars": 778,
+    "forks": 1392,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2429,
+    "stars": 2430,
     "forks": 97,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -974,7 +974,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16496,
+    "stars": 16497,
     "forks": 758,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1190,7 +1190,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28549,
+    "stars": 28550,
     "forks": 2845,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1208,7 +1208,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4102,
+    "stars": 4103,
     "forks": 89,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1281,7 +1281,7 @@
     "owner": "jestjs",
     "name": "jest",
     "stars": 45469,
-    "forks": 6719,
+    "forks": 6718,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1298,7 +1298,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.radio",
-    "stars": 491,
+    "stars": 490,
     "forks": 51,
     "language": "JavaScript",
     "description": "Messaging patterns for Backbone applications.",
@@ -1307,7 +1307,7 @@
   {
     "owner": "marionettejs",
     "name": "marionette",
-    "stars": 7040,
+    "stars": 7041,
     "forks": 1237,
     "language": "JavaScript",
     "description": "A JavaScript library for structured interfaces, with explicit ownership and lifecycle. Built for agent-led development. Canonical Marionette repository; v4 history is preserved on the v4 branch.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44005,
-    "forks": 2322,
+    "stars": 44004,
+    "forks": 2338,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1416,7 +1416,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 457,
-    "forks": 1096,
+    "forks": 1097,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41471,
+    "stars": 41469,
     "forks": 2701,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
