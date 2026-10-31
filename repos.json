@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44056,
-    "forks": 5967,
+    "stars": 44054,
+    "forks": 5970,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -443,7 +443,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-react-optimize",
-    "stars": 1663,
+    "stars": 1664,
     "forks": 28,
     "language": "JavaScript",
     "description": ":rocket: A Babel preset and plugins for optimizing React code.",
@@ -1146,7 +1146,7 @@
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
     "stars": 3015,
-    "forks": 66,
+    "forks": 65,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
     "url": "https://github.com/jamiebuilds/tailwindcss-animate"
@@ -1181,8 +1181,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28551,
-    "forks": 2845,
+    "stars": 28548,
+    "forks": 2844,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1271,7 +1271,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45467,
+    "stars": 45468,
     "forks": 6716,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1298,7 +1298,7 @@
   {
     "owner": "marionettejs",
     "name": "marionette",
-    "stars": 7042,
+    "stars": 7043,
     "forks": 1237,
     "language": "JavaScript",
     "description": "A JavaScript library for structured interfaces, with explicit ownership and lifecycle. Built for agent-led development. Canonical Marionette repository; v4 history is preserved on the v4 branch.",
@@ -1307,7 +1307,7 @@
   {
     "owner": "meta",
     "name": "flow",
-    "stars": 22305,
+    "stars": 22304,
     "forks": 1892,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44009,
-    "forks": 2383,
+    "stars": 44011,
+    "forks": 2392,
     "language": "JavaScript",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1416,7 +1416,7 @@
     "owner": "yarnpkg",
     "name": "website",
     "stars": 457,
-    "forks": 1097,
+    "forks": 1096,
     "language": "JavaScript",
     "description": "Yarn package manager website",
     "url": "https://github.com/yarnpkg/website"
