@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44053,
+    "stars": 44054,
     "forks": 5977,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -200,7 +200,7 @@
   {
     "owner": "babel",
     "name": "minify",
-    "stars": 4365,
+    "stars": 4364,
     "forks": 217,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
@@ -443,7 +443,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-react-optimize",
-    "stars": 1664,
+    "stars": 1663,
     "forks": 28,
     "language": "JavaScript",
     "description": ":rocket: A Babel preset and plugins for optimizing React code.",
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28545,
+    "stars": 28544,
     "forks": 2844,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4104,
+    "stars": 4105,
     "forks": 89,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1271,7 +1271,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45468,
+    "stars": 45471,
     "forks": 6714,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1281,7 +1281,7 @@
     "owner": "lerna",
     "name": "lerna",
     "stars": 36033,
-    "forks": 2268,
+    "forks": 2267,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1308,7 +1308,7 @@
     "owner": "meta",
     "name": "flow",
     "stars": 22310,
-    "forks": 1891,
+    "forks": 1890,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/meta/flow"
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44014,
-    "forks": 2393,
+    "stars": 44013,
+    "forks": 2395,
     "language": "Rust",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41460,
+    "stars": 41459,
     "forks": 2698,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
