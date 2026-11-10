@@ -12,7 +12,7 @@
     "owner": "atlassian",
     "name": "jest-in-case",
     "stars": 1061,
-    "forks": 21,
+    "forks": 20,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
     "url": "https://github.com/atlassian/jest-in-case"
@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44056,
+    "stars": 44055,
     "forks": 5977,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 778,
+    "stars": 779,
     "forks": 1392,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -389,7 +389,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12088,
+    "stars": 12089,
     "forks": 1747,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -605,7 +605,7 @@
   {
     "owner": "jamiebuilds",
     "name": "documentation-handbook",
-    "stars": 302,
+    "stars": 303,
     "forks": 28,
     "language": null,
     "description": "How to write high-quality friendly documentation that people want to read.",
@@ -803,7 +803,7 @@
   {
     "owner": "jamiebuilds",
     "name": "json-parser-in-typescript-very-bad-idea-please-dont-use",
-    "stars": 434,
+    "stars": 435,
     "forks": 4,
     "language": "TypeScript",
     "description": "JSON Parser written entirely in TypeScript's type system",
@@ -893,7 +893,7 @@
   {
     "owner": "jamiebuilds",
     "name": "pretty-format",
-    "stars": 302,
+    "stars": 303,
     "forks": 24,
     "language": null,
     "description": ":sparkles: Stringify any JavaScript value",
@@ -1145,7 +1145,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 3014,
+    "stars": 3015,
     "forks": 65,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28544,
+    "stars": 28545,
     "forks": 2844,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1271,8 +1271,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45474,
-    "forks": 6719,
+    "stars": 45473,
+    "forks": 6716,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1280,7 +1280,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36031,
+    "stars": 36029,
     "forks": 2267,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1289,7 +1289,7 @@
   {
     "owner": "marionettejs",
     "name": "backbone.radio",
-    "stars": 490,
+    "stars": 491,
     "forks": 51,
     "language": "JavaScript",
     "description": "Messaging patterns for Backbone applications.",
@@ -1307,8 +1307,8 @@
   {
     "owner": "meta",
     "name": "flow",
-    "stars": 22312,
-    "forks": 1890,
+    "stars": 22311,
+    "forks": 1891,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/meta/flow"
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44012,
-    "forks": 2396,
+    "stars": 44011,
+    "forks": 2395,
     "language": "Rust",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
