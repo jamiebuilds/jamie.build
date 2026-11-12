@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 44057,
-    "forks": 5977,
+    "forks": 5976,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,8 +209,8 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 779,
-    "forks": 1392,
+    "stars": 778,
+    "forks": 1394,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -389,7 +389,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12090,
+    "stars": 12089,
     "forks": 1747,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -911,7 +911,7 @@
   {
     "owner": "jamiebuilds",
     "name": "proposal-promise-prototype-inspect",
-    "stars": 75,
+    "stars": 74,
     "forks": 7,
     "language": "JavaScript",
     "description": "Proposal for Promise.prototype.inspect",
@@ -947,7 +947,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-gridlist",
-    "stars": 423,
+    "stars": 422,
     "forks": 8,
     "language": "TypeScript",
     "description": "A virtual-scrolling GridList component based on CSS Grids",
@@ -1128,7 +1128,7 @@
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
     "stars": 4125,
-    "forks": 163,
+    "forks": 162,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
     "url": "https://github.com/jamiebuilds/spectacle-code-slide"
@@ -1145,7 +1145,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 3015,
+    "stars": 3016,
     "forks": 65,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28545,
+    "stars": 28544,
     "forks": 2844,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1217,7 +1217,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated",
-    "stars": 7710,
+    "stars": 7709,
     "forks": 259,
     "language": "JavaScript",
     "description": "State so simple, it goes without saying",
@@ -1280,7 +1280,7 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36030,
+    "stars": 36032,
     "forks": 2266,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
@@ -1307,7 +1307,7 @@
   {
     "owner": "meta",
     "name": "flow",
-    "stars": 22312,
+    "stars": 22315,
     "forks": 1891,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44012,
+    "stars": 44013,
     "forks": 2395,
     "language": "Rust",
     "description": "The zero configuration build tool for the web. 📦🚀",
