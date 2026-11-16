@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44062,
-    "forks": 5995,
+    "stars": 44063,
+    "forks": 6032,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 779,
+    "stars": 780,
     "forks": 1396,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -318,7 +318,7 @@
     "owner": "cloudflare",
     "name": "a11y-focus-scope",
     "stars": 36,
-    "forks": 3,
+    "forks": 4,
     "language": "JavaScript",
     "description": "Accessibility util for scoping focus to an element.",
     "url": "https://github.com/cloudflare/a11y-focus-scope"
@@ -327,7 +327,7 @@
     "owner": "cloudflare",
     "name": "a11y-focus-store",
     "stars": 25,
-    "forks": 3,
+    "forks": 4,
     "language": "JavaScript",
     "description": "Accessibility util for storing/restoring focus.",
     "url": "https://github.com/cloudflare/a11y-focus-store"
@@ -1181,8 +1181,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28545,
-    "forks": 2843,
+    "stars": 28546,
+    "forks": 2842,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1200,7 +1200,7 @@
     "owner": "jamiebuilds",
     "name": "tinykeys",
     "stars": 4106,
-    "forks": 89,
+    "forks": 88,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
     "url": "https://github.com/jamiebuilds/tinykeys"
@@ -1272,7 +1272,7 @@
     "owner": "jestjs",
     "name": "jest",
     "stars": 45473,
-    "forks": 6733,
+    "forks": 6765,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1281,7 +1281,7 @@
     "owner": "lerna",
     "name": "lerna",
     "stars": 36029,
-    "forks": 2266,
+    "forks": 2265,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1308,7 +1308,7 @@
     "owner": "meta",
     "name": "flow",
     "stars": 22318,
-    "forks": 1891,
+    "forks": 1892,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/meta/flow"
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44023,
-    "forks": 2395,
+    "stars": 44024,
+    "forks": 2396,
     "language": "Rust",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41456,
+    "stars": 41455,
     "forks": 2698,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
