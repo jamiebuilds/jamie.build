@@ -11,7 +11,7 @@
   {
     "owner": "atlassian",
     "name": "jest-in-case",
-    "stars": 1061,
+    "stars": 1060,
     "forks": 20,
     "language": "JavaScript",
     "description": "Jest utility for creating variations of the same test",
@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44063,
-    "forks": 6032,
+    "stars": 44064,
+    "forks": 6053,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -335,7 +335,7 @@
   {
     "owner": "cloudflare",
     "name": "cf-ui",
-    "stars": 1289,
+    "stars": 1290,
     "forks": 79,
     "language": "JavaScript",
     "description": ":gem: Cloudflare UI Framework",
@@ -389,7 +389,7 @@
   {
     "owner": "jamiebuilds",
     "name": "babel-handbook",
-    "stars": 12089,
+    "stars": 12090,
     "forks": 1747,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
@@ -965,7 +965,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16494,
+    "stars": 16493,
     "forks": 757,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1127,7 +1127,7 @@
   {
     "owner": "jamiebuilds",
     "name": "spectacle-code-slide",
-    "stars": 4124,
+    "stars": 4125,
     "forks": 162,
     "language": "JavaScript",
     "description": ":metal: Present code with style",
@@ -1181,8 +1181,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28546,
-    "forks": 2842,
+    "stars": 28545,
+    "forks": 2841,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1271,8 +1271,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45473,
-    "forks": 6765,
+    "stars": 45474,
+    "forks": 6792,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1280,8 +1280,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36029,
-    "forks": 2265,
+    "stars": 36030,
+    "forks": 2266,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1317,7 +1317,7 @@
     "owner": "parcel-bundler",
     "name": "parcel",
     "stars": 44024,
-    "forks": 2396,
+    "forks": 2397,
     "language": "Rust",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
