@@ -183,7 +183,7 @@
     "owner": "babel",
     "name": "babel",
     "stars": 44064,
-    "forks": 6053,
+    "forks": 6055,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -209,7 +209,7 @@
   {
     "owner": "babel",
     "name": "website",
-    "stars": 780,
+    "stars": 781,
     "forks": 1396,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
@@ -965,7 +965,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-loadable",
-    "stars": 16493,
+    "stars": 16492,
     "forks": 757,
     "language": "JavaScript",
     "description": ":hourglass_flowing_sand: A higher order component for loading components with promises.",
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28545,
+    "stars": 28547,
     "forks": 2841,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4106,
+    "stars": 4107,
     "forks": 88,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1271,8 +1271,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45474,
-    "forks": 6792,
+    "stars": 45477,
+    "forks": 6799,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1280,8 +1280,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36030,
-    "forks": 2266,
+    "stars": 36031,
+    "forks": 2267,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1307,7 +1307,7 @@
   {
     "owner": "meta",
     "name": "flow",
-    "stars": 22318,
+    "stars": 22319,
     "forks": 1892,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44024,
+    "stars": 44028,
     "forks": 2397,
     "language": "Rust",
     "description": "The zero configuration build tool for the web. 📦🚀",
