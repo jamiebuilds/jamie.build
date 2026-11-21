@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44075,
+    "stars": 44073,
     "forks": 6060,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -201,7 +201,7 @@
     "owner": "babel",
     "name": "minify",
     "stars": 4364,
-    "forks": 217,
+    "forks": 216,
     "language": "JavaScript",
     "description": ":scissors: An ES6+ aware minifier based on the Babel toolchain (beta)",
     "url": "https://github.com/babel/minify"
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4107,
+    "stars": 4108,
     "forks": 88,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1226,7 +1226,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4180,
+    "stars": 4179,
     "forks": 137,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1271,7 +1271,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45486,
+    "stars": 45487,
     "forks": 6818,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1317,7 +1317,7 @@
     "owner": "parcel-bundler",
     "name": "parcel",
     "stars": 44027,
-    "forks": 2397,
+    "forks": 2336,
     "language": "Rust",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41457,
+    "stars": 41458,
     "forks": 2697,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
