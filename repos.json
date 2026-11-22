@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44073,
-    "forks": 6060,
+    "stars": 44071,
+    "forks": 6059,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -1146,7 +1146,7 @@
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
     "stars": 3017,
-    "forks": 65,
+    "forks": 64,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
     "url": "https://github.com/jamiebuilds/tailwindcss-animate"
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4108,
+    "stars": 4109,
     "forks": 88,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1271,7 +1271,7 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45487,
+    "stars": 45486,
     "forks": 6818,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
@@ -1280,8 +1280,8 @@
   {
     "owner": "lerna",
     "name": "lerna",
-    "stars": 36033,
-    "forks": 2267,
+    "stars": 36032,
+    "forks": 2268,
     "language": "TypeScript",
     "description": "Lerna is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.",
     "url": "https://github.com/lerna/lerna"
@@ -1298,7 +1298,7 @@
   {
     "owner": "marionettejs",
     "name": "marionette",
-    "stars": 7046,
+    "stars": 7047,
     "forks": 1237,
     "language": "JavaScript",
     "description": "A JavaScript library for structured interfaces, with explicit ownership and lifecycle. Built for agent-led development. Canonical Marionette repository; v4 history is preserved on the v4 branch.",
@@ -1307,7 +1307,7 @@
   {
     "owner": "meta",
     "name": "flow",
-    "stars": 22318,
+    "stars": 22321,
     "forks": 1892,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
@@ -1316,7 +1316,7 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44027,
+    "stars": 44028,
     "forks": 2336,
     "language": "Rust",
     "description": "The zero configuration build tool for the web. 📦🚀",
@@ -1425,7 +1425,7 @@
     "owner": "yarnpkg",
     "name": "yarn",
     "stars": 41458,
-    "forks": 2697,
+    "forks": 2696,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
     "url": "https://github.com/yarnpkg/yarn"
