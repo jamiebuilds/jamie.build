@@ -182,7 +182,7 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44076,
+    "stars": 44074,
     "forks": 6053,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
@@ -227,7 +227,7 @@
   {
     "owner": "boltpkg",
     "name": "bolt",
-    "stars": 2430,
+    "stars": 2429,
     "forks": 97,
     "language": "JavaScript",
     "description": "⚡️ Super-powered JavaScript project management",
@@ -390,7 +390,7 @@
     "owner": "jamiebuilds",
     "name": "babel-handbook",
     "stars": 12086,
-    "forks": 1747,
+    "forks": 1746,
     "language": null,
     "description": ":blue_book: A guided handbook on how to use Babel and how to create plugins for Babel.",
     "url": "https://github.com/jamiebuilds/babel-handbook"
@@ -1181,7 +1181,7 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28547,
+    "stars": 28550,
     "forks": 2839,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
@@ -1226,7 +1226,7 @@
   {
     "owner": "jamiebuilds",
     "name": "unstated-next",
-    "stars": 4178,
+    "stars": 4177,
     "forks": 137,
     "language": "TypeScript",
     "description": "200 bytes to never think about React state management libraries ever again",
@@ -1271,8 +1271,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45475,
-    "forks": 6811,
+    "stars": 45476,
+    "forks": 6813,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1424,7 +1424,7 @@
   {
     "owner": "yarnpkg",
     "name": "yarn",
-    "stars": 41459,
+    "stars": 41457,
     "forks": 2695,
     "language": "JavaScript",
     "description": "The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry",
