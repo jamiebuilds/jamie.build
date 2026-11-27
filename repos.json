@@ -182,8 +182,8 @@
   {
     "owner": "babel",
     "name": "babel",
-    "stars": 44074,
-    "forks": 6053,
+    "stars": 44076,
+    "forks": 6064,
     "language": "TypeScript",
     "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
     "url": "https://github.com/babel/babel"
@@ -210,7 +210,7 @@
     "owner": "babel",
     "name": "website",
     "stars": 781,
-    "forks": 1395,
+    "forks": 1394,
     "language": "TypeScript",
     "description": ":globe_with_meridians: The Babel documentation website",
     "url": "https://github.com/babel/website"
@@ -1028,7 +1028,7 @@
   {
     "owner": "jamiebuilds",
     "name": "react-stylish",
-    "stars": 47,
+    "stars": 46,
     "forks": 3,
     "language": "JavaScript",
     "description": ":ribbon: Make your React component style-able by all",
@@ -1145,7 +1145,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tailwindcss-animate",
-    "stars": 3015,
+    "stars": 3014,
     "forks": 64,
     "language": "JavaScript",
     "description": "A Tailwind CSS plugin for creating beautiful animations",
@@ -1181,8 +1181,8 @@
   {
     "owner": "jamiebuilds",
     "name": "the-super-tiny-compiler",
-    "stars": 28550,
-    "forks": 2839,
+    "stars": 28552,
+    "forks": 2838,
     "language": "JavaScript",
     "description": ":snowman: Possibly the smallest compiler ever",
     "url": "https://github.com/jamiebuilds/the-super-tiny-compiler"
@@ -1199,7 +1199,7 @@
   {
     "owner": "jamiebuilds",
     "name": "tinykeys",
-    "stars": 4108,
+    "stars": 4107,
     "forks": 88,
     "language": "TypeScript",
     "description": "A tiny (~650 B) & modern library for keybindings.",
@@ -1271,8 +1271,8 @@
   {
     "owner": "jestjs",
     "name": "jest",
-    "stars": 45476,
-    "forks": 6813,
+    "stars": 45475,
+    "forks": 6825,
     "language": "TypeScript",
     "description": "Delightful JavaScript Testing.",
     "url": "https://github.com/jestjs/jest"
@@ -1307,8 +1307,8 @@
   {
     "owner": "meta",
     "name": "flow",
-    "stars": 22324,
-    "forks": 1893,
+    "stars": 22323,
+    "forks": 1894,
     "language": "Rust",
     "description": "Adds static typing to JavaScript to improve developer productivity and code quality.",
     "url": "https://github.com/meta/flow"
@@ -1316,8 +1316,8 @@
   {
     "owner": "parcel-bundler",
     "name": "parcel",
-    "stars": 44031,
-    "forks": 2337,
+    "stars": 44032,
+    "forks": 2336,
     "language": "Rust",
     "description": "The zero configuration build tool for the web. 📦🚀",
     "url": "https://github.com/parcel-bundler/parcel"
